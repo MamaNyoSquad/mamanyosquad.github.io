@@ -6,7 +6,7 @@ _Updated 18 April 2022 Venus Island Time (UTC)_
 This is the official GitHub repository for [#MamaNyoSquad](http://github.com/MamaNyoSquad), reliving the DOA hype through web presence among others! This brand is run by two people: [thebelovedmoon (G.Mgr)](http://github.com/thebelovedmoon) and [Emmannuel Ortega (SocWeb Mgr)](http://github.com/Ortega082)!
 
 # Why have you decided to go open-source?
-Following the recent website policy imposed by the previous provider, Bookmark, we have decided to explore alternatives without any need of risky pricing. As you may have noticed, though this is run by two people, we are tight on a budget so we cannot (at least for the time being) able to accomodate such incredible pricing ranges. And besides, going open-source means we are transparent in our own way, as most of our code is transmitted through this repository.
+Following the recent website policy imposed by the previous provider, Bookmark, we have decided to explore alternatives without any need of risky pricing. As you may have noticed, though this is run by two people, we are on a tight budget so we are unable (at least for the time being) to accomodate such incredible pricing ranges. And besides, going open-source means we are transparent in our own way, as most of our code is transmitted through this repository.
 
 # Is the website (and repository) licensable?
 Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Zero (CC0) 1.0 Universal**, which can be read via this [file](http://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/main/LICENSE) (this change has been in effect via this [commit](http://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/cf6f42377dde718495347c419f10a1f736862aae)).
