@@ -9,6 +9,7 @@
     <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
     <style>
       .dis {
+        .dis {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -26,6 +27,15 @@
         text-align: center;
         width: 70%;
         max-height: 75%;
+        overflow-x: none;
+        overflow-y: scroll;
+      }
+      .dis::-webkit-scrollbar {
+        display: none;
+      }
+      .dis {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
       body {
         font-family: "Poppins";
