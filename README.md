@@ -12,7 +12,7 @@ Following the recent website policy imposed by the previous provider, Bookmark, 
 
 # Is the website (and repository) licensable?
 
-Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Zero (CC0) 1.0 Universal**, which can be read via this [file](http://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/main/LICENSE) (this change has been in effect via this [commit](http://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/cf6f42377dde718495347c419f10a1f736862aae)).
+Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Zero (CC0) 1.0 Universal**, which can be read via this [file](http://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/LICENSE) (this change has been in effect via this [commit](http://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/cf6f42377dde718495347c419f10a1f736862aae)).
 
 # Where is the Site Policies and KT Disclosure?
 
@@ -34,7 +34,7 @@ Now, we understand that these paid services are the 'keys' to improving the site
 
 Because of these sudden changes, those who are in that sector have a choice to pay up to continue using the basic services after the trial, or remove from the platform.
 
-Before we move on, we just wanted to mention that restricting customizations is a real pain considering that some websites have individual customization settings before this sudden change, like in Emmannuel's case, in which he tweeted at 8:11am UTC. In a nutshell, the websites after this update have restricted the customizations (llike header and footer) to apply globally. What's worse is that unlike the last update [as we can remember] that you limited our free websites to 5, you haven't pushed future updates to your customers, which proves that the changes are sudden without their notice.
+Before we move on, we just wanted to mention that restricting customizations is a real pain considering that some websites have individual customization settings before this sudden change, like in Emmannuel's case, in which he [tweeted](http://mobile.twitter.com/Ortega082/status/1513791911919644675) at 8:11am UTC. In a nutshell, the websites after this update have restricted the customizations (llike header and footer) to apply globally. What's worse is that unlike the last update [as we can remember] that you limited our free websites to 5, you haven't pushed future updates to your customers, which proves that the changes are sudden without their notice.
 
 We are appealing to Bookmark to reconsider other options considering the no-budget customers like us and features that we deem are demanding to be returned, amongst other considerations not mentioned in this open letter.
 
