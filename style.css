@@ -1,34 +1,38 @@
 /* This CSS is required for all HTML documents. This might be updated as more additions come in. */
 
-/* Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  /* font-family: 'Poppins', sans-serif; */
+/* Fonts */
 
-/* Leckerli One */
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
-  /* font-family: 'Leckerli One', cursive; */
+  /* Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    /* font-family: 'Poppins', sans-serif; */
 
-body {
-  background-color: #161224;
-  color: #ffffff;
-}
+  /* Leckerli One */
+  @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+    /* font-family: 'Leckerli One', cursive; */
 
-a:link {
-  color: #ff0000;
-  text-decoration: none;
-}
+/* HTML */
 
-a:visited {
-  color: #880000;
-  text-decoration: none;
-}
+  body {
+    background-color: #161224;
+    color: #ffffff;
+  }
 
-a:hover {
-  color: #ff3333;
-  text-decoration: none;
-}
+  a:link {
+    color: #ff0000;
+    text-decoration: none;
+  }
 
-a:active {
-  color: #aa0000;
-  text-decoration: none;
-}
+  a:visited {
+    color: #880000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #ff3333;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: #aa0000;
+    text-decoration: none;
+  }
