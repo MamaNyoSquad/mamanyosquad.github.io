@@ -2,12 +2,42 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>#MamaNyoSquad</title>
+    <title>#MamaNyoSquad @ 2</title>
     <link href="https://mamanyosquad.github.io/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="https://mamanyosquad.github.io/media/favicon.png" type="image/x-icon">
     <style>
+      body {
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+      }
+      .timer {
+        position: absolute;
+        top: 70%;
+        left: 65%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        font-size: 256px;
+        color: #ffffff40;
+      }
+      .annivdesc {
+        position: absolute;
+        top: -11%;
+        left: 30%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        font-family: "Leckerli One", cursive;
+        text-align: center;
+        font-size: 128px;
+        color: #ffffff20;
+      }
       .dis {
         position: absolute;
         top: 50%;
@@ -36,29 +66,29 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
-      body {
-        font-family: "Poppins", sans-serif;
-      }
     </style>
+    <script src="scripts/anniv.js"></script>
     <meta name="og:type" content="website">
-    <meta name="og:title" content="#MamaNyoSquad">
+    <meta name="og:title" content="#MamaNyoSquad @ 2">
     <meta name="og:image" content="https://mamanyosquad.github.io/media/preview.png">
     <meta name="og:url" content="https://mamanyosquad.github.io">
-    <meta name="og:description" content="We are going open-source! 💕">
+    <meta name="og:description" content="Our 2nd Anniversary is just around the corner! 🎉">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@MamaNyoSquad">
     <meta name="theme-color" content="#161224">
     <meta name="msapplication-navbutton-color" content="#161224">
   </head>
   <body>
+    <p class="timer" id="anniv"></p>
+    <p class="annivdesc">#MamaNyoSquadAt2</p>
     <div class="dis">
-      <h1>We are going open-source! 💕</h1>
+      <h1>Our 2nd Anniversary is just around the corner! 🎉</h1>
       <p>
-        In a few commits, our web presence returns as we have undergone a major migration and overhaul! Read our <a href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/README.md" target="_blank">README</a> for details.
+        As we are just half a year away from our 2nd Anniversary, we thought we might tease you a bit with some of our improvements so far! All modifications here are helmed by <a href="https://mobile.twitter.com/thebelovedmoon" target="_blank">thebelovedmoon</a> using clever methods. Documentation to be posted whenever he sees fit.
         <br><br>
-        Read more about our <a href="policies">Site Policies</a> to understand how we manage our workflow. We have archived our Main Page modifications that reflect recent events at the <a href="archive">Archives</a>.
+        This page is best viewed on desktops with a minimum display of 1080p. For the default landing page, see <a href="lp.html">lp.html</a>.
         <br><br>
-        <b><i>Enter the universe through the eyes of the Tengu!</i></b>
+        Want to contribute? You may <a href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">fork</a> our repository from the deployment branch and submit a Pull Request from there. (You must be logged in to GitHub to perform this task.) This website is licensed under <a href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/LICENSE" target="_blank">CC0-1.0</a>.
       </p>
     </div>
   </body>
