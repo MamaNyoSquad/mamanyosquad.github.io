@@ -1,10 +1,10 @@
-_Updated 6 May 2022 UTC_
+_Updated 5 June 2022 UTC_
 
 # Introduction
 
 **We are going open-source! :two_hearts:**
 
-This is the official GitHub repository for [#MamaNyoSquad](http://github.com/MamaNyoSquad), reliving the DOA hype through web presence among others! This brand is run by two people: [thebelovedmoon (G.Mgr)](http://github.com/thebelovedmoon) and [Emmannuel Ortega (SocWeb Mgr)](http://github.com/Ortega082)!
+This is the official GitHub repository for [#MamaNyoSquad](https://github.com/MamaNyoSquad), reliving the DOA hype through web presence among others! This brand is run by two people: [thebelovedmoon (G.Mgr)](https://github.com/thebelovedmoon) and [Emmannuel Ortega (SocWeb Mgr)](https://github.com/Ortega082)!
 
 # Why have you decided to go open-source?
 
@@ -12,11 +12,11 @@ Following the recent website policy imposed by the previous provider, Bookmark, 
 
 # Is the website (and repository) licensable?
 
-Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Zero (CC0) 1.0 Universal**, which can be read via this [file](http://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/LICENSE) (this change has been in effect via this [commit](http://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/cf6f42377dde718495347c419f10a1f736862aae)).
+Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Attribution 4.0 International**, which can be read via this [file](https://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/LICENSE) (this change has been in effect via this [commit](https://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/f6bb85a936e4c8991c48118b2ec57646e9a1a337).
 
 # Where is the Site Policies and KT Disclosure?
 
-We have moved such policies to this [page](http://mamanyosquad.github.io/policies).
+We have moved such policies to this [page](https://mamanyosquad.github.io/policies).
 
 # How about the Open Letter?
 
@@ -34,7 +34,7 @@ Now, we understand that these paid services are the 'keys' to improving the site
 
 Because of these sudden changes, those who are in that sector have a choice to pay up to continue using the basic services after the trial, or remove from the platform.
 
-Before we move on, we just wanted to mention that restricting customizations is a real pain considering that some websites have individual customization settings before this sudden change, like in Emmannuel's case, in which he [tweeted](http://mobile.twitter.com/Ortega082/status/1513791911919644675) at 8:11am UTC. In a nutshell, the websites after this update have restricted the customizations (llike header and footer) to apply globally. What's worse is that unlike the last update [as we can remember] that you limited our free websites to 5, you haven't pushed future updates to your customers, which proves that the changes are sudden without their notice.
+Before we move on, we just wanted to mention that restricting customizations is a real pain considering that some websites have individual customization settings before this sudden change, like in Emmannuel's case, in which he [tweeted](https://mobile.twitter.com/Ortega082/status/1513791911919644675) at 8:11am UTC. In a nutshell, the websites after this update have restricted the customizations (llike header and footer) to apply globally. What's worse is that unlike the last update [as we can remember] that you limited our free websites to 5, you haven't pushed future updates to your customers, which proves that the changes are sudden without their notice.
 
 We are appealing to Bookmark to reconsider other options considering the no-budget customers like us and features that we deem are demanding to be returned, amongst other considerations not mentioned in this open letter.
 
@@ -44,7 +44,7 @@ As per release of this open letter, all websites owned by thebelovedmoon and Emm
 
 # What holds the future of an open-sourced #MamaNyoSquad?
 
-We have been working on engaging others to collaborate with our work as we move forward, beginning with the rewrite of Venus Island Diaries - Main Story (more in this [Tweet](http://mobile.twitter.com/i/status/1514422387961638918)). With this initiative, we are committed for a future where everyone can share ideas freely, interact with one's work, and bring their ideas to life!
+We have been working on engaging others to collaborate with our work as we move forward, beginning with the rewrite of Venus Island Diaries - Main Story (more in this [Tweet](https://mobile.twitter.com/i/status/1514422387961638918)). With this initiative, we are committed for a future where everyone can share ideas freely, interact with one's work, and bring their ideas to life!
 
 # Conclusion
 
@@ -54,4 +54,4 @@ As we move forward through an open-sourced future, we are still expecting some h
 
 # Contact
 
-[Twitter](http://mobile.twitter.com/MamaNyoSquad) | [YouTube](http://youtube.com/channel/UC2YiXR9cWXJp0adN7x51qVQ) | [Email](mailto:mamanyosquad@outlook.com)
+[Twitter](https://mobile.twitter.com/MamaNyoSquad) | [YouTube](https://youtube.com/channel/UC2YiXR9cWXJp0adN7x51qVQ) | [Email](mailto:mamanyosquad@outlook.com)
