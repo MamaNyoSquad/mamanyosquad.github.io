@@ -12,7 +12,7 @@ Following the recent website policy imposed by the previous provider, Bookmark, 
 
 # Is the website (and repository) licensable?
 
-Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Attribution 4.0 International**, which can be read via this [file](https://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/LICENSE) (this change has been in effect via this [commit](https://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/f6bb85a936e4c8991c48118b2ec57646e9a1a337).
+Yes! Our web presence, being on an open-source platform, is licensed under **Creative Commons Attribution 4.0 International**, which can be read via this [file](https://github.com/MamaNyoSquad/mamanyosquad.github.io/blob/deploy/LICENSE) (this change has been in effect via this [commit](https://github.com/MamaNyoSquad/mamanyosquad.github.io/commit/f6bb85a936e4c8991c48118b2ec57646e9a1a337)).
 
 # Where is the Site Policies and KT Disclosure?
 
