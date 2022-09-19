@@ -109,6 +109,28 @@
       body {
         font-family: "Poppins", sans-serif;
       }
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeOutAnimation {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      #fadein {
+        display: none;
+        animation: fadeInAnimation ease 2.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
       .gr {
         position: absolute;
         top: 50%;
@@ -127,6 +149,34 @@
         width: 70%;
         height: 75%;
       }
+      .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        width: 70%;
+        max-height: 75%;
+        overflow-x: none;
+        overflow-y: scroll;
+      }
+      .txt::-webkit-scrollbar {
+        display: none;
+      }
+      .txt {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
       body {
         background-color: #000;
         background-size: cover;
@@ -143,6 +193,12 @@
         height: 100%;
       }
     </style>
+    <script>
+      function fade() {
+        document.getElementById("fadeout").style.cssText = "display: block; animation: fadeOutAnimation ease 2.5s; animation-iteration-count: 1; animation-fill-mode: forwards;";
+        document.getElementById("fadein").style.display = "block";
+      }
+    </script>
     <meta name="og:type" content="website">
     <meta name="og:title" content="女天狗 / MamaNyoSquad">
     <meta name="og:image" content="https://mamanyosquad.github.io/media/preview/20220908.png">
@@ -156,8 +212,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
   </head>
   <body>
-    <div class="gr">
+    <div id="fadeout" class="gr" onclick="fade()">
       <div class="LongLiveTheQueen"></div>
+    </div>
+    <div id="fadein" class="txt">
+      <h1>Open Letter of Condolence to the Royal Family 🇬🇧</h1>
+      <h3>thebelovedmoon, G.Mgr</h3>
+      <p>
+        thebelovedmoon -- on behalg of tbmassoc (thebelovedmoon and associates) -- joins the Royal Family and the people of the UK in mourning the loss of the beloved HM Queen Elizabeth II las 8 Sep at 6:30pm BST. an epitome of grace and prosperity, she underpinned the changing times whilst being in the service to the people. her undying commitment to the service has spanned 7 decades -- making her the longest-serving monarch in history.
+        <br><br>
+        as the mourning comes to a close, we'll remember the days where her humble presence and selfless reign have touched the people around the world -- even in times of trouble. she will be missed dearly.
+        <br><br>
+        <b>Long Live the Queen, God Save the King.</b>
+      </p>
     </div>
   </body>
 </html>
