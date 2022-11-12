@@ -72,6 +72,9 @@
   color: #06a8ff;
   text-decoration: none;
 }
+.Active {
+  color: #06a8ff;
+}
 
 .NyoWeekHead {
   background-image: url(../media/images/NyoWeek2022.jpg);
