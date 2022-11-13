@@ -1,4 +1,4 @@
-/* css updated as of 12 Nov 2022 UTC */
+/* css updated as of 13 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -31,7 +31,7 @@
   top: 0;
   text-align: center;
   background-color: #ff0000;
-  box-shadow: 0 8px 16px 0 #06a8ff80, 0 6px 20px 0 #06a8ffa0;
+  box-shadow: 0 9.5px 19px #06a8ffa0;
 }
 .logoHead {
   width: 100%;

@@ -9,10 +9,10 @@ var x = setInterval(function() {
   
   var distance = countDownDate - now;
   
-  var days =  ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-3);
-  var hours =  ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+  var days = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-3);
+  var hours = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
   var minutes = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
-  var seconds =  ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+  var seconds = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
   
   document.getElementById("anniv").innerHTML = days + ":" + hours + ":"
   + minutes + ":" + seconds;
