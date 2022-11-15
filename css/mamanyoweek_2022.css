@@ -1,4 +1,4 @@
-/* css updated as of 13 Nov 2022 UTC */
+/* css updated as of 15 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -99,7 +99,7 @@
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .NyoWeekHead {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -142,4 +142,14 @@
 .tbmassoc {
   font-family: 'Monotype Corsiva', cursive;
   font-weight: normal;
+}
+
+.DOAXVV5周年 {
+  background-image: url(../media/images/DOAXVV5周年.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
 }
