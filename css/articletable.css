@@ -1,4 +1,4 @@
-/* css updated as of 14 Nov 2022 UTC */
+/* css updated as of 15 Nov 2022 UTC */
 
 .articleHead {
   background-image: url(../media/images/VenusIsland_1.jpg);
@@ -14,16 +14,12 @@
   width: 100%;
   padding: 38px;
 }
-
 .inThisArticle {
   width: 100%;
-  margin: 19px;
   padding: 38px;
-  align-items: center;
-  position: relative;
 }
-.sectionContain {
-  width: 75%;
-  position: relative;
-  background-color: #aaa;
+
+.secContain {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
 }
