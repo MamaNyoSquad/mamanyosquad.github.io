@@ -153,3 +153,38 @@
   width: 100%;
   height: 100%;
 }
+
+.ovlBtn {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.NyoBtn {
+  background-color: #161224;
+  border: solid #ff0000;
+  padding: 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -moz-border-radius: 950px;
+  -ms-border-radius: 950px;
+  -webkit-border-radius: 950px;
+  -o-border-radius: 950px;
+  border-radius: 950px;
+  transition-duration: .95s;
+  cursor: pointer;
+  /* box-shadow: 0 9.5px 19px #06a8ffa0; */
+}
+.NyoBtn:link {
+  color: #ffffff;
+}
+.NyoBtn:visited {
+  color: #ffffff;
+}
+.NyoBtn:hover {
+  background-color: #ff0000;
+  border: solid #06a8ff;
+  color: #ffffff;
+}
+.NyoBtn:active {
+  color: #ffffff;
+}
