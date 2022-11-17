@@ -49,18 +49,32 @@
     color: #ff0000;
     text-decoration: none;
   }
-
   a:visited {
     color: #880000;
     text-decoration: none;
   }
-
   a:hover {
     color: #ff3333;
     text-decoration: none;
   }
-
   a:active {
     color: #aa0000;
     text-decoration: none;
+  }
+
+  /* Venus 5 */
+  .Nyotengu {
+    background-color: #161224;
+  }
+  .Helena {
+    background-color: #fce693;
+  }
+  .Luna {
+    background-color: #f0d2d4;
+  }
+  .Misaki {
+    background-color: #a88255;
+  }
+  .Elise {
+    background-color: #eda2ae;
   }

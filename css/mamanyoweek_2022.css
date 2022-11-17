@@ -1,4 +1,4 @@
-/* css updated as of 16 Nov 2022 UTC */
+/* css updated as of 17 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -22,6 +22,38 @@
   padding: 19px;
   text-align: center;
 }
+
+/* DOAXVV Hearts, the graphical standout of #MamaNyoSquad */
+  .NyoHeart-left {
+    background-image: url(../media/images/heart_transparent_left.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+  }
+  .NyoHeart-right {
+    background-image: url(../media/images/heart_transparent_right.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+  }
+  @media screen and (max-width: 950px) {
+    .NyoHeart-left, .NyoHeart-right {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
 
 .pageHeader {
   width: 100%;
@@ -81,11 +113,6 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
 }
 .MamaNyoWeekLogo {
   width: 100%;
@@ -98,14 +125,6 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-}
-@media screen and (max-width: 950px) {
-  .NyoWeekHead {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 .InceptAnniv {
@@ -187,4 +206,29 @@
 }
 .NyoBtn:active {
   color: #ffffff;
+}
+
+.divTranst {
+  width: 100%;
+  height: 19px;
+}
+
+.MamaNyo19Div {
+  background: linear-gradient(#ff0000, #161224);
+}
+.MamaNyo19LogoPlace {
+  width: 100%;
+  height: 375px;
+}
+.MamaNyo19 {
+  background-image: url(../media/svg/MamaNyo19.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.NyoFont {
+  font-family: 'Vladimir Script', cursive;
+  font-size: 48px;
 }

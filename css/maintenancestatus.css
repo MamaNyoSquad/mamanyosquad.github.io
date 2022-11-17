@@ -1,0 +1,16 @@
+.statustext {
+  padding-bottom: 19px;
+}
+
+.maint-queued /* Luna */ {
+  font-weight: bold;
+  color: #f0d2d4;
+}
+.maint-active /* Helena */ {
+  font-weight: bold;
+  color: #fce693;
+}
+.maint-finished /* Misaki */ {
+  font-weight: bold;
+  color: #a88255;
+}
