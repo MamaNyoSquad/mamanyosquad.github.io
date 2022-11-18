@@ -5,12 +5,15 @@
 .maint-queued /* Luna */ {
   font-weight: bold;
   color: #f0d2d4;
+  /* QUEUED */
 }
 .maint-active /* Helena */ {
   font-weight: bold;
   color: #fce693;
+  /* ACTIVE */
 }
 .maint-finished /* Misaki */ {
   font-weight: bold;
   color: #a88255;
+  /* FINISHED */
 }
