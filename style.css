@@ -1,4 +1,7 @@
-/* This CSS is required for all HTML documents. This might be updated as more additions come in. */
+/*
+  This CSS is required for all HTML documents. This might be updated as more additions come in.
+  CSS updated 19 Nov 2022 UTC
+*/
 
 /* Fonts */
 
@@ -62,7 +65,7 @@
     text-decoration: none;
   }
 
-  /* Venus 5 */
+  /* Venus 5 (only applies to DIV) */
   .Nyotengu {
     background-color: #161224;
   }
@@ -77,4 +80,14 @@
   }
   .Elise {
     background-color: #eda2ae;
+  }
+
+  code {
+    background-color: #ffffff40;
+    padding: 4.75px;
+    -moz-border-radius: 4.75px;
+    -ms-border-radius: 4.75px;
+    -webkit-border-radius: 4.75px;
+    -o-border-radius: 4.75px;
+    border-radius: 4.75px;
   }

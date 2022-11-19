@@ -1,4 +1,4 @@
-/* css updated as of 18 Nov 2022 UTC */
+/* css updated as of 19 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -213,22 +213,59 @@
   height: 19px;
 }
 
-.MamaNyo19Div {
-  background: linear-gradient(#ff0000, #161224);
+/* dual feed */
+.dualfeed-col {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 19px;
 }
-.MamaNyo19LogoPlace {
-  width: 100%;
-  height: 375px;
+.dualfeed-row:after {
+  content: "";
+  display: block;
+  clear: both;
 }
-.MamaNyo19 {
-  background-image: url(../media/svg/MamaNyo19.svg);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 950px) {
+  .dualfeed-col {
+    width: 100%;
+    padding: 9.5px;
+  }
 }
-.NyoFont {
-  font-family: 'Vladimir Script', cursive;
-  font-size: 48px;
+
+/* tri feed */
+.trifeed-col {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 19px;
+}
+.trifeed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 950px) {
+  .trifeed-col {
+    width: 100%;
+    padding: 9.5px;
+  }
+}
+
+/* quad feed */
+.quadfeed-col {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 19px;
+}
+.quadfeed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 950px) {
+  .quadfeed-col {
+    width: 100%;
+    padding: 9.5px;
+  }
 }
