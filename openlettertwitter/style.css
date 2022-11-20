@@ -24,6 +24,29 @@ header {
   text-align: center;
 }
 
+footer {
+  background-color: #000000;
+  padding: 25px;
+  text-align: center;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #dddddd;
+  text-decoration: none;
+}
+a:active {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
 .content {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -41,4 +64,14 @@ header {
     padding-left: 50px;
     padding-right: 50px;
   }
+}
+
+.notice {
+  background-color: #1d9bf0;
+  padding: 50px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
 }
