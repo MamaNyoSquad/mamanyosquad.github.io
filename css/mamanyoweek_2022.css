@@ -1,4 +1,4 @@
-/* css updated as of 12 Nov 2022 UTC */
+/* css updated as of 19 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -23,6 +23,38 @@
   text-align: center;
 }
 
+/* DOAXVV Hearts, the graphical standout of #MamaNyoSquad */
+  .NyoHeart-left {
+    background-image: url(../media/images/heart_transparent_left.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+  }
+  .NyoHeart-right {
+    background-image: url(../media/images/heart_transparent_right.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+  }
+  @media screen and (max-width: 950px) {
+    .NyoHeart-left, .NyoHeart-right {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
 .pageHeader {
   width: 100%;
   padding: 19px;
@@ -31,7 +63,7 @@
   top: 0;
   text-align: center;
   background-color: #ff0000;
-  box-shadow: 0 8px 16px 0 #06a8ff80, 0 6px 20px 0 #06a8ffa0;
+  box-shadow: 0 9.5px 19px #06a8ffa0;
 }
 .logoHead {
   width: 100%;
@@ -72,17 +104,15 @@
   color: #06a8ff;
   text-decoration: none;
 }
+.Active {
+  color: #06a8ff;
+}
 
 .NyoWeekHead {
-  background-image: url(../media/images/NyoWeek2022.jpg);
+  background-image: url(../media/images/MamaNyoWeek_2022.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: center;
 }
 .MamaNyoWeekLogo {
   width: 100%;
@@ -95,14 +125,6 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-}
-@media screen and (max-width: 600px) {
-  .NyoWeekHead {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 .InceptAnniv {
@@ -139,4 +161,84 @@
 .tbmassoc {
   font-family: 'Monotype Corsiva', cursive;
   font-weight: normal;
+}
+
+.DOAXVV5周年 {
+  background-image: url(../media/images/DOAXVV5周年.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.ovlBtn {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.NyoBtn {
+  background-color: #161224;
+  border: solid #ff0000;
+  padding: 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -moz-border-radius: 950px;
+  -ms-border-radius: 950px;
+  -webkit-border-radius: 950px;
+  -o-border-radius: 950px;
+  border-radius: 950px;
+  transition-duration: .95s;
+  cursor: pointer;
+  /* box-shadow: 0 9.5px 19px #06a8ffa0; */
+}
+.NyoBtn:link {
+  color: #ffffff;
+}
+.NyoBtn:visited {
+  color: #ffffff;
+}
+.NyoBtn:hover {
+  background-color: #ff0000;
+  border: solid #06a8ff;
+  color: #ffffff;
+}
+.NyoBtn:active {
+  color: #ffffff;
+}
+
+.divTranst {
+  width: 100%;
+  height: 19px;
+}
+
+.dualfeed-col /* dual feed */ {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 19px;
+}
+.trifeed-col /* tri feed */ {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 19px;
+}
+.quadfeed-col /* quad feed */ {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 19px;
+}
+.feed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 950px) {
+  .dualfeed-col, .trifeed-col, .quadfeed-col {
+    width: 100%;
+    padding: 9.5px;
+  }
 }
