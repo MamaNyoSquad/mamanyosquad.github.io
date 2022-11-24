@@ -1,4 +1,4 @@
-/* css updated as of 19 Nov 2022 UTC */
+/* css updated as of 24 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -55,12 +55,15 @@
     }
   }
 
-.pageHeader {
-  width: 100%;
-  padding: 19px;
+.HEADER {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 1;
+}
+.siteHEADER {
+  width: 100%;
+  padding: 19px;
   text-align: center;
   background-color: #ff0000;
   box-shadow: 0 9.5px 19px #06a8ffa0;
@@ -106,6 +109,13 @@
 }
 .Active {
   color: #06a8ff;
+}
+
+.VenusIncept {
+  width: 100%;
+  padding: 19px;
+  text-align: center;
+  background-color: #dc919f;
 }
 
 .NyoWeekHead {
