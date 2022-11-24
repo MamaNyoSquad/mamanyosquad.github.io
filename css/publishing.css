@@ -1,0 +1,144 @@
+/* css updated as of 24 Nov 2022 UTC */
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+.HEADER {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+.head {
+  width: 100%;
+  padding: 19px;
+  text-align: center;
+  background-color: #d6c278;
+}
+.logoplace {
+  width: 100%;
+  height: 95px;
+}
+.logo {
+  background-image: url(../media/svg/publishing.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  color: #d6c278;
+  text-decoration: none;
+}
+a:visited {
+  color: #b69b38;
+  text-decoration: none;
+}
+a:hover {
+  color: #ceb65e;
+  text-decoration: none;
+}
+a:active {
+  color: #e2d39e;
+  text-decoration: none;
+}
+
+.intro-outer {
+  background-image: url(../media/images/VenusIsland_2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.intro-inner {
+  padding-top: 237.5px;
+  padding-bottom: 237.5px;
+  padding-left: 19px;
+  padding-right: 19px;
+  text-align: center;
+  background-color: #16122480;
+  background-image: url(../media/images/venus_V_transparent.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 950px) {
+  .intro-inner {
+    padding-top: 190px;
+    padding-bottom: 190px;
+  }
+}
+
+.history {
+  padding: 19px;
+  padding-bottom: 9.5px;
+  background-color: #d6c278;
+}
+.infobox {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+}
+.infobox-contain {
+  box-shadow: 0 0 19px #161224;
+}
+
+/*
+  filter: none | blur(%) brightness(%) contrast(%) drop-shadow(h-shadow v-shadow blur spread color)
+    grayscale(%) hue-rotate(deg) invert(%) opacity(%) saturate(%) sepia(%) | url() | initial | inherit;
+  from https://www.w3schools.com/cssref/css3_pr_filter.php
+*/
+.featTXT {
+  width: 100%;
+  height: 475px;
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #161224;
+}
+.feat1 {
+  width: 100%;
+  height: 475px;
+  background-image: url(../media/images/vidiaries-feat1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.feat2 {
+  width: 100%;
+  height: 475px;
+  background-image: url(../media/images/SquadPublishing_wide.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.dualfeed-col /* dual feed */ {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.trifeed-col /* tri feed */ {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.quadfeed-col /* quad feed */ {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.feed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 950px) {
+  .dualfeed-col, .trifeed-col, .quadfeed-col {
+    width: 100%;
+  }
+}
