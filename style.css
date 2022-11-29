@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 22 November 2022 UTC
+  CSS updated 29 November 2022 UTC
 */
 
 /* Fonts */
@@ -20,16 +20,19 @@
   @font-face {
     font-family: 'Kunstler Script', cursive;
     src: url(media/fonts/KUNSTLER.TTF);
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Vladimir Script', cursive;
     src: url(media/fonts/VLADIMIR.TTF);
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Monotype Corsiva', cursive;
     src: url(media/fonts/MTCORSVA.TTF);
+    font-display: swap;
   }
 
 /* HTML */
@@ -40,6 +43,7 @@
     height: 100%;
     overflow-x: hidden;
     word-wrap: break-word;
+    -ms-word-wrap: break-word;
   }
 
   * {
