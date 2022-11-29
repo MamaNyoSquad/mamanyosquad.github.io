@@ -1,4 +1,4 @@
-/* css updated as of 24 Nov 2022 UTC */
+/* css updated as of 29 Nov 2022 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -55,7 +55,7 @@
     }
   }
 
-.HEADER {
+header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -194,6 +194,11 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   -moz-border-radius: 950px;
   -ms-border-radius: 950px;
   -webkit-border-radius: 950px;
