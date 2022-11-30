@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>#MamaNyoSquad celebrates #MamaNyo19</title>
+    <title>#MamaNyoSquad</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="media/favicon.png" type="image/x-icon">
     <style>
       /* attach in-html custom css args here */
     </style>
     <meta name="og:type" content="website">
-    <meta name="og:title" content="#MamaNyoSquad celebrates #MamaNyo19">
-    <meta name="og:image" content="https://mamanyosquad.github.io/media/preview/20211119.png">
+    <meta name="og:title" content="#MamaNyoSquad">
+    <meta name="og:image" content="https://mamanyosquad.github.io/media/preview.png">
     <meta name="og:url" content="https://mamanyosquad.github.io">
-    <meta name="og:description" content="Mama Nyo celebrates her birthday today! 🎂">
+    <meta name="og:description" content="Stay tuned for the unveiling of the 2nd Inception Anniversary logo on 1 December UTC!">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@MamaNyoSquad">
     <meta name="theme-color" content="#161224">
@@ -24,6 +24,7 @@
     <!-- custom css -->
     <link href="css/mamanyoweek_2022.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/MamaNyo19.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/anniv.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
     <script src="scripts/anniv.js"></script>
   </head>
@@ -34,9 +35,6 @@
       </video>
     </div>
     <header>
-      <div class="VenusIncept">
-        <b>Koharu has just been incepted as the 25th Venus of the Global Edition! More <a class="HeadURL" href="https://game.doaxvv.com/production/html/information/chara_gl_0432_221124_1_0_c1a5a475e16455e729864f6f80197dfaf04b577ec42d1cdf6ccc4629c1fc6756_en.html" target="_blank">here</a>.</b>
-      </div>
       <div class="siteHEADER">
         <div class="logoHead">
           <div class="NyoLogo"></div>
@@ -52,29 +50,17 @@
         </div>
       </div>
     </header>
-    <div class="MamaNyo19-back">
-      <div class="MamaNyo19-fore"></div>
+    <div class="anniv-hero">
+      <div class="anniv-head">
+        <h1>UNVEILING TOMORROW!</h1>
+      </div>
+    </div>
+    <div class="InceptAnniv">
+      <p>Time before the 2nd Inception Anniversary: <span id="anniv"></span></p>
     </div>
     <div class="GeneralDiv">
-      <p class="MamaNyoTTF"><b>Happy Birthday / Special Day, Mama Nyo!</b></p>
+      <p class="MamaNyoTTF">Get Involved</p>
       <div class="MamaNyo19-row">
-        <div class="MamaNyo19-col">
-          <div class="MamaNyo19-HL">
-            <div class="MamaNyo19-Japanese"></div>
-          </div>
-          <div class="ovlBtn">
-            <a class="NyoBtn" href="https://doax-venusvacation.jp/update/32541.html" target="_blank">Japanese Edition</a>
-          </div>
-        </div>
-        <div class="MamaNyo19-col">
-          <div class="MamaNyo19-HL">
-            <div class="MamaNyo19-Global"></div>
-          </div>
-          <div class="ovlBtn">
-            <a class="NyoBtn" href="https://game.doaxvv.com/production/html/information/birthday_gl_0431_221118_1_0_91101ef624914881854e1601b8bdb5a96b2901d2008a86a562f684a1e327c8f9_en.html" target="_blank">Global Edition</a>
-          </div>
-        </div>
-        <p class="MamaNyoTTF">Get Involved</p>
         <div class="dualfeed-row">
           <div class="dualfeed-col">
             <a class="twitter-timeline" data-lang="en" data-height="950" data-dnt="true" data-theme="dark" href="https://twitter.com/MamaNyoSquad">Tweets by @MamaNyoSquad</a>
@@ -86,17 +72,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="MamaNyo19Div">
-      <div class="NyoHeart-left">
-        <div class="MamaNyo19LogoPlace">
-          <div class="MamaNyo19"></div>
-        </div>
-        <p class="MamaNyoTTF">Saturday, 19 Nov 2022</p>
-      </div>
-    </div>
-    <div class="InceptAnniv">
-      <p>Time before the 2nd Inception Anniversary: <span id="anniv"></span></p>
     </div>
     <footer class="footer">
       <div class="footerTagline">
@@ -123,17 +98,22 @@
   </body>
 </html>
 
-<!-- IMPORTANT NOTES 
+<!-- DIV REFERENCES
 
-  copy this div if you want to add a separator (inherited from thebelovedmoon/thebelovedmoon):
+  div separator (inherited from thebelovedmoon/thebelovedmoon)
+
   <div class="divTranst [Nyotengu, Helena, Luna, Misaki, Elise]" style="background-color: #ff0000;"></div>
 
-  copy this div for a trailer to new features:
+
+  newfeature trailer
+
   <div class="GeneralDiv">
     <h1>More resources coming soon! 💕</h1>
   </div>
 
-  copy this div for the #MamaNyoWeek event:
+
+  #MamaNyoWeek
+
   <div class="NyoWeekHead">
     <div class="NyoHeart-right">
       <div class="MamaNyoWeekLogo">
@@ -143,7 +123,28 @@
     </div>
   </div>
 
-  copy this part to the div for the #MamaNyo19 event:
+
+  #MamaNyo19 - feature image
+
+  <div class="MamaNyo19-back">
+    <div class="MamaNyo19-fore"></div>
+  </div>
+
+  
+  #MamaNyo19 - date
+
+  <div class="MamaNyo19Div">
+    <div class="NyoHeart-left">
+      <div class="MamaNyo19LogoPlace">
+        <div class="MamaNyo19"></div>
+      </div>
+      <p class="MamaNyoTTF">Saturday, 19 Nov 2022</p>
+    </div>
+  </div>
+
+
+  #MamaNyo19 - events
+
   <p class="MamaNyoTTF"><b>Happy Birthday / Special Day, Mama Nyo!</b></p>
   <div class="MamaNyo19-row">
     <div class="MamaNyo19-col">
@@ -151,7 +152,7 @@
         <div class="MamaNyo19-Japanese"></div>
       </div>
       <div class="ovlBtn">
-        <a class="NyoBtn" href="https://doax-venusvacation.jp/update/32541.html" target="_blank">Japanese Edition</a>
+        <a class="NyoBtn" href="[apanese Edition]" target="_blank">Japanese Edition</a>
       </div>
     </div>
     <div class="MamaNyo19-col">
@@ -159,10 +160,24 @@
         <div class="MamaNyo19-Global"></div>
       </div>
       <div class="ovlBtn">
-        <a class="NyoBtn" href="https://game.doaxvv.com/production/html/information/birthday_gl_0431_221118_1_0_91101ef624914881854e1601b8bdb5a96b2901d2008a86a562f684a1e327c8f9_en.html" target="_blank">Global Edition</a>
+        <a class="NyoBtn" href="[Global Edition]" target="_blank">Global Edition</a>
       </div>
     </div>
     (this part will be for other stuff related to the event)
+  </div>
+
+
+  Venus Inception - Japanese
+
+  <div class="VenusIncept">
+    <b>シャンディがグローバル版27代目ヴィーナスに就任しました! 詳しくは<a class="HeadURL" href="[Japanese Edition]" target="_blank">こちら</a>。</b>
+  </div>
+
+
+  Venus Inception - Global
+
+  <div class="VenusIncept">
+    <b>Koharu has just been incepted as the 25th Venus of the Global Edition! More <a class="HeadURL" href="[Global Edition]" target="_blank">here</a>.</b>
   </div>
 
 -->

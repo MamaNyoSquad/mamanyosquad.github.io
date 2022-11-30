@@ -1,4 +1,4 @@
-/* css updated as of 19 Nov 2022 UTC */
+/* css updated as of 30 Nov 2022 UTC */
 
 .MamaNyo19Div {
   background: linear-gradient(#ff0000, #161224);
@@ -23,7 +23,7 @@
 .MamaNyo19-back {
   background-image: url(../media/images/MamaNyo19_2022.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: 85% center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
@@ -32,7 +32,7 @@
 .MamaNyo19-fore {
   background-image: url(../media/images/MamaNyo_transparent.png);
   background-size: cover;
-  background-position: center center;
+  background-position: 10% center;
   background-repeat: no-repeat;
   height: 100%;
 }

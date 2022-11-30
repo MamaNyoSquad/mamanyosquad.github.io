@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 29 November 2022 UTC
+  CSS updated 30 November 2022 UTC
 */
 
 /* Fonts */
@@ -16,6 +16,10 @@
   /* EB Garamond */
   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
     /* font-family: 'EB Garamond', serif; */
+
+  /* Cascadia Code */
+  @import url('https://fonts.cdnfonts.com/css/cascadia-code&display=swap');
+    /* font-family: 'Cascadia Code', sans-serif */
 
   @font-face {
     font-family: 'Kunstler Script', cursive;
@@ -98,4 +102,5 @@
     -webkit-border-radius: 4.75px;
     -o-border-radius: 4.75px;
     border-radius: 4.75px;
+    font-family: 'Cascadia Code', sans-serif
   }
