@@ -1,4 +1,4 @@
-/* css updated as of 29 Nov 2022 UTC */
+/* css updated as of 30 Nov 2022 UTC */
 
 @font-face {
   font-family: 'Paris 2024';
@@ -199,6 +199,7 @@ a:active {
 .Aga-chuu {
   background-image: url(../media/images/Aga-chuu.png);
   /* art commissioned by Suzu Puyo -- formerly Hina Oujo */
+  background-position: 58% center;
 }
 
 .insidestory {
@@ -283,7 +284,6 @@ a:active {
   width: 35%;
   height: 285px;
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   -moz-border-top-left-radius: inherit;
   -ms-border-top-left-radius: inherit;
@@ -319,22 +319,27 @@ a:active {
   -o-border-bottom-right-radius: inherit;
   border-bottom-right-radius: inherit;
 }
-
 .ep1 {
   background-image: url(../media/images/InsideStory001.png);
+  background-position: 60% center;
 }
 .ep2 {
   background-image: url(../media/images/InsideStory002.png);
+  background-position: 55% center;
 }
 .ep3 {
   background-image: url(../media/images/InsideStory003.png);
+  background-position: center center;
 }
 .ep4 {
   background-image: url(../media/images/InsideStory004.png);
+  background-position: 25% center;
 }
 .ep5 {
   background-image: url(../media/images/InsideStory005.png);
+  background-position: 9% center;
 }
 .ep6 {
   background-image: url(../media/images/InsideStory006.png);
+  background-position: 40% center;
 }

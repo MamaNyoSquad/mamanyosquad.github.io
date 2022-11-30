@@ -1,0 +1,19 @@
+/* css updated as of 30 Nov 2022 UTC */
+
+.anniv-hero {
+  background-image: url(../media/images/2anniv_trailer.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  height: 100%;
+}
+.anniv-head {
+  height: 100%;
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
