@@ -1,19 +1,24 @@
+/* css updated as of 29 Nov 2022 UTC */
+
 .statustext {
   padding-bottom: 19px;
 }
 
-.maint-queued /* Luna */ {
+.queued /* Luna */ {
   font-weight: bold;
   color: #f0d2d4;
+  text-transform: uppercase;
   /* QUEUED */
 }
-.maint-active /* Helena */ {
+.active /* Helena */ {
   font-weight: bold;
   color: #fce693;
+  text-transform: uppercase;
   /* ACTIVE */
 }
-.maint-finished /* Misaki */ {
+.finished /* Misaki */ {
   font-weight: bold;
   color: #a88255;
+  text-transform: uppercase;
   /* FINISHED */
 }
