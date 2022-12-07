@@ -50,7 +50,7 @@ We have been working on engaging others to collaborate with our work as we move 
 
 As we move forward through an open-sourced future, we are still expecting some hurdles. Though it is certain that those can lead to a more fulfilling future that everyone can achieve just by collaborating with each other!
 
-***Enter the universe through the eyes of the Tengu!***
+***Enter the universe through the eyes of the Tengu! 💕***
 
 # Contact
 
