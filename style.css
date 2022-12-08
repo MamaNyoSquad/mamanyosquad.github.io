@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 30 November 2022 UTC
+  CSS updated 8 December 2022 UTC
 */
 
 /* Fonts */
@@ -19,7 +19,11 @@
 
   /* Cascadia Code */
   @import url('https://fonts.cdnfonts.com/css/cascadia-code&display=swap');
-    /* font-family: 'Cascadia Code', sans-serif */
+    /* font-family: 'Cascadia Code', sans-serif; */
+  
+  /* IBM Plex Mono */
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    /* font-family: 'IBM Plex Mono', monospace; */
 
   @font-face {
     font-family: 'Kunstler Script', cursive;
@@ -46,8 +50,8 @@
     padding: 0;
     height: 100%;
     overflow-x: hidden;
-    word-wrap: break-word;
     -ms-word-wrap: break-word;
+    word-wrap: break-word;
   }
 
   * {
@@ -102,5 +106,5 @@
     -webkit-border-radius: 4.75px;
     -o-border-radius: 4.75px;
     border-radius: 4.75px;
-    font-family: 'Cascadia Code', sans-serif
+    font-family: 'IBM Plex Mono', monospace;
   }
