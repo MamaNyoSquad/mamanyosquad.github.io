@@ -1,0 +1,345 @@
+/* css updated as of 8 Dec 2022 UTC */
+
+@font-face {
+  font-family: 'Paris 2024';
+  src: url(../media/fonts/Paris2024-Variable.woff2) format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paris 2024';
+  src: url(../media/fonts/Paris2024-VariableItalic.woff2) format("woff2");
+  font-style: italic;
+  font-display: swap;
+}
+/*
+  The Paris 2024 WOFF is often used as part of the Venus Island Diaries
+  branding. Copyright IOC/IPC and CNOSF/CPSF (International and French
+  Olympic/Paralympic Committees)
+*/
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+footer {
+  padding: 19px;
+  text-align: center;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.head {
+  width: 100%;
+  padding: 19px;
+  text-align: center;
+  background-color: #d6c278;
+  box-shadow: 0 9.5px 19px #66666680;
+}
+.logoplace {
+  width: 100%;
+  height: 95px;
+}
+.logo {
+  background-image: url(../media/svg/publishing.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #d6c278;
+  text-decoration: none;
+}
+a:active {
+  color: #e2d39e;
+  text-decoration: none;
+}
+
+.intro-outer {
+  background-image: url(../media/images/VenusIsland_2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.intro-inner {
+  padding-top: 237.5px;
+  padding-bottom: 237.5px;
+  padding-left: 19px;
+  padding-right: 19px;
+  text-align: center;
+  background-color: #66666680;
+  background-image: url(../media/images/venus_V_transparent.png);
+  background-size: cover;
+  background-position: 10% center;
+  background-repeat: no-repeat;
+}
+.staple-place {
+  width: 100%;
+  height: calc(19px * 7.5);
+}
+.staple {
+  background-image: url(../media/svg/publishing_staple_landscape.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 950px) {
+  .intro-inner {
+    padding-top: 190px;
+    padding-bottom: 190px;
+  }
+  .staple {
+    background-image: url(../media/svg/publishing_staple_portrait.svg);
+  }
+}
+
+.history {
+  padding: 19px;
+  padding-bottom: 9.5px;
+  background-color: #d6c278;
+}
+.infobox {
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+}
+.infobox-shadow {
+  box-shadow: 0 0 19px #666666;
+}
+
+/*
+  filter: none | blur(%) brightness(%) contrast(%) drop-shadow(h-shadow v-shadow blur spread color)
+    grayscale(%) hue-rotate(deg) invert(%) opacity(%) saturate(%) sepia(%) | url() | initial | inherit;
+  from https://www.w3schools.com/cssref/css3_pr_filter.php
+*/
+.featTXT {
+  width: 100%;
+  height: 475px;
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background-color: #ffffff;
+  color: #666666;
+}
+.featformat {
+  width: 100%;
+  height: 475px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.feat1 {
+  background-image: url(../media/images/InsideStory003.png);
+}
+.feat2 {
+  background-image: url(../media/images/SquadPublishing_wide.png);
+}
+.feat3 {
+  background-image: url(../media/images/pub_VIDiaries.png);
+}
+.feat4 {
+  background-image: url(../media/images/pub_Tengu.png);
+}
+.feat5 {
+  background-image: url(../media/images/pub_formats.png);
+}
+.feat6 {
+  background-image: url(../media/images/Main_and_Sub.png);
+}
+
+.dualfeed-col /* dual feed */ {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.trifeed-col /* tri feed */ {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.quadfeed-col /* quad feed */ {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.feed-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 950px) {
+  .dualfeed-col, .trifeed-col, .quadfeed-col {
+    width: 100%;
+  }
+}
+
+.author {
+  padding: 19px;
+  background-color: #dcc6bb;
+}
+.Aga-chuu {
+  background-image: url(../media/images/Aga-chuu.png);
+  /* art commissioned by Suzu Puyo -- formerly Hina Oujo */
+  background-position: 58% center;
+}
+
+.insidestory {
+  padding: 19px;
+  background-image: url(../media/images/VenusIsland_3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.IStitle {
+  width: 100%;
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #d6c278;
+  box-shadow: 0 0 19px #666666;
+  font-family: 'Paris 2024';
+  font-weight: 900;
+  text-align: left;
+  font-size: 247px;
+  line-height: 0.75;
+  white-space: nowrap;
+  text-overflow: clip;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.ISepisodes {
+  width: 100%;
+  height: 475px;
+  padding: 19px;
+  overflow-y: auto;
+}
+.episode-ovl {
+  padding: 9.5px;
+  position: relative;
+}
+.epURL {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.episode {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  position: relative;
+  color: #666666;
+  background-color: #ffffff;
+  box-shadow: 0 0 19px #666666;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -webkit-border-radius: 19px;
+  -o-border-radius: 19px;
+  border-radius: 19px;
+  transition-duration: .475s;
+  cursor: pointer;
+}
+.episode:link {
+  color: #666666;
+  background-color: #ffffff; 
+}
+.episode:visited {
+  color: #666666;
+  background-color: #ffffff;
+}
+.episode:hover {
+  color: #ffffff;
+  background-color: #d6c278;
+}
+.episode:active {
+  color: #ffffff;
+  background-color: #d6c278;
+}
+.epHead {
+  width: 35%;
+  height: 285px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -moz-border-top-left-radius: inherit;
+  -ms-border-top-left-radius: inherit;
+  -webkit-border-top-left-radius: inherit;
+  -o-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+  -moz-border-bottom-left-radius: inherit;
+  -ms-border-bottom-left-radius: inherit;
+  -webkit-border-bottom-left-radius: inherit;
+  -o-border-bottom-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+.epText {
+  width: 65%;
+  height: 285px;
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -moz-border-top-right-radius: inherit;
+  -ms-border-top-right-radius: inherit;
+  -webkit-border-top-right-radius: inherit;
+  -o-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+  -moz-border-bottom-right-radius: inherit;
+  -ms-border-bottom-right-radius: inherit;
+  -webkit-border-bottom-right-radius: inherit;
+  -o-border-bottom-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.ep1 {
+  background-image: url(../media/images/InsideStory001.png);
+  background-position: 60% center;
+}
+.ep2 {
+  background-image: url(../media/images/InsideStory002.png);
+  background-position: 55% center;
+}
+.ep3 {
+  background-image: url(../media/images/InsideStory003.png);
+  background-position: center center;
+}
+.ep4 {
+  background-image: url(../media/images/InsideStory004.png);
+  background-position: 25% center;
+}
+.ep5 {
+  background-image: url(../media/images/InsideStory005.png);
+  background-position: 9% center;
+}
+.ep6 {
+  background-image: url(../media/images/InsideStory006.png);
+  background-position: 40% center;
+}
