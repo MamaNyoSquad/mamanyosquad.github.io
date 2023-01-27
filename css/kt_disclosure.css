@@ -1,0 +1,46 @@
+body {
+  background-color: #cc0000;
+  background-image: url(../media/svg/KT_white.svg);
+  background-size: 95%;
+  background-position: -450% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.kt-ovl {
+  background-color: #cc0000c0;
+  padding-top: 237.5px;
+  padding-bottom: 237.5px;
+  padding-left: 95px;
+  padding-right: 95px;
+  width: 100%;
+}
+@media screen and (max-width: 950px) {
+  .kt-ovl {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    padding-left: 47.5px;
+    padding-right: 47.5px;
+  }
+}
+
+#lang-en {
+  display: block;
+}
+#lang-ja {
+  display: none;
+}
+.langSelect {
+  cursor: pointer;
+}
+
+.pdf {
+  width: 100%;
+  height: 712.5px;
+  border: none;
+  -moz-border-radius: 19px;
+  -ms-border-radius: 19px;
+  -webkit-border-radius: 19px;
+  -o-border-radius: 19px;
+  border-radius: 19px;
+}
