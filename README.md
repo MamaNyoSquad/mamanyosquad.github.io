@@ -1,4 +1,6 @@
-_Updated 7 December 2022 UTC_
+[![pages-build-deployment](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=deploy)](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/pages/pages-build-deployment)
+
+_Updated 5 February 2023 UTC_
 
 # Introduction
 
