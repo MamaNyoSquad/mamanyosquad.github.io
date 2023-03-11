@@ -202,6 +202,39 @@ a:active {
   background-position: 58% center;
 }
 
+.FAB {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.9%;
+  right: 1.9%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border-style: none;
+  width: 76px;
+  height: 76px;
+  background-color: #161224;
+  box-shadow: 0 4.5px 9.5px #66666680;
+}
+.FABurl {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.vidiaries-iconplace {
+  padding: 20px;
+}
+.vidiaries-icon {
+  max-width: 100%;
+}
+
 .insidestory {
   padding: 19px;
   background-image: url(../media/images/VenusIsland_3.jpg);
