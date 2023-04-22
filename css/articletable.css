@@ -1,4 +1,4 @@
-/* css updated as of 6 Dec 2022 UTC */
+/* css updated as of 22 Apr 2023 UTC */
 
 .articleHead {
   background-image: url(../media/images/VenusIsland_1.jpg);
@@ -12,10 +12,7 @@
 
 .articleArea {
   width: 100%;
-  padding-top: 38px;
-  padding-bottom: 38px;
-  padding-left: 285px;
-  padding-right: 285px;
+  padding: 38px 285px 38px 285px;
 }
 .inThisArticle {
   width: 100%;
