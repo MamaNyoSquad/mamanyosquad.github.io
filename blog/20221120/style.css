@@ -48,10 +48,7 @@ a:active {
 }
 
 .content {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding: 25px 250px 25px 250px;
 }
 @media screen and (max-width: 1000px) {
   .content {

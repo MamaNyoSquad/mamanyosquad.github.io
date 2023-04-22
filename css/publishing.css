@@ -1,4 +1,4 @@
-/* css updated as of 8 Dec 2022 UTC */
+/* css updated as of 22 Apr 2023 UTC */
 
 @font-face {
   font-family: 'Paris 2024';
@@ -78,10 +78,7 @@ a:active {
   background-attachment: fixed;
 }
 .intro-inner {
-  padding-top: 237.5px;
-  padding-bottom: 237.5px;
-  padding-left: 19px;
-  padding-right: 19px;
+  padding: 237.5px 95px 237.5px 95px;
   text-align: center;
   background-color: #66666680;
   background-image: url(../media/images/venus_V_transparent.png);
@@ -103,8 +100,7 @@ a:active {
 }
 @media screen and (max-width: 950px) {
   .intro-inner {
-    padding-top: 190px;
-    padding-bottom: 190px;
+    padding: 190px 38px 190px 38px;
   }
   .staple {
     background-image: url(../media/svg/publishing_staple_portrait.svg);
@@ -148,7 +144,7 @@ a:active {
   background-repeat: no-repeat;
 }
 .feat1 {
-  background-image: url(../media/images/InsideStory003.png);
+  background-image: url(../media/images/insidestory/03_tsukushi.png);
 }
 .feat2 {
   background-image: url(../media/images/SquadPublishing_wide.png);
@@ -376,26 +372,26 @@ a:active {
   border-bottom-right-radius: inherit;
 }
 .ep1 {
-  background-image: url(../media/images/InsideStory001.png);
+  background-image: url(../media/images/insidestory/01_nagisa.png);
   background-position: 60% center;
 }
 .ep2 {
-  background-image: url(../media/images/InsideStory002.png);
+  background-image: url(../media/images/insidestory/02_fiona.png);
   background-position: 55% center;
 }
 .ep3 {
-  background-image: url(../media/images/InsideStory003.png);
+  background-image: url(../media/images/insidestory/03_tsukushi.png);
   background-position: center center;
 }
 .ep4 {
-  background-image: url(../media/images/InsideStory004.png);
+  background-image: url(../media/images/insidestory/04_nyotengu.png);
   background-position: 25% center;
 }
 .ep5 {
-  background-image: url(../media/images/InsideStory005.png);
+  background-image: url(../media/images/insidestory/05_luna.png);
   background-position: 9% center;
 }
 .ep6 {
-  background-image: url(../media/images/InsideStory006.png);
+  background-image: url(../media/images/insidestory/06_helena.png);
   background-position: 40% center;
 }

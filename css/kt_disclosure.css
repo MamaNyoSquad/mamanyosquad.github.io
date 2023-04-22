@@ -9,18 +9,12 @@ body {
 
 .kt-ovl {
   background-color: #cc0000c0;
-  padding-top: 237.5px;
-  padding-bottom: 237.5px;
-  padding-left: 95px;
-  padding-right: 95px;
+  padding: 237.5px 95px 237.5px 95px;
   width: 100%;
 }
 @media screen and (max-width: 950px) {
   .kt-ovl {
-    padding-top: 95px;
-    padding-bottom: 95px;
-    padding-left: 47.5px;
-    padding-right: 47.5px;
+    padding: 95px 47.5px 95px 47.5px;
   }
 }
 

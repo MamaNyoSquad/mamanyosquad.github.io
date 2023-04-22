@@ -1,0 +1,30 @@
+.insideStoryHead {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.insideStoryContent {
+  line-height: 1.5;
+  padding: 190px;
+}
+@media screen and (max-width: 950px) {
+  .insideStoryContent {
+    padding-left: 47.5px;
+    padding-right: 47.5px;
+  }
+}
+
+.journalWrite {
+  background-color: #66666680;
+  padding: 9.5px;
+  border-left: #d6c278 solid 9.5px;
+}
+
+img {
+  height: .95em;
+  padding-right: 5px;
+}
