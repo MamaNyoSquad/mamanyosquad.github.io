@@ -1,4 +1,4 @@
-/* css updated as of 27 Apr 2023 UTC */
+/* css updated as of 5 May 2023 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -17,20 +17,25 @@
 }
 /* adapted from https://blog.hubspot.com/website/video-background-css */
 
-.GeneralDiv {
+.GeneralDIV {
   width: 100%;
-  padding: 19px;
+  padding: 95px 47.5px;
   text-align: center;
+}
+@media screen and (max-width: 950px) {
+  .GeneralDIV {
+    padding: 95px 19px;
+  }
 }
 
 .ComingSoonFill {
   height: 100%;
-  padding: 250px 100px 250px 100px; /* optimized padding values in a clockwise basis [top right bottom left] */
+  padding: 250px 100px; /* optimized padding values in a clockwise basis [top right bottom left] */
   text-align: center;
 }
 @media screen and (max-width: 950px) {
   .ComingSoonFill {
-    padding: 100px 50px 100px 50px;
+    padding: 100px 50px;
   }
 }
 
@@ -62,7 +67,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 250px 100px 250px 100px;
+    padding: 250px 100px;
     text-align: center;
   }
   .NyoHeart-right {
@@ -70,12 +75,12 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 250px 100px 250px 100px;
+    padding: 250px 100px;
     text-align: center;
   }
   @media screen and (max-width: 950px) {
     .NyoHeart-left, .NyoHeart-right {
-      padding: 100px 50px 100px 50px;
+      padding: 100px 50px;
     }
   }
 
@@ -99,7 +104,7 @@ header {
 }
 .NyoLogo {
   background-image: url(../media/svg/MamaNyoSquad.svg); /* (DEFAULT) */
-  /* background-image: url(../media/images/xvvglobal_4th.png); (EVENT) */
+  /* background-image: url(../media/images/5-5_simple.png); (EVENT) */
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -153,7 +158,7 @@ header {
   background-color: #06a8ff40;
   width: 100%;
   height: 75%;
-  padding: 475px 190px 475px 190px;
+  padding: 475px 190px;
 }
 .entertheuniverse-logoplace {
   width: 100%;
@@ -161,7 +166,7 @@ header {
 }
 @media screen and (max-width: 950px) {
   .basicHead-fore {
-    padding: 190px 38px 190px 38px;
+    padding: 190px 38px;
   }
 }
 

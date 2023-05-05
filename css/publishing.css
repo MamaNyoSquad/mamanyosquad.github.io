@@ -1,4 +1,4 @@
-/* css updated as of 22 Apr 2023 UTC */
+/* css updated as of 5 May 2023 UTC */
 
 @font-face {
   font-family: 'Paris 2024';
@@ -78,7 +78,7 @@ a:active {
   background-attachment: fixed;
 }
 .intro-inner {
-  padding: 237.5px 95px 237.5px 95px;
+  padding: 237.5px 95px;
   text-align: center;
   background-color: #66666680;
   background-image: url(../media/images/venus_V_transparent.png);
@@ -100,7 +100,7 @@ a:active {
 }
 @media screen and (max-width: 950px) {
   .intro-inner {
-    padding: 190px 38px 190px 38px;
+    padding: 190px 38px;
   }
   .staple {
     background-image: url(../media/svg/publishing_staple_portrait.svg);
