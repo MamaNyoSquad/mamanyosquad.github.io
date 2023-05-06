@@ -1,0 +1,8 @@
+.ImportantHEAD {
+  width: 100%;
+  padding: 19px;
+  text-align: center;
+  font-family: "Poppins", sans-serif; /* inherited from root css */
+  background-color: #bda599;
+  /* display: none; */ /* trigger this if there's nothing to be shown in the headers */
+}

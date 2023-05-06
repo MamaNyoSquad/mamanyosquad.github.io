@@ -1,4 +1,4 @@
-/* css updated as of 5 May 2023 UTC */
+/* css updated as of 6 May 2023 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -139,12 +139,6 @@ header {
 }
 .Active {
   color: #06a8ff;
-}
-
-.VenusIncept {
-  width: 100%;
-  padding: 19px;
-  text-align: center;
 }
 
 .basicHead-back {
