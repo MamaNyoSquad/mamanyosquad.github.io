@@ -4,7 +4,7 @@ _Updated 11 May 2023 UTC_
 
 # Introduction
 
-**we're going open-source! :two_hearts:**
+**We're going open-source! :two_hearts:**
 
 This is the official GitHub repository for [#MamaNyoSquad](https://github.com/MamaNyoSquad), reliving the DOA hype through web presence among others! This brand is run by two people: [thebelovedmoon (G.Mgr)](https://github.com/thebelovedmoon) and [Emmannuel Ortega (SocWeb Mgr)](https://github.com/Ortega082)!
 
