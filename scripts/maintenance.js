@@ -21,7 +21,7 @@ const JPqueued = setInterval(function() {
 
 }, 1000);
 
-const JPActive = new Date('May 26, 2023 17:00:00 GMT+09:00').getTime();
+const JPActive = new Date('May 26, 2023 18:00:00 GMT+09:00').getTime();
 
 const JPactive = setInterval(function() {
   
