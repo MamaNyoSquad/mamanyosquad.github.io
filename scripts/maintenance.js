@@ -58,7 +58,7 @@ const GLqueued = setInterval(function() {
 
 }, 1000);
 
-const GLActive = new Date('May 26, 2023 06:30:00 GMT+00:00').getTime();
+const GLActive = new Date('May 26, 2023 08:30:00 GMT+00:00').getTime();
 
 const GLactive = setInterval(function() {
   
