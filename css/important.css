@@ -3,7 +3,7 @@
   padding: 19px;
   text-align: center;
   font-family: "Poppins", sans-serif; /* inherited from root css */
-  background-color: #a31f34;
+  background-color: #24292f;
   color: #ffffff;
   /* display: none; */ /* trigger this if there's nothing to be shown in the headers */
 }
