@@ -1,12 +1,12 @@
-[![pages-build-deployment](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=deploy)](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/pages/pages-build-deployment)
+[![site deploy](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy)](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml)
 
-_Updated 11 May 2023 UTC_
+_Updated 31 May 2023 UTC_
 
 # Introduction
 
-**We're going open-source! :two_hearts:**
+**We are going open-source! :two_hearts:**
 
-This is the official GitHub repository for [#MamaNyoSquad](https://github.com/MamaNyoSquad), reliving the DOA hype through web presence among others! This brand is run by two people: [thebelovedmoon (G.Mgr)](https://github.com/thebelovedmoon) and [Emmannuel Ortega (SocWeb Mgr)](https://github.com/Ortega082)!
+This is the official GitHub repository for [#MamaNyoSquad](https://github.com/MamaNyoSquad), reliving the DOA hype through web presence among others! This brand is run by two people: [thebelovedmoon (General Manager)](https://github.com/thebelovedmoon) and [Emmannuel Ortega (Social & Web Manager)](https://github.com/Ortega082)!
 
 # Why have you decided to go open-source?
 
