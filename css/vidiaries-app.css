@@ -17,7 +17,7 @@ body {
 
 body {
   width: 100%;
-  padding: 95px 237.5px 95px 237.5px;
+  padding: 95px 237.5px;
 }
 @media screen and (max-width: 950px) {
   body {
