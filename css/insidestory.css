@@ -1,6 +1,6 @@
 .insideStoryHead {
   width: 100%;
-  height: 100%;
+  height: 125%;
   background-color: #d6c278;
   background-size: cover;
   background-position: center center;
@@ -10,13 +10,15 @@
 
 .insideStoryContent {
   line-height: 1.5;
-  padding: 190px;
+  padding: 190px 47.5px;
+  box-shadow: 0 0 19px #d6c278;
 }
-@media screen and (max-width: 950px) {
-  .insideStoryContent {
-    padding-left: 47.5px;
-    padding-right: 47.5px;
-  }
+
+.insideStoryText {
+  width: 855px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 .journalWrite {
