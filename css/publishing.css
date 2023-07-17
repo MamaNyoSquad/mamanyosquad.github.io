@@ -70,6 +70,31 @@ a:active {
   text-decoration: none;
 }
 
+#loadOVL {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #d6c278;
+  -webkit-transition: 2.5s;
+  -moz-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+  box-shadow: 0 0 25px #666666;
+}
+.vidiariesIcon {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  /* filter: drop-shadow(0 0 7.5px #fff); */
+  padding: 38px;
+}
+
 .intro-outer {
   background-image: url(../media/images/VenusIsland_2.jpg);
   background-size: cover;
