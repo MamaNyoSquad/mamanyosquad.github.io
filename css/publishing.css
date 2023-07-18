@@ -223,11 +223,11 @@ a:active {
   background-position: 58% center;
 }
 
-.FAB-MainStory {
+.FAB {
   position: absolute;
   z-index: 1;
-  bottom: 1.9%;
-  right: 1.9%;
+  bottom: 0.95%;
+  right: 0.95%;
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -239,44 +239,14 @@ a:active {
   -o-border-radius: 50%;
   border-radius: 50%;
   border-style: none;
-  width: 76px;
-  height: 76px;
-  background-color: #161224;
+  width: 57px;
+  height: 57px;
+  padding: 14.25px;
   box-shadow: 0 4.5px 9.5px #66666680;
-}
-.FAB-Android {
-  position: absolute;
-  z-index: 1;
-  bottom: 1.9%;
-  right: 1.9%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  border-style: none;
-  width: 76px;
-  height: 76px;
-  /* background-color: #d6c278; */
-  background-color: #161224;
-  box-shadow: 0 4.5px 9.5px #66666680;
-}
-.FABurl {
-  width: 100%;
-  position: relative;
-  cursor: pointer;
-}
-.FAB-iconplace {
-  padding: 20px;
 }
 .FAB-icon {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 .insidestory {
