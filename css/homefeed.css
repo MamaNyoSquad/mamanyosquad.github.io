@@ -1,4 +1,4 @@
-/* css updated as of 6 May 2023 UTC */
+/* css updated as of 26 Jun 2023 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -191,7 +191,7 @@ header {
 }
 
 .footer {
-  padding: 19px;
+  padding: 28.5px 19px 19px 19px;
   padding-bottom: 4.75px;
   background-color: #000000;
   text-align: center;
@@ -213,8 +213,10 @@ header {
   padding-top: 19px;
 }
 .tbmassoc {
-  font-family: 'Monotype Corsiva', cursive;
-  font-weight: normal;
+  width: 142.5px;
+  max-width: 100%;
+  height: auto;
+  margin: 9.5px 0 9.5px 0;
 }
 
 .DOAXVV5周年 {
@@ -227,44 +229,27 @@ header {
   height: 100%;
 }
 
-.ovlBtn {
-  padding-top: 19px;
-  padding-bottom: 19px;
-}
+/* new button layout, utilizing the <button> property */
 .NyoBtn {
   background-color: #161224;
-  border: solid #ff0000;
-  padding: 19px;
+  border: solid 3.8px #ff0000;
+  border-radius: 1900px;
+  color: inherit;
+  padding: 19px 28.5px;
+  font-family: inherit;
+  font-size: inherit;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -moz-border-radius: 950px;
-  -ms-border-radius: 950px;
-  -webkit-border-radius: 950px;
-  -o-border-radius: 950px;
-  border-radius: 950px;
-  transition-duration: .95s;
+  margin: 9.5px 1.9px 28.5px 1.9px;
   cursor: pointer;
-  /* box-shadow: 0 9.5px 19px #06a8ffa0; */
-}
-.NyoBtn:link {
-  color: #ffffff;
-}
-.NyoBtn:visited {
-  color: #ffffff;
+  -webkit-transition: 0.95s;
+  -moz-transition: 0.95s;
+  -o-transition: 0.95s;
+  transition: 0.95s;
 }
 .NyoBtn:hover {
   background-color: #ff0000;
-  border: solid #06a8ff;
-  color: #ffffff;
-}
-.NyoBtn:active {
-  color: #ffffff;
+  border: solid 3.8px #06a8ff;
 }
 
 .divTranst {

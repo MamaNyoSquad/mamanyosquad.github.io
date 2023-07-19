@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>Venus Island Diaries v0.3.0-prerelease has been released!</title>
+    <title>Venus Island Diaries v0.3.6-prerelease has been released!</title>
     <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="https://mamanyosquad.github.io/media/favicon/publishing.png" type="image/x-icon">
     <style>
       /* attach in-html custom css args here */
     </style>
     <meta name="og:type" content="website">
-    <meta name="og:title" content="Venus Island Diaries - Official App">
+    <meta name="og:title" content="Venus Island Diaries - Release Notes">
     <meta name="og:image" content="https://mamanyosquad.github.io/media/images/vidiaries-app_head.png">
     <meta name="og:url" content="https://mamanyosquad.github.io/publishing/app">
-    <meta name="og:description" content="Check out the latest release of our app!">
+    <meta name="og:description" content="Check out the latest Release Notes of the app!">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@VenusVIDiaries">
     <meta name="theme-color" content="#d6c278">
@@ -25,116 +25,152 @@
     <link href="../../css/vidiaries-app.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <div class="FAB-github">
-      <div class="FABurl">
-        <a rel="noopener noreferrer" class="urlblock" title="Read our latest release on GitHub!"
-          href="https://github.com/MamaNyoSquad/vidiaries-app/releases" target="_blank"></a>
-        <div class="FAB-iconplace">
-          <img class="FAB-icon" src="../../media/svg/github.svg" title="Read our latest release on GitHub!">
-        </div>
-      </div>
+    <div class="FAB" style="background-color: #161224;">
+      <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/vidiaries-app/releases" target="_blank">
+        <img class="FAB-icon" src="../../media/svg/github.svg" title="vidiaries-app Releases Sheet">
+      </a>
     </div>
     <div class="fillWidth">
       <img src="../../media/images/vidiaries-app_icon.png" alt="Venus Island Diaries - App">
     </div>
     <div class="fillWidth title">
       <h1>Venus Island Diaries</h1>
-      <em>Official App - Release Notes</em><br>
-      <em><b>v0.3.0-prerelease</b></em>
+      <em>Release Notes - <b>v0.3.6-prerelease</b></em>
     </div>
     <br><br>
-    <div class="fillWidth card">
-      <h1>Splash screen</h1>
-      <em>From <code>v0.3.0-prerelease</code></em>
-      <p>
-        <b>We're now Kotlin-First!</b> That means our app will now be built upon the new Kotlin
-        framework moving forward.
-      </p>
-      <img class="displayOVL"
-        src="../../media/images/vidiaries-app/v0.3.0-prerelease/kotlinFirst.png"
-        alt="Venus Island Diaries goes Kotlin-First">
+    <div class="fillWidth title">
+      <h1>Main Release Notes</h1>
     </div>
     <br>
     <div class="fillWidth card">
-      <h1>Splash screen</h1>
-      <em>Improved from <code>v0.2.5-prerelease</code></em>
+      <h1>Our approach to migrating our Inside Stories</h1>
       <p>
-        We've implemented the Splash Screen to introduce the users to the app! We've also improved
-        the alignment of the layouts especially on the logo to make it look like what Google Apps
-        look like before Android 12's splash screen implementation.
+        We had our first Inside Story -- <b>Deep Arrogance</b> -- migrated to the website due to the shutdown
+        of Revue. This has been improved, alongside the addition of existing Inside Stories into the migration
+        phase.
       </p>
       <p>
-        We're working on bringing that implementation in later pre-releases.
+        Our primary focus on this approach is to make it mobile-friendly since we'll be including them in the
+        app.
       </p>
-      <img class="displayOVL"
-        src="../../media/images/vidiaries-app/v0.2.8-prerelease/splash.png"
-        alt="Venus Island Diaries splash screen from v0.2.5-prerelease to v0.2.8-prerelease">
-    </div>
-    <br>
-    <div class="fillWidth card">
-      <h1>MIT License screen</h1>
-      <em>Introduced in <code>v0.2.5-prerelease</code></em>
       <p>
-        For transparency, we've included the MIT License if any developer is willing to reproduce
-        the software based on our code. <b>Please note that this is DIFFERENT from our contents,
-        which is licensed under CC-BY 4.0 and above.</b>
+        All contents are taken from their original Google Docs files, along with some minor spelling, grammar
+        and formatting adjustments. We've also included effects not present in the Docs for a more immersive
+        experience.
       </p>
-      <img class="displayOVL"
-        src="../../media/images/vidiaries-app/v0.2.8-prerelease/mit.png"
-        alt="MIT License screen">
       <p>
-        “MIT,” “Massachusetts Institute of Technology,” and its logos and seal are trademarks of
-        the Massachusetts Institute of Technology.
+        Desktop and Web users, you can still view the documents as they would on mobile via
+        <code>https://mamanyosquad.github.io/publishing</code>.
       </p>
     </div>
     <br>
     <div class="fillWidth card">
-      <h1>App translations</h1>
-      <em>Introduced in <code>v0.2.5-prerelease</code></em>
+      <h1>Improvements to our ImageView implementation</h1>
       <p>
-        We've introduced an initial batch of language translations aiming to boost our reach to
-        international readers! At the moment, we can only translate our original programs to
-        Japanese.
+        We've done a bit of research on how we can implement a better way to display our images without
+        sacrificing the APK size. We came across an article by GeeksforGeeks about how we can appeal to such
+        implementation, and safely delete the image resources in our project.
       </p>
       <p>
-        Interested to see the translation magic? Change your language in your device settings!
+        Albeit a bit slow to load, the <code>ImageView</code> components rendered successfully!
       </p>
-      <img class="displayOVL"
-        src="../../media/images/vidiaries-app/v0.2.8-prerelease/lang.png"
-        alt="Language support">
+      <p>
+        For those who want to take a look at the implementations that we base on, head over to the Releases
+        page via the FAB on the bottom-right and look for <b>v0.3.6-prerelease</b> on the release title.
+      </p>
     </div>
     <br>
     <div class="fillWidth card">
-      <h1>Main Story button</h1>
-      <em>Improved from <code>v0.2.5-prerelease</code></em>
+      <h1>Some adjustments to <code>build.gradle.kts</code></h1>
       <p>
-        We've improved the button placement for a quick redirect to our Main Story from its
-        first public pre-release! In reflection, our site also inherited the same FAB (Floating
-        Action Button) design!
+        We've done a bit of coding work to be able to prepare ourselves whenever we finally push the official
+        <code>v1.0-release</code> version of the app! For transparency, we provided the following code as shown
+        below:
+      </p>
+      <pre>
+        buildTypes {
+          named("release") {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            setProguardFiles(listOf(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"))
+            <b>versionNameSuffix = "-release"</b>
+          }
+          named("debug") {
+            signingConfig = signingConfigs.getByName("debug")
+            <b>versionNameSuffix = "-prerelease"</b>
+          }
+        }
+      </pre>
+      <p>
+        <i>Note that the new versioning implementation is denoted in bold text in the <code>pre</code> block.</i>
       </p>
       <p>
-        In addition, our logo replaced the title text!
+        Moving forward with this approach, all future <code>-prerelease</code>s will be published under the "debug"
+        option, while <code>-release</code> will be under the "release" option.
       </p>
-      <img class="displayOVL"
-        src="../../media/images/vidiaries-app/v0.2.8-prerelease/mainStoryButton.png"
-        alt="Main Story button placement improvements">
+      <p>
+        For the full code, head over to <code>vidiaries-app/app/build.gradle.kts</code> under the
+        <code>development</code> branch, with more details under the hood. Keep on reading for future implementation
+        notes.
+      </p>
+    </div>
+    <br><br>
+    <div class="fillWidth title">
+      <h1>Other Release Notes</h1>
     </div>
     <br>
     <div class="fillWidth card">
-      <h1>A OneUI-like look and feel</h1>
-      <em>Improved from <code>v0.2.5-prerelease</code></em>
+      <h1>Multiple Kotlin files, one <code>WebView</code></h1>
       <p>
-        Natively, we're implementing the card shadow to coherent with the Material Design basis.
-        But since we're transitioning to a OneUI-like look and feel, we've turned the shadow off!
+        As we continue to expand our migration phase in the middle of development from <code>v0.3.5-prerelease</code>
+        to <code>v0.3.6-prerelease</code>, we tried many ways to get pages going on one <code>WebView</code>. The best
+        implementation that we can proceed with is to invoke multiple Kotlin files bearing the respective Inside Story
+        releases in each file, and direct the said files to a <code>WebView</code> layout XML.
       </p>
       <p>
-        For developers: <code>card_view:cardElevation</code> for Android is the same as
-        <code>box-shadow</code> or <code>drop-shadow</code> for the web, all it needs is some
-        tinkering to suit more of your theming needs.
+        If you want to take a look at the implementations that we did, head over to
+        <code>vidiaries-app/app/src/main/java/mamanyosquad/vidiaries</code> directory under the <code>development</code>
+        branch.
       </p>
-      <img class="displayOVL"
-        src="../../media/images/vidiaries-app/v0.2.8-prerelease/oneUI.png"
-        alt="A OneUI-like look and feel">
+    </div>
+    <br>
+    <div class="fillWidth card">
+      <h1>Making site-wide changes</h1>
+      <p>
+        As part of the redesign efforts, we'll begin improving the <code>publishing</code> page on a regular basis. This
+        release note covers the following adjustments:
+      </p>
+      <ul>
+        <li>Changes to our FAB (Floating Action Button), and optimizing it against unnecessary attributes</li>
+        <ul>
+          <li>This also affects the <code>publishing</code> page, where it employs the same FAB implementation</li>
+        </ul>
+        <li><code>.fillWidth</code> blocks are more blog-like, similar to the Inside Story pages</li>
+        <li>Inside Story pages have splash screens implemented</li>
+        <ul>
+          <li>For more information, visit <code>thebelovedmoon.github.io</code>'s sourcecode on GitHub</li>
+        </ul>
+      </ul>
+    </div>
+    <br><br>
+    <div class="fillWidth title">
+      <h1>Future Implementations</h1>
+    </div>
+    <br>
+    <div class="fillWidth card">
+      <h1>Adjustments to <code>build.gradle.kts</code></h1>
+      <p>
+        We're working on optimizing the experience without sacrificing the APK size even more! In a future pre-release,
+        all implementations that we employed on our "release" option will carry over to "debug".
+      </p>
+    </div>
+    <br>
+    <div class="fillWidth card">
+      <h1>Tablet view</h1>
+      <p>
+        Once we're done with all of the optimizations as we work on more adjustments in the app, we'll make the app
+        tablet-friendly by invoking the <b>Tablet View Layout XML</b>, usable for larger screens and foldables.
+      </p>
     </div>
     <br><br>
     <div class="fillWidth title" style="text-align: center;">

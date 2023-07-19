@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 8 December 2022 UTC
+  CSS updated 26 June 2023 UTC
 */
 
 /* Fonts */
@@ -30,12 +30,6 @@
   @font-face {
     font-family: 'Vladimir Script', cursive;
     src: url(media/fonts/VLADIMIR.TTF);
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'Monotype Corsiva', cursive;
-    src: url(media/fonts/MTCORSVA.TTF);
     font-display: swap;
   }
 
