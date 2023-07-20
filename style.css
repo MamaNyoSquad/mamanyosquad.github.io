@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 26 June 2023 UTC
+  CSS updated 19 July 2023 UTC
 */
 
 /* Fonts */
@@ -49,10 +49,13 @@
     box-sizing: border-box;
   }
 
-  body {
-    font-family: "Poppins", sans-serif;
+  html {
     background-color: #161224;
     color: #ffffff;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
   }
 
   a:link {
