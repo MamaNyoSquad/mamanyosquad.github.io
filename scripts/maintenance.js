@@ -3,7 +3,7 @@ let maintenance = ["queued", "active", "finished"];
 
 //Japanese Edition
 
-const JPQueued = new Date('July 20, 2023 12:00:00 GMT+09:00').getTime();
+const JPQueued = new Date('July 27, 2023 12:00:00 GMT+09:00').getTime();
 
 const JPqueued = setInterval(function() {
   
@@ -21,7 +21,7 @@ const JPqueued = setInterval(function() {
 
 }, 1000);
 
-const JPActive = new Date('July 20, 2023 17:00:00 GMT+09:00').getTime();
+const JPActive = new Date('July 27, 2023 17:00:00 GMT+09:00').getTime();
 
 const JPactive = setInterval(function() {
   
