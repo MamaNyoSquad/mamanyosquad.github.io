@@ -1,4 +1,4 @@
-/* css updated as of 8 Dec 2022 UTC */
+/* css updated as of 27 Jul 2023 UTC */
 
 .statustext {
   padding-bottom: 19px;
@@ -25,4 +25,80 @@
 }
 .finished::before {
   content: "FINISHED";
+}
+
+.IMPORTANT {
+  font-weight: 900;
+  padding: 0 9.5px 0 0;
+  /* rainbow css from https://codepen.io/zak/pen/rWJzPy */
+  -webkit-animation: rainbow 2.5s linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: rainbow 2.5s linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: rainbow 2.5s linear;
+  -o-animation-iteration-count: infinite;
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes rainbow{
+  100%, 0% { color: rgb(255,0,0); }
+  8% { color: rgb(255,127,0); }
+  16% { color: rgb(255,255,0); }
+  25% { color: rgb(127,255,0); }
+  33% { color: rgb(0,255,0); }
+  41% { color: rgb(0,255,127); }
+  50% { color: rgb(0,255,255); }
+  58% { color: rgb(0,127,255); }
+  66% { color: rgb(0,0,255); }
+  75% { color: rgb(127,0,255); }
+  83% { color: rgb(255,0,255); }
+  91% { color: rgb(255,0,127); }
+}
+@-moz-keyframes rainbow{
+  100%, 0% { color: rgb(255,0,0); }
+  8% { color: rgb(255,127,0); }
+  16% { color: rgb(255,255,0); }
+  25% { color: rgb(127,255,0); }
+  33% { color: rgb(0,255,0); }
+  41% { color: rgb(0,255,127); }
+  50% { color: rgb(0,255,255); }
+  58% { color: rgb(0,127,255); }
+  66% { color: rgb(0,0,255); }
+  75% { color: rgb(127,0,255); }
+  83% { color: rgb(255,0,255); }
+  91% { color: rgb(255,0,127); }
+}
+@-o-keyframes rainbow{
+  100%, 0% { color: rgb(255,0,0); }
+  8% { color: rgb(255,127,0); }
+  16% { color: rgb(255,255,0); }
+  25% { color: rgb(127,255,0); }
+  33% { color: rgb(0,255,0); }
+  41% { color: rgb(0,255,127); }
+  50% { color: rgb(0,255,255); }
+  58% { color: rgb(0,127,255); }
+  66% { color: rgb(0,0,255); }
+  75% { color: rgb(127,0,255); }
+  83% { color: rgb(255,0,255); }
+  91% { color: rgb(255,0,127); }
+}
+@keyframes rainbow{
+  100%, 0% { color: rgb(255,0,0); }
+  8% { color: rgb(255,127,0); }
+  16% { color: rgb(255,255,0); }
+  25% { color: rgb(127,255,0); }
+  33% { color: rgb(0,255,0); }
+  41% { color: rgb(0,255,127); }
+  50% { color: rgb(0,255,255); }
+  58% { color: rgb(0,127,255); }
+  66% { color: rgb(0,0,255); }
+  75% { color: rgb(127,0,255); }
+  83% { color: rgb(255,0,255); }
+  91% { color: rgb(255,0,127); }
+}
+.IMPORTANT-en::before {
+  content: "[IMPORTANT]";
+}
+.IMPORTANT-ja::before {
+  content: "【重要】";
 }
