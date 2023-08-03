@@ -62,4 +62,4 @@ As we move forward through an open-sourced future, we're still expecting some hu
 
 # Contact
 
-[Twitter](https://mobile.twitter.com/MamaNyoSquad) | [YouTube](https://youtube.com/@MamaNyoSquad) | [Email](mailto:mamanyosquad@outlook.com)
+[Twitter/X](https://mobile.twitter.com/MamaNyoSquad) | [YouTube](https://youtube.com/@MamaNyoSquad) | [Email](mailto:mamanyosquad@outlook.com)
