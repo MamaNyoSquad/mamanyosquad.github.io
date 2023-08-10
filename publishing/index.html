@@ -25,13 +25,20 @@
     <link href="../css/important.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/important.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/publishing.css" rel="stylesheet" type="text/css" media="all">
+    <!-- custom scripts -->
+    <script src="../scripts/pubLoad.js" type="text/javascript"></script>
   </head>
-  <body>
-    <div class="FAB" style="background-color: #161224;">
-      <a rel="noopener noreferrer" href="app" target="_blank">
-        <img class="FAB-icon" src="../media/svg/gfonts/android.svg" title="The latest Release Notes">
-      </a>
+  <body onload="pubLoad()">
+    <div id="loadOVL">
+      <div id="load">
+        <img class="vidiariesIcon" src="../media/svg/publishing.svg" style="width: 332.5px;" alt="">
+      </div>
     </div>
+    <a rel="noopener noreferrer" href="app" target="_blank" title="The latest Release Notes">
+      <div class="FAB" style="background-color: #161224;">
+        <img class="FAB-icon" src="../media/svg/gfonts/android.svg" alt="">
+      </div>
+    </a>
     <header>
       <div class="ImportantHEAD">
         <b>We've now migrated our page deployment experience! More <a rel="noopener noreferrer" class="HeadURL" href="https://mobile.twitter.com/i/status/1663881014907895815" target="_blank">here</a>.</b>
