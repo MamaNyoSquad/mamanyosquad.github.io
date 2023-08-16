@@ -3,7 +3,7 @@ let maintenance = ["queued", "active", "finished"];
 
 //Japanese Edition
 
-const JPQueued = new Date('August 10, 2023 12:00:00 GMT+09:00').getTime();
+const JPQueued = new Date('August 17, 2023 12:00:00 GMT+09:00').getTime();
 
 const JPqueued = setInterval(function() {
   
@@ -21,7 +21,7 @@ const JPqueued = setInterval(function() {
 
 }, 1000);
 
-const JPActive = new Date('August 10, 2023 17:00:00 GMT+09:00').getTime();
+const JPActive = new Date('August 17, 2023 17:00:00 GMT+09:00').getTime();
 
 const JPactive = setInterval(function() {
   
@@ -40,7 +40,7 @@ const JPactive = setInterval(function() {
 
 //Global Edition
 
-const GLQueued = new Date('August 2, 2023 02:30:00 GMT+00:00').getTime();
+const GLQueued = new Date('August 17, 2023 02:30:00 GMT+00:00').getTime();
 
 const GLqueued = setInterval(function() {
   
@@ -58,7 +58,7 @@ const GLqueued = setInterval(function() {
 
 }, 1000);
 
-const GLActive = new Date('August 2, 2023 06:30:00 GMT+00:00').getTime();
+const GLActive = new Date('August 17, 2023 06:30:00 GMT+00:00').getTime();
 
 const GLactive = setInterval(function() {
   
