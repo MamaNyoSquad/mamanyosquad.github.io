@@ -1,4 +1,4 @@
-/* css updated as of 5 May 2023 2022 UTC */
+/* css updated as of 20 Aug 2023 2022 UTC */
 
 .anniv-hero {
   background-image: url(../media/images/VenusIsland_2.jpg);
@@ -53,6 +53,7 @@
 }
 
 .annivtext {
+  background-color: #161224;
   padding: 38px;
   text-align: center;
 }
