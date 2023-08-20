@@ -63,6 +63,10 @@ header {
 
 footer {
   background-color: #161224;
+  background-image: url(../media/images/vidiaries_2024_scratch.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   padding: 19px;
   text-align: center;
 }
@@ -125,7 +129,8 @@ a:active {
   padding: 237.5px 95px;
   text-align: center;
   background-color: #66666680;
-  background-image: url(../media/images/venus_V_transparent.png);
+  background-image: url(../media/images/venus_V_transparent.png), url(../media/images/vidiaries_2024_scratch.png);
+  background-blend-mode: normal;
   background-size: cover;
   background-position: 10% center;
   background-repeat: no-repeat;
