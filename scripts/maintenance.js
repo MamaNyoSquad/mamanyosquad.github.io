@@ -40,7 +40,7 @@ const JPactive = setInterval(function() {
 
 //Global Edition
 
-const GLQueued = new Date('September 18, 2023 02:30:00 GMT+00:00').getTime();
+const GLQueued = new Date('October 10, 2023 02:30:00 GMT+00:00').getTime();
 
 const GLqueued = setInterval(function() {
   
@@ -58,7 +58,7 @@ const GLqueued = setInterval(function() {
 
 }, 1000);
 
-const GLActive = new Date('September 18, 2023 06:30:00 GMT+00:00').getTime();
+const GLActive = new Date('October 10, 2023 06:30:00 GMT+00:00').getTime();
 
 const GLactive = setInterval(function() {
   
