@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="#MamaNyoSquad">
+    <title>「Justice」 continues to live on.</title>
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="../../media/favicon.png" type="image/x-icon">
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+      html {
+        background-image: url(https://sinoalice.global/launch/images/pc/bg-character.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      #loadOVL {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #8b3c1bf0;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-transition: 2.5s;
+        -moz-transition: 2.5s;
+        -o-transition: 2.5s;
+        transition: 2.5s;
+      }
+      .sinoEnd {
+        font-family: "Noto Serif JP", serif;
+        text-align: center;
+      }
+      .large {
+        font-size: 128px;
+        font-weight: 900;
+      }
+    </style>
+    <meta name="theme-color" content="#161224">
+    <meta name="msapplication-TileColor" content="#161224">
+    <meta name="msapplication-navbutton-color" content="#161224">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
+    <!-- custom css -->
+    <link href="../../css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/articletable.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/anniv.css" rel="stylesheet" type="text/css" media="all">
+    <!-- custom scripts -->
+    <script src="sinoTimer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function activateMusic() {
+        document.getElementById("load").remove();
+        document.getElementById("loadOVL").style.height = "0";
+        document.getElementById("playAudio").play();
+        onvisibility();
+      }
+      function onvisibility() {
+        // code adapted from https://stackoverflow.com/questions/61076149/video-paused-on-inactive-tab
+        var playback = document.getElementById("playAudio"), hidden, visibilityChange;
+        if (typeof document.hidden !== "undefined") {  
+          hidden = "hidden";
+          visibilityChange = "visibilitychange";
+          playback.play();
+        } else if (typeof document.msHidden !== "undefined") {
+          hidden = "msHidden";
+          visibilityChange = "msvisibilitychange";
+          playback.play();
+        } else if (typeof document.webkitHidden !== "undefined") {
+          hidden = "webkitHidden";
+          visibilityChange = "webkitvisibilitychange";
+          playback.play();
+        }
+        function handleVisibilityChange() {
+          if (document[hidden]) {
+            playback.pause();
+          } else {
+            playback.play();
+          }
+        }
+        if (typeof document.addEventListener === "undefined" || hidden === undefined) {
+          console.log("requires a browser that supports Visibility API.");
+        } else {
+          document.addEventListener(visibilityChange, handleVisibilityChange, false);
+        }
+      }
+    </script>
+  </head>
+  <body onload="sinoTimer()">
+    <div onclick="activateMusic()">
+      <div id="loadOVL">
+        <div id="load">
+          <p style="padding: 19px;">
+            This page uses sound for an immersive experience while reading the article. Ensure that you have
+            headphones on for the best experience.
+            <br><br>
+            Tap or click anywhere to continue...
+          </p>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="siteHEADER">
+        <div class="logoHead">
+          <div class="NyoLogo"></div>
+        </div>
+        <div class="HeadURLs" id="top">
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../">Home</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../policies">Policies</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../events">Events</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../archive">Archives</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../publishing">Publishing</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../blog">The Squad's Blog</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../maintenance">Maintenance</a></span>
+        </div>
+      </div>
+    </header>
+    <div class="articleHead" style="background-image: url(../../media/images/blog/SnowWhite_shutdown.png);"></div>
+    <div style="width: 100%; box-shadow: 0 -9.5px 19px #d8dce4a0;">
+      <div class="articleArea">
+        <h1>「Justice」continues to live on.</h1>
+        <em>published 2 September 2023 UTC</em>
+        <p>
+          Our Social & Web Manager has this official statement regarding the shutdown of SINoALICE Global, the game
+          that has been a part of him since 2020. 
+        </p>
+        <div class="inThisArticle"></div>
+        <div class="secContain">
+          This is <b>Emmannuel Ortega</b>, Social & Web Manager for #MamaNyoSquad.
+          <br><br>
+          I have been a part of the SINoALICE universe since its inception on July 2020, and since then I have been
+          committed to enriching its experience through my expertise. This game have been a major factor in bringing
+          the universes together for a never-ending desire, something that I have been looking forward to since its
+          inception.
+          <br><br>
+          It began when one of the closest people I associate myself with has introduced me to it, and she has ushered
+          her own efforts along with it. That gave me an interest in trying that out, and soon I became hooked on to
+          it. Although we could not talk about it anymore since she has since been disappeared without a trace.
+          However, her spirit will always linger with me and I will continue her journey through countless efforts
+          and determination through this game.
+          <br><br>
+          <i>
+            And in addition, she became one of what I call the Circles, something that I will be cherishing for
+            generations to come. That is why I founded the <b>「Seal of the Circle (SotC)」</b> to repay my gratitude
+            towards two of the people whom I associate with, that I loved deeply in my heart.
+          </i>
+          <br><br>
+          My story had become livelier when I realized one of the characters in the game—Snow White—perfectly fits my
+          vision of taking matters with prejudice and consideration, where impartiality becomes the basis for a
+          rational approach to every situation.
+          <br><br>
+          And I vowed, moving forward, that I will represent as the endeared Symbol of Justice.
+          <br><br>
+          During my experience with SINoALICE, I have a Guild named 「TheLonelyBride」, which initially was attributed
+          to one of the Classes associated with Snow White; specifically the Cleric class, where she endowed herself
+          in an alternative revision of a wedding dress. However, that has changed when she debuted later in her Mage
+          class—something that shocked the community as she endowed in an elegant <i>*literal*</i> wedding dress itself.
+          This, complete with a stamp titled 「Snow White/Bride」, has made me stuck upon for the remainder of my
+          experiences as a whole, while becoming as one of the Players who represent Snow White.
+          <br><br>
+          Those experiences, among other instances that I did not mention in this Message, are what I will be taking
+          with when the Global Edition finally seals the Library into a halt. The memories and experiences I had with it
+          became a foundation that will be inherited by the ideas that I will populate in its honor.
+          <br><br>
+          To every Guild that I have fought a battle on in the Colosseum, to every Player whom I had a co-op battle with,
+          to everyone who have stuck with the community to its final breath, I thank you for your never-ending commitment
+          in harnessing the stories from within.
+          <br><br>
+          To SQUARE ENIX and Pokelabo: Without both of your efforts, SINoALICE would not have been possible. Your
+          commitment to ensuring quality on your game has been one of the biggest factors in which I loved, and I hope
+          that will carry on with your future endeavors. ありがとうございます。
+          <br><br>
+          To those who have read to the very end of this Message, I hope you can support SINoALICE Global to the very end.
+          You can find them on Twitter / X at <b>@sinoaliceglobal</b>, or play the game along with me to the end. <b>Let us
+          wander around the Library for the final time.</b>
+          <br><br>
+          And, before I can conclude this Message: <b>I will not be going anywhere.</b> As soon as Pokelabo pulls the plug
+          on Global Edition, I will be around on the Japanese Edition. So, you can expect the same experiences as it would
+          during my first experiences on the former.
+          <br><br>
+          <b>
+            「正義」は生き続ける。
+            <br><br>
+            SINoALICE Global Edition
+            <br>
+            2020年7月1日～2023年11月15日
+          </b>
+          <br><br>
+          <div class="sinoEnd">
+            <p id="sinoTime" class="large"></p>
+            <p>
+              The landing page has been updated in response to this Blog. Head over to "Home" and check it out.
+            </p>
+          </div>
+        </div>
+        <audio id="playAudio" src="../../media/audio/20230902_sinoalice_20231115.mp3" width="0" height="0" loop></audio>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerTagline">
+        <div class="entertheuniverse"></div>
+      </div>
+      <div class="footerText">
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://mobile.twitter.com/MamaNyoSquad" target="_blank">Twitter/X</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://youtube.com/@MamaNyoSquad" target="_blank">YouTube</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="mailto:mamanyosquad@outlook.com">Email</a></span>
+        <br>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io" target="_blank">GitHub Repository</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">Fork and Improve</a></span>
+        <br>
+        <p>
+          <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml" target="_blank" title="See the current GitHub Action here.">
+            <img src="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy" alt="">
+          </a>
+        </p>
+        <p style="font-weight: normal;">
+          Source code licensed under MIT License, site content under CC-BY 4.0 INTL and above
+          <br>
+          #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
+        </p>
+      </div>
+      <a rel="noopener noreferrer" href="https://thebelovedmoon.wixsite.com/tbmassoc?lang=en" target="_blank" title="a tbmassoc brand">
+        <image class="tbmassoc" src="../../media/svg/tbmassoc.svg" alt=""></image>
+      </a>
+    </footer>
+  </body>
+</html>

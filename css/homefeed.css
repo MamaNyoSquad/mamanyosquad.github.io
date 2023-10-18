@@ -1,4 +1,4 @@
-/* css updated as of 26 Jun 2023 UTC */
+/* css updated as of 20 Aug 2023 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -95,6 +95,10 @@ header {
   padding: 19px;
   text-align: center;
   background-color: #ff0000;
+  background-image: url(../media/images/BG2024/nyoRed.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   box-shadow: 0 9.5px 19px #06a8ffa0;
 }
 .logoHead {
@@ -188,6 +192,10 @@ header {
   text-align: center;
   vertical-align: middle;
   background-color: #06a8ff;
+  background-image: url(../media/images/BG2024/nyoBlue.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .footer {

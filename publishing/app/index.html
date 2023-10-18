@@ -6,8 +6,8 @@
     <meta name="author" content="#MamaNyoSquad">
     <title>Venus Island Diaries v0.3.6-prerelease has been released!</title>
     <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="https://mamanyosquad.github.io/media/favicon/publishing.png" type="image/x-icon">
-    <style>
+    <link rel="icon" href="../../media/favicon/publishing.png" type="image/x-icon">
+    <style type="text/css">
       /* attach in-html custom css args here */
     </style>
     <meta name="og:type" content="website">
@@ -22,14 +22,28 @@
     <meta name="msapplication-navbutton-color" content="#d6c278">
     <meta name="apple-mobile-web-app-status-bar-style" content="#d6c278">
     <!-- custom css -->
+    <link href="../../css/publishing.css" rel="stylesheet" type="text/css" media="all">
     <link href="../../css/vidiaries-app.css" rel="stylesheet" type="text/css" media="all">
+    <!-- custom scripts -->
+    <script src="../../scripts/pubLoad.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        pubLoad();
+      }
+    </script>
   </head>
-  <body>
-    <div class="FAB" style="background-color: #161224;">
-      <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/vidiaries-app/releases" target="_blank">
-        <img class="FAB-icon" src="../../media/svg/github.svg" title="vidiaries-app Releases Sheet">
-      </a>
+  <body onload="launch()">
+    <div id="loadOVL">
+      <div id="load">
+        <img class="vidiariesIcon" src="../../media/images/vidiaries-app_icon.png" alt="">
+      </div>
     </div>
+    <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/vidiaries-app/releases" target="_blank" title="vidiaries-app Releases Sheet">
+      <div class="FAB" style="background-color: #161224;">
+        <img class="FAB-icon" src="../../media/svg/github.svg" alt="">
+      </div>
+    </a>
     <div class="fillWidth">
       <img src="../../media/images/vidiaries-app_icon.png" alt="Venus Island Diaries - App">
     </div>
