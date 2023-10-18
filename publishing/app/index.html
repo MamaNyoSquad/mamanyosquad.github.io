@@ -26,8 +26,14 @@
     <link href="../../css/vidiaries-app.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
     <script src="../../scripts/pubLoad.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        pubLoad();
+      }
+    </script>
   </head>
-  <body onload="pubLoad()">
+  <body onload="launch()">
     <div id="loadOVL">
       <div id="load">
         <img class="vidiariesIcon" src="../../media/images/vidiaries-app_icon.png" alt="">

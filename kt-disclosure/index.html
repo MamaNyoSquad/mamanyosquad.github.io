@@ -28,11 +28,18 @@
     <link href="../css/anniv.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
     <script src="../scripts/changeLang.js" type="text/javascript"></script>
+    <script src="../blog/20230902/sinoTimer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        sinoDayCount();
+      }
+    </script>
   </head>
-  <body>
+  <body onload="launch()">
     <header>
       <div class="ImportantHEAD">
-        <b>We're just 31 days before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
+        <b>We're just <span id="sinoDayCount">NaN days</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
       </div>
       <div class="siteHEADER" style="box-shadow: 0 9.5px 19px #ffffff;">
         <div class="logoHead">

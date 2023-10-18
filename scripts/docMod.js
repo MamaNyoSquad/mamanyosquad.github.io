@@ -47,4 +47,5 @@ function docMod() {
 
   var docModified = utcDay + " " + utcMonth + " " + utcYear;
   document.getElementById("modifiedUTC").innerHTML = docModified;
+  
 }
