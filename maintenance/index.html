@@ -30,10 +30,20 @@
     <!-- custom scripts -->
     <script src="../scripts/maintenance.js" type="text/javascript"></script>
     <script src="../scripts/docMod.js" type="text/javascript"></script>
+    <script src="../blog/20230902/sinoTimer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        docMod();
+        jMaint();
+        gMaint();
+        sinoDayCount();
+      }
+    </script>
   </head>
-  <body onload="docMod()">
+  <body onload="launch()">
     <div class="ImportantHEAD">
-      <b>We're just 31 days before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
+      <b>We're just <span id="sinoDayCount">NaN days</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
     </div>
     <header>
       <div class="siteHEADER">
@@ -101,14 +111,14 @@
           Status: <span id="GLStatus"></span>
         </p>
         <p>
-          The DOAXVV Global Edition is conducting a Maintenance Routine on <b>10 October
+          The DOAXVV Global Edition is conducting a Maintenance Routine on <b>18 October
           2023</b> from <b>2:30am to 6:30am UTC*</b>, with regards to the following:
           <ul>
             <li>Updated Events</li>
             <li>Bug Fixes</li>
           </ul>
         </p>
-        <button class="NyoBtn" onclick="window.open('https://game.doaxvv.com/production/html/information/maint_gl_0523_231010_1_0_c7811e075d5fbdebc9fe21bd11d8522eedd3def73311050ead176f6bf4d11e76_en.html', '_blank')">Details</button>
+        <button class="NyoBtn" onclick="window.open('https://game.doaxvv.com/production/html/information/maint_gl_0524_231018_1_0_a4c4aeb28a65555d308ea83fd67376d73a4ca5f6a11bceac2da31e660dd4bb9e_en.html', '_blank')">Details</button>
         <!--<button class="NyoBtn">Details unavailable</button>-->
       </div>
       <p>

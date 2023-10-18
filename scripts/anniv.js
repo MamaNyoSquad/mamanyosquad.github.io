@@ -5,25 +5,20 @@
 
 //time for 3rd Inception Anniversary!!
 
-var countDownDate = new Date('Dec 6, 2023 00:00:00 GMT+00:00').getTime();
-
-var x = setInterval(function() {
-  
-  var now = new Date().getTime();
-  
-  var distance = countDownDate - now;
-  
-  var days = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-3);
-  var hours = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
-  var minutes = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
-  var seconds = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
-  
-  document.getElementById("anniv").innerHTML = days + ":" + hours + ":"
-  + minutes + ":" + seconds;
-  
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("anniv").innerHTML = "The Inception Anniversary has begun!";
-  }
-
-}, 1000);
+function annivTimer() {
+  var countDownDate = new Date('Dec 6, 2023 00:00:00 GMT+00:00').getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-3);
+    var hours = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+    var minutes = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+    var seconds = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+    document.getElementById("anniv").innerHTML = days + ":" + hours + ":"
+    + minutes + ":" + seconds;
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("anniv").innerHTML = "The Inception Anniversary has begun!";
+    }
+  }, 1000);
+}
