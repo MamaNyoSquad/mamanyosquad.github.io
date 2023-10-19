@@ -21,13 +21,12 @@ function sinoDayCount() {
     const now = new Date().getTime();
     const distance = time - now;
     var d = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
-    var h = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
-    var m = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
-    var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
-    document.getElementById("sinoDayCount").innerHTML = d + " days";
+    var dnum = Number(d);
+    dnum += 1;
+    document.getElementById("sinoDayCount").innerHTML = dnum + " days";
     if (distance <= 0) {
       clearInterval(timer);
-      document.getElementById("sinoDayCount").innerHTML = "NaN days";
+      document.getElementById("sinoOver").innerHTML = "The Library is now closed. Thank you for playing SINoALICE Global Edition.";
     }
   }, 1000);
 }
