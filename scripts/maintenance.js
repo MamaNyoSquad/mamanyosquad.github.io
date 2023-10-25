@@ -33,7 +33,7 @@ function jMaint() {
 
 function gMaint() {
 
-  const GLQueued = new Date('October 18, 2023 02:30:00 GMT+00:00').getTime();
+  const GLQueued = new Date('October 25, 2023 02:30:00 GMT+00:00').getTime();
   const GLqueued = setInterval(function() {
     const now = new Date().getTime();
     const distance = GLQueued - now;
@@ -44,7 +44,7 @@ function gMaint() {
     }
   }, 1000);
 
-  const GLActive = new Date('October 18, 2023 06:30:00 GMT+00:00').getTime();
+  const GLActive = new Date('October 25, 2023 06:30:00 GMT+00:00').getTime();
   const GLactive = setInterval(function() {
     const now = new Date().getTime();
     const distance = GLActive - now;
