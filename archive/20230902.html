@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url='/'">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
@@ -14,6 +13,7 @@
       html {
         background-color: #8b3c1b;
         background-image: url(https://sinoalice.global/launch/images/pc/bg-character.jpg);
+        /* background-image: url(../media/images/sinoalice_bg1.jpg); */
         color: #d8dce4;
       }
       body {
@@ -127,6 +127,17 @@
           document.addEventListener(visibilityChange, handleVisibilityChange, false);
         }
       }
+      function eventEnd() {
+        document.getElementById("removeElement").remove();
+        document.getElementById("eventRedir").href = "../events/sinoaliceglobal-shutdown";
+        document.getElementById("playAudio").src = "../media/audio/20230902_sinoalice_20231115.mp3";
+        document.getElementById("sinoEnd").innerHTML =
+          "<h1 style='font-weight: 900;'>The Library is officially closed.</h1>" +
+          "<p>" +
+            "Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition. " +
+            "Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>" +
+          "</p>";
+      }
     </script>
   </head>
   <body onload="launch()">
@@ -140,16 +151,21 @@
       </div>
     </div>
     <audio id="playAudio" src="../media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio>
+    <div class="ImportantHEAD">
+      <b>This is the archived page in commemoration of the event. Click <a id="eventRedir" rel="noopener noreferrer" class="HeadURL" href="/" target="_blank">here</a> for the live updates.</b>
+    </div>
     <div class="textarea">
-      <p id="sinoTime" class="large"></p>
+      <div id="removeElement"><p id="sinoTime" class="large"></p></div>
       <br>
-      <h2>SINoALICE Global will end soon.</h2>
-      <p>
-        With just moments away from sealing the Library, SINoALICE Global thanks its players for their unending
-        desire to support the game through various means. From its developers -- SQUARE ENIX and Pokelabo -- they
-        thank the fans and everyone for making their dreams possible, and that they will usher forward with their
-        future endeavors.
-      </p>
+      <div id="sinoEnd">
+        <h2>SINoALICE Global will end soon.</h2>
+        <p>
+          With just moments away from sealing the Library, SINoALICE Global thanks its players for their unending
+          desire to support the game through various means. From its developers -- SQUARE ENIX and Pokelabo -- they
+          thank the fans and everyone for making their dreams possible, and that they will usher forward with their
+          future endeavors.
+        </p>
+      </div>
       <br>
       <h2>Letter from the Producer</h2>
       <em>
@@ -270,7 +286,7 @@
         </p>
       </div>
       <a rel="noopener noreferrer" href="https://thebelovedmoon.wixsite.com/tbmassoc?lang=en" target="_blank" title="a tbmassoc brand">
-        <image class="tbmassoc" src="media/svg/tbmassoc.svg" alt=""></image>
+        <image class="tbmassoc" src="../media/svg/tbmassoc.svg" alt=""></image>
       </a>
     </footer>
   </body>

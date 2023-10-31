@@ -1,5 +1,6 @@
+const time = new Date('November 15, 2023 14:00:00 GMT+09:00').getTime();
+
 function sinoTimer() {
-  const time = new Date('November 15, 2023 14:00:00 GMT+09:00').getTime();
   const timer = setInterval(function() {
     const now = new Date().getTime();
     const distance = time - now;
@@ -11,12 +12,12 @@ function sinoTimer() {
     if (distance <= 0) {
       clearInterval(timer);
       document.getElementById("sinoTime").innerHTML = "00:00:00:00";
+      eventEnd();
     }
-  }, 1000);
+  }, 0);
 }
 
 function sinoDayCount() {
-  const time = new Date('November 15, 2023 14:00:00 GMT+09:00').getTime();
   const timer = setInterval(function() {
     const now = new Date().getTime();
     const distance = time - now;
@@ -26,7 +27,7 @@ function sinoDayCount() {
     document.getElementById("sinoDayCount").innerHTML = dnum + " days";
     if (distance <= 0) {
       clearInterval(timer);
-      document.getElementById("sinoOver").innerHTML = "The Library is now closed. Thank you for playing SINoALICE Global Edition.";
+      document.getElementById("sinoOver").innerHTML = "The Library is officially closed. Thank you for playing SINoALICE Global Edition.";
     }
-  }, 1000);
+  }, 0);
 }
