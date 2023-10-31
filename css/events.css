@@ -1,0 +1,37 @@
+/* css updated as of 31 Oct 2023 UTC */
+
+.showc {
+  border: #ff0000 solid;
+  border-radius: 19px;
+}
+.thumb {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 6;
+  border-radius: 19px 19px 0 0;
+}
+.text {
+  background-color: #161224;
+  padding: 38px;
+  text-align: center;
+  border-radius: 0 0 19px 19px;
+}
+
+.backToEvents {
+  margin: 9.5px;
+  padding: 9.5px;
+  border-radius: 9.5px;
+  position: absolute;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #161224;
+  color: #ffffff;
+  border: none;
+}
+.backToEvents:hover {
+  background-color: #ff0000;
+}

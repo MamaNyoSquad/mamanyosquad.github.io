@@ -20,5 +20,5 @@ function annivTimer() {
       clearInterval(x);
       document.getElementById("anniv").innerHTML = "The Inception Anniversary has begun!";
     }
-  }, 1000);
+  }, 0);
 }

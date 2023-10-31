@@ -14,7 +14,7 @@ function jMaint() {
       clearInterval(JPqueued);
       document.getElementById("JPStatus").className = maintenance[1];
     }
-  }, 1000);
+  }, 0);
 
   const JPActive = new Date('October 26, 2023 22:00:00 GMT+09:00').getTime();
   const JPactive = setInterval(function() {
@@ -24,7 +24,7 @@ function jMaint() {
       clearInterval(JPactive);
       document.getElementById("JPStatus").className = maintenance[2];
     }
-  }, 1000);
+  }, 0);
 
 }
 
@@ -42,7 +42,7 @@ function gMaint() {
       clearInterval(GLqueued);
       document.getElementById("GLStatus").className = maintenance[1];
     }
-  }, 1000);
+  }, 0);
 
   const GLActive = new Date('October 25, 2023 06:30:00 GMT+00:00').getTime();
   const GLactive = setInterval(function() {
@@ -52,6 +52,6 @@ function gMaint() {
       clearInterval(GLactive);
       document.getElementById("GLStatus").className = maintenance[2];
     }
-  }, 1000);
+  }, 0);
 
 }
