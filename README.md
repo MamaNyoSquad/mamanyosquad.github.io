@@ -1,6 +1,6 @@
 [![site deploy](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy)](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml)
 
-_Updated 31 May 2023 UTC_
+_Updated 2 November 2023 UTC_
 
 # Introduction
 
