@@ -1,4 +1,4 @@
-const time = new Date('November 15, 2023 14:00:00 GMT+09:00').getTime();
+const time = new Date("November 15, 2023 14:00:00 GMT+09:00").getTime();
 
 function sinoTimer() {
   const timer = setInterval(function() {

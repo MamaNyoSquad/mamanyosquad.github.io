@@ -5,7 +5,7 @@ let maintenance = ["queued", "active", "finished"];
 
 function jMaint() {
   
-  const JPQueued = new Date('November 9, 2023 10:00:00 GMT+09:00').getTime();
+  const JPQueued = new Date("November 9, 2023 10:00:00 GMT+09:00").getTime();
   const JPqueued = setInterval(function() {
     const now = new Date().getTime();
     const distance = JPQueued - now;
@@ -16,7 +16,7 @@ function jMaint() {
     }
   }, 0);
 
-  const JPActive = new Date('November 9, 2023 17:00:00 GMT+09:00').getTime();
+  const JPActive = new Date("November 9, 2023 17:00:00 GMT+09:00").getTime();
   const JPactive = setInterval(function() {
     const now = new Date().getTime();
     const distance = JPActive - now;
@@ -33,7 +33,7 @@ function jMaint() {
 
 function gMaint() {
 
-  const GLQueued = new Date('October 25, 2023 02:30:00 GMT+00:00').getTime();
+  const GLQueued = new Date("October 25, 2023 02:30:00 GMT+00:00").getTime();
   const GLqueued = setInterval(function() {
     const now = new Date().getTime();
     const distance = GLQueued - now;
@@ -44,7 +44,7 @@ function gMaint() {
     }
   }, 0);
 
-  const GLActive = new Date('October 25, 2023 06:30:00 GMT+00:00').getTime();
+  const GLActive = new Date("October 25, 2023 06:30:00 GMT+00:00").getTime();
   const GLactive = setInterval(function() {
     const now = new Date().getTime();
     const distance = GLActive - now;
