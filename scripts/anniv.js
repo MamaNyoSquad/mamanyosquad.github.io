@@ -6,7 +6,7 @@
 //time for 3rd Inception Anniversary!!
 
 function annivTimer() {
-  var countDownDate = new Date('Dec 6, 2023 00:00:00 GMT+00:00').getTime();
+  var countDownDate = new Date("December 6, 2023 00:00:00 GMT+00:00").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;

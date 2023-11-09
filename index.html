@@ -80,22 +80,9 @@
       footer {
         font-family: "Poppins", sans-serif;
       }
-      .ytembed {
-        overflow: hidden;
-        position: relative;
-      }
-      .ytembed::after {
-        padding-top: 56.25%;
-        display: block;
-        content: '';
-      }
-      .ytembed iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
+      .ytEmbed {
         width: 100%;
-        height: 100%;
-        border-radius: 19px;
+        min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
       }
       #revealEmbed {
         display: none;
@@ -165,13 +152,14 @@
         document.getElementById("revealEmbed").style.display = "block";
         document.getElementById("removeBtnStream").remove();
         document.getElementById("playAudio").src = "";
+        window.location.hash = "streamGoesHere";
       }
       function autoPlayStream() {
-        const time = new Date('November 15, 2023 12:50:00 GMT+09:00').getTime();
         const timer = setInterval(function() {
           const now = new Date().getTime();
           const distance = time - now;
-          if (distance <= 0) {
+          if (distance <= 42000000) {
+            pageLaunch();
             revealEmbed();
           }
         }, 0);
@@ -181,15 +169,17 @@
         document.getElementById("playAudio").remove();
         document.getElementById("removeElement").remove();
         document.getElementById("sinoEnd").innerHTML =
-          "<h1 style='font-weight: 900;'>The Library is officially closed.</h1>" +
-          "<p>" +
-            "Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition. " +
-            "Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>" +
-          "</p>" +
-          "<br>" +
-          "<img src='media/images/bride_3.png' alt=''>" +
-          "<br><br><br><br>" +
-          "<img src='media/svg/mamanyosquad.svg' alt='' style='width: 475px;'>";
+          "<div class='textarea'>" +
+            "<h1 style='font-weight: 900;'>The Library is officially closed.</h1>" +
+            "<p>" +
+              "Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition. " +
+              "Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>" +
+            "</p>" +
+            "<br><br><br><br>" +
+            "<img src='media/images/bride_3.png' alt=''>" +
+            "<br><br>" +
+            "<img src='media/svg/TheLonelyBride.svg' alt='' style='width: 475px;'>" +
+          "</div>";
         pageLaunch();
       }
     </script>
@@ -206,127 +196,137 @@
     </div>
     <!-- <audio id="playAudio" src="https://sinoalice.global/launch/media/ost/ost9.mp3" width="0" height="0" loop></audio> -->
     <!-- <audio id="playAudio" src="media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio> -->
-    <audio id="playAudio" src="media/audio/20230902_sinoalice_20231115.mp3" width="0" height="0" loop></audio>
+    <audio id="playAudio" src="media/audio/20231108_sinoSayonara.mp3" width="0" height="0" loop></audio>
     <div id="removeElement" class="ImportantHEAD">
       <b id="sinoOver">We're just <span id="sinoDayCount">NaN days</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
     </div>
-    <div id="sinoEnd" class="textarea">
-      <p id="removeBtnStream">
-        <button onclick="revealEmbed()">Watch the livestream</button>
-      </p>
-      <p id="revealEmbed" class="ytembed">
+    <div id="sinoEnd">
+      <div id="streamGoesHere">
         <iframe
+          id="revealEmbed"
+          class="ytEmbed"
           title="「正義」は生き続ける。 ～The Farewell Stream～"
           src="https://www.youtube-nocookie.com/embed/fDwi6ylbiWU?autoplay=1"
           frameborder="0"
           allowfullscreen>
         </iframe>
-      </p>
-      <br>
-      <p id="sinoTime" class="large"></p>
-      <br>
-      <h2>SINoALICE Global will end soon.</h2>
-      <p>
-        With just moments away from sealing the Library, SINoALICE Global thanks its players for their unending
-        desire to support the game through various means. From its developers -- SQUARE ENIX and Pokelabo -- they
-        thank the fans and everyone for making their dreams possible, and that they will usher forward with their
-        future endeavors.
-      </p>
-      <br>
-      <h2>Letter from the Producer</h2>
-      <em>
-        Attached is the exact copy of the letter as it appeared in the in-game notice. Timestamps have been
-        modified to conform with the UTC timezone.
-      </em>
-      <p>
-        <div style="text-align: left; padding: 19px; background-color: #00000080;">
-          <p>Thank you for playing SINoALICE.</p>
-          <p>This is Pokelabo Inc. SINoALICE Producer Shogo Maeda.</p>
-          <p>
-            We understand that this announcement might come as a surprise to our users, but as previously mentioned
-            in the End of Service Notice, it is my deepest regret to inform you that we will be concluding our Service
-            on 2023.11.15 4:59 (UTC).
-            <br>
-            We have devoted ourselves to devising and implementing ideas that would allow players to enjoy the game
-            for years to come, but despite our best efforts, we have fallen short of sustaining this goal. We deeply
-            apologize for the situation.
-          </p>
-          <p>
-            The global version began operation back in July 2020, and thanks to all our users we've managed to keep it
-            going for over three years.
-            <br>
-            We were able to hold the World Gran Colosseum twice through the support of our Global players, and
-            personally, I was truly moved by the way people from around the world, including players from the JP
-            version, connected through the event.
-          </p>
-          <p>
-            The main story will conclude with the currently released Act of Elimination.
-            <br>
-            Furthermore, as part of our operations through to October 31st, we have prepared the following events for
-            our Last Big Thanks Campaign.
-            <br>
-            -Big Thanks Free Grimoire x11<br>
-            -Big Thanks Mission<br>
-            -The Last Colosseum Sin<br>
-            Plus others.
-            <br>
-            We hope you continue to enjoy the game leading up to The Last Colosseum.
-          </p>
-          <p>
-            Lastly,
-            <br>
-            while were there moments when we might have inconvenienced our users, we're grateful to have been able to
-            operate for more than three years.
-            <br>
-            We want to extend a sincere thank you to all the users who supported and livened up our activities on
-            Discord, the Royal Creators who contributed to the excitement by streaming SINoALICE on platforms like
-            YouTube, and to all the users who consistently enjoyed playing the game. We can't thank you all enough for
-            being a part of the community.
-            <br>
-            Although we're nearing the end of our service, we hope you make the most of SINoALICE Global through to the
-            very end. Thank you.
-          </p>
-          <p>
-            Pokelabo Inc. Producer<br>
-            Shogo Maeda
-          </p>
-        </div>
-      </p>
-      <br>
-      <h2>The reason behind this event</h2>
-      <p>
-        It has been decided upon the request of our Social & Web Manager -- Emmannuel Ortega -- to use this platform to
-        pay his tribute to his fellow players and to all the developers of SINoALICE, as he is among the players
-        themselves. In response to the End of Service Notice, he sent out an official statement regarding that. You can
-        check it out by clicking the button below:
-        <p>
-          <button onclick="window.open('blog/20230902')">Read the statement</button>
+      </div>
+      <div class="textarea">
+        <p id="removeBtnStream">
+          <button onclick="revealEmbed()">Watch the livestream</button>
         </p>
-      </p>
-      <br>
-      <h2>More information</h2>
-      <p>
-        Details about the End of Service Notice can be found via this button below:
+        <br>
+        <p id="sinoTime" class="large"></p>
+        <br>
+        <h2>SINoALICE Global will end soon.</h2>
         <p>
-          <button onclick="window.open('https://sinoalice.global/en/news/64edd606')">End of Service Notice</button>
+          With just moments away from sealing the Library, SINoALICE Global thanks its players for their unending
+          desire to support the game through various means. From its developers -- SQUARE ENIX and Pokelabo -- they
+          thank the fans and everyone for making their dreams possible, and that they will usher forward with their
+          future endeavors.
         </p>
-        Otherwise, you can find additional details on the in-game notice.
-      </p>
-      <br>
-      <h2>Disclaimer</h2>
-      <p>
-        Image and audio resources have been sourced from SINoALICE website and the SINoALICE Original Soundtrack.
-        Texts sourced from SINoALICE in-game notice. For full details, launch the game. Copyright 2017 SQEX and Pokelabo.
-        See <a rel="noopener noreferrer" href="policies" target="_blank">Site Policies</a> for more information.
-      </p>
-      <br><br><br><br>
-      <p class="large" style="font-size: 64px;">
-        「正義」は生き続ける。
-      </p>
-      <p class="large" style="font-size: xx-large;">
-        SINoALICE Global Edition<br>
-        2020年7月1日～2023年11月15日
-      </p>
+        <br>
+        <h2>Letter from the Producer</h2>
+        <em>
+          Attached is the exact copy of the letter as it appeared in the in-game notice. Timestamps have been
+          modified to conform with the UTC timezone.
+        </em>
+        <p>
+          <div style="text-align: left; padding: 19px; background-color: #00000080;">
+            <p>Thank you for playing SINoALICE.</p>
+            <p>This is Pokelabo Inc. SINoALICE Producer Shogo Maeda.</p>
+            <p>
+              We understand that this announcement might come as a surprise to our users, but as previously mentioned
+              in the End of Service Notice, it is my deepest regret to inform you that we will be concluding our Service
+              on 2023.11.15 4:59 (UTC).
+              <br>
+              We have devoted ourselves to devising and implementing ideas that would allow players to enjoy the game
+              for years to come, but despite our best efforts, we have fallen short of sustaining this goal. We deeply
+              apologize for the situation.
+            </p>
+            <p>
+              The global version began operation back in July 2020, and thanks to all our users we've managed to keep it
+              going for over three years.
+              <br>
+              We were able to hold the World Gran Colosseum twice through the support of our Global players, and
+              personally, I was truly moved by the way people from around the world, including players from the JP
+              version, connected through the event.
+            </p>
+            <p>
+              The main story will conclude with the currently released Act of Elimination.
+              <br>
+              Furthermore, as part of our operations through to October 31st, we have prepared the following events for
+              our Last Big Thanks Campaign.
+              <br>
+              -Big Thanks Free Grimoire x11<br>
+              -Big Thanks Mission<br>
+              -The Last Colosseum Sin<br>
+              Plus others.
+              <br>
+              We hope you continue to enjoy the game leading up to The Last Colosseum.
+            </p>
+            <p>
+              Lastly,
+              <br>
+              while were there moments when we might have inconvenienced our users, we're grateful to have been able to
+              operate for more than three years.
+              <br>
+              We want to extend a sincere thank you to all the users who supported and livened up our activities on
+              Discord, the Royal Creators who contributed to the excitement by streaming SINoALICE on platforms like
+              YouTube, and to all the users who consistently enjoyed playing the game. We can't thank you all enough for
+              being a part of the community.
+              <br>
+              Although we're nearing the end of our service, we hope you make the most of SINoALICE Global through to the
+              very end. Thank you.
+            </p>
+            <p>
+              Pokelabo Inc. Producer<br>
+              Shogo Maeda
+            </p>
+          </div>
+        </p>
+        <br>
+        <h2>The reason behind this event</h2>
+        <p>
+          It has been decided upon the request of our Social & Web Manager -- Emmannuel Ortega -- to use this platform to
+          pay his tribute to his fellow players and to all the developers of SINoALICE, as he is among the players
+          themselves. In response to the End of Service Notice, he sent out an official statement regarding that. You can
+          check it out by clicking the button below:
+          <p>
+            <button onclick="window.open('blog/20230902')">Read the statement</button>
+            <button onclick="window.open('events/thelonelybride-sinoalice')">From TheLonelyBride</button>
+          </p>
+        </p>
+        <br>
+        <h2>More information</h2>
+        <p>
+          Details about the End of Service Notice can be found via this button below:
+          <p>
+            <button onclick="window.open('https://sinoalice.global/en/news/64edd606')">End of Service Notice</button>
+          </p>
+          Otherwise, you can find additional details on the in-game notice.
+        </p>
+        <br>
+        <h2>Disclaimer</h2>
+        <p>
+          Image and audio resources have been sourced from SINoALICE website and the SINoALICE Original Soundtrack.
+          Texts sourced from SINoALICE in-game notice. For full details, launch the game. Copyright 2017 SQEX and Pokelabo.
+          See <a rel="noopener noreferrer" href="policies" target="_blank">Site Policies</a> for more information.
+        </p>
+        <br><br><br><br>
+        <p class="large" style="font-size: 64px;">
+          「正義」は生き続ける。
+        </p>
+        <p class="large" style="font-size: xx-large;">
+          SINoALICE Global Edition<br>
+          2020年7月1日～2023年11月15日
+        </p>
+      </div>
+      <div class="textarea" style="padding: 19px; text-align: center;">
+        <p>
+          Assets courtesy of SQUARE ENIX Co., Ltd. and Pokelabo, Inc.
+        </p>
+      </div>
     </div>
     <header>
       <div class="siteHEADER">
@@ -538,13 +538,13 @@
       <div class="MamaNyo19-HL">
         <div class="MamaNyo19-Japanese"></div>
       </div>
-      <button class="NyoBtn" onclick="window.open('[Japanese Edition]', '_blank')">Global Edition</button>
+      <button class="NyoBtn" onclick="window.open('[Japanese Edition]')">Global Edition</button>
     </div>
     <div class="MamaNyo19-col">
       <div class="MamaNyo19-HL">
         <div class="MamaNyo19-Global"></div>
       </div>
-      <button class="NyoBtn" onclick="window.open('[Global Edition]', '_blank')">Global Edition</button>
+      <button class="NyoBtn" onclick="window.open('[Global Edition]')">Global Edition</button>
     </div>
     (this part will be for other stuff related to the event)
   </div>
