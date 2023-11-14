@@ -153,12 +153,13 @@
         document.getElementById("removeBtnStream").remove();
         document.getElementById("playAudio").src = "";
         window.location.hash = "streamGoesHere";
+        noInteract();
       }
       function autoPlayStream() {
         const timer = setInterval(function() {
           const now = new Date().getTime();
           const distance = time - now;
-          if (distance <= 42000000) {
+          if (distance <= 4200000) {
             pageLaunch();
             revealEmbed();
           }
@@ -182,9 +183,19 @@
           "</div>";
         pageLaunch();
       }
+      function noInteract() {
+        document.getElementById("no-input").style.pointerEvents = "none";
+        document.getElementById("no-input").style.overflow = "hidden";
+      }
+      function interactModeOn() {
+        document.getElementById("no-input").style.pointerEvents = "all";
+        document.getElementById("no-input").style.overflow = "auto";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
   </head>
-  <body onload="launch()">
+  <body id="no-input" onload="launch()">
     <div onclick="pageLaunch()">
       <div id="loadOVL">
         <div id="load">
@@ -198,7 +209,7 @@
     <!-- <audio id="playAudio" src="media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio> -->
     <audio id="playAudio" src="media/audio/20231108_sinoSayonara.mp3" width="0" height="0" loop></audio>
     <div id="removeElement" class="ImportantHEAD">
-      <b id="sinoOver">We're just <span id="sinoDayCount">NaN days</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
+      <b id="sinoOver">We're just <span id="sinoDayCount">NaN</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
     </div>
     <div id="sinoEnd">
       <div id="streamGoesHere">
@@ -217,6 +228,7 @@
         </p>
         <br>
         <p id="sinoTime" class="large"></p>
+        <p id="unixSinoTime" class="large" style="display: none;"></p>
         <br>
         <h2>SINoALICE Global will end soon.</h2>
         <p>
@@ -417,7 +429,7 @@
     </iframe>
     ->
     <div class="ImportantHEAD">
-      <b id="sinoOver">We're just <span id="sinoDayCount">NaN days</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
+      <b id="sinoOver">We're just <span id="sinoDayCount">NaN</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
     </div>
     <header>
       <div class="siteHEADER">

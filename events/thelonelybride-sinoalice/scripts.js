@@ -21,8 +21,9 @@ function autoPlayStream() {
   const timer = setInterval(function() {
     const now = new Date().getTime();
     const distance = time - now;
-    if (distance <= 42000000) {
+    if (distance <= 4200000) {
       window.location.hash = "streamGoesHere";
+      noInteract();
     }
   }, 0);
 }
