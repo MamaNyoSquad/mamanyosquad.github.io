@@ -34,9 +34,17 @@
         sinoTimer();
         autoPlayStream();
       }
+      function noInteract() {
+        document.getElementById("no-input").style.pointerEvents = "none";
+        document.getElementById("no-input").style.overflow = "hidden";
+      }
+      function interactModeOn() {
+        document.getElementById("no-input").style.pointerEvents = "all";
+        document.getElementById("no-input").style.overflow = "auto";
+      }
     </script>
   </head>
-  <body onload="launch()">
+  <body id="no-input" onload="launch()">
     <div id="makeSnowWhiteDisappear" class="snowWhite"></div>
     <div id="sinoEnd" class="textarea">
       <img src="../../media/images/bride_3.png" alt="">
