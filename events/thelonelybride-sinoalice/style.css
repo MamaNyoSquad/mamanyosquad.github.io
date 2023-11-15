@@ -55,6 +55,10 @@ button {
   text-decoration: none;
   cursor: pointer;
 }
+button:hover { 
+  background-color: #d8dce4;
+  color: #8b3c1b;
+}
 
 img {
   display: block;
