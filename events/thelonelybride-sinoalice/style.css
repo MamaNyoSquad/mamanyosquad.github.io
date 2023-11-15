@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+
+html {
+  background-color: #8b3c1b;
+  background-image: url(../../media/images/sinoalice_bg2.jpg);
+  color: #d8dce4;
+}
+body {
+  font-family: "Noto Serif JP", serif;
+}
+
+.snowWhite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../media/images/bride_1.png);
+  background-size: 125%;
+  background-position: 75% 2.5%;
+  background-repeat: no-repeat;
+  opacity: .1;
+  position: absolute;
+  display: block;
+  z-index: -427;
+}
+@media screen and (max-width: 750px) {
+  .snowWhite {
+    display: none;
+  }
+}
+
+.textarea {
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 190px 19px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.embedStream {
+  width: 100%;
+  min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}

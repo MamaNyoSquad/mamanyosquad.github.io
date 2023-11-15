@@ -1,6 +1,6 @@
 [![site deploy](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy)](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml)
 
-_Updated 31 May 2023 UTC_
+_Updated 2 November 2023 UTC_
 
 # Introduction
 
@@ -31,28 +31,13 @@ Since Bookmark has unpublished (and restricted exporting of) websites that are a
 
 ## An Open Letter to Bookmark
 
-_Published 13 April 2022 at 12:54pm UTC_<br>
-_Updated 11 May 2023 UTC_
+_Updated 2 November 2023 UTC_
 
-We, whom have been your loyal customers on the platform, are saddened by the sudden concurrent changes that has affected our workflows. It has been such a pain to be able to maintain our social presence across the Internet without worrying when our features are going to be limited anytime soon. And most importantly, we're in a deep worry that due to the new pricing guidelines, our free websites--like this one--is bound to be deleted soon. (we've made backups of it just in case, so that we won't lose any hard work, but nonetheless.)
-
-As such, we've been staying on this platform for many months (if not a year or two), freely customizing our websites as we wish without any worry of limitations. we've been so grateful to be provided many new features that will enhance the website experience, but that came at a cost: We need to pay to utilize the advanced services and keep our websites active.
-
-Now, we understand that these paid services are the 'keys' to improving the site experience, but please understand that some customers of this platform can't stay longer because when their "Free Trial" ends, they MUST PAY to continue using the service; whereas themselves have a tight budget or have no budget at all.
-
-Because of these sudden changes, those who are in that sector have a choice to pay up to continue using the basic services after the trial, or remove from the platform.
-
-Before we move on, we just wanted to mention that restricting customizations is a real pain considering that some websites have individual customization settings before this sudden change, like in Emmannuel's case, in which he [tweeted](https://mobile.twitter.com/Ortega082/status/1513791911919644675) at 8:11am UTC. In a nutshell, the websites after this update have restricted the customizations (like header and footer) to apply globally. What's worse is that unlike the last update [as we can remember] that you limited our free websites to 5, you haven't pushed future updates to your customers, which proves that the changes are sudden without their notice.
-
-we're appealing to Bookmark to reconsider other options considering the no-budget customers like us and features that we deem are demanding to be returned, amongst other considerations not mentioned in this open letter.
-
-**Addendum**
-
-As per release of this open letter, all websites owned by thebelovedmoon and Emmannuel Ortega are put ON HOLD as the migration is underway to a new [temporary] provider. Also, we might consider staying on the platform if the finances are into account, but for now, this letter comes into effect.
+We've moved the Open Letter to the Blog! Check [here](https://mamanyosquad.github.io/blog/20220413) for details.
 
 # What holds the future of an open-sourced #MamaNyoSquad?
 
-we've been working on engaging others to collaborate with our work as we move forward, beginning with the rewrite of [Venus Island Diaries - Main Story](https://bit.ly/VIDiariesRealTime). With this initiative, we're committed for a future where everyone can share ideas freely, interact with one's work, and bring their ideas to life!
+We've been working on engaging others to collaborate with our work as we move forward, beginning with the rewrite of [Venus Island Diaries - Main Story](https://bit.ly/VIDiariesRealTime). With this initiative, we're committed for a future where everyone can share ideas freely, interact with one's work, and bring their ideas to life!
 
 # Conclusion
 
