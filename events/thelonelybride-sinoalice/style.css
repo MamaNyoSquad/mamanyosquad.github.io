@@ -43,9 +43,26 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
 }
 
+button {
+  background-color: #8b3c1b;
+  border: none;
+  border-radius: 1900px;
+  color: inherit;
+  padding: 19px;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+}
+.TheLonelyBride {
+  max-width: 100%;
+  height: auto;
 }

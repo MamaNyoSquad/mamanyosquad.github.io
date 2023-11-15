@@ -87,6 +87,10 @@
       #revealEmbed {
         display: none;
       }
+      .TheLonelyBride {
+        max-width: 100%;
+        height: auto;
+      }
     </style>
     <meta name="og:type" content="website">
     <meta name="og:title" content="「正義」は生き続ける。">
@@ -152,8 +156,6 @@
         document.getElementById("revealEmbed").style.display = "block";
         document.getElementById("removeBtnStream").remove();
         document.getElementById("playAudio").src = "";
-        window.location.hash = "streamGoesHere";
-        noInteract();
       }
       function autoPlayStream() {
         const timer = setInterval(function() {
@@ -162,6 +164,11 @@
           if (distance <= 4200000) {
             pageLaunch();
             revealEmbed();
+            window.location.hash = "streamGoesHere";
+            interactModeOff();
+          }
+          if (distance <= 0) {
+            interactModeOn();
           }
         }, 0);
       }
@@ -179,11 +186,13 @@
             "<br><br><br><br>" +
             "<img src='media/images/bride_3.png' alt=''>" +
             "<br><br>" +
-            "<img src='media/svg/TheLonelyBride.svg' alt='' style='width: 475px;'>" +
+            "<img class='TheLonelyBride' src='media/svg/TheLonelyBride.svg' alt='' style='width: 475px;'>" +
+            "<br><br><br>" +
+            "<button onclick='window.open(&quot;https://youtu.be/fDwi6ylbiWU&quot;)'>Rewatch the stream</button>" +
           "</div>";
         pageLaunch();
       }
-      function noInteract() {
+      function interactModeOff() {
         document.getElementById("no-input").style.pointerEvents = "none";
         document.getElementById("no-input").style.overflow = "hidden";
       }
