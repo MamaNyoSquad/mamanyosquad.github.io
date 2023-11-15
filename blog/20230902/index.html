@@ -59,6 +59,13 @@
     <!-- custom scripts -->
     <script src="sinoTimer.js" type="text/javascript"></script>
     <script type="text/javascript">
+      function launch() {
+        // launch args here
+        sinoTimer();
+        removeTimer();
+      }
+    </script>
+    <script type="text/javascript">
       function activateMusic() {
         document.getElementById("load").remove();
         document.getElementById("loadOVL").style.height = "0";
@@ -94,9 +101,18 @@
           document.addEventListener(visibilityChange, handleVisibilityChange, false);
         }
       }
+      function removeTimer() {
+        const timer = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = time - now;
+          if (distance <= 0) {
+            document.getElementById("removeElement").remove();
+          }
+        }, 0);
+      }
     </script>
   </head>
-  <body onload="sinoTimer()">
+  <body onload="launch()">
     <div onclick="activateMusic()">
       <div id="loadOVL">
         <div id="load">
@@ -196,7 +212,7 @@
             2020年7月1日～2023年11月15日
           </b>
           <br><br>
-          <div class="sinoEnd">
+          <div id="removeElement" class="sinoEnd">
             <p id="sinoTime" class="large"></p>
             <p>
               The landing page has been updated in response to this Blog. Head over to "Home" and check it out.
