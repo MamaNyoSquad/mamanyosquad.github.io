@@ -14,7 +14,7 @@ function eventEnd() {
       "<br>" +
       "<img class='TheLonelyBride' src='../../media/svg/TheLonelyBride.svg' alt='' style='width: 475px;'>" +
       "<br><br><br>" +
-      "<button onclick='window.open(&quot;https://youtu.be/fDwi6ylbiWU&quot;)'>Rewatch the stream</button>" +
+      "<button onclick='window.open(&quot;https://youtu.be/y2D0m3I_GVY&quot;)'>Rewatch the stream</button>" +
     "</div>";
   document.getElementById("makeSnowWhiteDisappear").remove();
 }
