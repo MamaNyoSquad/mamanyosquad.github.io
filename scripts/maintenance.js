@@ -6,8 +6,8 @@ const maintToday = new Date().getTime();
 
 function jMaint() {
 
-  const jpActive = new Date("November 9, 2023 10:00:00 GMT+09:00").getTime(),
-    jpEnd = new Date("November 9, 2023 17:00:00 GMT+09:00").getTime(),
+  const jpActive = new Date("November 18, 2023 10:00:00 GMT+09:00").getTime(),
+    jpEnd = new Date("November 18, 2023 18:00:00 GMT+09:00").getTime(),
     unixDetDist = jpEnd - jpActive,
     unixActDist = jpEnd - maintToday;
   
