@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="#MamaNyoSquad">
+    <title>「正義」は生き続ける。</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="https://sinoalice.global/include/images/favicon.ico" type="image/x-icon">
+    <!-- <link rel="icon" href="../media/favicon/sinoalice_g.ico" type="image/x-icon"> -->
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+      html {
+        background-color: #8b3c1b;
+        /* background-image: url(https://sinoalice.global/launch/images/pc/bg-character.jpg); */
+        /* background-image: url(media/images/sinoalice_bg1.jpg); */
+        background-image: url(../media/images/sinoalice_bg2.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: #d8dce4;
+      }
+      body {
+        font-family: "Noto Serif JP", serif;
+      }
+      .textarea {
+        width: 950px;
+        max-width: 100%;
+        padding: 190px 19px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .large {
+        font-size: 128px;
+        font-weight: 900;
+      }
+      #loadOVL {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #8b3c1bf0;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-transition: 2.5s;
+        -moz-transition: 2.5s;
+        -o-transition: 2.5s;
+        transition: 2.5s;
+      }
+      button {
+        background-color: #8b3c1b;
+        border: none;
+        border-radius: 1900px;
+        color: inherit;
+        padding: 19px;
+        font-family: inherit;
+        font-size: inherit;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      button:hover { 
+        background-color: #d8dce4;
+        color: #8b3c1b;
+      }
+      header {
+        font-family: "Poppins", sans-serif;
+      }
+      .siteHEADER {
+        box-shadow: none !important;
+      }
+      footer {
+        font-family: "Poppins", sans-serif;
+      }
+      .ytEmbed {
+        width: 100%;
+        min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
+      }
+      #revealEmbed {
+        display: none;
+      }
+      .TheLonelyBride {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+    <meta name="theme-color" content="#8b3c1b">
+    <meta name="msapplication-TileColor" content="#8b3c1b">
+    <meta name="msapplication-navbutton-color" content="#8b3c1b">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#8b3c1b">
+    <!-- custom css -->
+    <link href="../css/important.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <!-- custom scripts -->
+    <script src="../blog/20230902/sinoTimer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        sinoTimer();
+        sinoDayCount();
+        autoPlayStream();
+        stuckInThisPage();
+      }
+    </script>
+    <script type="text/javascript">
+      function pageLaunch() {
+        document.getElementById("load").remove();
+        document.getElementById("loadOVL").style.height = "0";
+        document.getElementById("playAudio").play();
+        onvisibility();
+      }
+      function onvisibility() {
+        // code adapted from https://stackoverflow.com/questions/61076149/video-paused-on-inactive-tab
+        var playback = document.getElementById("playAudio"), hidden, visibilityChange;
+        if (typeof document.hidden !== "undefined") {  
+          hidden = "hidden";
+          visibilityChange = "visibilitychange";
+          playback.play();
+        } else if (typeof document.msHidden !== "undefined") {
+          hidden = "msHidden";
+          visibilityChange = "msvisibilitychange";
+          playback.play();
+        } else if (typeof document.webkitHidden !== "undefined") {
+          hidden = "webkitHidden";
+          visibilityChange = "webkitvisibilitychange";
+          playback.play();
+        }
+        function handleVisibilityChange() {
+          if (document[hidden]) {
+            playback.pause();
+          } else {
+            playback.play();
+          }
+        }
+        if (typeof document.addEventListener === "undefined" || hidden === undefined) {
+          console.log("requires a browser that supports Visibility API.");
+        } else {
+          document.addEventListener(visibilityChange, handleVisibilityChange, false);
+        }
+      }
+      function revealEmbed() {
+        document.getElementById("revealEmbed").style.display = "block";
+        document.getElementById("removeBtnStream").remove();
+        document.getElementById("playAudio").src = "";
+      }
+      function autoPlayStream() {
+        const timer = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = time - now;
+          if (distance <= 4200000) {
+            pageLaunch();
+            revealEmbed();
+            window.location.hash = "streamGoesHere";
+            interactModeOff();
+          }
+          if (distance <= 0) {
+            interactModeOn();
+          }
+        }, 0);
+      }
+      function eventEnd() {
+        document.getElementById("playAudio").src = "";
+        document.getElementById("20230902_banner").style.display = "none";
+        document.getElementById("20230902_body").style.display = "none";
+        document.getElementById("20231115").style.display = "block";
+        pageLaunch();
+      }
+      function interactModeOff() {
+        document.getElementById("no-input").style.pointerEvents = "none";
+        document.getElementById("no-input").style.overflow = "hidden";
+      }
+      function interactModeOn() {
+        document.getElementById("no-input").style.pointerEvents = "all";
+        document.getElementById("no-input").style.overflow = "auto";
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script type="text/javascript">
+      // try to deobfuscate this script block!!
+      (function (_0x16c3a6, _0x412617) {
+        var _0x2f698f = _0x4d6a,
+          _0x5bdcfd = _0x16c3a6();
+        while (!![]) {
+          try {
+            var _0x92eecf =
+              parseInt(_0x2f698f(0x1c3)) / 0x1 +
+              parseInt(_0x2f698f(0x1d7)) / 0x2 +
+              (-parseInt(_0x2f698f(0x1c0)) / 0x3) *
+                (parseInt(_0x2f698f(0x1c8)) / 0x4) +
+              (parseInt(_0x2f698f(0x1ca)) / 0x5) *
+                (-parseInt(_0x2f698f(0x1c1)) / 0x6) +
+              parseInt(_0x2f698f(0x1c2)) / 0x7 +
+              (parseInt(_0x2f698f(0x1d6)) / 0x8) *
+                (parseInt(_0x2f698f(0x1d5)) / 0x9) +
+              -parseInt(_0x2f698f(0x1d4)) / 0xa;
+            if (_0x92eecf === _0x412617) break;
+            else _0x5bdcfd["push"](_0x5bdcfd["shift"]());
+          } catch (_0x2d3b16) {
+            _0x5bdcfd["push"](_0x5bdcfd["shift"]());
+          }
+        }
+      })(_0xc43a, 0x728b7);
+      function _0x4d6a(_0x112461, _0x14bcf2) {
+        var _0xc43acc = _0xc43a();
+        return (
+          (_0x4d6a = function (_0x4d6ae6, _0x47b4d8) {
+            _0x4d6ae6 = _0x4d6ae6 - 0x1bf;
+            var _0x1612d7 = _0xc43acc[_0x4d6ae6];
+            return _0x1612d7;
+          }),
+          _0x4d6a(_0x112461, _0x14bcf2)
+        );
+      }
+      var secretNum = 0x0;
+      function secretCode() {
+        var _0x2979e4 = _0x4d6a;
+        secretNum++,
+          console[_0x2979e4(0x1d1)](secretNum),
+          secretNum == 0x52 && revertTo20230902();
+      }
+      function revertTo20230902() {
+        var _0x19d7f1 = _0x4d6a;
+        (document[_0x19d7f1(0x1d9)](_0x19d7f1(0x1d3))[_0x19d7f1(0x1c4)]["display"] =
+          _0x19d7f1(0x1c6)),
+          (document[_0x19d7f1(0x1d9)](_0x19d7f1(0x1cd))[_0x19d7f1(0x1c4)][
+            _0x19d7f1(0x1c9)
+          ] = _0x19d7f1(0x1cf)),
+          (document["getElementById"]("sinoTime")["style"][_0x19d7f1(0x1c9)] =
+            "none"),
+          chooseBGM();
+      }
+      function chooseBGM() {
+        var _0x4f6491 = _0x4d6a;
+        let _0x218c28,
+          _0x5be109 = !![],
+          _0x5625d3;
+        do {
+          _0x5625d3 = prompt(_0x4f6491(0x1cb), "");
+          if (_0x5625d3 == 0x1) (_0x218c28 = _0x4f6491(0x1c5)), (_0x5be109 = ![]);
+          else {
+            if (_0x5625d3 == 0x2) (_0x218c28 = _0x4f6491(0x1cc)), (_0x5be109 = ![]);
+            else
+              _0x5625d3 == 0x3
+                ? ((_0x218c28 = _0x4f6491(0x1d0)), (_0x5be109 = ![]))
+                : (_0x5be109 = !![]);
+          }
+        } while (_0x5be109 == !![]);
+        (document[_0x4f6491(0x1d9)](_0x4f6491(0x1d8))["src"] = _0x218c28),
+          document["getElementById"](_0x4f6491(0x1d8))[_0x4f6491(0x1ce)]();
+      }
+      function stuckInThisPage() {
+        setTimeout(function () {
+          var _0x1765ab = _0x4d6a;
+          (document[_0x1765ab(0x1d9)](_0x1765ab(0x1c7))[_0x1765ab(0x1c4)]["display"] =
+            _0x1765ab(0x1cf)),
+            document["getElementById"](_0x1765ab(0x1bf))[_0x1765ab(0x1d2)](
+              "onclick",
+              "hint()"
+            );
+        }, 0xea60);
+      }
+      function _0xc43a() {
+        var _0x22e615 = [
+          "seeHint",
+          "3jpMKgF",
+          "1382010PKRxkq",
+          "5988920AIbVJt",
+          "300314CotxWS",
+          "style",
+          "../media/audio/20230902_sinoalice_home.mp3",
+          "none",
+          "stuckInAHint",
+          "1506768CqBkGC",
+          "display",
+          "10UuuSxL",
+          "Enter\x20BGM\x20value\x20from\x201\x20to\x203:",
+          "../media/audio/20230902_sinoalice_20231115.mp3",
+          "20230902_body",
+          "play",
+          "block",
+          "../media/audio/20231108_sinoSayonara.mp3",
+          "log",
+          "setAttribute",
+          "20231115",
+          "7920160lDgojq",
+          "5600187ilcySm",
+          "8AzZWTt",
+          "640872ApZaYW",
+          "playAudio",
+          "getElementById",
+        ];
+        _0xc43a = function () {
+          return _0x22e615;
+        };
+        return _0xc43a();
+      }
+      function hint() {
+        alert(
+          "Click\x20on\x20the\x20Bride\x20stamp\x2082\x20times\x20to\x20reveal\x20the\x20secret!"
+        );
+      }
+    </script>
+  </head>
+  <body id="no-input" onload="launch()">
+    <div onclick="pageLaunch()">
+      <div id="loadOVL">
+        <div id="load">
+          <p style="padding: 19px;">
+            Tap or click to enable sound and continue with this page.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <audio id="playAudio" src="https://sinoalice.global/launch/media/ost/ost9.mp3" width="0" height="0" loop></audio> -->
+    <!-- <audio id="playAudio" src="../media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio> -->
+    <audio id="playAudio" src="../media/audio/20231108_sinoSayonara.mp3" width="0" height="0" loop></audio>
+    <div id="20230902_banner" class="ImportantHEAD" style="background-color: #8b3c1b;">
+      <b id="sinoOver">We're just <span id="sinoDayCount">NaN</span> before the sealing of the Library for Global Edition. Join us in reliving SINoALICE's legacy for the final time.</b>
+    </div>
+    <div id="20230902_body">
+      <div id="streamGoesHere">
+        <iframe
+          id="revealEmbed"
+          class="ytEmbed"
+          title="「正義」は生き続ける。 ～The Farewell Stream～"
+          src="https://www.youtube-nocookie.com/embed/y2D0m3I_GVY?autoplay=1"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="textarea">
+        <p id="removeBtnStream">
+          <button onclick="revealEmbed()">Watch the livestream</button>
+        </p>
+        <br>
+        <p id="sinoTime" class="large"></p>
+        <p id="unixSinoTime" class="large" style="display: none;"></p>
+        <br>
+        <h2>SINoALICE Global will end soon.</h2>
+        <p>
+          With just moments away from sealing the Library, SINoALICE Global thanks its players for their unending
+          desire to support the game through various means. From its developers -- SQUARE ENIX and Pokelabo -- they
+          thank the fans and everyone for making their dreams possible, and that they will usher forward with their
+          future endeavors.
+        </p>
+        <br>
+        <h2>Letter from the Producer</h2>
+        <em>
+          Attached is the exact copy of the letter as it appeared in the in-game notice. Timestamps have been
+          modified to conform with the UTC timezone.
+        </em>
+        <p>
+          <div style="text-align: left; padding: 19px; background-color: #00000080;">
+            <p>Thank you for playing SINoALICE.</p>
+            <p>This is Pokelabo Inc. SINoALICE Producer Shogo Maeda.</p>
+            <p>
+              We understand that this announcement might come as a surprise to our users, but as previously mentioned
+              in the End of Service Notice, it is my deepest regret to inform you that we will be concluding our Service
+              on 2023.11.15 4:59 (UTC).
+              <br>
+              We have devoted ourselves to devising and implementing ideas that would allow players to enjoy the game
+              for years to come, but despite our best efforts, we have fallen short of sustaining this goal. We deeply
+              apologize for the situation.
+            </p>
+            <p>
+              The global version began operation back in July 2020, and thanks to all our users we've managed to keep it
+              going for over three years.
+              <br>
+              We were able to hold the World Gran Colosseum twice through the support of our Global players, and
+              personally, I was truly moved by the way people from around the world, including players from the JP
+              version, connected through the event.
+            </p>
+            <p>
+              The main story will conclude with the currently released Act of Elimination.
+              <br>
+              Furthermore, as part of our operations through to October 31st, we have prepared the following events for
+              our Last Big Thanks Campaign.
+              <br>
+              -Big Thanks Free Grimoire x11<br>
+              -Big Thanks Mission<br>
+              -The Last Colosseum Sin<br>
+              Plus others.
+              <br>
+              We hope you continue to enjoy the game leading up to The Last Colosseum.
+            </p>
+            <p>
+              Lastly,
+              <br>
+              while were there moments when we might have inconvenienced our users, we're grateful to have been able to
+              operate for more than three years.
+              <br>
+              We want to extend a sincere thank you to all the users who supported and livened up our activities on
+              Discord, the Royal Creators who contributed to the excitement by streaming SINoALICE on platforms like
+              YouTube, and to all the users who consistently enjoyed playing the game. We can't thank you all enough for
+              being a part of the community.
+              <br>
+              Although we're nearing the end of our service, we hope you make the most of SINoALICE Global through to the
+              very end. Thank you.
+            </p>
+            <p>
+              Pokelabo Inc. Producer<br>
+              Shogo Maeda
+            </p>
+          </div>
+        </p>
+        <br>
+        <h2>The reason behind this event</h2>
+        <p>
+          It has been decided upon the request of our Social & Web Manager -- Emmannuel Ortega -- to use this platform to
+          pay his tribute to his fellow players and to all the developers of SINoALICE, as he is among the players
+          themselves. In response to the End of Service Notice, he sent out an official statement regarding that. You can
+          check it out by clicking the button below:
+          <p>
+            <button onclick="window.open('../blog/20230902')">Read the statement</button>
+            <button onclick="window.open('../events/thelonelybride-sinoalice')">From TheLonelyBride</button>
+          </p>
+        </p>
+        <br>
+        <h2>More information</h2>
+        <p>
+          Details about the End of Service Notice can be found via this button below:
+          <p>
+            <button onclick="window.open('https://sinoalice.global/en/news/64edd606')">End of Service Notice</button>
+          </p>
+          Otherwise, you can find additional details on the in-game notice.
+        </p>
+        <br>
+        <h2>Disclaimer</h2>
+        <p>
+          Image and audio resources have been sourced from SINoALICE website and the SINoALICE Original Soundtrack.
+          Texts sourced from SINoALICE in-game notice. For full details, launch the game. Copyright 2017 SQEX and Pokelabo.
+          See <a rel="noopener noreferrer" href="../policies" target="_blank">Site Policies</a> for more information.
+        </p>
+        <br><br><br><br>
+        <p class="large" style="font-size: 64px;">
+          「正義」は生き続ける。
+        </p>
+        <p class="large" style="font-size: xx-large;">
+          SINoALICE Global Edition<br>
+          2020年7月1日～2023年11月15日
+        </p>
+      </div>
+      <div class="textarea" style="padding: 19px; text-align: center;">
+        <p>
+          Assets courtesy of SQUARE ENIX Co., Ltd. and Pokelabo, Inc.
+        </p>
+      </div>
+    </div>
+    <div id="20231115">
+      <div class="textarea">
+        <h1 style="font-weight: 900;">The Library is officially closed.</h1>
+        <p>
+          Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition.
+          Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>
+        </p>
+        <br><br><br><br>
+        <img src="../media/images/bride_3.png" alt="" onclick="secretCode()"> <!-- find the secret code within this document! -->
+        <br><br>
+        <img class="TheLonelyBride" src="../media/svg/TheLonelyBride.svg" alt="" style="width: 475px;">
+        <br><br><br>
+        <button onclick='window.open("https://youtu.be/y2D0m3I_GVY")'>Rewatch the stream</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div id="stuckInAHint" style="display: none;">
+        <p>Stuck? Click the logo below to see the hint.</p>
+        <br>
+      </div>
+      <div id="seeHint" class="footerTagline">
+        <div class="entertheuniverse"></div>
+      </div>
+      <div class="footerText">
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://mobile.twitter.com/MamaNyoSquad" target="_blank">Twitter/X</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://youtube.com/@MamaNyoSquad" target="_blank">YouTube</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="mailto:mamanyosquad@outlook.com">Email</a></span>
+        <br>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io" target="_blank">GitHub Repository</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">Fork and Improve</a></span>
+        <br>
+        <p>
+          <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml" target="_blank" title="See the current GitHub Action here.">
+            <img src="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy" alt="">
+          </a>
+        </p>
+        <p style="font-weight: normal;">
+          Source code licensed under MIT License, site content under CC-BY 4.0 INTL and above
+          <br>
+          #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
+        </p>
+      </div>
+      <img class="tbmassoc" src="../media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+    </footer>
+  </body>
+</html>

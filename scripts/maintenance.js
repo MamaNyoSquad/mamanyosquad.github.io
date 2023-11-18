@@ -22,27 +22,6 @@ function jMaint() {
     }
   }, 0);
 
-  /*
-  const jpActive = new Date("November 9, 2023 10:00:00 GMT+09:00").getTime();
-  const jpEnd = new Date("November 9, 2023 17:00:00 GMT+09:00").getTime();
-
-  const unixActive = setInterval(function() {
-    const unixCalc = jpActive - maintToday;
-    document.getElementById("jpStat").className = maintenance[0];
-    if (unixCalc <= 0) {
-      clearInterval(unixActive);
-      document.getElementById("jpStat").className = maintenance[1];
-    }
-  }, 0);
-  const unixEnd = setInterval(function() {
-    const unixCalc = jpEnd - maintToday;
-    if (unixCalc <= 0) {
-      clearInterval(unixEnd);
-      document.getElementById("jpStat").className = maintenance[2];
-    }
-  }, 0);
-  */
-
 }
 
 
@@ -65,26 +44,5 @@ function gMaint() {
       document.getElementById("glStat").className = maintenance[2];
     }
   }, 0);
-
-  /*
-  const glActive = new Date("October 25, 2023 02:30:00 GMT+00:00").getTime();
-  const glEnd = new Date("October 25, 2023 06:30:00 GMT+00:00").getTime();
-
-  const unixActive = setInterval(function() {
-    const unixCalc = glActive - maintToday;
-    document.getElementById("glStat").className = maintenance[0];
-    if (unixCalc <= 0) {
-      clearInterval(unixActive);
-      document.getElementById("glStat").className = maintenance[1];
-    }
-  }, 0);
-  const unixEnd = setInterval(function() {
-    const unixCalc = glEnd - maintToday;
-    if (unixCalc <= 0) {
-      clearInterval(unixEnd);
-      document.getElementById("glStat").className = maintenance[2];
-    }
-  }, 0);
-  */
 
 }
