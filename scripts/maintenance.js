@@ -1,4 +1,4 @@
-let maintenance = ["queued", "ongoing", "finished"];
+let maintenance = ["queued", "active", "finished"];
 const maintToday = new Date().getTime();
 
 
