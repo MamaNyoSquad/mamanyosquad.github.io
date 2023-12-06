@@ -1,12 +1,12 @@
-//js updated as of 6 Dec 2022 UTC
+//js updated as of 6 Dec 2023 UTC
 
 //all code is based on W3Schools: https://www.w3schools.com/howto/howto_js_countdown.asp
 //and stackoverflow answer: https://stackoverflow.com/questions/40263537/javascript-countdown-timer-in-gmt-utc
 
-//time for 3rd Inception Anniversary!!
+//time for 4th Inception Anniversary!!
 
 function annivTimer() {
-  var countDownDate = new Date("December 6, 2023 00:00:00 GMT+00:00").getTime();
+  var countDownDate = new Date("December 6, 2024 00:00:00 GMT+00:00").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = countDownDate - now;
