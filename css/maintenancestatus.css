@@ -1,4 +1,4 @@
-/* css updated as of 27 Jul 2023 UTC */
+/* css updated as of 6 Dec 2023 UTC */
 
 .statustext {
   padding-bottom: 19px;
@@ -8,7 +8,7 @@
   font-weight: bold;
   color: #f0d2d4;
 }
-.active /* Helena */ {
+.ongoing /* Helena */ {
   font-weight: bold;
   color: #fce693;
 }
@@ -20,8 +20,8 @@
 .queued::before {
   content: "QUEUED";
 }
-.active::before {
-  content: "ACTIVE";
+.ongoing::before {
+  content: "ONGOING";
 }
 .finished::before {
   content: "FINISHED";

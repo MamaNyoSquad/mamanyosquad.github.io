@@ -1,4 +1,4 @@
-let maintenance = ["queued", "active", "finished"];
+let maintenance = ["queued", "ongoing", "finished"];
 const maintToday = new Date().getTime();
 
 
@@ -6,8 +6,8 @@ const maintToday = new Date().getTime();
 
 function jMaint() {
 
-  const jpActive = new Date("December 5, 2023 10:00:00 GMT+09:00").getTime(),
-    jpEnd = new Date("December 5, 2023 14:00:00 GMT+09:00").getTime(),
+  const jpActive = new Date("December 7, 2023 12:00:00 GMT+09:00").getTime(),
+    jpEnd = new Date("December 7, 2023 17:00:00 GMT+09:00").getTime(),
     unixDetDist = jpEnd - jpActive,
     unixActDist = jpEnd - maintToday;
   
