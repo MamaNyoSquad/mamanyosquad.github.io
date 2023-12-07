@@ -89,6 +89,7 @@
       function launch() {
         // launch args here
         sinoTimer();
+        sinoOverArchive();
       }
     </script>
     <script type="text/javascript">
@@ -129,14 +130,23 @@
       }
       function eventEnd() {
         document.getElementById("removeElement").remove();
-        document.getElementById("eventRedir").href = "../events/thelonelybride-sinoalice";
         document.getElementById("playAudio").src = "../media/audio/20231108_sinoSayonara.mp3";
         document.getElementById("sinoEnd").innerHTML =
           "<h1 style='font-weight: 900;'>The Library is officially closed.</h1>" +
           "<p>" +
             "Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition. " +
             "Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>" +
-          "</p>";
+          "</p>" +
+          "<br><br>";
+      }
+      function sinoOverArchive() {
+        const timer = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = time - now;
+          if (distance <= 0) {
+            document.getElementById("sinoOver").innerHTML = "The Library is officially closed. Thank you for playing SINoALICE Global Edition.";
+          }
+        }, 0);
       }
     </script>
   </head>
@@ -151,8 +161,8 @@
       </div>
     </div>
     <audio id="playAudio" src="../media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio>
-    <div class="ImportantHEAD">
-      <b>This is the archived page in commemoration of the event. Click <a id="eventRedir" rel="noopener noreferrer" class="HeadURL" href="/" target="_blank">here</a> for the live updates.</b>
+    <div class="ImportantHEAD" style="background-color: #8b3c1b;">
+      <b>This is the archived page in commemoration of the event. Click <a id="eventRedir" rel="noopener noreferrer" class="HeadURL" href="20231115.html">here</a> for the live updates.</b>
     </div>
     <div class="textarea">
       <div id="removeElement"><p id="sinoTime" class="large"></p></div>
@@ -285,9 +295,7 @@
           #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
         </p>
       </div>
-      <a rel="noopener noreferrer" href="https://thebelovedmoon.wixsite.com/tbmassoc?lang=en" target="_blank" title="a tbmassoc brand">
-        <image class="tbmassoc" src="../media/svg/tbmassoc.svg" alt=""></image>
-      </a>
+      <img class="tbmassoc" src="../media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
     </footer>
   </body>
 </html>

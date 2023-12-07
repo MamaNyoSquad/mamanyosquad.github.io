@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 20 August 2023 UTC
+  CSS updated 18 November 2023 UTC
 */
 
 /* Fonts */
@@ -80,21 +80,13 @@
     text-decoration: none;
   }
 
-  /* Venus 5 (only applies to DIV) */
-  .Nyotengu {
-    background-color: #161224;
-  }
-  .Helena {
-    background-color: #fce693;
-  }
-  .Luna {
-    background-color: #f0d2d4;
-  }
-  .Misaki {
-    background-color: #a88255;
-  }
-  .Elise {
-    background-color: #eda2ae;
+  /* Venus 5 (Global Variables) */
+  :root {
+    --Nyotengu: #161224;
+    --Helena: #fce693;
+    --Luna: #f0d2d4;
+    --Misaki: #a88255;
+    --Elise: #eda2ae;
   }
 
   code {

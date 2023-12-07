@@ -1,4 +1,4 @@
-/* css updated as of 20 Aug 2023 UTC */
+/* css updated as of 4 December 2023 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -6,7 +6,7 @@
 }
 .NyoHead {
   width: 100%;
-  height: 100%;
+  min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
   object-fit: cover;
   position: fixed center;
   left: 0;
@@ -107,8 +107,8 @@ header {
   padding-bottom: 19px;
 }
 .NyoLogo {
-  background-image: url(../media/svg/MamaNyoSquad.svg); /* (DEFAULT) */
-  /* background-image: url(../media/images/5-5_simple.png); (EVENT) */
+  /* background-image: url(../media/svg/MamaNyoSquad.svg); (DEFAULT) */
+  background-image: url(../media/svg/anniv/MamaNyoSquad@3.svg); /* (EVENT) */
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -153,19 +153,22 @@ header {
   background-attachment: fixed;
 }
 .basicHead-fore {
-  background-color: #06a8ff40;
+  background-color: #06a8ff60;
   width: 100%;
   height: 75%;
   padding: 475px 190px;
-}
-.entertheuniverse-logoplace {
-  width: 100%;
-  height: 190px;
 }
 @media screen and (max-width: 950px) {
   .basicHead-fore {
     padding: 190px 38px;
   }
+}
+.entertheuniverse-logo {
+  width: 1900px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .NyoWeekHead {
@@ -192,7 +195,6 @@ header {
   text-align: center;
   vertical-align: middle;
   background-color: #06a8ff;
-  background-image: url(../media/images/BG2024/nyoBlue.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -202,6 +204,7 @@ header {
   padding: 28.5px 19px 19px 19px;
   padding-bottom: 4.75px;
   background-color: #000000;
+  color: #ffffff !important;
   text-align: center;
   font-weight: bold;
 }
@@ -221,10 +224,13 @@ header {
   padding-top: 19px;
 }
 .tbmassoc {
-  width: 142.5px;
+  width: 190px;
   max-width: 100%;
   height: auto;
-  margin: 9.5px 0 9.5px 0;
+  display: block;
+  margin: 0 auto;
+  padding: 9.5px 0;
+  cursor: pointer;
 }
 
 .DOAXVV5周年 {
@@ -262,7 +268,7 @@ header {
 
 .divTranst {
   width: 100%;
-  height: 19px;
+  height: 95px;
 }
 
 .dualfeed-col /* dual feed */ {
@@ -297,5 +303,6 @@ header {
 
 .ytembed {
   width: 100%;
-  height: 100%;
+  min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
+  pointer-events: none;
 }

@@ -10,7 +10,6 @@ function sinoTimer() {
     var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
     document.getElementById("sinoTime").innerHTML = d + ":" + h + ":" + m + ":" + s;
     if (distance <= 0) {
-      interactModeOn();
       clearInterval(timer);
       document.getElementById("sinoTime").innerHTML = "00:00:00:00";
       eventEnd();

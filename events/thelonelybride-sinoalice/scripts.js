@@ -12,7 +12,9 @@ function eventEnd() {
       "<br><br><br><br>" +
       "<img src='../../media/images/bride_3.png' alt=''>" +
       "<br>" +
-      "<img src='../../media/svg/TheLonelyBride.svg' alt='' style='width: 475px;'>" +
+      "<img class='TheLonelyBride' src='../../media/svg/TheLonelyBride.svg' alt='' style='width: 475px;'>" +
+      "<br><br><br>" +
+      "<button onclick='window.open(&quot;https://youtu.be/y2D0m3I_GVY&quot;)'>Rewatch the stream</button>" +
     "</div>";
   document.getElementById("makeSnowWhiteDisappear").remove();
 }
@@ -23,7 +25,10 @@ function autoPlayStream() {
     const distance = time - now;
     if (distance <= 4200000) {
       window.location.hash = "streamGoesHere";
-      noInteract();
+      interactModeOff();
+    }
+    if (distance <= 0) {
+      interactModeOn();
     }
   }, 0);
 }
