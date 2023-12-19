@@ -1,4 +1,4 @@
-/* css updated as of 4 December 2023 UTC */
+/* css updated as of 19 December 2023 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -305,4 +305,6 @@ header {
   width: 100%;
   min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
   pointer-events: none;
+  border: none;
+  display: block;
 }

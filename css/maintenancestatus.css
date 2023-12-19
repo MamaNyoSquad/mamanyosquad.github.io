@@ -12,7 +12,7 @@
   font-weight: bold;
   color: #fce693;
 }
-.finished /* Misaki */ {
+.done /* Misaki */ {
   font-weight: bold;
   color: #a88255;
 }
@@ -23,8 +23,8 @@
 .ongoing::before {
   content: "ONGOING";
 }
-.finished::before {
-  content: "FINISHED";
+.done::before {
+  content: "DONE";
 }
 
 .IMPORTANT {
