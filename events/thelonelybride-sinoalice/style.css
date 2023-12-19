@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 .embedStream {
   width: 100%;
   min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
+  border: none;
 }
 
 button {
