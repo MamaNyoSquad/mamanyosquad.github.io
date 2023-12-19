@@ -306,4 +306,5 @@ header {
   min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
   pointer-events: none;
   border: none;
+  display: block;
 }
