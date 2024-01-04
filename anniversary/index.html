@@ -28,16 +28,19 @@
     <link href="../css/articlePostsHome.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
     <script src="../scripts/anniv.js" type="text/javascript"></script>
+    <script src="../blog/20240105/sinoTimer.js" type="text/javascript"></script>
     <script type="text/javascript">
       function launch() {
         // launch args here
+        sinoTimer();
+        sinoDayCount();
         annivTimer();
       }
     </script>
   </head>
   <body onload="launch()">
-    <div class="ImportantHEAD">
-      <b>Happy Special Day, Nyotengu!</b>
+    <div id="removeElement" class="ImportantHEAD">
+      <b id="sinoOver">日本版ライブラリーの封印まで、あと<span id="sinoDayCount">NaN</span>。シノアリスのレガシーを、最後にもう一度。</b>
     </div>
     <header>
       <div class="siteHEADER">

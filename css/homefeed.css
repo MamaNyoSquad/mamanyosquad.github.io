@@ -1,4 +1,4 @@
-/* css updated as of 19 December 2023 UTC */
+/* css updated as of 4 January 2024 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -108,7 +108,7 @@ header {
 }
 .NyoLogo {
   /* background-image: url(../media/svg/MamaNyoSquad.svg); (DEFAULT) */
-  background-image: url(../media/svg/anniv/MamaNyoSquad@3.svg); /* (EVENT) */
+  background-image: url(../media/images/bride_3.png); /* (EVENT) */
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
