@@ -125,6 +125,12 @@
         autoPlayStream();
       }
     </script>
+    <script>
+      // service worker by PWABuilder
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("scripts/offlineSW.js")
+      }
+    </script>
     <script type="text/javascript">
       function pageLaunch() {
         document.getElementById("load").remove();

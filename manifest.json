@@ -1,43 +1,84 @@
 {
   "_basedOn": "Twitter/X manifest.json at https://twitter.com/manifest.json",
+  "_assistedBy": "PWABuilder",
   "background_color": "#161224",
   "categories": [
-    "dead or alive",
-    "public relations",
-    "PR",
-    "made with GitHub",
-    "open source",
-    "vanilla",
-    "Nyotengu",
-    "女天狗",
-    "xtreme venus vacation",
-    "doaxvv",
-    "ブイブイ"
+    "entertainment",
+    "games",
+    "news"
   ],
   "description": "Enter the universe through the eyes of the Tengu! 💕",
   "display": "standalone",
   "icons": [
     {
-      "src": "media/images/pwa/appx_maskable_192px.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "purpose": "maskable",
-      "src": "media/images/pwa/appx_maskable_512px.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "media/images/pwa/appx_maskable_192px.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "purpose": "maskable",
-      "src": "media/images/pwa/appx_maskable_512px.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "_basedOn": "Twitter/X manifest.json at https://twitter.com/manifest.json",
+      "background_color": "#161224",
+      "categories": [
+        "entertainment",
+        "games",
+        "news"
+      ],
+      "description": "Enter the universe through the eyes of the Tengu! 💕",
+      "display": "standalone",
+      "icons": [
+        {
+          "purpose": "any",
+          "src": "media/images/pwa/appx_maskable_192px.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "purpose": "any",
+          "src": "media/images/pwa/appx_maskable_512px.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      "name": "#MamaNyoSquad",
+      "shortcuts": [
+        {
+          "name": "#MamaNyoSquad Publishing",
+          "url": "publishing",
+          "icons": [
+            {
+              "src": "media/images/pwa/icon_publishing.png",
+              "type": "image/png",
+              "sizes": "192x192"
+            }
+          ]
+        },
+        {
+          "name": "The Squad's Blog",
+          "url": "blog",
+          "icons": [
+            {
+              "src": "media/images/pwa/icon_blog.png",
+              "type": "image/png",
+              "sizes": "192x192"
+            }
+          ]
+        },
+        {
+          "name": "Maintenance Tracker",
+          "url": "maintenance",
+          "icons": [
+            {
+              "src": "media/images/pwa/icon_maintenance.png",
+              "type": "image/png",
+              "sizes": "192x192"
+            }
+          ]
+        }
+      ],
+      "short_name": "#MamaNyoSquad",
+      "start_url": "/",
+      "theme_color": "#161224",
+      "prefer_related_applications": false,
+      "edge_side_panel": {
+        "preferred_width": 475
+      },
+      "dir": "auto",
+      "orientation": "any"
     }
   ],
   "name": "#MamaNyoSquad",
@@ -49,7 +90,8 @@
         {
           "src": "media/images/pwa/icon_publishing.png",
           "type": "image/png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "description": "The publishing arm of #MamaNyoSquad, home to Venus Island Diaries."
         }
       ]
     },
@@ -60,7 +102,8 @@
         {
           "src": "media/images/pwa/icon_blog.png",
           "type": "image/png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "description": "The blog posts from the SquadMates and in general!"
         }
       ]
     },
@@ -71,12 +114,27 @@
         {
           "src": "media/images/pwa/icon_maintenance.png",
           "type": "image/png",
-          "sizes": "192x192"
+          "sizes": "192x192",
+          "description": "Stay updated on the most recent Maintenance Routines from the Japanese and Global Edition!"
         }
       ]
     }
   ],
   "short_name": "#MamaNyoSquad",
   "start_url": "/",
-  "theme_color": "#161224"
+  "theme_color": "#161224",
+  "scope": "/",
+  "id": "/?homescreen=1",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 475
+  },
+  "dir": "auto",
+  "orientation": "any",
+  "lang": "en",
+  "display_override": [
+    "fullscreen",
+    "standalone",
+    "window-controls-overlay"
+  ]
 }
