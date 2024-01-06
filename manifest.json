@@ -11,74 +11,10 @@
   "display": "standalone",
   "icons": [
     {
-      "_basedOn": "Twitter/X manifest.json at https://twitter.com/manifest.json",
-      "background_color": "#161224",
-      "categories": [
-        "entertainment",
-        "games",
-        "news"
-      ],
-      "description": "Enter the universe through the eyes of the Tengu! 💕",
-      "display": "standalone",
-      "icons": [
-        {
-          "purpose": "any",
-          "src": "media/images/pwa/appx_maskable_192px.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        },
-        {
-          "purpose": "any",
-          "src": "media/images/pwa/appx_maskable_512px.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        }
-      ],
-      "name": "#MamaNyoSquad",
-      "shortcuts": [
-        {
-          "name": "#MamaNyoSquad Publishing",
-          "url": "publishing",
-          "icons": [
-            {
-              "src": "media/images/pwa/icon_publishing.png",
-              "type": "image/png",
-              "sizes": "192x192"
-            }
-          ]
-        },
-        {
-          "name": "The Squad's Blog",
-          "url": "blog",
-          "icons": [
-            {
-              "src": "media/images/pwa/icon_blog.png",
-              "type": "image/png",
-              "sizes": "192x192"
-            }
-          ]
-        },
-        {
-          "name": "Maintenance Tracker",
-          "url": "maintenance",
-          "icons": [
-            {
-              "src": "media/images/pwa/icon_maintenance.png",
-              "type": "image/png",
-              "sizes": "192x192"
-            }
-          ]
-        }
-      ],
-      "short_name": "#MamaNyoSquad",
-      "start_url": "/",
-      "theme_color": "#161224",
-      "prefer_related_applications": false,
-      "edge_side_panel": {
-        "preferred_width": 475
-      },
-      "dir": "auto",
-      "orientation": "any"
+      "src": "media/images/pwa/appx_maskable_512px.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "name": "#MamaNyoSquad",

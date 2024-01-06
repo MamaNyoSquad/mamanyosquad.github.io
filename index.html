@@ -43,6 +43,7 @@
         height: 100%;
         bottom: 0;
         position: absolute;
+        display: -webkit-flex;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,8 +126,8 @@
         autoPlayStream();
       }
     </script>
-    <script>
-      // service worker by PWABuilder
+    <script type="text/javascript">
+      // offline service worker by PWABuilder
       if (typeof navigator.serviceWorker !== "undefined") {
         navigator.serviceWorker.register("scripts/offlineSW.js")
       }
