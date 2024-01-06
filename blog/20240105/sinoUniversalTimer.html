@@ -18,13 +18,16 @@
         scroll-behavior: smooth;
       }
       body {
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        color: #d8dce4;
         display: -webkit-flex;
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-family: "Noto Serif JP", serif;
-        color: #d8dce4;
+        overflow: auto;
+      }
+      .centerSomeStuff {
+        margin: auto;
       }
       h1, h2, h3, h4, h5, h6 {
         font-weight: 900;
@@ -97,7 +100,7 @@
     </script>
   </head>
   <body onload="startTimer()">
-    <div>
+    <div class="centerSomeStuff">
       <div style="text-align: center; padding: 10px;">
         <p>SINoALICE Global Edition</p>
         <h1 id="sinoGL">this will be modified</h1>
