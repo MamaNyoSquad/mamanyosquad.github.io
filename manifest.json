@@ -11,7 +11,7 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "media/images/pwa/appx_maskable_512px.png",
+      "src": "media/images/pwa/appx_512px.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
