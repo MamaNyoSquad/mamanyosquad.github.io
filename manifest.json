@@ -7,7 +7,7 @@
     "games",
     "news"
   ],
-  "description": "Enter the universe through the eyes of the Tengu! 💕",
+  "description": "Enter the universe through the eyes of the Tengu! This is the official PWA (Progressive Web App) of #MamaNyoSquad, which allows you to take the website with you on the go. 💕",
   "display": "standalone",
   "icons": [
     {
@@ -72,5 +72,31 @@
     "fullscreen",
     "standalone",
     "window-controls-overlay"
+  ],
+  "screenshots": [
+    {
+      "src": "media/images/pwa/screen_wide.png",
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "media/images/pwa/screen_narrow.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "media/images/pwa/screen_publishing.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "media/images/pwa/screen_maintenance.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    }
   ]
 }
