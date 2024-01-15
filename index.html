@@ -4,73 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>「正義」は生き続ける。</title>
+    <title>…</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <!-- <link rel="icon" href="https://sinoalice.global/include/images/favicon.ico" type="image/x-icon"> -->
-    <link rel="icon" href="media/favicon/sinoalice_j.png" type="image/x-icon">
+    <link rel="icon" href="media/images/sinoalice_j_end.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="media/favicon.png">
     <link rel="manifest" href="manifest.json"> <!-- PWA -->
     <style type="text/css">
       /* attach in-html custom css args here */
       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
       html {
-        background-color: #8b3c1b;
-        background-image: url(media/images/sinoalice_bg4.png);
+        background-color: #d8dce4;
+        background-image: url(media/images/wp6289040-beautiful-cloudy-sky-anime-wallpapers.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        color: #d8dce4;
+        color: #ffffff;
       }
       body {
         font-family: "Noto Serif JP", serif;
       }
-      .textarea {
-        width: 950px;
-        max-width: 100%;
-        padding: 190px 19px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      .large {
-        font-size: 128px;
-        font-weight: 900;
-      }
-      #loadOVL {
-        z-index: 2;
-        width: 100%;
-        height: 100vh;
-        bottom: 0;
-        position: absolute;
-        display: -webkit-flex;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color: #8b3c1bf0;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        -webkit-transition: 2.5s;
-        -moz-transition: 2.5s;
-        -o-transition: 2.5s;
-        transition: 2.5s;
-      }
       button {
-        background-color: #8b3c1b;
+        background-color: #d8dce4;
         border: none;
         border-radius: 1900px;
-        color: inherit;
+        color: #000000;
         padding: 19px;
         font-family: inherit;
+        font-weight: bold;
         font-size: inherit;
         text-align: center;
         text-decoration: none;
         cursor: pointer;
       }
       button:hover { 
-        background-color: #d8dce4;
-        color: #8b3c1b;
+        background-color: #000000;
+        color: #d8dce4;
       }
       header {
         font-family: "Poppins", sans-serif;
@@ -81,47 +50,38 @@
       footer {
         font-family: "Poppins", sans-serif;
       }
-      .ytEmbed {
-        width: 100%;
-        min-height: 100vh; /* as per https://stackoverflow.com/questions/64178071/how-do-i-full-screen-with-embed */
-        display: block;
+      .sinoPostJP {
+        padding: 475px 19px;
+        text-align: center;
       }
-      #revealEmbed {
-        display: none;
-      }
-      .TheLonelyBride {
+      .sinoHelpMe {
+        width: 285px;
         max-width: 100%;
         height: auto;
+        border-radius: 19px;
       }
-      .sinoUniversalTimer {
-        display: block;
-        border: none;
-        width: 100%;
-        height: 100vh;
+      h1 {
+        font-weight: 900;
       }
     </style>
     <meta name="og:type" content="website">
-    <meta name="og:title" content="「正義」は生き続ける。">
-    <meta name="og:image" content="https://mamanyosquad.github.io/media/preview/20240114.png">
+    <meta name="og:title" content="…">
+    <meta name="og:image" content="https://pbs.twimg.com/media/GDmrKd6bgAA6GMx?format=jpg&name=large">
     <meta name="og:url" content="https://mamanyosquad.github.io">
-    <meta name="og:description" content="シノアリス日本語版は2024年1月15日12時に終了します。ヘッドフォンが必要です。">
+    <meta name="og:description" content="「ひとつの物語が終わると、また別の物語が始まる。」">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@MamaNyoSquad">
-    <meta name="theme-color" content="#8b3c1b">
-    <meta name="msapplication-TileColor" content="#8b3c1b">
-    <meta name="msapplication-navbutton-color" content="#8b3c1b">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#8b3c1b">
+    <meta name="theme-color" content="#d8dce4">
+    <meta name="msapplication-TileColor" content="#d8dce4">
+    <meta name="msapplication-navbutton-color" content="#d8dce4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#d8dce4">
     <!-- custom css -->
     <link href="css/important.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/homefeed.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
-    <script src="blog/20240105/sinoTimer.js" type="text/javascript"></script>
     <script type="text/javascript">
       function launch() {
         // launch args here
-        sinoTimer();
-        sinoDayCount();
-        autoPlayStream();
       }
     </script>
     <script type="text/javascript">
@@ -130,243 +90,20 @@
         navigator.serviceWorker.register("scripts/offlineSW.js")
       }
     </script>
-    <script type="text/javascript">
-      function pageLaunch() {
-        document.getElementById("load").remove();
-        document.getElementById("loadOVL").style.height = "0";
-        document.getElementById("playAudio").play();
-        onvisibility();
-      }
-      function onvisibility() {
-        // code adapted from https://stackoverflow.com/questions/61076149/video-paused-on-inactive-tab
-        var playback = document.getElementById("playAudio"), hidden, visibilityChange;
-        if (typeof document.hidden !== "undefined") {  
-          hidden = "hidden";
-          visibilityChange = "visibilitychange";
-          playback.play();
-        } else if (typeof document.msHidden !== "undefined") {
-          hidden = "msHidden";
-          visibilityChange = "msvisibilitychange";
-          playback.play();
-        } else if (typeof document.webkitHidden !== "undefined") {
-          hidden = "webkitHidden";
-          visibilityChange = "webkitvisibilitychange";
-          playback.play();
-        }
-        function handleVisibilityChange() {
-          if (document[hidden]) {
-            playback.pause();
-          } else {
-            playback.play();
-          }
-        }
-        if (typeof document.addEventListener === "undefined" || hidden === undefined) {
-          console.log("requires a browser that supports Visibility API.");
-        } else {
-          document.addEventListener(visibilityChange, handleVisibilityChange, false);
-        }
-      }
-      function revealEmbed() {
-        document.getElementById("revealEmbed").style.display = "block";
-        document.getElementById("removeBtnStream").remove();
-        window.location.hash = "streamGoesHere";
-        document.getElementById("playAudio").src = "";
-      }
-      function autoPlayStream() {
-        const timer = setInterval(function() {
-          const now = new Date().getTime();
-          const distance = time - now;
-          if (distance <= 4200000) {
-            pageLaunch();
-            revealEmbed();
-            window.location.hash = "streamGoesHere";
-            interactModeOff();
-          }
-          if (distance <= 0) {
-            interactModeOn();
-          }
-        }, 0);
-      }
-      function eventEnd() {
-        document.getElementById("playAudio").src = "";
-        document.getElementById("playAudio").remove();
-        document.getElementById("removeElement").remove();
-        document.getElementById("sinoEnd").innerHTML = `
-          <div class="textarea">
-            <h1 style="font-weight: 900;">図書館は正式に閉鎖された。</h1>
-            <p>
-              シノアリス日本語版の最後を記念して、お付き合いいただきありがとうございました。
-              ゴッドスピード、ポケラボ、そして<b>ゴッドスピード、シノアリス日本語版！</b>
-            </p>
-            <br><br><br><br>
-            <img src="media/images/bride_3.png" alt="">
-            <br><br>
-            <img class="TheLonelyBride" src="media/svg/TheLonelyBride.svg" alt="" style="width: 475px;">
-            <br><br><br>
-            <button onclick="window.open('https://youtu.be/JRVt_1ZwK5Q')">ストリームを再視聴する</button>
-          </div>
-          `;
-        pageLaunch();
-      }
-      function interactModeOff() {
-        document.getElementById("no-input").style.pointerEvents = "none";
-        document.getElementById("no-input").style.overflow = "hidden";
-      }
-      function interactModeOn() {
-        document.getElementById("no-input").style.pointerEvents = "all";
-        document.getElementById("no-input").style.overflow = "auto";
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
   </head>
   <body id="no-input" onload="launch()">
-    <div onclick="pageLaunch()">
-      <div id="loadOVL">
-        <div id="load">
-          <p style="padding: 19px;">
-            タップまたはクリックしてサウンドを有効にし、このページを続行します。
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- <audio id="playAudio" src="https://sinoalice.global/launch/media/ost/ost9.mp3" width="0" height="0" loop></audio> -->
-    <!-- <audio id="playAudio" src="media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio> -->
-    <audio id="playAudio" src="media/audio/20231108_sinoSayonara.mp3" width="0" height="0" loop></audio>
-    <div id="removeElement" class="ImportantHEAD">
-      <b id="sinoOver">日本版ライブラリーの封印まで、あと<span id="sinoDayCount">NaN</span>。シノアリスのレガシーを、最後にもう一度。</b>
-    </div>
-    <div id="sinoEnd">
-      <div id="streamGoesHere">
-        <iframe
-          id="revealEmbed"
-          class="ytEmbed"
-          title="「正義」は生き続ける。 ～別れの儀式～"
-          src="https://www.youtube-nocookie.com/embed/JRVt_1ZwK5Q?autoplay=1"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
-      <div class="textarea">
-        <p id="removeBtnStream">
-          <button onclick="revealEmbed()">ライブストリームを見る</button>
-        </p>
+    <div class="sinoPostJP">
+      <h1>「When one story ends, another one begins.」</h1>
+      <h3>「ひとつの物語が終わると、また別の物語が始まる。」</h3>
+      <br><br>
+      <img class="sinoHelpMe" src="media/images/sinoalice_j_end.png" alt="">
+      <p><b>
+        SINoALICE-シノアリス-
         <br>
-        <p id="sinoTime" class="large"></p>
-        <p id="unixSinoTime" class="large" style="display: none;"></p>
-        <br>
-        <h2>シノアリス日本語版はまもなく終了する。</h2>
-        <p>
-          グローバル版の直後、日本版もリリースされた。私たちの知る図書館は終わりを告げた。そして、図書館の中から溢れ出てきた記憶も
-          また、図書館とともに。
-        </p>
-        <p>
-          私たち#MamaNyoSquadは、その思い出を忘れることができないことを知っていた。シノアリスがグローバル版として発売されたと
-          きからこのゲームに憧れ、「TheLonelyBride」としてその名を轟かせてきた。たとえシノアリスが終わっても、彼のレガシーは残る。
-        </p>
-        <br>
-        <!--
-        <h2>Letter from the Producer</h2>
-        <em>
-          Attached is the exact copy of the letter as it appeared in the in-game notice. Timestamps have been
-          modified to conform with the UTC timezone.
-        </em>
-        <p>
-          <div style="text-align: left; padding: 19px; background-color: #00000080;">
-            <p>Thank you for playing SINoALICE.</p>
-            <p>This is Pokelabo Inc. SINoALICE Producer Shogo Maeda.</p>
-            <p>
-              We understand that this announcement might come as a surprise to our users, but as previously mentioned
-              in the End of Service Notice, it is my deepest regret to inform you that we will be concluding our Service
-              on 2023.11.15 4:59 (UTC).
-              <br>
-              We have devoted ourselves to devising and implementing ideas that would allow players to enjoy the game
-              for years to come, but despite our best efforts, we have fallen short of sustaining this goal. We deeply
-              apologize for the situation.
-            </p>
-            <p>
-              The global version began operation back in July 2020, and thanks to all our users we've managed to keep it
-              going for over three years.
-              <br>
-              We were able to hold the World Gran Colosseum twice through the support of our Global players, and
-              personally, I was truly moved by the way people from around the world, including players from the JP
-              version, connected through the event.
-            </p>
-            <p>
-              The main story will conclude with the currently released Act of Elimination.
-              <br>
-              Furthermore, as part of our operations through to October 31st, we have prepared the following events for
-              our Last Big Thanks Campaign.
-              <br>
-              -Big Thanks Free Grimoire x11<br>
-              -Big Thanks Mission<br>
-              -The Last Colosseum Sin<br>
-              Plus others.
-              <br>
-              We hope you continue to enjoy the game leading up to The Last Colosseum.
-            </p>
-            <p>
-              Lastly,
-              <br>
-              while were there moments when we might have inconvenienced our users, we're grateful to have been able to
-              operate for more than three years.
-              <br>
-              We want to extend a sincere thank you to all the users who supported and livened up our activities on
-              Discord, the Royal Creators who contributed to the excitement by streaming SINoALICE on platforms like
-              YouTube, and to all the users who consistently enjoyed playing the game. We can't thank you all enough for
-              being a part of the community.
-              <br>
-              Although we're nearing the end of our service, we hope you make the most of SINoALICE Japanese through to the
-              very end. Thank you.
-            </p>
-            <p>
-              Pokelabo Inc. Producer<br>
-              Shogo Maeda
-            </p>
-          </div>
-        </p>
-        <br>
-        -->
-        <h2>SocWeb管理者からのメッセージ</h2>
-        <p>
-          SocWeb管理者のおるてがえみまんにゅえるが、日本版（およびシノアリス全体）の閉鎖について公式声明を発表した。なお、メッセージは英語
-          で書かれています。
-          <p>
-            <button onclick="window.open('blog/20240105')">続きを読む</button>
-          </p>
-        </p>
-        <br>
-        <h2>詳細情報</h2>
-        <p>
-          サービス終了に関するお知らせの詳細は、以下のボタンからご覧いただけます：
-          <p>
-            <button onclick="window.open('https://sinoalice.jp/news/658a4c22.html')">サービス終了のお知らせ</button>
-          </p>
-          その他の詳細については、ゲーム内のお知らせをご覧ください。
-        </p>
-        <br>
-        <h2>免責事項</h2>
-        <p>
-          画像および音声はシノアリスウェブサイトおよびシノアリスオリジナル・サウンドトラックより使用。テキストはシノアリスゲーム内告知文より
-          引用。詳細はゲームを起動してご確認ください。SQEXとポケラボ2017年著作権について。詳しくは
-          <a rel="noopener noreferrer" href="policies" target="_blank">サイトポリシー</a>をご覧ください。
-        </p>
-        <br><br><br><br>
-        <p class="large" style="font-size: 64px;">
-          「正義」は生き続ける。
-        </p>
-        <p class="large" style="font-size: xx-large;">
-          シノアリス日本語版<br>
-          2017年6月6日～2024年1月15日
-        </p>
-        <br><br>
-        <iframe class="sinoUniversalTimer" src="blog/20240105/sinoUniversalTimer.html" title="「正義」は生き続ける。"></iframe>
-      </div>
-      <div class="textarea" style="padding: 19px; text-align: center;">
-        <p>
-          資産提供：株式会社スクウェア・エニックス、ポケラボ株式会社
-        </p>
-      </div>
+        2017年6月6日～2024年1月15日
+      </b></p>
+      <br><br>
+      <button onclick="window.open('https://lwup.adj.st/?adjust_t=7q8qtg')">Launch / 打ち上げ</button>
     </div>
     <header>
       <div class="siteHEADER">
