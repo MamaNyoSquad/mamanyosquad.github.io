@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="#MamaNyoSquad">
+    <title>…</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="../media/images/sinoalice_j_end.png" type="image/x-icon">
+    <style type="text/css">
+      /* attach in-html custom css args here */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+      html {
+        background-color: #d8dce4;
+        background-image: url(../media/images/wp6289040-beautiful-cloudy-sky-anime-wallpapers.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: #ffffff;
+      }
+      body {
+        font-family: "Noto Serif JP", serif;
+      }
+      button {
+        background-color: #d8dce4;
+        border: none;
+        border-radius: 1900px;
+        color: #000000;
+        margin: 9.5px;
+        padding: 19px;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: inherit;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      button:hover { 
+        background-color: #000000;
+        color: #d8dce4;
+      }
+      header {
+        font-family: "Poppins", sans-serif;
+      }
+      .siteHEADER {
+        box-shadow: none !important;
+      }
+      footer {
+        font-family: "Poppins", sans-serif;
+      }
+      .sinoPostJP {
+        width: 950px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 475px 19px;
+        text-align: center;
+      }
+      .sinoHelpMe {
+        width: 285px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 19px;
+      }
+      h1 {
+        font-weight: 900;
+      }
+      .sinoEmbed {
+        display: block;
+        border: none;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 19px;
+      }
+    </style>
+    <meta name="theme-color" content="#d8dce4">
+    <meta name="msapplication-TileColor" content="#d8dce4">
+    <meta name="msapplication-navbutton-color" content="#d8dce4">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#d8dce4">
+    <!-- custom css -->
+    <link href="../css/important.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <!-- custom scripts -->
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        onvisibility();
+      }
+    </script>
+    <script type="text/javascript">
+      function sinoEnd2024() {
+        document.getElementById("playAudio").src = "";
+        document.getElementById("playAudio").src = "../media/audio/20240115_sinoEnd2024.mp3";
+        document.getElementById("playAudio").play();
+      }
+      function onvisibility() {
+        // code adapted from https://stackoverflow.com/questions/61076149/video-paused-on-inactive-tab
+        var playback = document.getElementById("playAudio"), hidden, visibilityChange;
+        if (typeof document.hidden !== "undefined") {  
+          hidden = "hidden";
+          visibilityChange = "visibilitychange";
+          playback.play();
+        } else if (typeof document.msHidden !== "undefined") {
+          hidden = "msHidden";
+          visibilityChange = "msvisibilitychange";
+          playback.play();
+        } else if (typeof document.webkitHidden !== "undefined") {
+          hidden = "webkitHidden";
+          visibilityChange = "webkitvisibilitychange";
+          playback.play();
+        }
+        function handleVisibilityChange() {
+          if (document[hidden]) {
+            playback.pause();
+          } else {
+            playback.play();
+          }
+        }
+        if (typeof document.addEventListener === "undefined" || hidden === undefined) {
+          console.log("requires a browser that supports Visibility API.");
+        } else {
+          document.addEventListener(visibilityChange, handleVisibilityChange, false);
+        }
+      }
+    </script>
+  </head>
+  <body id="no-input" onload="launch()">
+    <audio id="playAudio" src="" width="0" height="0" loop></audio>
+    <div class="sinoPostJP">
+      <button onclick="sinoEnd2024()">オーディオを再生する</button>
+      <div style="width: 100%; height: 190px;"></div>
+      <h1>「When one story ends, another one begins.」</h1>
+      <h3>「ひとつの物語が終わると、また別の物語が始まる。」</h3>
+      <br><br>
+      <img class="sinoHelpMe" src="../media/images/sinoalice_j_end.png" alt="">
+      <p><b>
+        SINoALICE-シノアリス-
+        <br>
+        2017年6月6日～2024年1月15日
+      </b></p>
+      <br><br>
+      <button onclick="window.open('https://lwup.adj.st/?adjust_t=7q8qtg')">Launch / 打ち上げ</button>
+      <button onclick="window.open('https://youtu.be/xQh70oNy3DE')">FINAL運営生放送</button>
+      <div style="width: 100%; height: 475px;"></div>
+      <iframe
+        class="sinoEmbed"
+        src="https://www.youtube-nocookie.com/embed/wD1_GHLtQkk?rel=0&showinfo=0&modestbranding=1&playsinline=1"
+        title="「ひとつの物語が終わると、また別の物語が始まる。」"
+        allowfullscreen>
+      </iframe>
+      <div style="width: 100%; height: 475px;"></div>
+      <img src="../media/images/bride_3.png" alt="">
+    </div>
+    <footer class="footer">
+      <div class="footerTagline">
+        <div class="entertheuniverse"></div>
+      </div>
+      <div class="footerText">
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://mobile.twitter.com/MamaNyoSquad" target="_blank">Twitter/X</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://youtube.com/@MamaNyoSquad" target="_blank">YouTube</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="mailto:mamanyosquad@outlook.com">Email</a></span>
+        <br>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io" target="_blank">GitHub Repository</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">Fork and Improve</a></span>
+        <br>
+        <p>
+          <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml" target="_blank" title="See the current GitHub Action here.">
+            <img src="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy" alt="">
+          </a>
+        </p>
+        <p style="font-weight: normal;">
+          Source code licensed under MIT License, site content under CC-BY 4.0 INTL and above
+          <br>
+          #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
+        </p>
+      </div>
+      <img class="tbmassoc" src="../media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+    </footer>
+  </body>
+</html>
