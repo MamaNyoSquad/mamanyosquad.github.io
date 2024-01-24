@@ -151,6 +151,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  text-align: center;
 }
 .basicHead-fore {
   background-color: #06a8ff60;

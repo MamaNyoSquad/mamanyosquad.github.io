@@ -76,6 +76,9 @@
       footer {
         font-family: "Poppins", sans-serif;
       }
+      .bride-stamp {
+        width: 100px;
+      }
     </style>
     <meta name="theme-color" content="#8b3c1b">
     <meta name="msapplication-TileColor" content="#8b3c1b">
@@ -131,14 +134,16 @@
       }
       function eventEnd() {
         document.getElementById("removeElement").remove();
-        document.getElementById("playAudio").src = "../media/audio/20231108_sinoSayonara.mp3";
-        document.getElementById("sinoEnd").innerHTML =
-          "<h1 style='font-weight: 900;'>The Library is officially closed.</h1>" +
-          "<p>" +
-            "Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition. " +
-            "Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>" +
-          "</p>" +
-          "<br><br>";
+        document.getElementById("sinoEnd").innerHTML = `
+          <h1 style="font-weight: 900;">The Library is officially closed.</h1>
+          <p>
+            Thank you for tuning in with us in commemorating the final moments of SINoALICE Global Edition.
+            Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>
+            <br><br><br><br>
+            <img class="bride-stamp" src="../media/images/bride_3.png" alt="">
+          </p>
+          <br><br>
+        `;
       }
       function sinoOverArchive() {
         const timer = setInterval(function() {
@@ -161,7 +166,7 @@
         </div>
       </div>
     </div>
-    <audio id="playAudio" src="../media/audio/20230902_sinoalice_home.mp3" width="0" height="0" loop></audio>
+    <audio id="playAudio" src="../media/audio/20240115_sinoEnd2024.mp3" width="0" height="0" loop></audio>
     <div class="ImportantHEAD" style="background-color: #8b3c1b;">
       <b>This is the archived page in commemoration of the event. Click <a id="eventRedir" rel="noopener noreferrer" class="HeadURL" href="20231115.html">here</a> for the live updates.</b>
     </div>
