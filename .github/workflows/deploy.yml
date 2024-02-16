@@ -30,14 +30,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Repository Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@main
       - name: Prepare GitHub Pages for Deployment
-        uses: actions/configure-pages@v4.0.0
+        uses: actions/configure-pages@main
       - name: Upload to Deployment
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@main
         with:
           # Upload entire repository
           path: '.'
       - name: Finalize and Publish
         id: deployment
-        uses: actions/deploy-pages@v4.0.4
+        uses: actions/deploy-pages@main
