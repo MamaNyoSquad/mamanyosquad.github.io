@@ -34,10 +34,10 @@ jobs:
       - name: Prepare GitHub Pages for Deployment
         uses: actions/configure-pages@v4.0.0
       - name: Upload to Deployment
-        uses: actions/upload-pages-artifact@v3.0.0
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           # Upload entire repository
           path: '.'
       - name: Finalize and Publish
         id: deployment
-        uses: actions/deploy-pages@v4.0.2
+        uses: actions/deploy-pages@v4.0.4
