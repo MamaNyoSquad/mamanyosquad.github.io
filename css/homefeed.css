@@ -1,4 +1,4 @@
-/* css updated as of 4 January 2024 UTC */
+/* css updated as of 17 Feb 2024 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -125,11 +125,7 @@ header {
   padding-right: 5px;
   display: inline-block;
 }
-.HeadURL:link {
-  color: #ffffff;
-  text-decoration: none;
-}
-.HeadURL:visited {
+.HeadURL:link, .HeadURL:visited {
   color: #ffffff;
   text-decoration: none;
 }
