@@ -30,11 +30,7 @@ footer {
   text-align: center;
 }
 
-a:link {
-  color: #ffffff;
-  text-decoration: none;
-}
-a:visited {
+a:link, a:visited {
   color: #ffffff;
   text-decoration: none;
 }
