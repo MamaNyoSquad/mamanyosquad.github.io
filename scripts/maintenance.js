@@ -29,8 +29,8 @@ function jMaint() {
 
 function gMaint() {
 
-  const glActive = new Date("February 28, 2024 02:30:00 GMT+00:00").getTime(),
-    glEnd = new Date("February 28, 2024 06:30:00 GMT+00:00").getTime(),
+  const glActive = new Date("March 13, 2024 02:30:00 GMT+00:00").getTime(),
+    glEnd = new Date("March 13, 2024 06:30:00 GMT+00:00").getTime(),
     unixDetDist = glEnd - glActive,
     unixActDist = glEnd - maintToday;
   
