@@ -4,7 +4,7 @@
   padding: 19px;
   text-align: center;
   font-family: "Poppins", sans-serif; /* inherited from root css */
-  background-color: #f8daa8;
+  background-color: #06a8ff;
   color: #ffffff;
-  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
