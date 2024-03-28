@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 18 November 2023 UTC
+  CSS updated 17 February 2023 UTC
 */
 
 /* Fonts */
@@ -20,6 +20,10 @@
   /* IBM Plex Mono */
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
     /* font-family: 'IBM Plex Mono', monospace; */
+
+  /* Noto Sans Japanese */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+    /* font-family: "Noto Sans JP", sans-serif; */
 
   @font-face {
     font-family: 'Kunstler Script', cursive;
@@ -60,7 +64,7 @@
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Noto Sans JP", sans-serif;
   }
 
   a:link {

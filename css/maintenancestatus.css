@@ -1,4 +1,4 @@
-/* css updated as of 6 Dec 2023 UTC */
+/* css updated as of 26 Jan 2024 UTC */
 
 .statustext {
   padding-bottom: 19px;
@@ -12,7 +12,7 @@
   font-weight: bold;
   color: #fce693;
 }
-.finished /* Misaki */ {
+.done /* Misaki */ {
   font-weight: bold;
   color: #a88255;
 }
@@ -23,8 +23,8 @@
 .ongoing::before {
   content: "ONGOING";
 }
-.finished::before {
-  content: "FINISHED";
+.done::before {
+  content: "DONE";
 }
 
 .IMPORTANT {
@@ -96,9 +96,9 @@
   83% { color: rgb(255,0,255); }
   91% { color: rgb(255,0,127); }
 }
-.IMPORTANT-en::before {
-  content: "[IMPORTANT]";
-}
 .IMPORTANT-ja::before {
   content: "【重要】";
+}
+.IMPORTANT-gl::before {
+  content: "[IMPORTANT]";
 }
