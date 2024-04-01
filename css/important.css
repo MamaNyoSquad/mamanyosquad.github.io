@@ -6,5 +6,5 @@
   font-family: "Poppins", sans-serif; /* inherited from root css */
   background-color: #06a8ff;
   color: #ffffff;
-  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
