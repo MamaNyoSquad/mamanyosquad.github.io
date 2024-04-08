@@ -1,4 +1,4 @@
-/* css updated as of 2 Nov 2023 UTC */
+/* css updated as of 8 Apr 2024 UTC */
 
 
 /* universal template */
@@ -26,8 +26,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 6;
+    height: 450px;
     border-radius: 19px 19px 0 0;
   }
   .text {
