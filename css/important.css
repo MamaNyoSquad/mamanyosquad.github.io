@@ -1,10 +1,11 @@
 .ImportantHEAD {
   font-family: "Poppins", sans-serif !important;
   width: 100%;
-  padding: 19px;
+  padding: 1.9px;
   text-align: center;
   font-family: "Poppins", sans-serif; /* inherited from root css */
-  background-color: #06a8ff;
-  color: #ffffff;
-  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  font-weight: bold;
+  background-color: #d9d5c5;
+  color: #161224;
+  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
