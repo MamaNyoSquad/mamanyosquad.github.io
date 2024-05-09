@@ -7,5 +7,5 @@
   font-weight: bold;
   background-color: #000;
   color: #fff;
-  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
