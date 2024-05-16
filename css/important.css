@@ -5,7 +5,7 @@
   text-align: center;
   font-family: "Poppins", sans-serif; /* inherited from root css */
   font-weight: bold;
-  background-color: #000;
-  color: #fff;
-  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  background-color: #161224;
+  color: #ffffff;
+  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
