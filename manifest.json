@@ -1,0 +1,102 @@
+{
+  "_basedOn": "Twitter/X manifest.json at https://twitter.com/manifest.json",
+  "_assistedBy": "PWABuilder",
+  "background_color": "#161224",
+  "categories": [
+    "entertainment",
+    "games",
+    "news"
+  ],
+  "description": "Enter the universe through the eyes of the Tengu! 💕",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "media/images/pwa/appx_512px.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "name": "#MamaNyoSquad",
+  "shortcuts": [
+    {
+      "name": "#MamaNyoSquad Publishing",
+      "url": "publishing",
+      "icons": [
+        {
+          "src": "media/images/pwa/icon_publishing.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "The publishing arm of #MamaNyoSquad, home to Venus Island Diaries."
+        }
+      ]
+    },
+    {
+      "name": "The Squad's Blog",
+      "url": "blog",
+      "icons": [
+        {
+          "src": "media/images/pwa/icon_blog.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "The blog posts from the SquadMates and in general!"
+        }
+      ]
+    },
+    {
+      "name": "Maintenance Tracker",
+      "url": "maintenance",
+      "icons": [
+        {
+          "src": "media/images/pwa/icon_maintenance.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "description": "Stay updated on the most recent Maintenance Routines from the Japanese and Global Edition!"
+        }
+      ]
+    }
+  ],
+  "short_name": "#MamaNyoSquad",
+  "start_url": "/",
+  "theme_color": "#161224",
+  "scope": "/",
+  "id": "/?homescreen=1",
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 475
+  },
+  "dir": "auto",
+  "orientation": "natural",
+  "lang": "en",
+  "display_override": [
+    "fullscreen",
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "screenshots": [
+    {
+      "src": "media/images/pwa/screen_wide.png",
+      "type": "image/png",
+      "sizes": "1920x1080",
+      "form_factor": "wide"
+    },
+    {
+      "src": "media/images/pwa/screen_narrow.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "media/images/pwa/screen_publishing.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "media/images/pwa/screen_maintenance.png",
+      "type": "image/png",
+      "sizes": "1080x1920",
+      "form_factor": "narrow"
+    }
+  ]
+}

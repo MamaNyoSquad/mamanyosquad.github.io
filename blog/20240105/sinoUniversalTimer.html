@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="#MamaNyoSquad">
+    <title>「正義」は生き続ける。</title>
+    <link rel="icon" href="../../media/favicon/sinoalice_g.ico" type="image/x-icon">
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        scroll-behavior: smooth;
+      }
+      body {
+        text-align: center;
+        font-family: "Noto Serif JP", serif;
+        color: #d8dce4;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+      }
+      .centerSomeStuff {
+        margin: auto;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 900;
+        font-size: 2.5em;
+      }
+    </style>
+    <meta name="theme-color" content="#161224">
+    <meta name="msapplication-TileColor" content="#161224">
+    <meta name="msapplication-navbutton-color" content="#161224">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
+    <script type="text/javascript">
+      function startTimer() {
+        sinoGL();
+        sinoDMM();
+        sinoJP();
+      }
+    </script>
+    <script type="text/javascript">
+      const sinoGLtm = new Date("November 15, 2023 14:00:00 GMT+09:00").getTime();
+      const sinoDMMtm = new Date("December 26, 203 12:00:00 GMT+09:00").getTime();
+      const sinoJPtm = new Date("January 15, 2024 12:00:00 GMT+09:00").getTime();
+      function sinoGL() {
+        const GLtime = setInterval(function() {
+          const curr = new Date().getTime();
+          const distance = sinoGLtm - curr;
+          var d = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+          var h = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+          var m = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+          var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+          document.getElementById("sinoGL").innerHTML = d + ":" + h + ":" + m + ":" + s;
+          if (distance <= 0) {
+            clearInterval(GLtime);
+            document.getElementById("sinoGL").innerHTML = "Global Edition is officially closed.";
+            eventEnd();
+          }
+        }, 0);
+      }
+      function sinoDMM() {
+        const DMMtime = setInterval(function() {
+          const curr = new Date().getTime();
+          const distance = sinoDMMtm - curr;
+          var d = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+          var h = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+          var m = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+          var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+          document.getElementById("sinoDMM").innerHTML = d + ":" + h + ":" + m + ":" + s;
+          if (distance <= 0) {
+            clearInterval(DMMtime);
+            document.getElementById("sinoDMM").innerHTML = "DMM Edition is officially closed.";
+            eventEnd();
+          }
+        }, 0);
+      }
+      function sinoJP() {
+        const JPtime = setInterval(function() {
+          const curr = new Date().getTime();
+          const distance = sinoJPtm - curr;
+          var d = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+          var h = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+          var m = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+          var s = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+          document.getElementById("sinoJP").innerHTML = d + ":" + h + ":" + m + ":" + s;
+          if (distance <= 0) {
+            clearInterval(JPtime);
+            document.getElementById("sinoJP").innerHTML = "Japanese Edition is officially closed.";
+            eventEnd();
+          }
+        }, 0);
+      }
+    </script>
+  </head>
+  <body onload="startTimer()">
+    <div class="centerSomeStuff">
+      <div style="text-align: center; padding: 10px;">
+        <p>SINoALICE Global Edition</p>
+        <h1 id="sinoGL">this will be modified</h1>
+      </div>
+      <div style="text-align: center; padding: 10px;">
+        <p>SINoALICE DMM Edition</p>
+        <h1 id="sinoDMM">this will be modified</h1>
+      </div>
+      <div style="text-align: center; padding: 10px;">
+        <p>SINoALICE Japanese Edition</p>
+        <h1 id="sinoJP">this will be modified</h1>
+      </div>
+    </div>
+  </body>
+</html>
