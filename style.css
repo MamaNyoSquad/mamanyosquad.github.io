@@ -1,6 +1,6 @@
 /*
   This CSS is required for all HTML documents. This might be updated as more additions come in.
-  CSS updated 4 April 2024 UTC
+  CSS updated 21 May 2024 UTC
 */
 
 /* Fonts */
@@ -75,20 +75,16 @@
     pointer-events: none;
   }
 
-  a:link {
+  a:link, a:visited {
     color: #ff0000;
     text-decoration: none;
   }
-  a:visited {
-    color: #880000;
-    text-decoration: none;
-  }
   a:hover {
-    color: #ff3333;
+    color: #dd0000;
     text-decoration: none;
   }
   a:active {
-    color: #aa0000;
+    color: #ff5555;
     text-decoration: none;
   }
 
