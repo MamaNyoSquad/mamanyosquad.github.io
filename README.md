@@ -1,6 +1,6 @@
 [![site deploy](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy)](https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml)
 
-_Updated 2 November 2023 UTC_
+_Updated 21 May 2024 UTC_
 
 # Introduction
 
@@ -21,7 +21,7 @@ Yes! Starting 11 May 2023 UTC, our repository has TWO licenses:
 
 For transparency, our Pull Requests which include the category <span style="background-color: #a31f34; padding: 1.9px 4.75px; border-radius: 950px; color: #fff'">**LICENSE UPDATE**</span> is found [here](https://github.com/MamaNyoSquad/mamanyosquad.github.io/pulls?q=is:pr+label:%22LICENSE+UPDATE%22).
 
-# Where is the Site Policies and KT Disclosure?
+# Where is the Site Policies?
 
 We've moved such policies to this [page](https://mamanyosquad.github.io/policies).
 
@@ -37,7 +37,7 @@ We've moved the Open Letter to the Blog! Check [here](https://mamanyosquad.githu
 
 # What holds the future of an open-sourced #MamaNyoSquad?
 
-We've been working on engaging others to collaborate with our work as we move forward, beginning with the rewrite of [Venus Island Diaries - Main Story](https://bit.ly/VIDiariesRealTime). With this initiative, we're committed for a future where everyone can share ideas freely, interact with one's work, and bring their ideas to life!
+We've been working on engaging others to collaborate with our work as we move forward, beginning with the rewrite of [Venus Island Diaries - Main Story](https://bit.ly/VIDiariesStory). With this initiative, we're committed for a future where everyone can share ideas freely, interact with one's work, and bring their ideas to life!
 
 # Conclusion
 
@@ -47,4 +47,4 @@ As we move forward through an open-sourced future, we're still expecting some hu
 
 # Contact
 
-[Twitter/X](https://mobile.twitter.com/MamaNyoSquad) | [YouTube](https://youtube.com/@MamaNyoSquad) | [Email](mailto:mamanyosquad@outlook.com)
+[The X Platform](https://x.com/MamaNyoSquad) | [YouTube](https://youtube.com/@MamaNyoSquad) | [Email](mailto:mamanyosquad@outlook.com)

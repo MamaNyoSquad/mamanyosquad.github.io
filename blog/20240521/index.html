@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="#MamaNyoSquad">
+    <title>General Updates - 21 May 2024</title>
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="../../media/favicon.png" type="image/x-icon">
+    <style type="text/css">
+      /* attach in-html custom css args here */
+    </style>
+    <meta name="theme-color" content="#161224">
+    <meta name="msapplication-TileColor" content="#161224">
+    <meta name="msapplication-navbutton-color" content="#161224">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
+    <!-- custom css -->
+    <link href="../../css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../css/articletable.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <header>
+      <div class="siteHEADER">
+        <div class="logoHead">
+          <div class="NyoLogo"></div>
+        </div>
+        <div class="HeadURLs" id="top">
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../">Home</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../policies">Policies</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../events">Events</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../archive">Archives</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../publishing">Publishing</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../blog">Blog</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../maintenance">Maintenance</a></span>
+        </div>
+      </div>
+    </header>
+    <div class="articleHead" style="background-image: url(../../media/images/blog/genericblog.png);"></div>
+    <div class="articleArea">
+      <h1>General Updates - 21 May 2024</h1>
+      <em>published 21 May 2024 UTC</em>
+      <p>
+        We&#39;re undergoing a major shift in how we present the website going
+        forward. The G.Mgr gives us the following updates on the situation, as well as
+        in other areas.
+      </p>
+      <div class="inThisArticle">
+        <h2>In this article</h2>
+        <ul>
+          <li><a rel="noopener noreferrer" href="#sec1">Introduction</a></li>
+          <li><a rel="noopener noreferrer" href="#sec2">Website Design</a></li>
+          <li><a rel="noopener noreferrer" href="#sec3"><code>mamanyosquad-preview</code></a></li>
+          <li><a rel="noopener noreferrer" href="#sec4">#MamaNyoSquad Publishing</a></li>
+          <li><a rel="noopener noreferrer" href="#sec5">Regarding the X Platform...</a></li>
+          <li><a rel="noopener noreferrer" href="#sec6">So... what's next?!</a></li>
+        </ul>
+      </div>
+      <div class="secContain">
+        <h2 id="sec1">Introduction</h2>
+        <p><strong>thebelovedmoon, G.Mgr of #MamaNyoSquad.</strong></p>
+        <p>
+          These past few weeks have been a very hectic experience with regards to
+          multitasking and a lot of stuff -- especially when it comes to VTubing
+          activities. Despite that, though, I remain committed to my other works;
+          especially this one.
+        </p>
+        <p>
+          I&#39;ve given it some thought about what would be the future of the Squad and
+          its underlying framework, and I&#39;m excited to share you the next steps in
+          order to [hopefully] make use of this platform even more.
+        </p>
+        <h2 id="sec2">Website Design</h2>
+        <p>
+          Recently, I&#39;ve taken on a new task of trying to update the website&#39;s
+          design language, seeing as I&#39;m already making progress in the other
+          projects that I had on my disposal. One of them happened to be my own website
+          <code>thebelovedmoon.github.io</code>, where I attempt to update its design
+          following the 2024 framework for my VTubing activities. (It&#39;s worth noting
+          that I&#39;ve gone the route similar to the Marias&#39; design language for a
+          unified experience at large, and have it integrated with the others while
+          I&#39;m at it.)
+        </p>
+        <p>
+          With that in mind, I&#39;ve set out to improve my other web projects with
+          their intended design languages, so it will take a while for them to actually
+          work. Same goes for this project, which has been the start of my web building
+          journey since being booted off from Bookmark back in April 2022. (Read the
+          <a href="../20220413">open letter</a> to see what I mean.) It had gone through
+          several iterations that I had to separate them into different classifications:
+          Pre-Overhaul and Post-Overhaul.
+          <strong>This time, it&#39;ll be much different.</strong>
+        </p>
+        <h2 id="sec3"><code>mamanyosquad-preview</code></h2>
+        <p>
+          Now a lot of you who have a keen eye have noticed that I have provisioned a
+          new repository on our GitHub Organizations page. The main reason I want to
+          deal with this is that I&#39;ll be drafting what will be the new look of the
+          website.
+        </p>
+        <p>
+          In addition, it will provide a &quot;unified&quot; design language that
+          encompasses what I&#39;ve learned from all attempts at web development --
+          seeing that I&#39;ve made some progress in my other projects, with others
+          currently in the works.
+        </p>
+        <p>
+          Consequently, some elements will be migrated over to the new framework; so I
+          have to do some trial-and-error in order to get it to work seamlessly when the
+          time comes that it&#39;ll be forwarded to upstream.
+        </p>
+        <button class="NyoBtn" onclick="window.open('https://github.com/MamaNyoSquad/mamanyosquad-preview')">Check out the repository</button>
+        <h3>What makes it different from the main repository?</h3>
+        <p>
+          <code>mamanyosquad-preview</code> is split into different branches which
+          encompasses different iterations (called versions) of the website we&#39;re
+          currently working on (not just my own). In essence, it will be useful when
+          there are events that will take place on this platform.
+        </p>
+        <p>
+          In order to accompany such results, we&#39;ve provisioned two underlying
+          technologies to make this work: <strong>GitHub Codespaces</strong> and
+          <strong>Nginx</strong>! Thanks to these technologies, we the SquadMates (and
+          fellow frontend developers who want to contribute to these iterations) will be
+          able to preview the changes seamlessly from a codespace dedicated to each
+          branch! (I&#39;ll be providing the proper documentation once things settle
+          down in order to get started with the codespace.)
+        </p>
+        <p>
+          Despite everything, we&#39;re still using the same licensing metadata from
+          upstream (MIT and CC-BY-4.0).
+        </p>
+        <h3>NEW: Web Versioning</h3>
+        <p>
+          As stipulated above, we&#39;ll be utilizing our web versioning in order to
+          identify which branch of <code>mamanyosquad-preview</code> is actively being
+          used on upstream (AKA this website). We&#39;ll be using the versioning
+          format <code>branchname.xx.yy</code>, where:
+        </p>
+        <p>
+          <ul>
+            <li>
+              <code>branchname</code> refers to the branch being used on upstream,
+              usually denoted in YYYYMMDD format
+            </li>
+            <li>
+              <code>xx</code> refers to any major version (any commit that has the
+              <strong>MAJOR</strong> tag in upstream&#39;s PR)
+            </li>
+            <li>
+              <code>yy</code> refers to any minor version (any commit that has the
+              <strong>MINOR</strong> tag in upstream&#39;s PR)
+            </li>
+          </ul>
+        </p>
+        <p>
+          There are rules that encompass how this format works, which will be made
+          available in the Preview&#39;s documentation.
+        </p>
+        <h3>Wait -- what will happen to the current iteration?</h3>
+        <p>
+          Don&#39;t worry -- while the current upstream will be overwritten any time
+          soon, its underlying code can still be accessible via the Commits page; and
+          its framework will be migrated over to Preview following its base versioning
+          format!
+        </p>
+        <h2 id="sec4">#MamaNyoSquad Publishing</h2>
+        <p>
+          #MamaNyoSquad Publishing will have its own dedicated repository in the coming
+          weeks/months in order to identify itself away from upstream&#39;s framework,
+          which means it will have its own set that will accommodate the readers through
+          its published works. Through the power of the Progressive Web App (PWA),
+          readers can enjoy streamlined experience whether they are on Mobile or
+          Desktops.
+        </p>
+        <p>
+          With regards to its publications, they will be re-evaluated for any possible
+          spelling-and-grammar errors to be easily readable when they return to the
+          website. It should be noted that starting from &quot;Romantic Perception&quot;
+          (Inside Story no.6), all publications will stay on the website as to migrate
+          away from newsletters following Revue&#39;s shutdown on 18 Jan 2023.
+        </p>
+        <h3>Empty - Helena's Inside Story Pt.2</h3>
+        <p>
+          On a related note, I&#39;m proud to declare that the Inside Story no.7 --
+          titled &quot;Empty&quot; -- is done as of 20 May! I can&#39;t believe it&#39;s
+          been more than TWO YEARS since I first provisioned this story as the newest
+          addition to the Inside Story lineup, which was bombarded with uncertainties
+          following my venture as a VTuber. But since I loved DOAXVV to the core and
+          wanted to thrive more than I should, I still pushed through and finally
+          completed it against all odds!
+        </p>
+        <p>You can access this Inside Story (and the others) via the button below:</p>
+        <button class="NyoBtn" onclick="window.open('https://bit.ly/VIDiariesInsideStory')">Inside Stories (Docs Format)</button>
+        <h3>What about <code>vidiaries-app</code>?</h3>
+        <p>
+          Upon realizing the existence of PWAs, <strong>I had to make a difficult
+          decision to retire the said repository.</strong> Another reason for such a
+          retirement is that it puts much strain on developing apps via the Android
+          Studio platform where it may be uncertain to be compatible with other
+          platforms, like iOS.
+        </p>
+        <p>
+          The importance at this current state is to ensure cross-compatibility with all
+          devices regardless of operating systems and device specifications, which is
+          currently possible with PWA.
+        </p>
+        <p>
+          Don&#39;t worry -- the archival of the repository is still ways off in
+          expectations that some web elements dependent on it may break, so it&#39;ll
+          give me more time to polish the final preview release (with migrated URLs).
+          I&#39;ll send over the archival state in the foreseeable future.
+        </p>
+        <h2 id="sec5">Regarding the X Platform...</h2>
+        <p>
+          We just oversaw the change that may be drastic in the long run:
+          <strong
+            ><code>twitter.com</code> has been officially renamed to
+            <code>x.com</code>.</strong
+          >
+        </p>
+        <p>
+          First off, we&#39;ve been focusing on the website&#39;s R&amp;D that we
+          haven&#39;t updated much on the X Platform (formerly Twitter). However, we
+          have some minor updates that we may consider in the long run:
+        </p>
+        <p>
+          <ul>
+            <li>
+              Updating of profile graphics (mostly accommodating the 96 DPI standard)
+            </li>
+            <li>
+              Promotional graphics using publicly-available assets from DOAXVV PR
+              (mostly Global)
+            </li>
+            <li>
+              Updated birthday greetings for Venuses and their Seiyuus (Nyotengu and
+              Satou Akemi take priority)
+            </li>
+            <li>Maintenance Routine deliveries</li>
+          </ul>
+        </p>
+        <p>
+          Second, we&#39;ll be utilizing our X account like what we used to before:
+          Engaging in events like DOAXVV Event Showcases and Community Events. However,
+          the latter may be still in questioning as to not cause an upheaval within our
+          communities because of the SquadMates&#39; past infractions; so we&#39;ll be
+          careful in conducting such events moving forward.
+        </p>
+        <p>
+          Third, our presence on X in relation to our website is hindered by our
+          non-option to the platform&#39;s Premium services. In turn, we just noticed
+          that our Embedded Timelines are not showing in contrast to
+          @doax_vv_staff&#39;s (since the latter is opted to such). We might invest in
+          Premium Services (starting from base Premium, not Basic) in order to restore
+          the Embedded Timelines service in a foreseeable future, but it comes at a cost
+          of our expenses. We&#39;ll let you know in the coming moments via subsequent
+          posts on X or blogs here on this website.
+        </p>
+        <p>
+          Fourth, in order to conform to the domain change as stated above, the
+          <code>widgets.js</code> has been modified -- replacing &quot;twitter&quot;
+          with &quot;X&quot;. Most of the functions/classes remain unchanged, however,
+          as to not break the appearance of X Embedded Web services. We might opt to
+          restore the original format whenever we see fit or otherwise pursuant to our
+          legal implications outlined in our Policies.
+        </p>
+        <h2 id="sec6">So... what's next?!</h2>
+        <p>
+          Now that we got the necessary info out, what&#39;s really next for
+          #MamaNyoSquad? Honestly, it&#39;s still ways off until it can be described as
+          one of the ultimate DEAD OR ALIVE platforms to have ever existed. We still
+          have some more features being baked in the oven, but at least we get to see
+          what&#39;s going to be the next big thing.
+        </p>
+        <p>
+          I&#39;m honestly looking forward to improving this website even more to
+          accommodate more viewers and continue waving the flag -- bringing the essence
+          of the series through DOAXVV and beyond!
+        </p>
+        <p>
+          Now with more projects related to this one under my belt, I might need some
+          more all-nighters to complete these at once (lol jk); but I hope that you
+          enjoy reading this Blog nonetheless! Again, we&#39;ll be providing updates
+          related to the website and our workflows where applicable.
+        </p>
+        <p>
+          <em><strong>Enter the universe through the eyes of the Tengu! 💕</strong></em>
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerTagline">
+        <div class="entertheuniverse"></div>
+      </div>
+      <div class="footerText">
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://x.com/MamaNyoSquad" target="_blank">The X Platform</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://youtube.com/@MamaNyoSquad" target="_blank">YouTube</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="mailto:mamanyosquad@outlook.com">Email</a></span>
+        <br>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io" target="_blank">GitHub Repository</a></span>
+        <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">Fork and Improve</a></span>
+        <br>
+        <p>
+          <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml" target="_blank" title="See the current GitHub Action here.">
+            <img src="https://github.com/MamaNyoSquad/mamanyosquad.github.io/actions/workflows/deploy.yml/badge.svg?branch=deploy" alt="">
+          </a>
+        </p>
+        <p style="font-weight: normal;">
+          Source code licensed under MIT License, site content under CC-BY 4.0 INTL and above
+          <br>
+          #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
+        </p>
+      </div>
+      <img class="tbmassoc" src="../../media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+    </footer>
+  </body>
+</html>
