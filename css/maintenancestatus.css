@@ -1,4 +1,4 @@
-/* css updated as of 26 Jan 2024 UTC */
+/* css updated as of 24 May 2024 UTC */
 
 .statustext {
   padding-bottom: 19px;
@@ -99,6 +99,6 @@
 .IMPORTANT-ja::before {
   content: "【重要】";
 }
-.IMPORTANT-gl::before {
+.IMPORTANT-en::before {
   content: "[IMPORTANT]";
 }
