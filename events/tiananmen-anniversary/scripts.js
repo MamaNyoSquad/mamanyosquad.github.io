@@ -2,13 +2,13 @@
 
 const parseQuery = new URLSearchParams(window.location.search); // global value
 
-function specialEvent() {
-  const isWebApp = parseQuery.get("eventDismissed");
+function whereBtn() {
+  const isWebApp = parseQuery.get("eventOverview");
   if (isWebApp == "1") {
-    console.log("event not triggered");
-  } else {
     console.log("event triggered");
-    window.location.replace("events/tiananmen-anniversary");
+    document.getElementById("backToTitle").style.display = "none";
+  } else {
+    console.log("event not triggered");
   }
 }
 // code: https://sitepoint.com/get-url-parameters-with-javascript 

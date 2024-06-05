@@ -1,0 +1,180 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ee1c25;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Times New Roman", serif;
+}
+
+footer {
+  background-color: #000;
+  padding: 19px 57px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.imgCourtesy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 9.5px 19px;
+  text-align: right;
+}
+
+.tiananmen-back {
+  background-image: url(https://cdn.cnn.com/cnn/interactive/2019/05/world/tiananmen-square-tank-man-cnnphotos/media/01.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.tiananmen-front {
+  background: linear-gradient(to bottom, #00000000 45%, #000000);
+  width: 100vw;
+  height: 100vh;
+}
+
+.callToAction-head {
+  padding: 19px 190px;
+  font-size: 3.8rem;
+}
+.rowLayout {
+  padding: 0 190px 95px 190px;
+  overflow: auto;
+}
+.row1 {
+  float: left;
+  width: 570px;
+  max-width: 100%;
+  text-align: left;
+}
+.row2 {
+  float: right;
+  width: 570px;
+  max-width: 100%;
+  text-align: right;
+}
+.row3 {
+  width: 570px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 1079px) {
+  .row1, .row2 {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .callToAction-head {
+    padding: 19px 38px;
+    font-size: 2.06rem;
+  }
+  .rowLayout {
+    padding: 0 38px 95px 38px;
+  }
+  .row1, .row2, .row3 {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 359px) {
+  .callToAction-head {
+    padding: 19px;
+    font-size: 2.06rem;
+  }
+  .rowLayout {
+    padding: 0 19px 95px 19px;
+  }
+  .row1, .row2, .row3 {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  footer {
+    padding: 19px;
+  }
+}
+
+a:link, a:visited {
+  color: #ee1c25;
+  text-decoration: none;
+}
+a:hover {
+  color: #a81219;
+  text-decoration: none;
+}
+a:active {
+  color: #ff0;
+  text-decoration: none;
+}
+
+button {
+  background-color: #ee1c25;
+  border: #ff0 1px solid;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  padding: 9.5px 19px;
+  border-radius: 9.5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+button:hover {
+  background-color: #a81219;
+}
+
+/* responsive fontsize */
+@media screen and (max-width: 540px) {
+  body {
+    font-size: small;
+  }
+}
+@media screen and (min-width: 540px) {
+  body {
+    font-size: normal;
+  }
+}
+@media screen and (min-width: 1080px) {
+  body {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 1620px) {
+  body {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 2160px) {
+  body {
+    font-size: x-large;
+  }
+}
+@media screen and (min-width: 2700px) {
+  body {
+    font-size: xx-large;
+  }
+}
