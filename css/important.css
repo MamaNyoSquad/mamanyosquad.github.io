@@ -15,7 +15,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
 .ImportantFEED::after {
   content: 'SPECIAL REPORT: BanG Dream! EN has been compromised and Bushiroad Global is working on its recovery process.';
