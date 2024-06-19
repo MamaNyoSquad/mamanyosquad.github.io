@@ -1,11 +1,22 @@
+@font-face {
+  font-family: "LoveLive";
+  src: url(../media/fonts/LoveLive.otf) format("opentype");
+}
+
 .ImportantHEAD {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Poppins", sans-serif !important; /* default: "Poppins", sans-serif !important */
   width: 100%;
-  padding: 1.9px;
+  padding: 1.9px 3.8px;
   text-align: center;
-  font-family: "Poppins", sans-serif; /* inherited from root css */
   font-weight: bold;
-  background-color: #161224;
+  background-color: #3344aa;
   color: #ffffff;
-  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  background-image: url(https://agasitecollection.github.io/arcanatheillusionist/roselia_bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+}
+.ImportantFEED::after {
+  content: 'SPECIAL REPORT: BanG Dream! EN has been compromised and Bushiroad Global is working on its recovery process.';
 }

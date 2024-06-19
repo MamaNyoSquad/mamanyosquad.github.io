@@ -1,5 +1,5 @@
 {
-  "_basedOn": "Twitter/X manifest.json at https://twitter.com/manifest.json",
+  "_basedOn": "The X Platform's manifest.json at https://x.com/manifest.json",
   "_assistedBy": "PWABuilder",
   "background_color": "#161224",
   "categories": [

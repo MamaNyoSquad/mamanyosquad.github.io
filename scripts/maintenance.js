@@ -6,8 +6,8 @@ const maintToday = new Date().getTime();
 
 function jMaint() {
 
-  const jpActive = new Date("May 16, 2024 12:00:00 GMT+09:00").getTime(),
-    jpEnd = new Date("May 16, 2024 17:00:00 GMT+09:00").getTime(),
+  const jpActive = new Date("June 12, 2024 12:00:00 GMT+09:00").getTime(),
+    jpEnd = new Date("June 12, 2024 17:00:00 GMT+09:00").getTime(),
     unixDetDist = jpEnd - jpActive,
     unixActDist = jpEnd - maintToday;
   
@@ -29,8 +29,8 @@ function jMaint() {
 
 function gMaint() {
 
-  const glActive = new Date("May 9, 2024 02:30:00 GMT+00:00").getTime(),
-    glEnd = new Date("May 9, 2024 06:30:00 GMT+00:00").getTime(),
+  const glActive = new Date("June 13, 2024 06:30:00 GMT+00:00").getTime(),
+    glEnd = new Date("June 13, 2024 07:00:00 GMT+00:00").getTime(),
     unixDetDist = glEnd - glActive,
     unixActDist = glEnd - maintToday;
   
