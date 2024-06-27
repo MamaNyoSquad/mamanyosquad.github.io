@@ -17,7 +17,7 @@ function specialEvent() { // special events page
 
 function eventBanner() { // banner event
   
-  var url = "wk131eoZGDk";
-  window.open("https://youtu.be/" + url);
+  // var url = "wk131eoZGDk";
+  // window.open("https://youtu.be/" + url);
 
 }
