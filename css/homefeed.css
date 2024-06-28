@@ -1,4 +1,4 @@
-/* css updated as of 2 Jun 2024 UTC */
+/* css updated as of 28 Jun 2024 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -108,7 +108,7 @@ header {
   padding-bottom: 19px;
 }
 .NyoLogo {
-  background-image: url(../media/svg/MamaNyoSquad.svg); /* (DEFAULT) */
+  background-image: url(../media/_MamaNyo2024/MamaNyoSquad_2024.png); /* (DEFAULT) */
   /* background-image: url(../media/images/5-5_simple.png); (EVENT) */
   background-size: contain;
   background-position: center center;
@@ -195,7 +195,7 @@ header {
   height: 76px;
 }
 .entertheuniverse {
-  background-image: url(../media/svg/entertheuniverse.svg);
+  background-image: url(../media/_MamaNyo2024/entertheuniverse_2024.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
