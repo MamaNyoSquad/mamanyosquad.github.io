@@ -1,4 +1,4 @@
-/* css updated as of 28 Jun 2024 UTC */
+/* css updated as of 3 Jul 2024 UTC */
 
 .NyoHeader {
   height: 100%;
@@ -95,10 +95,10 @@ header {
   padding: 19px;
   text-align: center;
   background-color: #ff0000;
-  /* background-image: url(../media/images/BG2024/nyoRed.png); (DEFAULT) */
-  background-image: url(https://static.vecteezy.com/system/resources/previews/010/060/530/original/colorful-rainbow-pride-gradient-fluid-abstract-background-lgbt-flag-pride-month-blur-wallpaper-lgbt-flag-pride-month-blur-wallpaper-light-bokeh-pride-month-colorful-wallpaper-vector.jpg); /* (EVENT) */
+  background-image: url(../media/images/BG2024/nyoRed.png); /* (DEFAULT) */
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/010/060/530/original/colorful-rainbow-pride-gradient-fluid-abstract-background-lgbt-flag-pride-month-blur-wallpaper-lgbt-flag-pride-month-blur-wallpaper-light-bokeh-pride-month-colorful-wallpaper-vector.jpg); (EVENT) */
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   box-shadow: 0 9.5px 19px #06a8ffa0;
 }
@@ -139,7 +139,7 @@ header {
   text-decoration: none;
 }
 .Active {
-  color: #ff0000; /* original: #06a8ff */
+  color: #06a8ff; /* original: #06a8ff */
 }
 
 .basicHead-back {
