@@ -8,7 +8,7 @@ function specialEvent() { // special events page
     console.log("event not triggered");
   } else {
     console.log("event triggered");
-    // window.location.replace("events/tiananmen-anniversary");
+    // window.location.replace("/events/tiananmen-anniversary");
   }
 
 }
