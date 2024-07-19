@@ -20,4 +20,6 @@ function eventBanner() { // banner event
   // var url = "wk131eoZGDk";
   // window.open("https://youtu.be/" + url);
 
+  window.open("https://crowdstrike.com/blog/statement-on-windows-sensor-update");
+
 }

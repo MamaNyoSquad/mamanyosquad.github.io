@@ -9,15 +9,15 @@
   padding: 1.9px 3.8px;
   text-align: center;
   font-weight: bold;
-  background-color: #4A4F63;
+  background-color: #ff0000;
   color: #ffffff;
   /* background-image: url(https://agasitecollection.github.io/arcanatheillusionist/roselia_bg.jpg); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  cursor: initial;
+  cursor: pointer;
   display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
 .ImportantFEED::after {
-  content: 'The 30th Overall Venus -- Reika -- has been debuted!';
+  content: 'ONGOING DEVELOPMENT: A recent CrowdStrike update has rendered thousands of Windows PCs unusable. Read their Press Release here.';
 }
