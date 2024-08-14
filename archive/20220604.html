@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>#MamaNyoSquad @ 2</title>
     <link href="https://mamanyosquad.github.io/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="../media/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/media/favicon.png" type="image/x-icon">
     <style type="text/css">
+      @import url("/css/_archivedSite.css");
       body {
-        overflow: hidden;
         font-family: "Poppins", sans-serif;
       }
       .timer {
@@ -71,15 +72,24 @@
     <meta name="msapplication-TileColor" content="#161224">
     <meta name="msapplication-navbutton-color" content="#161224">
     <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
-    <script src="../scripts/anniv.js" type="text/javascript"></script>
+    <!-- custom scripts -->
+    <script src="/scripts/anniv.js" type="text/javascript"></script>
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        // annivTimer();
+        launchArchive();
+      }
+    </script>
   </head>
-  <body onload="annivTimer()">
-    <p class="timer" id="anniv"></p>
-    <p class="annivdesc">#MamaNyoSquadAt2</p>
+  <body onload="launch()">
+    <!-- <p class="timer" id="anniv"></p> -->
+    <!-- <p class="annivdesc">#MamaNyoSquadAt2</p> -->
     <div class="dis">
       <p><b><i>
         This page has been archived, but the timer remains running. For the newer layout, visit the
-        <a rel="noopener noreferrer" href="../anniversary">Inception Anniversaries</a> page.
+        <a rel="noopener noreferrer" href="/anniversary">Inception Anniversaries</a> page.
       </i></b></p>
       <br><br>
       <h1>Our 2nd Anniversary is just around the corner! 🎉</h1>
@@ -90,7 +100,7 @@
         using clever methods. Documentation to be posted whenever he sees fit.
         <br><br>
         This page is best viewed on desktops with a minimum display of 1080p. For the default landing page, see
-        <a rel="noopener noreferrer" href="../lp.html">lp.html</a>.
+        <a rel="noopener noreferrer" href="/lp.html">lp.html</a>.
         <br><br>
         Want to contribute? You may
         <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/fork" target="_blank">fork</a>

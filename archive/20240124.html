@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>…</title>
-    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="../media/images/sinoalice_j_end.png" type="image/x-icon">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="/media/images/sinoalice_j_end.png" type="image/x-icon">
     <style type="text/css">
       /* attach in-html custom css args here */
       @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
       html {
         background-color: #d8dce4;
-        background-image: url(../media/images/wp6289040-beautiful-cloudy-sky-anime-wallpapers.jpg);
+        background-image: url(/media/images/wp6289040-beautiful-cloudy-sky-anime-wallpapers.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -73,28 +73,65 @@
         aspect-ratio: 16 / 9;
         border-radius: 19px;
       }
+      #playAudio {
+        display: none;
+      }
+      .mediaControls {
+        text-align: center;
+      }
+      .mediaControls > .material-symbols-rounded {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+        display: inline-block;
+        background-color: #d8dce4;
+        border-radius: 50%;
+        color: #000000;
+        padding: 19px;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+      }
+      .mediaControls > .material-symbols-rounded:hover { 
+        background-color: #000000;
+        color: #d8dce4;
+      }
+      #pauseBtn { display: none; }
     </style>
     <meta name="theme-color" content="#d8dce4">
     <meta name="msapplication-TileColor" content="#d8dce4">
     <meta name="msapplication-navbutton-color" content="#d8dce4">
     <meta name="apple-mobile-web-app-status-bar-style" content="#d8dce4">
     <!-- custom css -->
-    <link href="../css/important.css" rel="stylesheet" type="text/css" media="all">
-    <link href="../css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/important.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/homefeed.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
     <script type="text/javascript">
       function launch() {
         // launch args here
-        onvisibility();
+        launchArchive();
+        ifVisible();
       }
     </script>
     <script type="text/javascript">
-      function sinoEnd2024() {
-        document.getElementById("playAudio").src = "";
-        document.getElementById("playAudio").src = "../media/audio/20240115_sinoEnd2024.mp3";
-        document.getElementById("playAudio").play();
+      let hasPaused = true;
+      function sinoEnd2024(p) {
+        switch (p) {
+          case 'play':
+            document.getElementById("playAudio").play();
+            document.getElementById("playBtn").style.display = "none";
+            document.getElementById("pauseBtn").style.display = "inline-block";
+            hasPaused = false;
+            break;
+          case 'pause':
+            document.getElementById("playAudio").pause();
+            document.getElementById("playBtn").style.display = "inline-block";
+            document.getElementById("pauseBtn").style.display = "none";
+            hasPaused = true;
+            break;
+          default:
+            // none
+        }
       }
-      function onvisibility() {
+      function ifVisible() {
         // code adapted from https://stackoverflow.com/questions/61076149/video-paused-on-inactive-tab
         var playback = document.getElementById("playAudio"), hidden, visibilityChange;
         if (typeof document.hidden !== "undefined") {  
@@ -111,10 +148,16 @@
           playback.play();
         }
         function handleVisibilityChange() {
-          if (document[hidden]) {
-            playback.pause();
-          } else {
-            playback.play();
+          if (hasPaused != true) {
+            if (document[hidden]) {
+              playback.pause();
+              document.getElementById("playBtn").style.display = "inline-block";
+              document.getElementById("pauseBtn").style.display = "none";
+            } else {
+              playback.play();
+              document.getElementById("playBtn").style.display = "none";
+              document.getElementById("pauseBtn").style.display = "inline-block";
+            }
           }
         }
         if (typeof document.addEventListener === "undefined" || hidden === undefined) {
@@ -126,14 +169,17 @@
     </script>
   </head>
   <body id="no-input" onload="launch()">
-    <audio id="playAudio" src="" width="0" height="0" loop></audio>
+    <audio id="playAudio" src="/media/audio/20240115_sinoEnd2024.mp3" loop></audio>
     <div class="sinoPostJP">
-      <button onclick="sinoEnd2024()">オーディオを再生する</button>
+      <div class="mediaControls">
+        <span id="playBtn" onclick="sinoEnd2024('play')" class="material-symbols-rounded">play_arrow</span>
+        <span id="pauseBtn" onclick="sinoEnd2024('pause')" class="material-symbols-rounded">pause</span>
+      </div>
       <div style="width: 100%; height: 190px;"></div>
       <h1>「When one story ends, another one begins.」</h1>
       <h3>「ひとつの物語が終わると、また別の物語が始まる。」</h3>
       <br><br>
-      <img class="sinoHelpMe" src="../media/images/sinoalice_j_end.png" alt="">
+      <img class="sinoHelpMe" src="/media/images/sinoalice_j_end.png" alt="">
       <p><b>
         SINoALICE-シノアリス-
         <br>
@@ -150,7 +196,7 @@
         allowfullscreen>
       </iframe>
       <div style="width: 100%; height: 475px;"></div>
-      <img src="../media/images/bride_3.png" alt="">
+      <img src="/media/images/bride_3.png" alt="">
     </div>
     <footer class="footer">
       <div class="footerTagline">
@@ -175,7 +221,7 @@
           #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
         </p>
       </div>
-      <img class="tbmassoc" src="../media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+      <img class="tbmassoc" src="/media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
     </footer>
   </body>
 </html>

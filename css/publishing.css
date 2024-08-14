@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: 'Paris 2024';
-  src: url(../media/fonts/Paris2024-Variable.woff2) format("woff2");
+  src: url(/media/fonts/Paris2024-Variable.woff2) format("woff2");
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Paris 2024';
-  src: url(../media/fonts/Paris2024-VariableItalic.woff2) format("woff2");
+  src: url(/media/fonts/Paris2024-VariableItalic.woff2) format("woff2");
   font-style: italic;
   font-display: swap;
 }
@@ -20,7 +20,7 @@
 
 html {
   background-color: #d6c278;
-  background-image: url(../media/images/BG2024/vidiariesBG.png);
+  background-image: url(/media/images/BG2024/vidiariesBG.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ header {
   padding: 19px;
   text-align: center;
   background-color: #d6c278;
-  background-image: url(../media/images/BG2024/vidiariesBG.png);
+  background-image: url(/media/images/BG2024/vidiariesBG.png);
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ header {
   height: 95px;
 }
 .logo {
-  background-image: url(../media/svg/publishing.svg);
+  background-image: url(/media/svg/publishing.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ header {
 
 footer {
   background-color: #161224;
-  background-image: url(../media/images/vidiaries_2024_scratch.png);
+  background-image: url(/media/images/vidiaries_2024_scratch.png);
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ a:active {
   align-items: center;
   text-align: center;
   background-color: #d6c278;
-  background-image: url(../media/images/BG2024/vidiariesBG.png);
+  background-image: url(/media/images/BG2024/vidiariesBG.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ a:active {
 }
 
 .intro-outer {
-  background-image: url(../media/images/vi_wallpaper/VenusIsland_2.jpg);
+  background-image: url(/media/images/vi_wallpaper/VenusIsland_2.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@ a:active {
   padding: 237.5px 95px;
   text-align: center;
   background-color: #66666680;
-  background-image: url(../media/images/venus_V_transparent.png), url(../media/images/vidiaries_2024_scratch.png);
+  background-image: url(/media/images/venus_V_transparent.png), url(/media/images/vidiaries_2024_scratch.png);
   background-blend-mode: normal;
   background-size: cover;
   background-position: 10% center;
@@ -136,7 +136,7 @@ a:active {
   height: calc(19px * 7.5);
 }
 .staple {
-  background-image: url(../media/svg/publishing_staple_landscape.svg);
+  background-image: url(/media/svg/publishing_staple_landscape.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -148,7 +148,7 @@ a:active {
     padding: 190px 38px;
   }
   .staple {
-    background-image: url(../media/svg/publishing_staple_portrait.svg);
+    background-image: url(/media/svg/publishing_staple_portrait.svg);
   }
 }
 
@@ -195,22 +195,22 @@ a:active {
   background-repeat: no-repeat;
 }
 .feat1 {
-  background-image: url(../media/images/insidestory/03_tsukushi.png);
+  background-image: url(/media/images/insidestory/03_tsukushi.png);
 }
 .feat2 {
-  background-image: url(../media/images/SquadPublishing_wide.png);
+  background-image: url(/media/images/SquadPublishing_wide.png);
 }
 .feat3 {
-  background-image: url(../media/images/pub_VIDiaries.png);
+  background-image: url(/media/images/pub_VIDiaries.png);
 }
 .feat4 {
-  background-image: url(../media/images/pub_Tengu.png);
+  background-image: url(/media/images/pub_Tengu.png);
 }
 .feat5 {
-  background-image: url(../media/images/pub_formats.png);
+  background-image: url(/media/images/pub_formats.png);
 }
 .feat6 {
-  background-image: url(../media/images/Main_and_Sub.png);
+  background-image: url(/media/images/Main_and_Sub.png);
 }
 
 .dualfeed-col /* dual feed */ {
@@ -244,7 +244,7 @@ a:active {
   background-color: #dcc6bb;
 }
 .Aga-chuu {
-  background-image: url(../media/images/Aga-chuu.png);
+  background-image: url(/media/images/Aga-chuu.png);
   /* art commissioned by Hina Oujo/HinaSukii */
   background-position: 58% center;
 }
@@ -277,7 +277,7 @@ a:active {
 
 .insidestory {
   padding: 19px;
-  background-image: url(../media/images/vi_wallpaper/VenusIsland_3.jpg);
+  background-image: url(/media/images/vi_wallpaper/VenusIsland_3.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ a:active {
   align-items: center;
   overflow: hidden;
   background-color: #d6c278;
-  background-image: url(../media/images/BG2024/vidiariesBG.png);
+  background-image: url(/media/images/BG2024/vidiariesBG.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -393,26 +393,26 @@ a:active {
   border-bottom-right-radius: inherit;
 }
 .ep1 {
-  background-image: url(../media/images/insidestory/01_nagisa.png);
+  background-image: url(/media/images/insidestory/01_nagisa.png);
   background-position: 60% center;
 }
 .ep2 {
-  background-image: url(../media/images/insidestory/02_fiona.png);
+  background-image: url(/media/images/insidestory/02_fiona.png);
   background-position: 55% center;
 }
 .ep3 {
-  background-image: url(../media/images/insidestory/03_tsukushi.png);
+  background-image: url(/media/images/insidestory/03_tsukushi.png);
   background-position: center center;
 }
 .ep4 {
-  background-image: url(../media/images/insidestory/04_nyotengu.png);
+  background-image: url(/media/images/insidestory/04_nyotengu.png);
   background-position: 25% center;
 }
 .ep5 {
-  background-image: url(../media/images/insidestory/05_luna.png);
+  background-image: url(/media/images/insidestory/05_luna.png);
   background-position: 9% center;
 }
 .ep6 {
-  background-image: url(../media/images/insidestory/06_helena.png);
+  background-image: url(/media/images/insidestory/06_helena.png);
   background-position: 40% center;
 }
