@@ -1,6 +1,6 @@
 @font-face {
   font-family: "LoveLive";
-  src: url(../media/fonts/LoveLive.otf) format("opentype");
+  src: url(/media/fonts/LoveLive.otf) format("opentype");
 }
 
 #ImportantHEAD {
@@ -16,7 +16,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
-  display: block; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
+  display: none; /* set to "none" if there's nothing to be shown in the headers, "block" if there's any */
 }
 .ImportantFEED::after {
   content: 'ONGOING DEVELOPMENT: A recent CrowdStrike update has rendered thousands of Windows PCs unusable. Read their Press Release here.';

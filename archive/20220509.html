@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>「WE VOTE FOR THE FUTURE.」</title>
-    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="https://abs.twimg.com/hashflags/Philippines_General_Elections_2_2022/Philippines_General_Elections_2_2022.png" type="image/x-icon">
     <style type="text/css">
       .dis {
@@ -27,14 +27,14 @@
         height: 75%;
       }
       body {
-        background-image: url(../media/images/halalan2022_benarnews.png);
+        background-image: url(/media/images/halalan2022_benarnews.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
       .halalan2022 {
-        background-image: url(../media/images/halalan2022_squad.png);
+        background-image: url(/media/images/halalan2022_squad.png);
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -46,8 +46,16 @@
     <meta name="msapplication-TileColor" content="#006BA2">
     <meta name="msapplication-navbutton-color" content="#006BA2">
     <meta name="apple-mobile-web-app-status-bar-style" content="#006BA2">
+    <!-- custom scripts -->
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        launchArchive();
+      }
+    </script>
   </head>
-  <body>
+  <body onload="launch()">
     <div class="dis">
       <div class="halalan2022"></div>
     </div>

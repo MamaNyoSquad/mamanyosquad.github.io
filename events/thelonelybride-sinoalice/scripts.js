@@ -10,9 +10,9 @@ function eventEnd() {
         Godspeed, Pokelabo; and <b>Godspeed, SINoALICE Global Edition!</b>
       </p>
       <br><br><br><br>
-      <img class="bride-stamp" src="../../media/images/bride_3.png" alt="">
+      <img class="bride-stamp" src="/media/images/bride_3.png" alt="">
       <br><br>
-      <img class="TheLonelyBride" src="../../media/svg/TheLonelyBride.svg" alt="" style="width: 475px;">
+      <img class="TheLonelyBride" src="/media/svg/TheLonelyBride.svg" alt="" style="width: 475px;">
       <br><br><br>
       <button onclick='window.open("https://youtu.be/y2D0m3I_GVY")'>Rewatch the stream</button>
     </div>

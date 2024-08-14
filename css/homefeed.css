@@ -42,7 +42,7 @@
 .ComingSoonGIF {
   width: 100%;
   height: 75%;
-  background-image: url(../media/images/loading.gif);
+  background-image: url(/media/images/loading.gif);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 .NotFound {
   width: 100%;
   height: 75%;
-  background-image: url(../media/images/fiona_sad.png);
+  background-image: url(/media/images/fiona_sad.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@
 
 /* DOAXVV Hearts, the graphical standout of #MamaNyoSquad */
   .NyoHeart-left {
-    background-image: url(../media/images/heart_transparent_left.png);
+    background-image: url(/media/images/heart_transparent_left.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@
     text-align: center;
   }
   .NyoHeart-right {
-    background-image: url(../media/images/heart_transparent_right.png);
+    background-image: url(/media/images/heart_transparent_right.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@ header {
   padding: 19px;
   text-align: center;
   background-color: #ff0000;
-  background-image: url(../media/images/BG2024/nyoRed.png); /* (DEFAULT) */
+  background-image: url(/media/images/BG2024/nyoRed.png); /* (DEFAULT) */
   /* background-image: url(https://static.vecteezy.com/system/resources/previews/010/060/530/original/colorful-rainbow-pride-gradient-fluid-abstract-background-lgbt-flag-pride-month-blur-wallpaper-lgbt-flag-pride-month-blur-wallpaper-light-bokeh-pride-month-colorful-wallpaper-vector.jpg); (EVENT) */
   background-size: cover;
   background-position: center bottom;
@@ -108,8 +108,8 @@ header {
   padding-bottom: 19px;
 }
 .NyoLogo {
-  background-image: url(../media/_MamaNyo2024/MamaNyoSquad_2024.png); /* (DEFAULT) */
-  /* background-image: url(../media/images/5-5_simple.png); (EVENT) */
+  background-image: url(/media/_MamaNyo2024/MamaNyoSquad_2024.png); /* (DEFAULT) */
+  /* background-image: url(/media/images/5-5_simple.png); (EVENT) */
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -143,7 +143,7 @@ header {
 }
 
 .basicHead-back {
-  background-image: url(../media/images/vi_wallpaper/VenusIsland_1.jpg);
+  background-image: url(/media/images/vi_wallpaper/VenusIsland_1.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@ header {
   height: 76px;
 }
 .entertheuniverse {
-  background-image: url(../media/_MamaNyo2024/entertheuniverse_2024.png);
+  background-image: url(/media/_MamaNyo2024/entertheuniverse_2024.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -216,7 +216,7 @@ header {
 }
 
 .DOAXVV5周年 {
-  background-image: url(../media/images/DOAXVV5周年.jpg);
+  background-image: url(/media/images/DOAXVV5周年.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
