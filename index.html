@@ -62,6 +62,13 @@
       .LoveLivebtn:hover {
         background-color: #92004e;
       }
+      .basicHead-fore > div > img {
+        display: inline-block;
+        padding: 9.5px;
+        border-radius: 19px;
+        pointer-events: initial;
+        cursor: pointer;
+      }
     </style>
     <meta name="og:type" content="website">
     <meta name="og:title" content="#MamaNyoSquad">
@@ -79,31 +86,36 @@
     <link href="css/homefeed.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/MamaNyo19.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" type="text/javascript"></script> <!-- Twitter Timelines (original) -->
     <!-- <script async src="scripts/X_widgets.js" charset="utf-8" type="text/javascript"></script> Twitter Timelines (but rebranded to X) -->
     <script src="scripts/events.js" type="text/javascript"></script>
     <script type="text/javascript">
       function launch() {
         // launch args here
+        launchArchive();
         specialEvent();
       }
     </script>
   </head>
   <body onload="launch()">
-    <!--
-    <div class="NyoHeader">
+    <!-- <div class="NyoHeader">
       <video class="NyoHead" autoplay muted loop oncontextmenu="return false">
-        <source src="media/videos/20240427.mp4" type="video/mp4">
+        <source src="media/videos/20240627.mp4" type="video/mp4">
       </video>
-    </div>
-    -->
+    </div> -->
     <iframe
       class="ytembed"
-      src="https://www.youtube-nocookie.com/embed/qtvHJC6lQ48?loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1&playlist=qtvHJC6lQ48"
-      title="[DOAXVV] True Colors Update: Luna's Introduction PV"
+      src="https://www.youtube-nocookie.com/embed/DWinLmqHOPo?loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1&playlist=DWinLmqHOPo"
       allow="autoplay">
     </iframe>
-    <div class="ImportantHEAD">
+    <!-- <iframe
+      class="ytembed"
+      src="https://www.youtube-nocookie.com/embed/ZRFdMWM9RCU?list=PLpHVxNVX3ZfXzsBu_6ToLP-i4jNGUoX1q&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
+      title="active events"
+      allow="autoplay">
+    </iframe> -->
+    <div id="ImportantHEAD" onclick="eventBanner()">
       <p class="ImportantFEED"></p>
     </div>
     <header>
@@ -122,7 +134,7 @@
         </div>
       </div>
     </header>
-    <div class="basicHead-back" style="background-image: url(media/images/sif2_eos_bg.png); font-family: 'LoveLive', serif !important;">
+    <!-- <div class="basicHead-back" style="background-image: url(media/images/sif2_eos_bg.png); font-family: 'LoveLive', serif !important;">
       <div class="basicHead-fore" style="background-color: unset;">
         <img style="width: 625px;"
           src="https://lovelive-sif2.com/wordpress/wp-content/themes/sif2_gl_v1.3/assets/images/common/logo.png"
@@ -135,7 +147,16 @@
         <br><br>
         <button class="LoveLivebtn" onclick="window.open('https://lovelive-sif2.com')">Website (English)</button>
       </div>
-    </div>
+    </div> -->
+    <!-- <div class="basicHead-back">
+      <div class="basicHead-fore">
+        <h1>Are you ready to meet the new Venus?</h1>
+        <div>
+          <img src="https://i.ytimg.com/vi/wk131eoZGDk/hq720.jpg" onclick="window.open('https://youtu.be/wk131eoZGDk')" alt="【DOAXVV】ブイなま！！特別編「新女神登場！？オーナーたちで見守る国際版スペシャルプログラム」" width="570px" title="【DOAXVV】ブイなま！！特別編「新女神登場！？オーナーたちで見守る国際版スペシャルプログラム」">
+          <img src="https://i.ytimg.com/vi/g8OI0yuTeKo/hq720.jpg" onclick="window.open('https://youtu.be/g8OI0yuTeKo')" alt="[DOAXVV] New Venus Reveal Special Program" width="570px" title="[DOAXVV] New Venus Reveal Special Program">
+        </div>
+      </div>
+    </div> -->
     <div class="InceptAnniv">
       <h1>Take a look at our Inception Anniversaries!</h1>
       <button class="NyoBtn" onclick="window.open('anniversary')">Inception Anniversaries</button>
@@ -254,13 +275,13 @@
 
   Venus Inception - Japanese
 
-  <div class="ImportantHEAD">
+  <div id="ImportantHEAD" onclick="eventBanner()">
     <b>シャンディがグローバル版27代目ヴィーナスに就任しました! 詳しくは<a rel="noopener noreferrer" class="HeadURL" href="[Japanese Edition]" target="_blank">こちら</a>。</b>
   </div>
 
   Venus Inception - Global
 
-  <div class="ImportantHEAD">
+  <div id="ImportantHEAD" onclick="eventBanner()">
     <b>Koharu has just been incepted as the 25th Venus of the Global Edition! More <a rel="noopener noreferrer" class="HeadURL" href="[Global Edition]" target="_blank">here</a>.</b>
   </div>
 

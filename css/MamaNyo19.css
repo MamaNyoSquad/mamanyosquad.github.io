@@ -8,7 +8,7 @@
   height: 375px;
 }
 .MamaNyo19 {
-  background-image: url(../media/svg/MamaNyo19.svg);
+  background-image: url(/media/svg/MamaNyo19.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 }
 
 .MamaNyo19-back {
-  background-image: url(../media/images/MamaNyo19_2023.jpg);
+  background-image: url(/media/images/MamaNyo19_2023.jpg);
   background-size: cover;
   background-position: 85% center;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
   height: 100%;
 }
 .MamaNyo19-fore {
-  background-image: url(../media/images/MamaNyo_transparent.png);
+  background-image: url(/media/images/MamaNyo_transparent.png);
   background-size: cover;
   background-position: 10% center;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 }
 
 .NyoWeekHead {
-  background-image: url(../media/images/MamaNyoWeek_2022.jpg);
+  background-image: url(/media/images/MamaNyoWeek_2022.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@
   height: 375px;
 }
 .MamaNyoWeek-2022 {
-  background-image: url(../media/svg/MamaNyoWeek_2022.svg);
+  background-image: url(/media/svg/MamaNyoWeek_2022.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>E404</title>
-    <link href="https://mamanyosquad.github.io/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="https://mamanyosquad.github.io/media/favicon.png" type="image/x-icon">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="/media/favicon.png" type="image/x-icon">
     <style type="text/css">
       /* attach in-html custom css args here */
     </style>
@@ -15,18 +15,21 @@
     <meta name="msapplication-navbutton-color" content="#161224">
     <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
     <!-- custom css -->
-    <link href="https://mamanyosquad.github.io/css/important.css" rel="stylesheet" type="text/css" media="all">
-    <link href="https://mamanyosquad.github.io/css/homefeed.css" rel="stylesheet" type="text/css" media="all">
-    <link href="https://mamanyosquad.github.io/css/articletable.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/important.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/articletable.css" rel="stylesheet" type="text/css" media="all">
     <!-- custom scripts -->
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
+    <script src="/scripts/events.js" type="text/javascript"></script>
     <script type="text/javascript">
       function launch() {
         // launch args here
+        launchArchive();
       }
     </script>
   </head>
   <body onload="launch()">
-    <div class="ImportantHEAD">
+    <div id="ImportantHEAD" onclick="eventBanner()">
       <p class="ImportantFEED"></p>
     </div>
     <header>
@@ -72,7 +75,7 @@
           #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
         </p>
       </div>
-      <img class="tbmassoc" src="https://mamanyosquad.github.io/media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+      <img class="tbmassoc" src="/media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
     </footer>
   </body>
 </html>

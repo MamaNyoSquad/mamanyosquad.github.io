@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>HM QUEEN ELIZABETH II, 1926 - 2022</title>
-    <link href="../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="https://www.royal.uk/themes/custom/kpp/favicon.ico" type="image/x-icon">
     <style type="text/css">
       body {
@@ -87,7 +87,7 @@
         background-attachment: fixed;
       }
       .LongLiveTheQueen {
-        background-image: url(../media/images/HM_QUEEN_ELIZABETH_II.png);
+        background-image: url(/media/images/HM_QUEEN_ELIZABETH_II.png);
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -95,18 +95,26 @@
         height: 100%;
       }
     </style>
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <!-- custom scripts -->
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        launchArchive();
+      }
+    </script>
     <script type="text/javascript">
       function fade() {
         document.getElementById("fadeout").style.cssText = "display: block; animation: fadeOutAnimation ease 2.5s; animation-iteration-count: 1; animation-fill-mode: forwards;";
         document.getElementById("fadein").style.display = "block";
       }
     </script>
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-navbutton-color" content="#000000">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
   </head>
-  <body>
+  <body onload="launch()">
     <div id="fadeout" class="gr" onclick="fade()">
       <div class="LongLiveTheQueen"></div>
     </div>

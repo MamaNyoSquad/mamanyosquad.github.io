@@ -14,13 +14,16 @@
     <link href="style.css" rel="stylesheet" type="text/css" media="all"> <!-- builtin -->
     <style type="text/css">
       /* attach in-html custom css args here */
+      @import url("/css/_archivedSite.css");
     </style>
     <!-- js -->
     <script src="scripts.js" type="text/javascript"></script> <!-- builtin -->
-    <script src="../../scripts/docMod.js" type="text/javascript"></script>
+    <script src="/scripts/docMod.js" type="text/javascript"></script>
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
     <script type="text/javascript">
       function launch() {
         // launch args here
+        launchArchive();
         whereBtn();
         docMod();
       }
@@ -110,7 +113,7 @@
       <button onclick="window.open('/?eventDismissed=1', '_self')">Back to title</button>
     </div>
     <footer>
-      <img src="../../media/svg/nyo_sotc_tbm.svg" width="380px" alt="#MamaNyoSquad, The Ortega Project, and tbmassoc" style="margin: 0 auto;">
+      <img src="/media/svg/nyo_sotc_tbm.svg" width="380px" alt="#MamaNyoSquad, The Ortega Project, and tbmassoc" style="margin: 0 auto;">
       <p style="text-align: center;">
         <img src="https://abs-0.twimg.com/emoji/v2/svg/1f1f5-1f1ed.svg" width="22px" alt="PH" style="display: inline-block;">
         <img src="https://abs-0.twimg.com/emoji/v2/svg/1f1ef-1f1f5.svg" width="22px" alt="PH" style="display: inline-block;">

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>An Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」</title>
-    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="../../media/favicon.png" type="image/x-icon">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="/media/favicon.png" type="image/x-icon">
     <style type="text/css">
       /* attach in-html custom css args here */
     </style>
@@ -15,27 +15,35 @@
     <meta name="msapplication-navbutton-color" content="#161224">
     <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
     <!-- custom css -->
-    <link href="../../css/homefeed.css" rel="stylesheet" type="text/css" media="all">
-    <link href="../../css/articletable.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/homefeed.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/articletable.css" rel="stylesheet" type="text/css" media="all">
+    <!-- custom scripts -->
+    <script src="/scripts/_archivedSite.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function launch() {
+        // launch args here
+        launchArchive();
+      }
+    </script>
   </head>
-  <body>
+  <body onload="launch()">
     <header>
       <div class="siteHEADER">
         <div class="logoHead">
           <div class="NyoLogo"></div>
         </div>
         <div class="HeadURLs" id="top">
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../">Home</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../policies">Policies</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../events">Events</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../archive">Archives</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../publishing">Publishing</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../blog">Blog</a></span>
-          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="../../maintenance">Maintenance</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/">Home</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/policies">Policies</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/events">Events</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/archive">Archives</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/publishing">Publishing</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/blog">Blog</a></span>
+          <span class="HeadURLSpan"><a rel="noopener noreferrer" class="HeadURL" href="/maintenance">Maintenance</a></span>
         </div>
       </div>
     </header>
-    <div class="articleHead" style="background-image: url(../../media/images/blog/xvvglobal@4.png);"></div>
+    <div class="articleHead" style="background-image: url(/media/images/blog/xvvglobal@4.png);"></div>
     <div class="articleArea">
       <h1>An Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」</h1>
       <em>published 16 April 2023 UTC</em>
@@ -94,7 +102,7 @@
           #MamaNyoSquad is not associated with KOEI TECMO GAMES and their partners. See Policies for information.
         </p>
       </div>
-      <img class="tbmassoc" src="../../media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
+      <img class="tbmassoc" src="/media/svg/tbmassoc_notable.svg" alt="" onclick="window.open('https://thebelovedmoon.wixsite.com/tbmassoc?lang=en')">
     </footer>
   </body>
 </html>
