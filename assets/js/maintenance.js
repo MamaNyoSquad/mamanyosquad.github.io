@@ -30,8 +30,8 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.getElementById("impt-ja_jp").style.display = toggle[1];
-  document.getElementById("impt-en_jp").style.display = toggle[1];
+  document.getElementById("impt-ja_jp").style.display = toggle[0];
+  document.getElementById("impt-en_jp").style.display = toggle[0];
 
   document.getElementById("impt-ja_jp").innerHTML = "TODO：ほのかの「True Colors」衣装装備時のエピソードのバグ修正";
   document.getElementById("impt-en_jp").innerHTML = "TODO: Bug fix to Episodes whilst equipping Honoka's True Colors Outfit";
