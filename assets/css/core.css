@@ -126,7 +126,7 @@ button:active {
 }
 /* styling formats for buttons: inline-block, none */
 .xvvSurvey { display: inline-block; }
-.xvvNotify { display: inline-block; }
+.xvvNotify { display: none; }
 .xvvEvent { display: none; }
 
 /* base dialog */
