@@ -125,7 +125,7 @@ button:active {
   align-items: center;
 }
 /* styling formats for buttons: inline-block, none */
-.xvvSurvey { display: inline-block; }
+.xvvSurvey { display: none; }
 .xvvNotify { display: none; }
 .xvvEvent { display: none; }
 
