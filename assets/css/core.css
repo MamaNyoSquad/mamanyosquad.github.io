@@ -125,7 +125,7 @@ button:active {
   align-items: center;
 }
 /* styling formats for buttons: inline-block, none */
-.xvvSurvey { display: none; }
+.xvvSurvey { display: inline-block; }
 .xvvNotify { display: none; }
 .xvvEvent { display: none; }
 
@@ -145,6 +145,7 @@ dialog {
 dialog:focus { outline: 0; }
 dialog::backdrop {
   background-color: #16122480;
+  -webkit-backdrop-filter: blur(19px);
   backdrop-filter: blur(19px);
 }
 dialog > span { /* close button */
