@@ -33,8 +33,8 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   document.getElementById("impt-ja_jp").style.display = toggle[0];
   document.getElementById("impt-en_jp").style.display = toggle[0];
 
-  document.getElementById("impt-ja_jp").innerHTML = "TODO：ほのかの「True Colors」衣装装備時のエピソードのバグ修正";
-  document.getElementById("impt-en_jp").innerHTML = "TODO: Bug fix to Episodes whilst equipping Honoka's True Colors Outfit";
+  document.getElementById("impt-ja_jp").innerHTML = "PRISMのリンクされた特典のバグ修正";
+  document.getElementById("impt-en_jp").innerHTML = "PRISM's Linked Benefits bug fix";
 
   // True Colors (comment to activate / deactivate)
   // document.getElementById("impt-ja_jp").innerHTML = "True Colors～たまき～";
@@ -58,7 +58,7 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
   document.getElementById("impt-en_gl").style.display = toggle[1];
 
-  // document.getElementById("impt-en_gl").innerHTML = "TODO: [task here]";
+  // document.getElementById("impt-en_gl").innerHTML = "task here]";
 
   // True Colors (comment to activate / deactivate)
   document.getElementById("impt-en_gl").innerHTML = "True Colors ～Nagisa～";
