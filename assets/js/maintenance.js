@@ -56,7 +56,7 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // below code are contained in <li important>, toggle the view with #impt-[locale]
   let toggle = ["none", "list-item"];
 
-  document.getElementById("impt-en_gl").style.display = toggle[1];
+  document.getElementById("impt-en_gl").style.display = toggle[0];
 
   // document.getElementById("impt-en_gl").innerHTML = "task here]";
 
