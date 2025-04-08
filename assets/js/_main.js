@@ -2,6 +2,7 @@
 
 // global init
 function init() {
+  supplementalBtns();
   triggerResponsive();
   showVersion();
   viClock(); // js clock
@@ -10,7 +11,7 @@ function init() {
 }
 
 function showVersion() {
-  document.getElementById("siteVersion").innerHTML = "v20240518.20.13";
+  document.getElementById("siteVersion").innerHTML = "v20240518.20.14";
 }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock

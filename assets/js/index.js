@@ -42,3 +42,15 @@ function transcriptShow(file) { // anniversary transcript
   document.getElementById("xvvEvt").showModal();
 
 }
+
+function supplementalBtns() {
+  let suplRows = document.querySelectorAll(".btnOther");
+  for (let b = 0; b < suplRows.length; b++) {
+    suplRows[b].insertAdjacentHTML("beforeend", `
+      <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="alert('coming 12 May 2025')">how_to_vote</span>
+      <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stallin'&quot;!" onclick="window.open('https://youtu.be/xUVEfajbIj0')">music_note</span>
+      <!-- <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvDialog('notify')">info</span> -->
+      <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event')">celebration</span> -->
+    `);
+  }
+}
