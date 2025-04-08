@@ -124,10 +124,10 @@ button:active {
   justify-content: end;
   align-items: center;
 }
-/* styling formats for buttons: inline-block, none */
-.xvvSurvey { display: inline-block; }
-.xvvNotify { display: none; }
-.xvvEvent { display: none; }
+/* styling formats for supplemental buttons */
+.btnOther > * {
+  display: inline-block;
+}
 
 /* base dialog */
 dialog {

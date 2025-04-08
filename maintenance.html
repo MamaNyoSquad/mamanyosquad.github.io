@@ -41,7 +41,7 @@
         showMaintenance();
         // reference: start month, start day, start hr, start min, end month, end day, end hr, end min, timezone
         jpMaint(4, 3, 12, 0, 4, 3, 17, 0, 9);
-        glMaint(4, 3, 2, 30, 4, 3, 3, 30, 0);
+        glMaint(4, 8, 2, 30, 4, 8, 6, 30, 0);
       }
     </script>
     <script type="text/javascript">
@@ -50,15 +50,12 @@
   </head>
   <body onload="init()">
     <div id="mobile-navPanel" class="mobile">
-      <div class="btnOther">
-        <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="window.open('https://youtu.be/xUVEfajbIj0')">music_note</span>
-        <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvDialog('notify')">info</span>
-        <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event')">celebration</span>
-      </div>
+      <div class="btnOther"></div>
+      <span class="material-symbols-rounded" title="Go to Home" onclick="window.location.replace('/')">home</span>
       <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
       <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="window.open('/publishing')">book</span>
       <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
-      <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span>
+      <!-- <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span> -->
       <span class="material-symbols-rounded closeNav" onclick="mobilePanelClose()">close</span>
     </div>
     <div class="headers"> <!-- header -->
@@ -66,15 +63,12 @@
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
           <div class="linkRefs">
-            <div class="btnOther">
-              <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="window.open('https://youtu.be/xUVEfajbIj0')">music_note</span>
-              <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvDialog('notify')">info</span>
-              <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event')">celebration</span>
-            </div>
+            <div class="btnOther"></div>
+            <span class="material-symbols-rounded" title="Go to Home" onclick="window.location.replace('/')">home</span>
             <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
             <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="window.open('/publishing')">book</span>
             <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
-            <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span>
+            <!-- <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span> -->
           </div>
         </div>
       </header>
@@ -163,10 +157,10 @@
           <!-- TODO: add some data here if there are more than just displayed below,
           and comment these two below if they are not included in the Routine. -->
           
-          <li>Fixes for recently-occurring bugs</li>
+          <!-- <li>Fixes for recently-occurring bugs</li> -->
 
-          <!-- <li>Updated Events</li> -->
-          <!-- <li>Bug Fixes</li> -->
+          <li>Updated Events</li>
+          <li>Bug Fixes</li>
 
         </ul>
           <p>
@@ -174,7 +168,7 @@
             <span id="stTime-en_gl">[fetching data...]</span> to
             <span id="edTime-en_gl">[fetching data...]</span> VIT.
           </p>
-      <button onclick="viewMaintenance('maint_gl_0700_250403_1_0_439bb99c75b1ea673e4708b7ee6a7819ef0c774ea097772e752ed5962a883345_en', 'gl')">Details</button>
+      <button onclick="viewMaintenance('maint_gl_0701_250408_1_0_71f452733e418f8d2363e4e56f97ba770ce6d7f97aeb2d31782b9dfae67030c6_en', 'gl')">Details</button>
       </div>
     </div>
     <footer> <!-- footer -->
