@@ -11,7 +11,7 @@ function init() {
 }
 
 function showVersion() {
-  document.getElementById("siteVersion").innerHTML = "v20240518.20.16";
+  document.getElementById("siteVersion").innerHTML = "v20240518.20.17";
 }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
