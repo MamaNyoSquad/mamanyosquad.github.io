@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # full update everything before anyone starts working on stuff
 sudo apt update
