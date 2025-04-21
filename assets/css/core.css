@@ -18,7 +18,7 @@ img, video, iframe {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  padding: 0 7.6px;
+  padding: 0 7.6px 7.6px 7.6px;
   -webkit-transition: 0.95s;
   -moz-transition: 0.95s;
   -o-transition: 0.95s;
