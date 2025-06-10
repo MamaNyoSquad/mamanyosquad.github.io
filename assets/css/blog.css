@@ -2,14 +2,15 @@
 .heroFore { padding: calc(190px + 95px) 19px 190px 19px; }
 
 .latestBlogBack {
-  background-image: url("/assets/images/hero/Helena_hero.jpg");
+  background-color: #000000;
+  /* background-image: url("/assets/images/hero/Helena_hero.jpg"); */
   background-size: cover;
   background-position: 25% 47.5%;
   background-repeat: no-repeat;
   border-radius: 19px;
 }
 .latestBlogFore {
-  background-color: #16122480;
+  /* background-color: #16122480; */
   width: 100%;
   padding: 38px 19px;
   border: #06a8ff solid 3.8px;
