@@ -1,0 +1,33 @@
+<h2 style="text-align: center">
+  #MamaNyoSquad has been upgraded to v20240518.21.0
+</h2>
+<br>
+<p>
+  Following
+  <a
+    rel="noopener noreferrer"
+    href="https://youtu.be/VQSlVJtVJNM"
+    target="_blank"
+    >Azusa's debut as the 32nd Overall Venus</a
+  >, we are unveiling the following changelogs:
+</p>
+<p>
+  <ul>
+    <li>
+      Migrating of Blogs from HTML to TXT -- allowing AJAX to take effect (and
+      simplify blog view!)
+    </li>
+    <li>Universal dialog model for all notifications going forward</li>
+    <li>Reintroduction of the YouTube Player system</li>
+  </ul>
+</p>
+<p>
+  This major changelog is also reflected on our
+  <a
+    rel="noopener noreferrer"
+    href="https://github.com/MamaNyoSquad/mamanyosquad.github.io"
+    >GitHub</a
+  >.
+</p>
+<br>
+<p><i>For minor versions, they are only reflected on GitHub.</i></p>

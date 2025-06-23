@@ -4,7 +4,7 @@ function xvvDialog(func) {
 
     case "survey": // DOAXVV surveys 
       document.body.innerHTML += `
-        <dialog id="xvvMdl">
+        <dialog id="xvvMdl" onkeydown="if(event.key === 'Escape') { closeModal(); }">
           <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
           <iframe src="https://www.gamecity.ne.jp/form/doaxvv_enquete_2025_en" allowfullscreen></iframe>
         </dialog>
@@ -13,20 +13,20 @@ function xvvDialog(func) {
 
     case "notify": // #MamaNyoSquad announcements
       document.body.innerHTML += `
-        <dialog id="xvvMdl" style="background-color: #161224 !important; padding: 19px;">
-          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
+        <dialog id="xvvMdl" style="background-color: #161224 !important; padding: 19px;" onkeydown="if(event.key === 'Escape') { closeModal(); }">
+          <span xvvNotify class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
           <div id="ajaxTxt"></div>
         </dialog>
       `;
       const ajaxLoad = new XMLHttpRequest();
       ajaxLoad.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
-      ajaxLoad.open("GET", "/assets/notify.txt");
+      ajaxLoad.open("GET", "/assets/text/notify.txt");
       ajaxLoad.send();
       break;
 
     case "event": // announcements from DOAXVV
       document.body.innerHTML += `
-        <dialog id="xvvMdl">
+        <dialog id="xvvMdl" onkeydown="if(event.key === 'Escape') { closeModal(); }">
           <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
           <iframe src="` + ifEmbed("xvv") + `" allowfullscreen></iframe>
         </dialog>
@@ -42,6 +42,15 @@ function xvvDialog(func) {
           return yt;
         }
       }
+      break;
+
+    case "transcript": // anniversary transcript
+      document.body.innerHTML += `
+        <dialog id="xvvMdl" onkeydown="if(event.key === 'Escape') { closeModal(); }">
+          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
+          <iframe src="/assets/pdf/20241206_4anniv_transcript.pdf"></iframe>
+        </dialog>
+      `;
       break;
 
     default: // none will be executed in this part

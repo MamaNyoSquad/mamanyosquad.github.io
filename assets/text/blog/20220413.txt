@@ -1,0 +1,59 @@
+<div>
+  <div class="blogText">
+    <span blogType>PRESS RELEASE</span>
+    <h1>An Open Letter to Bookmark</h1>
+    <span>13 Apr 2022</span>
+    <br><br><br>
+    <p>
+      We, whom have been your loyal customers on the platform, are saddened by
+      the sudden concurrent changes that has affected our workflows. It has been
+      such a pain to be able to maintain our social presence across the Internet
+      without worrying when our features are going to be limited anytime soon.
+      And most importantly, we're in a deep worry that due to the new pricing
+      guidelines, our free websites--like this one--is bound to be deleted soon.
+      (we've made backups of it just in case, so that we won't lose any hard
+      work, but nonetheless.)
+    </p>
+    <p>
+      As such, we've been staying on this platform for many months (if not a
+      year or two), freely customizing our websites as we wish without any worry
+      of limitations. we've been so grateful to be provided many new features
+      that will enhance the website experience, but that came at a cost: We need
+      to pay to utilize the advanced services and keep our websites active.
+    </p>
+    <p>
+      Now, we understand that these paid services are the 'keys' to improving
+      the site experience, but please understand that some customers of this
+      platform can't stay longer because when their "Free Trial" ends, they MUST
+      PAY to continue using the service; whereas themselves have a tight budget
+      or have no budget at all.
+    </p>
+    <p>
+      Because of these sudden changes, those who are in that sector have a
+      choice to pay up to continue using the basic services after the trial, or
+      remove from the platform.
+    </p>
+    <p>
+      Before we move on, we just wanted to mention that restricting
+      customizations is a real pain considering that some websites have
+      individual customization settings before this sudden change, like in
+      Emmannuel's case, in which he
+      <a
+        rel="noopener noreferrer"
+        href="https://x.com/i/status/1513791911919644675"
+        target="_blank"
+        >tweeted</a
+      >
+      at 8:11am UTC. In a nutshell, the websites after this update have
+      restricted the customizations (like header and footer) to apply globally.
+      What's worse is that unlike the last update [as we can remember] that you
+      limited our free websites to 5, you haven't pushed future updates to your
+      customers, which proves that the changes are sudden without their notice.
+    </p>
+    <p>
+      We're appealing to Bookmark to reconsider other options considering the
+      no-budget customers like us and features that we deem are demanding to be
+      returned, amongst other considerations not mentioned in this open letter.
+    </p>
+  </div>
+</div>

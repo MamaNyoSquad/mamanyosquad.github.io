@@ -170,6 +170,7 @@ dialog > span { /* close button */
   -o-transition: 0.475s !important;
   transition: 0.475s !important;
 }
+dialog > span[xvvNotify] { background-color: #06a8ff; }
 dialog > span:hover {
   background-color: #ff0000;
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
