@@ -1,0 +1,23 @@
+html {
+  background-color: #3d374c;
+}
+a:link, a:visited {
+  color: #af9be0;
+  text-decoration: none;
+}
+a:hover {
+  color: #786d97;
+  text-decoration: none;
+}
+a:active {
+  color: #dcc6bb;
+  text-decoration: none;
+}
+header {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 1900;
+  padding: 19px 38px;
+  background: linear-gradient(#3d374ca0, #00000000);
+}
