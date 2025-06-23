@@ -22,10 +22,6 @@
   </ul>
 </p>
 <p>
-  This is amidst DOAXVV Global opening their survey platform to determine what
-  the Owners will expect in its future releases and upstreams from Japanese.
-</p>
-<p>
   This major changelog is also reflected on our
   <a
     rel="noopener noreferrer"
