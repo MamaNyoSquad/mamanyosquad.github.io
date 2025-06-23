@@ -30,4 +30,4 @@
   >.
 </p>
 <br>
-<p><i>For minor versions, they are only reflected only on GitHub.</i></p>
+<p><i>For minor versions, they are only reflected on GitHub.</i></p>
