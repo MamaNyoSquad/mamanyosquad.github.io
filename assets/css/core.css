@@ -170,6 +170,8 @@ button:disabled {
   pointer-events: all;
 }
 
+#ajaxTxt > *, .MITtxt > * { margin: 0; }
+
 /* article layout */
 .heroBack {
   position: -webkit-sticky;
