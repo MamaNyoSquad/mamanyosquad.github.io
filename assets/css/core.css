@@ -171,6 +171,21 @@ button:disabled {
 }
 
 #ajaxTxt > *, .MITtxt > * { margin: 0; }
+#ajaxTxt > div > * {
+  margin: 0;
+  text-align: left;
+}
+
+span[isLabel="MAJOR"] {
+  padding: 1.9px 9.5px;
+  background-color: #ff0000;
+  border-radius: 9999px;
+}
+span[isLabel="MINOR"] {
+  padding: 1.9px 9.5px;
+  background-color: #06a8ff;
+  border-radius: 9999px;
+}
 
 /* article layout */
 .heroBack {

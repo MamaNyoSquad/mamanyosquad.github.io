@@ -2,7 +2,7 @@
   #MamaNyoSquad has been upgraded to v20240518.21.0
 </h2>
 <br>
-<div style="text-align: center; margin: 0;">
+<div>
   <p>
     Following 
     <a rel="noopener noreferrer" href="https://youtu.be/VQSlVJtVJNM" target="_blank">Azusa's debut as the 32nd Overall Venus</a>,
@@ -22,8 +22,13 @@
   <br>
   <p>
     This major changelog is also reflected on our 
-    <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io">GitHub</a>.
+    <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/issues?q=label%3AMAJOR" target="_blank">GitHub Pull Requests</a>
+    with a <span isLabel="MAJOR">MAJOR</span> label.
   </p>
   <br>
-  <p><i>For minor versions, they are only reflected on GitHub.</i></p>
+  <p style="font-size: 0.75em;"><i>
+    Minor versions going forward will only be reflected as
+    <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/issues?q=label%3AMINOR" target="_blank">GitHub Pull Requests</a>
+    with a <span isLabel="MINOR">MINOR</span> label.
+  </i></p>
 </div>
