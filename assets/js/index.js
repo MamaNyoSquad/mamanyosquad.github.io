@@ -2,7 +2,7 @@ function showMIT() {
   return document.body.insertAdjacentHTML("afterbegin", `
     <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
       <div style="width: 593.75px; height: 712.5px; background-color: #a31f34;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
-        <div style="padding: 47.5px 19px; text-align: left;">
+        <div class="MITtxt" style="padding: 47.5px 19px; text-align: left;">
           <h2>MIT License</h2>
           <br>
           <span style="display: block; font-style: italic">
