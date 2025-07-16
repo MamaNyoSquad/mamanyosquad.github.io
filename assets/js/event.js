@@ -5,8 +5,17 @@ function xvvDialog(func) {
     case "survey": // DOAXVV surveys
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
-          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
             <iframe src="https://www.gamecity.ne.jp/form/doaxvv_enquete_2025_en"></iframe>
+          </div>
+        </div>
+      `);
+
+    case "music": // DOAXVV music
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 712.5px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
+            <iframe src="https://www.youtube-nocookie.com/embed/fgXv8wMl3h0?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
           </div>
         </div>
       `);
@@ -18,7 +27,7 @@ function xvvDialog(func) {
       ajx.send();
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
-          <div style="width: 593.75px; height: 712.5px; background-color: #161224;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+          <div style="width: 593.75px; height: 712.5px; background-color: #161224;" onclick="{ event.stopPropagation(); }">
             <div id="ajaxTxt" style="padding: 47.5px 19px;"></div>
           </div>
         </div>
@@ -27,7 +36,7 @@ function xvvDialog(func) {
     case "event": // announcements from DOAXVV
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
-          <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+          <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); }">
             <iframe src="${ifEmbed("xvv", "chara_gl_0715_250716_1_0_1553a72f7ee400ebc24584c090dfbe15e7fdcf214f59d1558478dcf720da7b9f_en")}" allowfullscreen></iframe>
           </div>
         </div>
@@ -40,7 +49,7 @@ function xvvDialog(func) {
     case "transcript": // anniversary transcript
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
-          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
             <iframe src="/assets/pdf/20241206_4anniv_transcript.pdf"></iframe>
           </div>
         </div>
