@@ -2,67 +2,53 @@ function xvvDialog(func) {
 
   switch(func) {
 
-    case "survey": // DOAXVV surveys 
-      document.body.innerHTML += `
-        <dialog id="xvvMdl" onkeydown="if(event.key === 'Escape') { closeModal(); }">
-          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
-          <iframe src="https://www.gamecity.ne.jp/form/doaxvv_enquete_2025_en" allowfullscreen></iframe>
-        </dialog>
-      `;
-      break;
+    case "survey": // DOAXVV surveys
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+            <iframe src="https://www.gamecity.ne.jp/form/doaxvv_enquete_2025_en"></iframe>
+          </div>
+        </div>
+      `);
 
     case "notify": // #MamaNyoSquad announcements
-      document.body.innerHTML += `
-        <dialog id="xvvMdl" style="background-color: #161224 !important; padding: 19px;" onkeydown="if(event.key === 'Escape') { closeModal(); }">
-          <span xvvNotify class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
-          <div id="ajaxTxt"></div>
-        </dialog>
-      `;
-      const ajaxLoad = new XMLHttpRequest();
-      ajaxLoad.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
-      ajaxLoad.open("GET", "/assets/text/notify.txt");
-      ajaxLoad.send();
-      break;
+      let ajx = new XMLHttpRequest();
+      ajx.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
+      ajx.open("GET", "/assets/text/notify.txt");
+      ajx.send();
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 593.75px; height: 712.5px; background-color: #161224;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+            <div id="ajaxTxt" style="padding: 47.5px 19px;"></div>
+          </div>
+        </div>
+      `);
 
     case "event": // announcements from DOAXVV
-      document.body.innerHTML += `
-        <dialog id="xvvMdl" onkeydown="if(event.key === 'Escape') { closeModal(); }">
-          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
-          <iframe src="` + ifEmbed("xvv") + `" allowfullscreen></iframe>
-        </dialog>
-      `;
-      function ifEmbed(e) {
-        if (e == "xvv") {
-          let xvvId = "maint_gl_0612_240627_1_0_0e7c7bdc282ba0ae8f1c5beffd454adde0ad08e7e17ff7bb893ebf052f07eaba_en",
-            xvv = "https://game.doaxvv.com/production/html/information/" + xvvId + ".html";
-          return xvv;
-        } else if (e == "yt") {
-          let ytId = "iif5ng2p3dE"
-            yt = "https://www.youtube-nocookie.com/embed/" + ytId + "?rel=0";
-          return yt;
-        }
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+            <iframe src="${ifEmbed("xvv", "chara_gl_0715_250716_1_0_1553a72f7ee400ebc24584c090dfbe15e7fdcf214f59d1558478dcf720da7b9f_en")}" allowfullscreen></iframe>
+          </div>
+        </div>
+      `);
+      function ifEmbed(e, r) {
+        if (e == "xvv") { return xvv = "https://game.doaxvv.com/production/html/information/" + r + ".html"; }
+        else if (e == "yt") { return yt = "https://www.youtube-nocookie.com/embed/" + r + "?rel=0"; }
       }
-      break;
 
     case "transcript": // anniversary transcript
-      document.body.innerHTML += `
-        <dialog id="xvvMdl" onkeydown="if(event.key === 'Escape') { closeModal(); }">
-          <span class="material-symbols-rounded" title="Close" onclick="closeModal()">close</span>
-          <iframe src="/assets/pdf/20241206_4anniv_transcript.pdf"></iframe>
-        </dialog>
-      `;
-      break;
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
+            <iframe src="/assets/pdf/20241206_4anniv_transcript.pdf"></iframe>
+          </div>
+        </div>
+      `);
 
     default: // none will be executed in this part
+      return;
 
   }
-  
-  // execute Modal
-  document.getElementById("xvvMdl").showModal();
 
-}
-
-function closeModal() {
-  document.getElementById("xvvMdl").close();
-  document.getElementById("xvvMdl").remove();
 }
