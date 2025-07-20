@@ -59,3 +59,13 @@ function supplementalBtns() {
     `);
   }
 }
+
+function headingDialog(url) {
+  return document.body.insertAdjacentHTML("afterbegin", `
+    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+      <div style="width: 475px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
+        <iframe id="headingDialog" src="${url}"></iframe>
+      </div>
+    </div>
+  `);
+}
