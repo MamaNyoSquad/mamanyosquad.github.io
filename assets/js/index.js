@@ -69,3 +69,13 @@ function headingDialog(url) {
     </div>
   `);
 }
+
+function ytVodDialog(ytId, style) {
+  return document.body.insertAdjacentHTML("afterbegin", `
+    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+      <div style="${style}" onclick="{ event.stopPropagation(); }">
+        <iframe src="https://www.youtube-nocookie.com/embed/${ytId}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
+      </div>
+    </div>
+  `);
+}
