@@ -38,14 +38,8 @@ function showMIT() {
   `);
 }
 
-function mobilePanelOpen() {
-  var navPanel = document.getElementById("mobile-navPanel").style;
-  navPanel.transform = "unset";
-}
-function mobilePanelClose() {
-  var navPanel = document.getElementById("mobile-navPanel").style;
-  navPanel.transform = "translateY(-19rem)";
-}
+function mobilePanelOpen() { return navPanel = document.getElementById("mobile-navPanel").setAttribute("style", "transform: unset;"); }
+function mobilePanelClose() { return navPanel = document.getElementById("mobile-navPanel").setAttribute("style", "transform: translateY(-19rem);"); }
 
 function supplementalBtns() {
   let suplRows = document.querySelectorAll(".btnOther");
@@ -54,8 +48,8 @@ function supplementalBtns() {
       <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="window.open('/MamaNyoVotesPH')">how_to_vote</span> -->
       <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
       <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="xvvDialog('music')">music_note</span>
-      <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.21.0!" onclick="xvvDialog('notify')">info</span>
-      <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV Global!" onclick="xvvDialog('event')">celebration</span>
+      <!-- <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.21.0!" onclick="xvvDialog('notify')">info</span> -->
+      <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV Global!" onclick="xvvDialog('event')">celebration</span> -->
     `);
   }
 }

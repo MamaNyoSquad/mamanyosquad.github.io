@@ -141,15 +141,14 @@ function blogQue() {
       loadArticle(article);
       return;
 
-    default:
-      return;
+    default: return;
 
   }
 
 }
 
 function replaceHeader() {
-  document.getElementById("blogHeader").innerHTML = `
+  return document.getElementById("blogHeader").innerHTML = `
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
@@ -175,7 +174,7 @@ function replaceHeader() {
 
 function loadArticle(date) {
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  const atcl = new XMLHttpRequest();
+  let atcl = new XMLHttpRequest();
   atcl.onload = function() { document.getElementById("blogContent").innerHTML = this.responseText; }
   atcl.open("GET", "/assets/text/blog/" + date + ".txt");
   atcl.send();

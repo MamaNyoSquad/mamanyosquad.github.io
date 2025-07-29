@@ -56,7 +56,7 @@ function xvvDialog(func) {
       `);
 
     default: // none will be executed in this part
-      return;
+      return this.preventDefault();
 
   }
 
