@@ -1,4 +1,4 @@
-function xvvDialog(func) {
+function xvvDialog(func, arg) {
 
   switch(func) {
 
@@ -6,7 +6,7 @@ function xvvDialog(func) {
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
           <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
-            <iframe src="https://www.gamecity.ne.jp/form/doaxvv_enquete_2025_en"></iframe>
+            <iframe src="${arg}"></iframe>
           </div>
         </div>
       `);
@@ -15,7 +15,7 @@ function xvvDialog(func) {
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
           <div style="width: 712.5px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
-            <iframe src="https://www.youtube-nocookie.com/embed/fgXv8wMl3h0?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
+            <iframe src="https://www.youtube-nocookie.com/embed/${arg}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
           </div>
         </div>
       `);
@@ -37,26 +37,29 @@ function xvvDialog(func) {
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
           <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); }">
-            <iframe src="${ifEmbed("xvv", "chara_gl_0715_250716_1_0_1553a72f7ee400ebc24584c090dfbe15e7fdcf214f59d1558478dcf720da7b9f_en")}" allowfullscreen></iframe>
+            <iframe src="${ifEmbed(...decodeURIComponent(arg).match(/"(?:[^"\\]|\\.)*"|[^,]+/g).map(s => s.trim().replace(/^"|"$/g, '')))}"></iframe>
           </div>
         </div>
       `);
       function ifEmbed(e, r) {
-        if (e == "xvv") { return xvv = "https://game.doaxvv.com/production/html/information/" + r + ".html"; }
-        else if (e == "yt") { return yt = "https://www.youtube-nocookie.com/embed/" + r + "?rel=0"; }
+        switch (e) {
+          case "jp": return `https://doax-venusvacation.jp/${r}.html`; // `{info|maintenance}/id`
+          case "gl": return `https://game.doaxvv.com/production/html/information/${r}.html`;
+          default: return event.preventDefault();
+        }
       }
 
     case "transcript": // anniversary transcript
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
           <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
-            <iframe src="/assets/pdf/20241206_4anniv_transcript.pdf"></iframe>
+            <iframe src="/assets/pdf/${arg}"></iframe>
           </div>
         </div>
       `);
 
     default: // none will be executed in this part
-      return this.preventDefault();
+      return event.preventDefault();
 
   }
 
