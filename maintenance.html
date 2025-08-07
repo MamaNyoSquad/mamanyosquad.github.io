@@ -8,7 +8,7 @@
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/favicon.png" type="image/x-icon">
     <meta name="og:type" content="website">
-    <meta name="og:title" content="#MamaNyoSquad">
+    <meta name="og:title" content="Maintenance Tracker">
     <meta name="og:image" content="https://mamanyosquad.github.io/assets/preview.png">
     <meta name="og:url" content="https://mamanyosquad.github.io/maintenance">
     <meta name="og:description" content="Stay updated on the most recent Maintenance Routines from the Japanese and Global Edition! 💕">
@@ -40,7 +40,7 @@
         // start() args here
         showMaintenance();
         // reference: start month, start day, start hr, start min, end month, end day, end hr, end min, timezone
-        jpMaint(7, 30, 12, 0, 7, 30, 17, 0, 9);
+        jpMaint(8, 7, 12, 0, 8, 7, 17, 0, 9);
         glMaint(8, 6, 2, 30, 8, 6, 7, 30, 0);
       }
     </script>
@@ -126,7 +126,7 @@
               >【データの取得...】</span
             >から午前<span id="edTime-ja_jp">【データの取得...】</span>までVITの予定だ。
           </p>
-          <button onclick="maintDialog('jp', 'maintenance/48841')">詳細へ</button>
+          <button onclick="maintDialog('jp', 'maintenance/49049')">詳細へ</button>
           <!-- <button disabled="true">ゲーム内でのみ利用可能</button> -->
         </div>
         <div id="en" lang="en"> <!-- ja-en -->
@@ -153,7 +153,7 @@
             <span id="stTime-en_jp">[fetching data...]</span> to
             <span id="edTime-en_jp">[fetching data...]</span> VIT.
           </p>
-          <button onclick="maintDialog('jp', 'maintenance/48841')">Details</button>
+          <button onclick="maintDialog('jp', 'maintenance/49049')">Details</button>
           <!-- <button disabled="true">Only available in-game</button> -->
         </div>
         <h2>Global Edition <img xvvIcon src="https://game.doaxvv.com/production/html/information/img/Girl/mis_icon.png" alt=""></h2> <!-- en_gl -->
@@ -191,9 +191,9 @@
           <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
         </div>
         <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
-        <p class="footText"><span id="footTime">Fetching time...</span></p>
+        <p class="footText"><span id="footTime" onclick="window.location.replace('/clock?format=12')">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="window.location.replace('/policies')" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="window.open('https://tbmassoc.github.io')" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="window.location.replace('/policies')" title="Read our Site Policies on how we use assets">Site Policies</a></p>
       </div>
     </footer>
   </body>

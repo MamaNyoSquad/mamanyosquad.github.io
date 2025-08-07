@@ -1,0 +1,19 @@
+.clockUI { padding: calc(190px + 95px) 19px 190px 19px; }
+.clockUI * { margin: 0; }
+.clockUI > div {
+  width: 95rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+p[venusIslandTime], p[yourTz] {
+  text-align: center;
+  font-weight: bold;
+  font-size: calc(1.9vw * 6.5);
+  font-family: "IBM Plex Mono", monospace;
+}
+
+button[set12or24] {
+  display: none;
+  float: right;
+}

@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
-    <title>Page not found</title>
+    <title>Venus Island Clock</title>
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json"> <!-- PWA -->
+    <!-- <meta name="og:type" content="website">
+    <meta name="og:title" content="#MamaNyoSquad">
+    <meta name="og:image" content="https://mamanyosquad.github.io/assets/preview.png">
+    <meta name="og:url" content="https://mamanyosquad.github.io">
+    <meta name="og:description" content="Enter the universe through the eyes of the Tengu! 💕">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MamaNyoSquad"> -->
     <meta name="theme-color" content="#161224">
     <meta name="msapplication-TileColor" content="#161224">
     <meta name="msapplication-navbutton-color" content="#161224">
@@ -15,19 +23,23 @@
     <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- root -->
     <style type="text/css">
       /* css args here */
-      @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"); /* googlefonts icons */
       @import url("/assets/css/core.css");
       @import url("/assets/css/responsive.css");
       @import url("/assets/css/index.css");
+      @import url("/assets/css/clock.css");
     </style>
     <!-- custom js -->
     <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- root -->
     <script src="/assets/js/pwa.js" type="text/javascript"></script> <!-- pwa -->
     <script src="/assets/js/index.js" type="text/javascript"></script>
     <script src="/assets/js/responsive.js" type="text/javascript"></script>
+    <script src="/assets/js/event.js" type="text/javascript"></script>
+    <script src="/assets/js/clock.js" type="text/javascript"></script>
     <script type="text/javascript">
       function start() {
         // start() args here
+        clockUI();
+        yourTimeZone();
       }
     </script>
     <script type="text/javascript">
@@ -52,10 +64,18 @@
         </div>
       </header>
     </div>
-    <div class="notFoundHead">
-      <img style="margin: 0 auto;" src="/assets/images/chibi/NYO_lose.png" alt="" width="285px">
-      <br>
-      <h2>E404: Page not found</h2>
+    <div class="clockUI">
+      <div>
+        <p>Time in <b>Venus Island</b> now</p>
+        <p venusIslandTime></p>
+        <p style="text-align: right; font-weight: bold;" viDate></p>
+        <br><br>
+        <p>Your time zone: <span style="font-weight: bold;" yourTzFrmt></span></p>
+        <p yourTz></p>
+        <p style="text-align: right; font-weight: bold;" yourTzDate></p>
+        <br><br>
+        <button set12or24></button>
+      </div>
     </div>
     <footer> <!-- footer -->
       <div id="footPage">
@@ -66,9 +86,9 @@
           <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
         </div>
         <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
-        <p class="footText"><span id="footTime" onclick="window.location.replace('/clock?format=12')">Fetching time...</span></p>
+        <p class="footText" style="display: none;"><span id="footTime" onclick="window.location.replace('/clock?format=12')">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank" title="Visit tbmassoc's website">a proud brand of tbmassoc</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="window.open('https://tbmassoc.github.io')" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="window.location.replace('/policies')" title="Read our Site Policies on how we use assets">Site Policies</a></p>
       </div>
     </footer>
   </body>
