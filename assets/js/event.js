@@ -1,6 +1,6 @@
 function xvvDialog(func, arg) {
 
-  switch(func) {
+  switch (func) {
 
     case "survey": // DOAXVV surveys
       return document.body.insertAdjacentHTML("afterbegin", `
@@ -20,10 +20,10 @@ function xvvDialog(func, arg) {
         </div>
       `);
 
-    case "notify": // #MamaNyoSquad announcements
+    case "newver": // new version announce
       let ajx = new XMLHttpRequest();
       ajx.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
-      ajx.open("GET", "/assets/text/notify.txt");
+      ajx.open("GET", `/assets/text/${func}.txt`);
       ajx.send();
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">

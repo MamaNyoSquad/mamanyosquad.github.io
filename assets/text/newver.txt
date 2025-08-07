@@ -1,23 +1,20 @@
 <h2 style="text-align: center">
-  #MamaNyoSquad has been upgraded to v20240518.21.0
+  #MamaNyoSquad v20240518.22.0, supercharged
 </h2>
 <br>
 <div>
-  <p>
-    Following 
-    <a rel="noopener noreferrer" href="https://youtu.be/VQSlVJtVJNM" target="_blank">Azusa's debut as the 32nd Overall Venus</a>,
-    we are unveiling the following changelogs:
-  </p>
+  <p>We have supercharged our website presence with major changelogs:</p>
   <br>
   <p>
     <ul>
-      <li>
-        Migrating of Blogs from HTML to TXT -- allowing AJAX to take effect (and
-        simplify blog view!)
-      </li>
-      <li>Universal dialog model for all notifications going forward</li>
-      <li>Reintroduction of the YouTube Player system</li>
+      <li>Introduction of the dedicated Clock system, with 12 and 24-hour formats</li>
+      <li>Major improvements to the Clock framework (footer and dedicated)</li>
     </ul>
+  </p>
+  <br>
+  <p>
+    Supplemental changelogs are available in the GitHub commit as they were
+    attributed as part of a minor version prior to this major release.
   </p>
   <br>
   <p>

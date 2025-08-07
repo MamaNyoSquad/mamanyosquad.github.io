@@ -84,9 +84,17 @@ footer {
   font-size: small !important;
   margin: 0 9.5px;
 }
-a[href="https://tbmassoc.github.io"]:link, a[href="https://tbmassoc.github.io"]:visited { color: #ffffff; }
-a[href="https://tbmassoc.github.io"]:hover, a[href="https://tbmassoc.github.io"]:active { color: #dcc6bb; }
+/* a[href="https://tbmassoc.github.io"]:link, a[href="https://tbmassoc.github.io"]:visited { color: #ffffff; }
+a[href="https://tbmassoc.github.io"]:hover, a[href="https://tbmassoc.github.io"]:active { color: #dcc6bb; } */
+a[onclick="window.open('https://tbmassoc.github.io')"]:hover {
+  cursor: pointer;
+  color: #dcc6bb;
+}
 span[onclick="showMIT()"]:hover { color: #a31f34; }
+span[onclick="window.location.replace('/clock?format=12')"]:hover {
+  cursor: pointer;
+  color: #06a8ff;
+}
 
 button {
   background-color: #161224;
@@ -214,7 +222,6 @@ span[isLabel="MINOR"] {
   margin: 0 auto;
 }
 
-/* footer */
 .social-icon {
   pointer-events: visible;
   cursor: pointer;
