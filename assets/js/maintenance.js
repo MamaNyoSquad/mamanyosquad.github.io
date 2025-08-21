@@ -30,8 +30,8 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.getElementById("impt-ja_jp").style.display = toggle[0];
-  document.getElementById("impt-en_jp").style.display = toggle[0];
+  document.getElementById("impt-ja_jp").setAttribute("style", `display: ${toggle[0]};`);
+  document.getElementById("impt-en_jp").setAttribute("style", `display: ${toggle[0]};`);
 
   document.getElementById("impt-ja_jp").innerHTML = "ユミアのアトリエ × DOAXVV";
   document.getElementById("impt-en_jp").innerHTML = "Atelier Yumia × DOAXVV";
@@ -56,7 +56,7 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // below code are contained in <li important>, toggle the view with #impt-[locale]
   let toggle = ["none", "list-item"];
 
-  document.getElementById("impt-en_gl").style.display = toggle[0];
+  document.getElementById("impt-en_gl").setAttribute("style", `display: ${toggle[0]};`);
 
   document.getElementById("impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
 
