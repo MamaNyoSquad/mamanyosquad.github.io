@@ -9,6 +9,7 @@
   text-align: center;
 }
 
+.hero * { margin: 0; }
 .heroHead1-fhd {
   background-image: url("/assets/images/hero/Helena_hero.jpg");
   background-size: 150%;
@@ -66,6 +67,8 @@
   }
 }
 
+div[style="text-align: center;"] { padding: calc(19px * 10) 0; }
+
 .annivColl {
   position: relative;
   width: 100%;
@@ -75,4 +78,13 @@
   background: linear-gradient(to right, #161224 10%, #00000000 30%, #00000000 70%, #161224 90%);
   width: 100%;
   height: 100%;
+}
+
+div[feed] > div > div[win10migrate] video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 2;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* background-color: #000000; */
 }

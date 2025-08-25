@@ -31,6 +31,10 @@ jobs:
     steps:
       - name: Repository Checkout
         uses: actions/checkout@main
+        with:
+          lfs: true
+      - name: Git LFS Checkout
+        run: git lfs checkout
       - name: Prepare GitHub Pages for Deployment
         uses: actions/configure-pages@main
       - name: Upload to Deployment

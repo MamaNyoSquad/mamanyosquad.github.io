@@ -6,7 +6,7 @@ function blogQue() {
 
     case "20220413":
       replaceHeader();
-      document.title = "An Open Letter to Bookmark &mdash; 13 Apr 2022";
+      document.title = "An Open Letter to Bookmark \u2014 13 Apr 2022";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20220413_Bookmark.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -15,7 +15,7 @@ function blogQue() {
 
     case "20221120":
       replaceHeader();
-      document.title = "An Open Letter to Twitter &mdash; 20 Nov 2022";
+      document.title = "An Open Letter to Twitter \u2014 20 Nov 2022";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20221120_Twitter.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -24,7 +24,7 @@ function blogQue() {
 
     case "20221229":
       replaceHeader();
-      document.title = "End of Support for Windows 8.1 -- what does it mean for DOAXVV? &mdash; 29 Dec 2022";
+      document.title = "End of Support for Windows 8.1 -- what does it mean for DOAXVV? \u2014 29 Dec 2022";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20221229_Windows8.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -33,7 +33,7 @@ function blogQue() {
 
     case "20230416":
       replaceHeader();
-      document.title = "n Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」 &mdash; 16 Apr 2023";
+      document.title = "n Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」 \u2014 16 Apr 2023";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20230416_XVVGL@4.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -42,7 +42,7 @@ function blogQue() {
 
     case "20230902":
       replaceHeader();
-      document.title = "「Justice」continues to live on. &mdash; 2 Sep 2023";
+      document.title = "「Justice」continues to live on. \u2014 2 Sep 2023";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20230902_SINoALICEGLEOS.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -74,7 +74,7 @@ function blogQue() {
           </header>
         </div>
       `;
-      document.title = "An Open Letter to Streamers &mdash; 31 Dec 2023";
+      document.title = "An Open Letter to Streamers \u2014 31 Dec 2023";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20231231_VTMOpenLetter.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -89,7 +89,7 @@ function blogQue() {
 
     case "20240105":
       replaceHeader();
-      document.title = "「正義」は生き続ける。 &mdash; 5 Jan 2024";
+      document.title = "「正義」は生き続ける。 \u2014 5 Jan 2024";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20240105_SINoALICEJPEOS.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -98,7 +98,7 @@ function blogQue() {
 
     case "20240328":
       replaceHeader();
-      document.title = "#MamaNyoSquad observes Holy Week &mdash; 28 Mar 2024";
+      document.title = "#MamaNyoSquad observes Holy Week \u2014 28 Mar 2024";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20240328_HolyWeek.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -107,7 +107,7 @@ function blogQue() {
 
     case "20240419":
       replaceHeader();
-      document.title = "Celebrating 5 Years of DOAXVV Global &mdash; 19 Apr 2024";
+      document.title = "Celebrating 5 Years of DOAXVV Global \u2014 19 Apr 2024";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20240419_XVVGL@5.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -116,7 +116,7 @@ function blogQue() {
 
     case "20240521":
       replaceHeader();
-      document.title = "General Updates (May Edition) &mdash; 21 May 2024";
+      document.title = "General Updates (May Edition) \u2014 21 May 2024";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/GenUpdate.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -125,7 +125,7 @@ function blogQue() {
 
     case "20240815":
       replaceHeader();
-      document.title = "We're archiving! &mdash; 15 Aug 2024";
+      document.title = "We're archiving! \u2014 15 Aug 2024";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/UnderRenovation.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -134,7 +134,7 @@ function blogQue() {
 
     case "20241206":
       replaceHeader();
-      document.title = "Our New Look to Celebrate the 4th Inception Anniversary &mdash; 6 Dec 2024";
+      document.title = "Our New Look to Celebrate the 4th Inception Anniversary \u2014 6 Dec 2024";
       document.getElementById("blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
       document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20241206_4anniv.png'); background-attachment: unset;");
       document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
@@ -176,7 +176,7 @@ function loadArticle(date) {
   // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
   let atcl = new XMLHttpRequest();
   atcl.onload = function() { document.getElementById("blogContent").innerHTML = this.responseText; }
-  atcl.open("GET", "/assets/text/blog/" + date + ".txt");
+  atcl.open("GET", "/assets/ajx/blog/" + date + ".txt");
   atcl.send();
   return;
 }

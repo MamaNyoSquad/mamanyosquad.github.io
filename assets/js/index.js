@@ -45,10 +45,11 @@ function supplementalBtns() {
   let suplRows = document.querySelectorAll(".btnOther");
   for (let b = 0; b < suplRows.length; b++) {
     suplRows[b].insertAdjacentHTML("beforeend", `
+      <span class="material-symbols-rounded xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">window</span>
       <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="window.open('/MamaNyoVotesPH')">how_to_vote</span> -->
       <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
       <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="xvvDialog('music', 'fgXv8wMl3h0')">music_note</span>
-      <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.22.0!" onclick="xvvDialog('newver')">info</span>
+      <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.22.0!" onclick="xvvDialog('newver')">release_alert</span>
       <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event', '${encodeURIComponent(`"jp", "info/48855"`)}')">celebration</span> -->
     `);
   }

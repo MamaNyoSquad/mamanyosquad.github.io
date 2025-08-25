@@ -23,7 +23,7 @@ function xvvDialog(func, arg) {
     case "newver": // new version announce
       let ajx = new XMLHttpRequest();
       ajx.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
-      ajx.open("GET", `/assets/text/${func}.txt`);
+      ajx.open("GET", `/assets/ajx/${func}.txt`);
       ajx.send();
       return document.body.insertAdjacentHTML("afterbegin", `
         <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">

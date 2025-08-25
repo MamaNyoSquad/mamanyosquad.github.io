@@ -99,9 +99,9 @@ button {
   border: solid 2.85px #ff0000;
   border-radius: 1900px;
   color: inherit;
-  padding: 11.875px 28.5px;
+  padding: calc(1.9rem / 3.75) 1.9rem;
   font-family: inherit;
-  font-size: inherit;
+  font-size: calc(1.9em / 2);
   text-align: center;
   text-decoration: none;
   margin: 9.5px 1.9px 28.5px 1.9px;
@@ -126,8 +126,8 @@ button:active {
 }
 button:disabled {
   opacity: 0.5;
-  /* cursor: not-allowed; */
-  pointer-events: none;
+  cursor: not-allowed;
+  /* pointer-events: none; */
 }
 
 /* NEW FORMAT!! supplementary buttons are now in a separate space */
@@ -212,6 +212,7 @@ span[isLabel="MINOR"] {
   width: 100vw;
   padding: 19px;
 }
+[feed] * { margin: 0; }
 [feed] > div {
   width: calc(190px * 5);
   max-width: 100%;
