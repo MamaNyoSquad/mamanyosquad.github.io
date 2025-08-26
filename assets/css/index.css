@@ -80,11 +80,19 @@ div[style="text-align: center;"] { padding: calc(19px * 10) 0; }
   height: 100%;
 }
 
-div[feed] > div > div[win10migrate] video {
-  width: 100%;
+div[win10migrate] > div {
+  width: 37.5rem;
+  max-width: 100%;
   height: auto;
-  aspect-ratio: 16 / 2;
+  aspect-ratio: 16 / 3.5;
+  overflow: hidden;
+  margin: 0 auto;
+  /* background-color: #000000; */
+}
+div[win10migrate] > div video {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.75);
   -o-object-fit: cover;
   object-fit: cover;
-  /* background-color: #000000; */
 }
