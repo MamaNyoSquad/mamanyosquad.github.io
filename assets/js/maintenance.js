@@ -37,8 +37,8 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   document.getElementById("impt-en_jp").innerHTML = "Atelier Yumia × DOAXVV";
 
   // True Colors (comment to activate / deactivate)
-  // document.getElementById("impt-ja_jp").innerHTML = "True Colors～たまき～";
-  // document.getElementById("impt-en_jp").innerHTML = "True Colors ～Tamaki～";
+  document.getElementById("impt-ja_jp").innerHTML = "True Colors～モニカ～";
+  document.getElementById("impt-en_jp").innerHTML = "True Colors ～Monica～";
 
 }
 
