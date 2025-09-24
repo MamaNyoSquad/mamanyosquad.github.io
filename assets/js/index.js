@@ -45,6 +45,7 @@ function supplementalBtns() {
   let suplRows = document.querySelectorAll(".btnOther");
   for (let b = 0; b < suplRows.length; b++) {
     suplRows[b].insertAdjacentHTML("beforeend", `
+      <span class="material-symbols-rounded xvvSurvey" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="window.open('https://youtu.be/mNsy-usRsCc')">play_circle</span>
       <span class="material-symbols-rounded xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">window</span>
       <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="window.open('/MamaNyoVotesPH')">how_to_vote</span> -->
       <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
