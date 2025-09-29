@@ -5,12 +5,13 @@ function init() {
   supplementalBtns();
   triggerResponsive();
   showVersion();
+  cssChange(); // global css change
   viClock(); // js clock
   start(); // per page
   // pwaInit(); // initialize PWA
 }
 
-function showVersion() { document.getElementById("siteVersion").innerHTML = "v20240518.22.16"; }
+function showVersion() { document.getElementById("siteVersion").innerHTML = "v20240518.22.17"; }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
 // with some improvisations to convert to am/pm format. initially used in G.Mgr's streams.

@@ -84,12 +84,12 @@ footer {
   font-size: small !important;
   margin: 0 9.5px;
 }
-a[onclick="window.open('https://tbmassoc.github.io')"]:hover {
+a[onclick="{ window.open('https://tbmassoc.github.io'); }"]:hover {
   cursor: pointer;
   color: #dcc6bb;
 }
-span[onclick="showMIT()"]:hover { color: #a31f34; }
-span[onclick="window.location.replace('/clock?format=12')"]:hover {
+span[onclick="{ showMIT(); }"]:hover { color: #a31f34; }
+span[onclick="{ window.location.replace('/clock?format=12'); }"]:hover {
   cursor: pointer;
   color: #06a8ff;
 }

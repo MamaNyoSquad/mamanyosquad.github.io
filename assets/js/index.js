@@ -51,7 +51,7 @@ function supplementalBtns() {
       <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
       <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="xvvDialog('music', 'fgXv8wMl3h0')">music_note</span>
       <!-- <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.22.0!" onclick="xvvDialog('newver')">release_alert</span> -->
-      <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event', '${encodeURIComponent(`"gl", "event_gl_0725_250924_1_0_e047de19ca4f42064dc3381577cfd72ea3eadfbfbcf504729981511266dffd3c_en"`)}')">celebration</span>
+      <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}')">celebration</span>
     `);
   }
 }
@@ -74,4 +74,9 @@ function ytVodDialog(ytId, style) {
       </div>
     </div>
   `);
+}
+
+function cssChange() {
+  // comment all to cancel change
+  document.querySelector("header").setAttribute("style", "background: linear-gradient(#c77a63a0, #00000000);")
 }

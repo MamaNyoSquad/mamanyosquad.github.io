@@ -56,8 +56,8 @@ function blogQue() {
             <div class="flexNav">
               <img src="/assets/partner/VTresMarias/vtm_logoWide.svg" alt="「VTresMarias - V三人のマリア - 」" width="190px">
               <div class="linkRefs">
-                <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
-                <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+                <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
+                <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
                 <span class="material-symbols-rounded" title="Learn more" onclick="window.open('https://vtresmarias.github.io')">open_in_new</span>
               </div>
             </div>
@@ -66,8 +66,8 @@ function blogQue() {
             <div class="flexNav">
               <img src="/assets/partner/VTresMarias/favicon_light.png" alt="「VTresMarias - V三人のマリア - 」" width="95px">
               <div class="linkRefs">
-                <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
-                <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+                <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
+                <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
                 <span class="material-symbols-rounded" title="Learn more" onclick="window.open('https://vtresmarias.github.io')">open_in_new</span>
               </div>
             </div>
@@ -152,10 +152,10 @@ function replaceHeader() {
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <img src="/assets/images/logo/doaxvv_collab/doaxvv_resleriana_jp.png" alt="#MamaNyoSquad" width="285px">
           <div class="linkRefs">
-            <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
-            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+            <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
           </div>
         </div>
       </header>
@@ -163,8 +163,8 @@ function replaceHeader() {
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
           <div class="linkRefs">
-            <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
-            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
+            <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
           </div>
         </div>
       </header>
