@@ -50,9 +50,9 @@
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <img src="/assets/images/logo/doaxvv_collab/doaxvv_resleriana_jp.png" alt="#MamaNyoSquad" width="285px">
         <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+        <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
           </div>
         </div>
       </header>
@@ -60,7 +60,7 @@
         <div class="flexNav">
           <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
         <div style="width: 380px; height: 19px;"></div>
-        <span class="material-symbols-rounded" title="Go back to Home" onclick="window.location.replace('/')">home</span>
+        <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
         </div>
       </header>
     </div>
@@ -74,7 +74,7 @@
     <div feed>
       <div>
         <div policySheet id="ja" lang="ja"> <!-- ja -->
-          <span><span changeLang onclick="cLang('en')">英語</span>&ensp;&#8226;&ensp;<b>日本語</b></span>
+          <span><span changeLang onclick="{ cLang('en'); }">英語</span>&ensp;&#8226;&ensp;<b>日本語</b></span>
           <span enfUpd>強制される：<span id="policyDate-ja">【データの取得...】</span></span>
           <br><br>
           <div> <!-- general policies -->
@@ -212,7 +212,7 @@
           </div>
         </div>
         <div policySheet id="en" lang="en"> <!-- en -->
-          <span><b>English</b>&ensp;&#8226;&ensp;<span changeLang onclick="cLang('ja')">Japanese</span></span>
+          <span><b>English</b>&ensp;&#8226;&ensp;<span changeLang onclick="{ cLang('ja'); }">Japanese</span></span>
           <span enfUpd>Enforced: <span id="policyDate-en">[fetching data...]</span></span>
           <br><br>
           <div> <!-- general policies -->
@@ -373,15 +373,15 @@
     <footer> <!-- footer -->
       <div id="footPage">
         <div>
-          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/github.svg" width="28.5px" alt="GitHub" title="Check out our GitHub repository" onclick="window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io')">
-          <img class="social-icon" src="/assets/svg/social/X.svg" width="28.5px" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="window.open('https://x.com/MamaNyoSquad')">
-          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/youtube.svg" width="28.5px" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="window.open('https://youtube.com/@MamaNyoSquad')">
-          <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
+          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/github.svg" width="28.5px" alt="GitHub" title="Check out our GitHub repository" onclick="{ window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io'); }">
+          <img class="social-icon" src="/assets/svg/social/X.svg" width="28.5px" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="{ window.open('https://x.com/MamaNyoSquad'); }">
+          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/youtube.svg" width="28.5px" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }">
+          <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com'); }" style="filter: invert(1);">
         </div>
-        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
-        <p class="footText"><span id="footTime" onclick="window.location.replace('/clock?format=12')">Fetching time...</span></p>
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
+        <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank" title="Visit tbmassoc's website">a proud brand of tbmassoc</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a></p>
       </div>
     </footer>
   </body>
