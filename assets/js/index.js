@@ -46,7 +46,7 @@ function supplementalBtns() {
   for (let b = 0; b < suplRows.length; b++) {
     suplRows[b].insertAdjacentHTML("beforeend", `
       <!-- <span class="material-symbols-rounded xvvSurvey" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="window.open('https://youtu.be/mNsy-usRsCc')">play_circle</span> -->
-      <span class="material-symbols-rounded xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">window</span>
+      <span class="material-symbols-sharp xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">border_all</span>
       <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="window.open('/MamaNyoVotesPH')">how_to_vote</span> -->
       <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
       <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="xvvDialog('music', 'fgXv8wMl3h0')">music_note</span>
@@ -77,6 +77,14 @@ function ytVodDialog(ytId, style) {
 }
 
 function cssChange() {
-  // comment all to cancel change
-  document.querySelector("header").setAttribute("style", "background: linear-gradient(#c77a63a0, #00000000);")
+  // comment all to cancel changes
+  document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#c77a63a0, #00000000);"); });
+  document.querySelectorAll("img[headerWideLogo]").forEach((hWL) => {
+    hWL.setAttribute("src", "/assets/images/logo/doaxvv_collab/doaxvv_resleriana_jp.png");
+    hWL.setAttribute("width", "285px");
+  });
+  document.querySelectorAll("img[headerMobileLogo]").forEach((hML) => {
+    hML.setAttribute("src", "https://play-lh.googleusercontent.com/vR0UGZVvqiD11tiKL1xNEGUSnZfqXxrT-OIuX0AvjVSbWM9TPAyYQXDaQ-BZ1AvQ9JPvFxr-OqeVc2bDrchQNw=s1024-rw");
+  });
+  document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
 }
