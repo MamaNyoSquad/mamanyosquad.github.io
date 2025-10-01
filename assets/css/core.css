@@ -10,7 +10,7 @@ img, video, iframe {
 }
 
 /* googlefonts icons */
-.material-symbols-rounded {
+span[class^="material-symbols"] {
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   font-size: 1.9rem;
   user-select: none;
@@ -24,9 +24,9 @@ img, video, iframe {
   -o-transition: 0.95s;
   transition: 0.95s;
 }
-.material-symbols-rounded:hover {
+span[class^="material-symbols"]:hover {
   font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24;
-  color: #bbbbbb;
+  color: #06a8ff;
 }
 
 header {
@@ -36,12 +36,6 @@ header {
   z-index: 1900;
   padding: 19px 38px;
   background: linear-gradient(#ff0000a0, #00000000);
-  /*
-  background-image: url("/assets/images/background/nyoRed.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  */
 }
 .flexNav {
   display: flex;
