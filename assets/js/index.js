@@ -86,5 +86,5 @@ function cssChange() {
   document.querySelectorAll("img[headerMobileLogo]").forEach((hML) => {
     hML.setAttribute("src", "https://play-lh.googleusercontent.com/vR0UGZVvqiD11tiKL1xNEGUSnZfqXxrT-OIuX0AvjVSbWM9TPAyYQXDaQ-BZ1AvQ9JPvFxr-OqeVc2bDrchQNw=s1024-rw");
   });
-  document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
+  // document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
 }
