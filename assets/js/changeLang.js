@@ -8,11 +8,11 @@
 
 function cLang(l) {
   if (l == "en") {
-    document.getElementById("en").setAttribute("style", "display: block;");
-    document.getElementById("ja").setAttribute("style", "display: none;");
+    document.querySelector("#en").setAttribute("style", "display: block;");
+    document.querySelector("#ja").setAttribute("style", "display: none;");
   }
   if (l == "ja") {
-    document.getElementById("en").setAttribute("style", "display: none;");
-    document.getElementById("ja").setAttribute("style", "display: block;");
+    document.querySelector("#en").setAttribute("style", "display: none;");
+    document.querySelector("#ja").setAttribute("style", "display: block;");
   }
 }

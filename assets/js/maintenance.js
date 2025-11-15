@@ -15,13 +15,13 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   let st = new Date(new Date(`${sMt} ${sDy}, 2025 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
     ed = new Date(new Date(`${eMt} ${eDy}, 2025 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
   
-  document.getElementById("maintDate-ja_jp").innerHTML = `2025年${(st.getMonth() + 1)}月${st.getDate()}日`;
-  document.getElementById("maintDate-en_jp").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
+  document.querySelector("#maintDate-ja_jp").innerHTML = `2025年${(st.getMonth() + 1)}月${st.getDate()}日`;
+  document.querySelector("#maintDate-en_jp").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
 
-  document.getElementById("stTime-ja_jp").innerHTML = `${st.getHours()}時${addZero(st.getMinutes())}分`;
-  document.getElementById("edTime-ja_jp").innerHTML = `${ed.getHours()}時${addZero(ed.getMinutes())}分`;
-  document.getElementById("stTime-en_jp").innerHTML = `${hr12(st.getHours())}:${addZero(st.getMinutes())}${ampm(st.getHours())}`;
-  document.getElementById("edTime-en_jp").innerHTML = `${hr12(ed.getHours())}:${addZero(ed.getMinutes())}${ampm(ed.getHours())}`;
+  document.querySelector("#stTime-ja_jp").innerHTML = `${st.getHours()}時${addZero(st.getMinutes())}分`;
+  document.querySelector("#edTime-ja_jp").innerHTML = `${ed.getHours()}時${addZero(ed.getMinutes())}分`;
+  document.querySelector("#stTime-en_jp").innerHTML = `${hr12(st.getHours())}:${addZero(st.getMinutes())}${ampm(st.getHours())}`;
+  document.querySelector("#edTime-en_jp").innerHTML = `${hr12(ed.getHours())}:${addZero(ed.getMinutes())}${ampm(ed.getHours())}`;
 
   // below code are contained in <li important>, toggle the view with #impt-[locale]
   let toggle = ["none", "list-item"];
@@ -30,15 +30,15 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.getElementById("impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
-  document.getElementById("impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
 
-  document.getElementById("impt-ja_jp").innerHTML = "8nfinityのDOAXVV";
-  document.getElementById("impt-en_jp").innerHTML = "DOAXVV @ 8nfinity";
+  document.querySelector("#impt-ja_jp").innerHTML = "8nfinityのDOAXVV";
+  document.querySelector("#impt-en_jp").innerHTML = "DOAXVV @ 8nfinity";
 
   // True Colors (comment to activate / deactivate)
-  // document.getElementById("impt-ja_jp").innerHTML = "True Colors～モニカ～";
-  // document.getElementById("impt-en_jp").innerHTML = "True Colors ～Monica～";
+  // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～モニカ～";
+  // document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Monica～";
 
 }
 
@@ -48,27 +48,27 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   let st = new Date(new Date(`${sMt} ${sDy}, 2025 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
     ed = new Date(new Date(`${eMt} ${eDy}, 2025 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
   
-  document.getElementById("maintDate-en_gl").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
+  document.querySelector("#maintDate-en_gl").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
 
-  document.getElementById("stTime-en_gl").innerHTML = `${hr12(st.getHours())}:${addZero(st.getMinutes())}${ampm(st.getHours())}`;
-  document.getElementById("edTime-en_gl").innerHTML = `${hr12(ed.getHours())}:${addZero(ed.getMinutes())}${ampm(ed.getHours())}`;
+  document.querySelector("#stTime-en_gl").innerHTML = `${hr12(st.getHours())}:${addZero(st.getMinutes())}${ampm(st.getHours())}`;
+  document.querySelector("#edTime-en_gl").innerHTML = `${hr12(ed.getHours())}:${addZero(ed.getMinutes())}${ampm(ed.getHours())}`;
 
   // below code are contained in <li important>, toggle the view with #impt-[locale]
   let toggle = ["none", "list-item"];
 
-  document.getElementById("impt-en_gl").setAttribute("style", `display: ${toggle[0]};`);
+  document.querySelector("#impt-en_gl").setAttribute("style", `display: ${toggle[0]};`);
 
-  document.getElementById("impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
+  document.querySelector("#impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
 
   // True Colors (comment to activate / deactivate)
-  // document.getElementById("impt-en_gl").innerHTML = "True Colors ～Kokkoro～";
+  // document.querySelector("#impt-en_gl").innerHTML = "True Colors ～Kokkoro～";
 
 }
 
 // simplified _main.js clock but for time/date document tracking
 function docModified() {
   let tD = new Date(new Date(document.lastModified).getTime() + diffOffs(11));
-  document.getElementById("modifiedDate").innerHTML = `${hr12(tD.getHours())}:${addZero(tD.getMinutes())}${ampm(tD.getHours())}&ensp;&#8226;&ensp;${tD.getDate()} ${monthDef(tD.getMonth())} ${tD.getFullYear()} VIT`
+  document.querySelector("#modifiedDate").innerHTML = `${hr12(tD.getHours())}:${addZero(tD.getMinutes())}${ampm(tD.getHours())}&ensp;&#8226;&ensp;${tD.getDate()} ${monthDef(tD.getMonth())} ${tD.getFullYear()} VIT`
   setTimeout(docModified, 0);
 }
 function monthDef(m) {
