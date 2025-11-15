@@ -22,7 +22,7 @@ function xvvDialog(func, arg) {
 
     case "newver": // new version announce
       let ajx = new XMLHttpRequest();
-      ajx.onload = function() { document.getElementById("ajaxTxt").innerHTML = this.responseText; }
+      ajx.onload = function() { document.querySelector("#ajaxTxt").innerHTML = this.responseText; }
       ajx.open("GET", `/assets/ajx/${func}.txt`);
       ajx.send();
       return document.body.insertAdjacentHTML("afterbegin", `

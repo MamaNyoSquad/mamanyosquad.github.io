@@ -2,6 +2,9 @@
 
 @import url("/assets/css/fonts.css"); /* all the other fonts */
 
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css");
+
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -213,15 +216,15 @@ span[isLabel="MINOR"] {
   margin: 0 auto;
 }
 
-.social-icon {
-  pointer-events: visible;
+.bi {
   cursor: pointer;
-  display: inline-block;
-  margin: 3.8px 5.7px 0 5.7px;
+  font-size: calc(1.9rem * 0.625);
+  color: inherit;
+  margin: 0 calc(1.9px * 3) 0 calc(1.9px * 1.25);
   padding: 2.85px;
   -webkit-transition: 0.95s;
   -moz-transition: 0.95s;
   -o-transition: 0.95s;
   transition: 0.95s;
 }
-.social-icon:hover { transform: scale(1.19); }
+.bi:hover { color: #06a8ff; }
