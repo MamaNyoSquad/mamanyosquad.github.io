@@ -15,15 +15,11 @@ html, body {
   word-wrap: break-word;
   scroll-behavior: smooth;
 }
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html {
-  background-color: #161224;
-}
+html { background-color: #161224; }
 body {
-  font-family: "Poppins", "Noto Sans JP", "Noto Color Emoji", sans-serif;
+  font-family: "Poppins", "Noto Sans JP", "Windows 11 Emoji", "Noto Color Emoji", sans-serif;
   color: #ffffff;
 }
 
@@ -51,37 +47,8 @@ code {
   font-family: 'IBM Plex Mono', monospace;
 }
 
-/* responsive fontsize */
-@media screen and (max-width: 540px) {
-  body {
-    font-size: normal;
-  }
-}
-@media screen and (min-width: 540px) and (max-width: 1080px) {
-  body {
-    font-size: large;
-  }
-}
-@media screen and (min-width: 1080px) and (max-width: 1620px) {
-  body {
-    font-size: larger;
-  }
-}
-@media screen and (min-width: 1620px) and (max-width: 2160px) {
-  body {
-    font-size: x-large;
-  }
-}
-@media screen and (min-width: 2160px) {
-  body {
-    font-size: xx-large;
-  }
-}
-
 /* hide scrollbar */
-::-webkit-scrollbar {
-  display: none;
-}
+::-webkit-scrollbar { display: none; }
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;

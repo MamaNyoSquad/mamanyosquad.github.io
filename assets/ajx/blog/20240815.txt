@@ -1,0 +1,48 @@
+<div>
+  <div class="blogText">
+    <span blogType>UNDER MAINTENANCE</span>
+    <h1>We're archiving!</h1>
+    <span>15 Aug 2024</span>
+    <br><br><br>
+    <p>
+      As you might have figured based on the title, we have decided that
+      <b>this website will be put in an archived state starting 15 Aug 2024</b>!
+      This is to focus on developing the next version of the website which is
+      scheduled to debut on the Squad's 4th Inception Anniversary -- 6 Dec 2024.
+    </p>
+    <p>
+      It has long since dormant since I was focusing on other webdev projects in
+      order to determine which design language is good for each context -- since I
+      learned that most of the websites I maintain are using the same language as
+      this website's upcoming version.
+    </p>
+    <p>
+      In response to this development, I've decided to put the site on hold, meaning
+      that all planned changes to be implemented are to be thrown out of the window.
+      Don't worry -- existing elements, including Blogs like this one -- will carry
+      over to the new version!
+    </p>
+    <p>So, what can we expect from the new version of the website?</p>
+    <p>
+      <ul>
+        <li>Updated design language</li>
+        <li>'Single-navigational' approach</li>
+        <li>Minimal browser cookie implementation</li>
+        <li>Updated look of Blog posts and Maintenance Tracker</li>
+        <li>and many more!</li>
+      </ul>
+    </p>
+    <p>
+      You can expect the full details to be disclosed during the 4th Inception
+      Anniversary.
+    </p>
+    <p>
+      For now, let&#39;s hope for the success that is unveiling the new look of our
+      new website -- based on version 20240518!
+    </p>
+    <p>For more updates, you can keep us on the loop on X at @MamaNyoSquad.</p>
+    <p>
+      <b><i>Enter the universe through the eyes of the Tengu! 💕</i></b>
+    </p>
+  </div>
+</div>

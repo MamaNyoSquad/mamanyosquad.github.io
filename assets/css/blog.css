@@ -2,54 +2,41 @@
 .heroFore { padding: calc(190px + 95px) 19px 190px 19px; }
 
 .latestBlogBack {
-  background-image: url("/assets/images/hero/Helena_hero.jpg");
+  background-color: #000000;
+  /* background-image: url("/assets/images/hero/Helena_hero.jpg"); */
   background-size: cover;
   background-position: 25% 47.5%;
   background-repeat: no-repeat;
   border-radius: 19px;
 }
 .latestBlogFore {
-  background-color: #16122480;
+  /* background-color: #16122480; */
   width: 100%;
   padding: 38px 19px;
   border: #06a8ff solid 3.8px;
   border-radius: inherit;
   cursor: pointer;
 }
-.latestBlogFore > * {
-  margin: 0 !important;
-}
+.latestBlogFore > * { margin: 0 !important; }
 .latestBlogFore > span {
   font-weight: 700;
   font-size: smaller;
 }
-.latestBlogFore > p {
-  font-size: x-large;
-}
-.latestBlogFore:hover {
-  background-color: #161224c0;
-}
+.latestBlogFore > p { font-size: x-large; }
+.latestBlogFore:hover { background-color: #161224c0; }
 
-[blogArtTitle] {
-  margin: 3.8rem 0;
-}
-[blogArtTitle] > * {
-  margin: 0;
-}
+[blogArtTitle] { margin: 3.8rem 0; }
+[blogArtTitle] > * { margin: 0; }
 [blogArtTitle] > span {
   display: block;
   font-weight: 700;
   font-size: smaller;
   margin-bottom: 0.95rem;
 }
-[blogArtTitle] > button {
-  margin-top: 1.9rem;
-}
+[blogArtTitle] > button { margin-top: 1.9rem; }
 
 .blogText { padding: 95px 0; }
-.blogText > * {
-  margin: 0;
-}
+.blogText > * { margin: 0; }
 .blogText > [blogType] {
   display: block;
   padding-bottom: 9.5px;

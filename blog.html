@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="#MamaNyoSquad">
+    <title>PR and Blogs</title>
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/favicon.png" type="image/x-icon">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="PR and Blogs">
+    <meta name="og:image" content="https://mamanyosquad.github.io/assets/preview.png">
+    <meta name="og:url" content="https://mamanyosquad.github.io/blog">
+    <meta name="og:description" content="Press Releases and Blogs from the SquadMates 💕">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MamaNyoSquad">
+    <meta name="theme-color" content="#161224">
+    <meta name="msapplication-TileColor" content="#161224">
+    <meta name="msapplication-navbutton-color" content="#161224">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#161224">
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/_main.css" type="text/css" media="all"> <!-- root -->
+    <style type="text/css">
+      /* css args here */
+      @import url("/assets/css/core.css");
+      @import url("/assets/css/responsive.css");
+      @import url("/assets/css/index.css");
+      @import url("/assets/css/blog.css");
+    </style>
+    <!-- custom js -->
+    <script src="/assets/js/_main.js" type="text/javascript"></script> <!-- root -->
+    <script src="/assets/js/pwa.js" type="text/javascript"></script> <!-- pwa -->
+    <script src="/assets/js/index.js" type="text/javascript"></script>
+    <script src="/assets/js/responsive.js" type="text/javascript"></script>
+    <script src="/assets/js/event.js" type="text/javascript"></script>
+    <script src="/assets/js/blog.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function start() {
+        // start() args here
+        blogQue();
+        cssChange();
+      }
+    </script>
+    <script type="text/javascript">
+      // js args here
+    </script>
+  </head>
+  <body onload="init()">
+    <div id="blogHeader">
+      <div id="mobile-navPanel" class="mobile">
+        <div class="btnOther"></div>
+        <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span>
+        <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+        <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+        <!-- <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span> -->
+        <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+        <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      </div>
+      <div class="headers"> <!-- header -->
+        <header class="desktop">
+          <div class="flexNav">
+            <img headerWideLogo src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+            <div class="linkRefs">
+              <div class="btnOther"></div>
+              <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span>
+              <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+              <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+              <!-- <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span> -->
+              <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+            </div>
+          </div>
+        </header>
+        <header class="mobile">
+          <div class="flexNav">
+            <img headerMobileLogo src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
+            <div class="linkRefs">
+              <span class="material-symbols-rounded" onclick="{ mobilePanelOpen(); }">menu</span>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div id="blogHero" class="hero"> <!-- hero section -->
+      <div class="heroBack">
+        <div class="heroFore">
+          <h1>PR and Blogs</h1>
+        </div>
+      </div>
+    </div>
+      <div id="blogContent" feed>
+        <div style="display: none;"> <!-- latest press release -->
+          <br><br>
+          <div class="latestBlogBack">
+            <div class="latestBlogFore" onclick="window.open('?article=20241206')">
+              <span>LATEST PRESS RELEASE</span>
+              <p>Our New Look to Celebrate the 4th Inception Anniversary</p>
+            </div>
+          </div>
+          <br>
+        </div>
+        <div>
+          <br><br>
+          <h1>Recent Posts</h1>
+          <div blogArtTitle>
+            <span>JOINT STATEMENT &bull; 10 Jun 2025</span>
+            <h2>AN URGENT CALL: hold the Trump Administration accountable on ALL GROUNDS</h2>
+            <p>
+              #MamaNyoSquad joins VTresMarias, tbmassoc, and The Ortega Project in
+              officially calling out Donald J. Trump, his administration, and the GOP for
+              their failure of service in light of their inactions of American democracy.
+            </p>
+            <button onclick="window.open('https://vtresmarias.github.io/press?ref=20250610')" title="This will open the external article in a new tab.">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 6 Dec 2024</span>
+            <h2>Our New Look to Celebrate the 4th Inception Anniversary</h2>
+            <p>
+              #MamaNyoSquad is debuting its new look of the website, after months of R&D!
+              Read on for more details, with the rest available on the Keynote.
+            </p>
+            <button onclick="window.open('?article=20241206')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>UNDER MAINTENANCE &bull; 15 Aug 2024</span>
+            <h2>We're archiving!</h2>
+            <p>
+              As we're gearing up for the launch of the new version of our website, we've
+              decided to put this website into an archival state. Read the Blog for more
+              details.
+            </p>
+            <button onclick="window.open('?article=20240815')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 21 May 2024</span>
+            <h2>General Updates (May Edition)</h2>
+            <p>
+              We're undergoing a major shift in how we present the website going forward.
+              The G.Mgr gives us the following updates on the situation, as well as in other
+              areas.
+            </p>
+            <button onclick="window.open('?article=20240521')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 19 Apr 2024</span>
+            <h2>Celebrating 5 Years of DOAXVV Global</h2>
+            <p>
+              Commemorating the 5th Anniversary of DOAXVV Global, the G.Mgr shares his
+              thoughts and thanks to the Development Staff for their continuous effort of
+              bringing the game to millions of players worldwide.
+            </p>
+            <button onclick="window.open('?article=20240419')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 28 Mar 2024</span>
+            <h2>#MamaNyoSquad observes Holy Week</h2>
+            <p>
+              Commemorating the 5th Anniversary of DOAXVV Global, the G.Mgr shares his
+              thoughts and thanks to the Development Staff for their continuous effort of
+              bringing the game to millions of players worldwide.
+            </p>
+            <button onclick="window.open('?article=20240328')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>BLOG &bull; 5 Jan 2024</span>
+            <h2>「正義」は生き続ける。</h2>
+            <p>
+              The SocWeb Mgr sends his thanks to SQUARE ENIX and Pokelabo as SINoALICE
+              Japanese Edition draws to a close in 10 days.
+            </p>
+            <button onclick="window.open('?article=20240105')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>SYNDICATED RELEASE &bull; 31 Dec 2023</span>
+            <h2>An Open Letter to Streamers</h2>
+            <p>
+              The G.Mgr -- representing 「VTresMarias - V三人のマリア - 」 -- sends out an
+              Open Letter in response to all the fiasco caused by the Twitch Meta
+              popularized by AsianBunnyx and Morgpie; and severed by MarinaVT, Firedancer,
+              and Amouranth -- among others. <i>This article was moved from the Marias'
+              website.</i>
+            </p>
+            <button onclick="window.open('?article=20231231')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>BLOG &bull; 2 Sep 2023</span>
+            <h2>「Justice」 continues to live on.</h2>
+            <p>
+              Our Social & Web Manager has this official statement regarding the shutdown of
+              SINoALICE Global, the game that has been a part of him since 2020.
+            </p>
+            <button onclick="window.open('?article=20230902')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 16 Apr 2023</span>
+            <h2>An Open Message to DOAXVV Global Edition regarding 「DOAXVV Global @ 4」</h2>
+            <p>
+              Here's the Open Message from the General Manager regarding the commemoration
+              of DOAXVV Global Edition's 4th Anniversary.
+            </p>
+            <button onclick="window.open('?article=20230416')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 29 Dec 2022</span>
+            <h2>End of Support for Windows 8.1 -- what does it mean for DOAXVV?</h2>
+            <p>
+              Microsoft will end its Extended Support Lifecycle for Windows 8.1 starting 10
+              January 2023 PST. This article explains how it will impact DEAD OR ALIVE
+              Xtreme Venus Vacation.
+            </p>
+            <button onclick="window.open('?article=20221229')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 20 Nov 2022</span>
+            <h2>An Open Letter to Twitter</h2>
+            <p>
+              A joint statement of the SquadMates as they learned about the initial
+              implications of Twitter (now X) from its business and digital standpoints.
+            </p>
+            <button onclick="window.open('?article=20221120')">Read</button>
+          </div>
+          <div blogArtTitle>
+            <span>PRESS RELEASE &bull; 13 Apr 2022</span>
+            <h2>An Open Letter to Bookmark</h2>
+            <p>
+              #MamaNyoSquad published an open letter in response to Bookmark's major changes
+              regarding their Pricing Policies and how websites are exported. <i>The first
+              iterations of the website were made with Bookmark.</i>
+            </p>
+            <button onclick="window.open('?article=20220413')">Read</button>
+          </div>
+        </div>
+      </div>
+    <footer> <!-- footer -->
+      <div id="footPage">
+        <div>
+          <i class="bi bi-github" alt="GitHub" title="#MamaNyoSquad 🖤 Open Source" onclick="{ window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io'); }"></i>
+          <i class="bi bi-twitter-x" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="{ window.open('https://x.com/MamaNyoSquad'); }"></i>
+          <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
+          <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
+        </div>
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
+        <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
+        <br>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

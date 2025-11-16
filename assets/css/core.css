@@ -2,6 +2,9 @@
 
 @import url("/assets/css/fonts.css"); /* all the other fonts */
 
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css");
+
 img, video, iframe {
   max-width: 100%;
   height: auto;
@@ -10,7 +13,7 @@ img, video, iframe {
 }
 
 /* googlefonts icons */
-.material-symbols-rounded {
+span[class^="material-symbols"] {
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   font-size: 1.9rem;
   user-select: none;
@@ -18,15 +21,15 @@ img, video, iframe {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  padding: 0 7.6px;
+  padding: 0 7.6px 7.6px 7.6px;
   -webkit-transition: 0.95s;
   -moz-transition: 0.95s;
   -o-transition: 0.95s;
   transition: 0.95s;
 }
-.material-symbols-rounded:hover {
+span[class^="material-symbols"]:hover {
   font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24;
-  color: #bbbbbb;
+  color: #06a8ff;
 }
 
 header {
@@ -36,12 +39,6 @@ header {
   z-index: 1900;
   padding: 19px 38px;
   background: linear-gradient(#ff0000a0, #00000000);
-  /*
-  background-image: url("/assets/images/background/nyoRed.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  */
 }
 .flexNav {
   display: flex;
@@ -72,9 +69,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
 }
-.closeNav {
-  margin-left: 19px;
-}
+.closeNav { margin-left: 19px; }
 
 footer {
   background-color: #000000;
@@ -86,11 +81,14 @@ footer {
   font-size: small !important;
   margin: 0 9.5px;
 }
-.footText > [tbmassoc]:link, [tbmassoc]:visited {
-  color: #ffffff;
-}
-.footText > [tbmassoc]:hover, [tbmassoc]:active {
+a[onclick="{ window.open('https://tbmassoc.github.io'); }"]:hover {
+  cursor: pointer;
   color: #dcc6bb;
+}
+span[onclick="{ showMIT(); }"]:hover { color: #a31f34; }
+span[onclick="{ window.location.replace('/clock?format=12'); }"]:hover {
+  cursor: pointer;
+  color: #06a8ff;
 }
 
 button {
@@ -98,9 +96,9 @@ button {
   border: solid 2.85px #ff0000;
   border-radius: 1900px;
   color: inherit;
-  padding: 11.875px 28.5px;
+  padding: calc(1.9rem / 3.75) 1.9rem;
   font-family: inherit;
-  font-size: inherit;
+  font-size: calc(1.9em / 2);
   text-align: center;
   text-decoration: none;
   margin: 9.5px 1.9px 28.5px 1.9px;
@@ -123,82 +121,73 @@ button:active {
   -o-transition: 0.19s;
   transition: 0.19s;
 }
-
-/* toggle between "inline-block" and "none" if there are active notifications */
-/* for .xvvNotify, uncomment "margin-right" if it'll be the only one in the navbar */
-.xvvNotify {
-  display: none;
-  /* display: inline-block; */
-  /* margin-right: 19px; */
-}
-.xvvNotify:hover {
-  color: #ff0000;
-}
-.xvvEvent {
-  display: none;
-  /* display: inline-block; */
-  margin-right: 19px;
-}
-.xvvEvent:hover {
-  color: #06a8ff;
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  /* pointer-events: none; */
 }
 
-/* base dialog */
-dialog {
-  position: relative;
-  width: 950px;
-  max-height: 100%;
-  max-height: 100%;
-  border-radius: 19px;
-  max-width: 100%;
-  background-color: #161224;
-  border: none;
-  color: inherit;
-  text-align: center;
-  padding: 0;
+/* NEW FORMAT!! supplementary buttons are now in a separate space */
+.btnOther {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
-dialog:focus {
-  outline: 0;
-}
-dialog::backdrop {
-  background-color: #16122480;
-}
-dialog > span { /* close button */
+/* styling formats for supplemental buttons */
+.btnOther > * { display: inline-block; }
+
+/* mamaNyoDialog v2 */
+#mamaNyoDialog {
   position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  margin: 9.5px 9.5px 0 0;
-  padding: 9.5px !important;
-  aspect-ratio: 1 / 1;
-  background-color: #161224;
-  border-radius: 50%;
-  color: #ffffff;
-  box-shadow: 0 0 4px #16122440, 0 4px 8px #16122480;
-  -webkit-transition: 0.475s !important;
-  -moz-transition: 0.475s !important;
-  -o-transition: 0.475s !important;
-  transition: 0.475s !important;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #16122480;
+  z-index: 5000;
+  -webkit-backdrop-filter: blur(9.5px);
+  backdrop-filter: blur(9.5px);
+  /* opacity: 0; */
+  /* -webkit-transition: 1.25s; */
+  /* -moz-transition: 1.25s; */
+  /* -o-transition: 1.25s; */
+  /* transition: 1.25s; */
 }
-dialog > span:hover {
-  background-color: #ff0000;
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 !important;
-  color: #ffffff !important;
+#mamaNyoDialog > div {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 19px;  
+  -webkit-filter: drop-shadow(0 9.5px 19px #161224a0);
+  filter: drop-shadow(0 9.5px 19px #161224a0);
+  overflow: auto;
 }
-
-/* xvvNotify() */
-#xvvNtf { padding: 19px; }
-
-/* xvvEvent() */
-#xvvEvt {
-  background-color: #ffffff !important;
-  height: 712.5px;
-}
-dialog > iframe {
+#mamaNyoDialog > div > *, #mamaNyoDialog > div > div > * { margin: 0 !important; }
+#mamaNyoDialog > div > iframe {
   width: 100%;
+  max-width: 100%;
   height: 100%;
-  border: 0;
+  max-height: 100%;
+  border: none;
   pointer-events: all;
+}
+
+#ajaxTxt > *, .MITtxt > * { margin: 0; }
+#ajaxTxt > div > * {
+  margin: 0;
+  text-align: left;
+}
+
+span[isLabel="MAJOR"] {
+  padding: 1.9px 9.5px;
+  background-color: #ff0000;
+  border-radius: 9999px;
+}
+span[isLabel="MINOR"] {
+  padding: 1.9px 9.5px;
+  background-color: #06a8ff;
+  border-radius: 9999px;
 }
 
 /* article layout */
@@ -220,24 +209,22 @@ dialog > iframe {
   width: 100vw;
   padding: 19px;
 }
+[feed] * { margin: 0; }
 [feed] > div {
   width: calc(190px * 5);
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* footer */
-.social-icon {
-  pointer-events: visible;
+.bi {
   cursor: pointer;
-  display: inline-block;
-  margin: 3.8px 5.7px 0 5.7px;
+  font-size: calc(1.9rem * 0.625);
+  color: inherit;
+  margin: 0 calc(1.9px * 3) 0 calc(1.9px * 1.25);
   padding: 2.85px;
   -webkit-transition: 0.95s;
   -moz-transition: 0.95s;
   -o-transition: 0.95s;
   transition: 0.95s;
 }
-.social-icon:hover {
-  transform: scale(1.19);
-}
+.bi:hover { color: #06a8ff; }

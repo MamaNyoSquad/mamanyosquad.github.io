@@ -1,3 +1,20 @@
+/* responsive fontsize */
+@media screen and (max-width: 540px) {
+  body { font-size: normal; }
+}
+@media screen and (min-width: 540px) and (max-width: 1080px) {
+  body { font-size: large; }
+}
+@media screen and (min-width: 1080px) and (max-width: 1620px) {
+  body { font-size: larger; }
+}
+@media screen and (min-width: 1620px) and (max-width: 2160px) {
+  body { font-size: x-large; }
+}
+@media screen and (min-width: 2160px) {
+  body { font-size: xx-large; }
+}
+
 /* header */
 @media screen and (max-width: 665px) {
   .desktop { display: none; }
@@ -28,4 +45,12 @@
 }
 @media screen and (max-width: 460px) {
   .viewSlogan-hd { display: none; }
+}
+
+/* div.btnOther */
+@media screen and (max-width: 665px) {
+  .btnOther { margin-right: 9.5px; }
+}
+@media screen and (min-width: 665px) {
+  .btnOther { margin-right: 19px; }
 }

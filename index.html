@@ -36,6 +36,7 @@
     <script type="text/javascript">
       function start() {
         // start() args here
+        // ytVodDialog("en9ioABcos4", "width: 950px; height: auto; aspect-ratio: 16 / 9;")
       }
     </script>
     <script type="text/javascript">
@@ -44,37 +45,45 @@
   </head>
   <body onload="init()">
     <div id="mobile-navPanel" class="mobile">
-      <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvNotify()">info</span>
-      <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvEvent()">celebration</span>
+      <div class="btnOther"></div>
+      <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
       <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-      <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="window.open('/publishing')">book</span>
-      <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
-      <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span>
-      <span class="material-symbols-rounded closeNav" onclick="mobilePanelClose()">close</span>
+      <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+      <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+      <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+      <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
     </div>
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <img headerWideLogo src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
           <div class="linkRefs">
-            <span class="material-symbols-rounded xvvNotify" title="Check out the important notification!" onclick="xvvNotify()">info</span>
-            <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvEvent()">celebration</span>
+            <div class="btnOther"></div>
+            <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
             <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-            <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="window.open('/publishing')">book</span>
-            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="window.location.replace('/blog')">rss_feed</span>
-            <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="window.location.replace('/maintenance')">build</span>
+            <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+            <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
           </div>
         </div>
       </header>
       <header class="mobile">
         <div class="flexNav">
-          <img src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
+          <img headerMobileLogo src="/assets/images/logo/MamaNyoSquad_mini.png" alt="#MamaNyoSquad" width="95px">
           <div class="linkRefs">
-            <span class="material-symbols-rounded" onclick="mobilePanelOpen()">menu</span>
+            <span class="material-symbols-rounded" onclick="{ mobilePanelOpen(); }">menu</span>
           </div>
         </div>
       </header>
     </div>
+    <iframe
+      style="width: 100vw; height: 100vh; display: block;"
+      src="https://www.youtube-nocookie.com/embed/5ph4h0ZVX9s?playlist=5ph4h0ZVX9s&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
+      title="YouTube Player"
+      frameborder="0"
+      allow="autoplay"
+      loop>
+    </iframe>
     <div class="hero"> <!-- hero section -->
       <div class="hero-fhd">
         <div class="heroHead1-fhd">
@@ -83,11 +92,13 @@
               <img src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe">
               <br>
               <h2>Our new look</h2>
+              <br>
               <p>
                 After our continuous effort in R&D, we're excited to unveil our new web design
                 language to commemorate a new beginning as a Squad! 💕
               </p>
-              <button onclick="window.open('/blog/20241206')">Read our approach</button>
+              <br>
+              <button onclick="{ headingDialog('/blog?article=20241206'); }">Read our approach</button>
             </div>
           </div>
         </div>
@@ -101,53 +112,81 @@
                 <br>
               </div>
               <h2>Our new look</h2>
+              <br>
               <p>
                 After our continuous effort in R&D, we're excited to unveil our new web design
                 language to commemorate a new beginning as a Squad! 💕
               </p>
-              <button onclick="window.open('/blog/20241206')">Read our approach</button>
+              <br>
+              <button onclick="{ headingDialog('/blog?article=20241206'); }">Read our approach</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div feed>
+    <!-- <div feed>
       <div>
         <div style="text-align: center;">
-          <br><br><br>
           <div class="annivColl">
             <div class="annivOVL"></div>
             <img src="/assets/images/annivCollection.png" alt="">
           </div>
           <br>
           <h2>Celebrating our 4th Anniversary as a Collective</h2>
+          <br>
           <p>
             #MamaNyoSquad has been constantly innovating to relive the hype of DEAD OR
             ALIVE through Venus Vacation and beyond. With the 4th Inception Anniversary,
             the ever-shining Prism continues to shine even brighter than before!
           </p>
+          <br>
           <p>
             Together with Nyotengu and the fellow Venuses, let's continue on our promise
             of continuous preservation of DOA's memories through our creative efforts!
           </p>
-          <button style="margin: 9.5px 1.9px 1.9px 1.9px;" onclick="window.open('https://youtu.be/PuIJe3EaRzU')">Watch the full Keynote</button>
-          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="transcriptShow('20241206_4anniv')">Presenter's Transcript</button>
-          <br><br><br>
+          <br>
+          <button style="margin: 9.5px 1.9px 1.9px 1.9px;" onclick="ytVodDialog('PuIJe3EaRzU', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">Watch the full Keynote</button>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="xvvDialog('transcript', '20241206_4anniv_transcript.pdf')">Presenter's Transcript</button>
+        </div>
+      </div>
+    </div> -->
+    <div feed class="VenusIslandBG">
+      <div>
+        <div style="text-align: center;">
+          <img class="doaxvvAnniv" src="/assets/svg/logo/doaxvv/anniv/8nfinityのDOAXVV.svg" alt="">
+          <br><br>
+          <h2>The Venus Island turns 8!</h2>
+          <br>
+          <p>
+            <b>15 Nov 2017</b>, the day the Venus Island was first introduced to the world
+            through its immersive experience following the debut of Dead or Alive Xtreme
+            Venus Vacation (Japanese Edition). The following years that came afterward
+            were filled with countless memories, events, and collaborations that made the
+            island a beloved destination for current and future Venuses to come.
+          </p>
+          <br>
+          <p>
+            Its prismatic legacy still remained as it redefined its own legacy -- a legacy
+            noteworthy of its charismatic beauty that came from within.
+          </p>
+          <br>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://www.gamecity.ne.jp/doaxvv/8th/program.html'); }">Get involved</button>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://youtu.be/lKRqro-lgTM'); }">From #MamaNyoLIVE</button>
         </div>
       </div>
     </div>
     <footer> <!-- footer -->
       <div id="footPage">
         <div>
-          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/github.svg" width="28.5px" alt="GitHub" title="Check out our GitHub repository" onclick="window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io')">
-          <img class="social-icon" src="/assets/svg/social/X.svg" width="28.5px" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="window.open('https://x.com/MamaNyoSquad')">
-          <img class="social-icon" src="https://raw.githubusercontent.com/brand-icons/brands/master/icons/light/youtube.svg" width="28.5px" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="window.open('https://youtube.com/@MamaNyoSquad')">
-          <img class="social-icon" src="https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/filled/mail.svg" width="28.5px" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="window.open('mailto:mamanyosquad@outlook.com')" style="filter: invert(1);">
+          <i class="bi bi-github" alt="GitHub" title="#MamaNyoSquad 🖤 Open Source" onclick="{ window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io'); }"></i>
+          <i class="bi bi-twitter-x" alt="The X Platform" title="Follow on X: @MamaNyoSquad" onclick="{ window.open('https://x.com/MamaNyoSquad'); }"></i>
+          <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
+          <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
         </div>
-        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="showMIT()" style="cursor: pointer;">MIT</span></p>
-        <p class="footText"><span id="footTime">Fetching time...</span></p>
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
+        <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a tbmassoc rel="noopener noreferrer" href="https://tbmassoc.github.io" target="_blank" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a tbmassoc rel="noopener noreferrer" style="cursor: pointer;" onclick="window.location.replace('/policies')" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
       </div>
     </footer>
   </body>

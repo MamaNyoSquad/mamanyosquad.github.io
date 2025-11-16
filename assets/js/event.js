@@ -1,54 +1,66 @@
-function xvvNotify() {
+function xvvDialog(func, arg) {
 
-  document.body.innerHTML += `
-    <dialog id="xvvNtf">
-      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvNtfClose')">close</span>
-      <p>
-        This dialog contains all of the urgent information that is required to be
-        displayed to the end-users. It will be populated once there are enough info.
-      </p>
-    </dialog>
-  `;
+  switch (func) {
 
-  // execute Modal
-  document.getElementById("xvvNtf").showModal();
+    case "survey": // DOAXVV surveys
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
+            <iframe src="${arg}"></iframe>
+          </div>
+        </div>
+      `);
 
-}
+    case "music": // DOAXVV music
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 712.5px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
+            <iframe src="https://www.youtube-nocookie.com/embed/${arg}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
+          </div>
+        </div>
+      `);
 
-function xvvEvent() {
+    case "newver": // new version announce
+      let ajx = new XMLHttpRequest();
+      ajx.onload = function() { document.querySelector("#ajaxTxt").innerHTML = this.responseText; }
+      ajx.open("GET", `/assets/ajx/${func}.txt`);
+      ajx.send();
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 593.75px; height: 712.5px; background-color: #161224;" onclick="{ event.stopPropagation(); }">
+            <div id="ajaxTxt" style="padding: 47.5px 19px;"></div>
+          </div>
+        </div>
+      `);
 
-  document.body.innerHTML += `
-    <dialog id="xvvEvt">
-      <span class="material-symbols-rounded" title="Close" onclick="closeModal('xvvEvtClose')">close</span>
-      <iframe src="` + ifEmbed("xvv") + `" allowfullscreen></iframe>
-    </dialog>
-  `;
+    case "event": // announcements from DOAXVV
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); }">
+            <iframe src="${ifEmbed(...decodeURIComponent(arg).match(/"(?:[^"\\]|\\.)*"|[^,]+/g).map(s => s.trim().replace(/^"|"$/g, '')))}"></iframe>
+          </div>
+        </div>
+      `);
+      function ifEmbed(e, r) {
+        switch (e) {
+          case "jp": return `https://doax-venusvacation.jp/${r}.html`; // `{info|maintenance}/id`
+          case "gl": return `https://game.doaxvv.com/production/html/information/${r}.html`;
+          default: return event.preventDefault();
+        }
+      }
 
-  function ifEmbed(e) {
-    if (e == "xvv") {
-      let xvvId = "maint_gl_0612_240627_1_0_0e7c7bdc282ba0ae8f1c5beffd454adde0ad08e7e17ff7bb893ebf052f07eaba_en",
-        xvv = "https://game.doaxvv.com/production/html/information/" + xvvId + ".html";
-      return xvv;
-    } else if (e == "yt") {
-      let ytId = "iif5ng2p3dE"
-        yt = "https://www.youtube-nocookie.com/embed/" + ytId + "?rel=0";
-      return yt;
-    }
-  }
+    case "transcript": // anniversary transcript
+      return document.body.insertAdjacentHTML("afterbegin", `
+        <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+          <div style="width: 950px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
+            <iframe src="/assets/pdf/${arg}"></iframe>
+          </div>
+        </div>
+      `);
 
-  // execute Modal
-  document.getElementById("xvvEvt").showModal();
+    default: // none will be executed in this part
+      return event.preventDefault();
 
-}
-
-function closeModal(x) {
-
-  if (x == "xvvNtfClose") {
-    document.getElementById("xvvNtf").close();
-    document.getElementById("xvvNtf").remove();
-  } if (x == "xvvEvtClose") {
-    document.getElementById("xvvEvt").close();
-    document.getElementById("xvvEvt").remove();
   }
 
 }

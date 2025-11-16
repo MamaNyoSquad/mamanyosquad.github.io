@@ -16,27 +16,15 @@ div[policySheet] > span {
   font-size: medium;
   text-transform: uppercase;
 }
-span[changeLang] {
-  cursor: pointer;
-}
-span[changeLang]:hover {
-  color: #ff0000;
-}
-#ja {
-  display: none;
-}
+span[changeLang] { cursor: pointer; }
+span[changeLang]:hover { color: #ff0000; }
+#ja { display: none; }
 
 span[enfUpd] {
   text-transform: initial !important;
   font-style: italic;
 }
 
-.policyRef:link, .policyRef:visited {
-  color: #ff0000;
-}
-.policyRef:hover {
-  color: #dd0000;
-}
-.policyRef:active {
-  color: #ff5555;
-}
+.policyRef:link, .policyRef:visited { color: #ff0000; }
+.policyRef:hover { color: #dd0000; }
+.policyRef:active { color: #ff5555; }
