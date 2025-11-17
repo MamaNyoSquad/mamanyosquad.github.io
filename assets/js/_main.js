@@ -11,7 +11,7 @@ function init() {
   // pwaInit(); // initialize PWA
 }
 
-function showVersion() { document.querySelector("#siteVersion").innerHTML = "v20240518.22.25"; }
+function showVersion() { document.querySelector("#siteVersion").innerHTML = "v20240518.22.26"; }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
 // with some improvisations to convert to am/pm format. initially used in G.Mgr's streams.
@@ -20,7 +20,7 @@ function viClock() {
   let hh = tD.getHours(),
     mm = addZero(tD.getMinutes()),
     ss = addZero(tD.getSeconds());
-  document.querySelector("#footTime").innerHTML = `${hr12(hh)}:${mm}${ampm(hh)}&ensp;&#8226;&ensp;VIT (UTC +11)`;
+  document.querySelector("#footTime").innerHTML = `${hr12(hh)}:${mm}${ampm(hh)}&ensp;&bull;&ensp;VIT (UTC +11)`;
   setTimeout(viClock, 0);
 }
 function addZero(z) {
