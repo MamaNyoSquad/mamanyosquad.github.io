@@ -67,7 +67,7 @@
   }
 }
 
-div[style="text-align: center;"] { padding: calc(19px * 10) 0; }
+div[style="text-align: center;"] { padding: calc(19px * 10) 19px; }
 
 .annivColl {
   position: relative;

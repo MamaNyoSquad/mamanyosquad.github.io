@@ -68,7 +68,7 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 // simplified _main.js clock but for time/date document tracking
 function docModified() {
   let tD = new Date(new Date(document.lastModified).getTime() + diffOffs(11));
-  document.querySelector("#modifiedDate").innerHTML = `${hr12(tD.getHours())}:${addZero(tD.getMinutes())}${ampm(tD.getHours())}&ensp;&#8226;&ensp;${tD.getDate()} ${monthDef(tD.getMonth())} ${tD.getFullYear()} VIT`
+  document.querySelector("#modifiedDate").innerHTML = `${hr12(tD.getHours())}:${addZero(tD.getMinutes())}${ampm(tD.getHours())}&ensp;&bull;&ensp;${tD.getDate()} ${monthDef(tD.getMonth())} ${tD.getFullYear()} VIT`
   setTimeout(docModified, 0);
 }
 function monthDef(m) {
