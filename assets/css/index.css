@@ -11,8 +11,8 @@
 
 .hero * { margin: 0; }
 .heroHead1-fhd {
-  background-image: url("/assets/images/hero/Helena_hero.jpg");
-  background-size: 150%;
+  background-image: url("/assets/images/hero/Nyotengu_hero.jpg");
+  background-size: 137.5%;
   background-position: center 40%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -30,9 +30,9 @@
 }
 
 .heroHead1-hd {
-  background-image: url("/assets/images/hero/Helena_hero.jpg");
+  background-image: url("/assets/images/hero/Nyotengu_hero.jpg");
   background-size: cover;
-  background-position: 45% center;
+  background-position: 35% center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
