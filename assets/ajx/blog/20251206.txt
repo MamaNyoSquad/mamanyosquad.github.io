@@ -1,0 +1,43 @@
+<div>
+  <div class="blogText">
+    <span blogType>PRESS RELEASE</span>
+    <h1>Our statement concerning the 5th Inception Anniversary broadcast</h1>
+    <span>6 Dec 2025</span>
+    <br><br><br>
+    <p>
+      Thank you for supporting #MamaNyoSquad for the last 5 years, and we hope to
+      continue doing our part in continuing the DEAD OR ALIVE legacy from the Venus
+      Island and beyond.
+    </p>
+    <p>
+      As you may have been aware, we are supposed to be debuting our 5th Inception
+      Anniversary broadcast this 6 Dec -- as with the other Inception Anniversaries
+      that we’ve done previously. However, due to time constraints and
+      responsibilities that we ourselves must adhere to, we are unable to unveil the
+      broadcast in time.
+    </p>
+    <p>
+      Rest assured that we’re doing whatever we can to bring the broadcast at the
+      earliest time possible -- starting from the end of the year. We’ll update you
+      on the progress and changes as they happen.
+    </p>
+    <p>
+      We hope that we can at least give you a proper experience in order to
+      celebrate our journeys together, even for many years to come.
+    </p>
+    <p>
+      More activities will return once we get out of the major responsibilities that
+      we have.
+    </p>
+    <br><br>
+    <div style="text-align: right;">
+      <p>All the best,</p>
+      <br>
+      <p>
+        <b>Agatha C., the First Maria🍃</b>
+        <br>
+        G.Mgr, #MamaNyoSquad
+      </p>
+    </div>
+  </div>
+</div>
