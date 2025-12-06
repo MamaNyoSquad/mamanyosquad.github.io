@@ -149,6 +149,15 @@ function blogQue() {
       loadArticle(article);
       return;
 
+    case "20251206":
+      replaceHeader();
+      document.title = "Our statement concerning the 5th Inception Anniversary broadcast \u2014 6 Dec 2025";
+      document.querySelector("#blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
+      document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20251206_5anniv.png'); background-attachment: unset;");
+      document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
+      loadArticle(article);
+      return;
+
     default: return;
 
   }
