@@ -21,7 +21,6 @@ span[class^="material-symbols"] {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  padding: 0 7.6px 7.6px 7.6px;
   -webkit-transition: 0.95s;
   -moz-transition: 0.95s;
   -o-transition: 0.95s;
@@ -49,13 +48,14 @@ header {
   display: flex;
   justify-content: right;
   align-items: center;
+  gap: 9.5px;
 }
 #mobile-navPanel {
   width: 100vw;
   position: absolute;
   top: 0;
   z-index: 3800;
-  padding: 28.5px 38px 19px 38px;
+  padding: 19px 38px;
   background-color: #161224;
   text-align: right;
   box-shadow: 0 9.5px 19px #ff0000a0;
@@ -68,8 +68,12 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 9.5px;
 }
-.closeNav { margin-left: 19px; }
+.closeNav { margin-left: 9.5px; }
 
 footer {
   background-color: #000000;
@@ -129,6 +133,7 @@ button:disabled {
 
 /* NEW FORMAT!! supplementary buttons are now in a separate space */
 .btnOther {
+  margin-right: 9.5px;
   display: flex;
   justify-content: end;
   align-items: center;
