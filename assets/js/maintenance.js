@@ -12,11 +12,11 @@ function showMaintenance() {
 // maintenance tracking (ja)
 function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`${sMt} ${sDy}, 2025 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
-    ed = new Date(new Date(`${eMt} ${eDy}, 2025 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`${sMt} ${sDy}, 2026 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
+    ed = new Date(new Date(`${eMt} ${eDy}, 2026 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
   
-  document.querySelector("#maintDate-ja_jp").innerHTML = `2025年${(st.getMonth() + 1)}月${st.getDate()}日`;
-  document.querySelector("#maintDate-en_jp").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
+  document.querySelector("#maintDate-ja_jp").innerHTML = `2026年${(st.getMonth() + 1)}月${st.getDate()}日`;
+  document.querySelector("#maintDate-en_jp").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2026`;
 
   document.querySelector("#stTime-ja_jp").innerHTML = `${st.getHours()}時${addZero(st.getMinutes())}分`;
   document.querySelector("#edTime-ja_jp").innerHTML = `${ed.getHours()}時${addZero(ed.getMinutes())}分`;
@@ -30,8 +30,8 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
-  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[0]};`);
+  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[0]};`);
 
   document.querySelector("#impt-ja_jp").innerHTML = "8nfinityのDOAXVV";
   document.querySelector("#impt-en_jp").innerHTML = "DOAXVV @ 8nfinity";
