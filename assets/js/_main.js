@@ -11,7 +11,7 @@ function init() {
   // pwaInit(); // initialize PWA
 }
 
-function showVersion() { document.querySelector("#siteVersion").innerHTML = "v20240518.22.30"; }
+function showVersion() { document.querySelector("#siteVersion").innerHTML = "v20240518.22.31"; }
 
 // js clock code adapted from w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
 // with some improvisations to convert to am/pm format. initially used in G.Mgr's streams.
