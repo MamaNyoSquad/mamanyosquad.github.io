@@ -1,0 +1,53 @@
+  .heroHead1 {
+    background-image: url("/assets/images/venusIsland/vi_4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .heroHead2 {
+    background-color: #161224a0;
+    padding: 285px 19px;
+    padding-top: 380px;
+    text-align: center;
+  }
+
+  .paletteFeed {
+    background-color: #161224;
+    color: #ffffff;
+    -webkit-transition: 1.9s;
+    -moz-transition: 1.9s;
+    -o-transition: 1.9s;
+    transition: 1.9s;
+    & * { display: block; }
+  }
+  .paletteGrid {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    display: grid;
+    & div {
+      padding: 9.5px;
+      text-align: center;
+      -moz-user-select: none;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+
+  .copiedToClipboard {
+    position: fixed;
+    bottom: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #161224;
+    color: #ffffff;
+    -webkit-filter: drop-shadow(0 9.5px 19px #06a8ffa0);
+    filter: drop-shadow(0 9.5px 19px #06a8ffa0);
+    font-weight: 600;
+    padding: 19px 38px;
+    border-radius: 9.5px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: calc(19 * 500);
+    & p { margin: 0; }
+  }

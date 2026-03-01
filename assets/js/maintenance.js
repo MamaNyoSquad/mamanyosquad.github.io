@@ -88,7 +88,7 @@ function maintDialog(e, id) {
     default: return event.preventDefault();
   }
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); }">
         <iframe src="${url}"></iframe>
       </div>

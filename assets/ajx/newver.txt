@@ -1,31 +1,45 @@
 <h2 style="text-align: center">
-  #MamaNyoSquad v20240518.22.0, supercharged
+  More colors, more fun -- now available on #MamaNyoSquad v20240518.23.0!
 </h2>
 <br>
 <div>
-  <p>We have supercharged our website presence with major changelogs:</p>
+  <p>
+    As part of bringing more visibility into the lives of our lovely Venuses,
+    we've added the following changelogs:
+  </p>
   <br>
   <p>
     <ul>
-      <li>Introduction of the dedicated Clock system, with 12 and 24-hour formats</li>
-      <li>Major improvements to the Clock framework (footer and dedicated)</li>
+      <li>Footer color change system that updates with each page load</li>
+      <li>
+        A dedicated
+        <a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.open('/palette.html'); }">"DOAXVV Palette"</a>
+        page where all colors associated with DOAXVV are ready for view
+      </li>
     </ul>
   </p>
   <br>
   <p>
-    Supplemental changelogs are available in the GitHub commit as they were
-    attributed as part of a minor version prior to this major release.
+    For our web developers, the palette page showcases the dynamics of each
+    color against the text color -- either #161224 (Nyotengu Black) or #FFFFFF
+    (White). You can also click on each color to copy its HEX value to your
+    clipboard.
   </p>
   <br>
   <p>
-    This major changelog is also reflected on our 
-    <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/issues?q=label%3AMAJOR" target="_blank">GitHub Pull Requests</a>
-    with a <span isLabel="MAJOR">MAJOR</span> label.
+    Supplemental changelogs are available in the related GitHub commit as they
+    were attributed as part of a minor version prior to this major release.
+  </p>  
+  <br>
+  <p>
+    This major changelog is also reflected on our GitHub Pull Requests with a
+    <span style="cursor: pointer;" isLabel="MAJOR" onclick="{ window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io/issues?q=label%3AMAJOR'); }">MAJOR</span>
+    label.
   </p>
   <br>
   <p style="font-size: 0.75em;"><i>
-    Minor versions going forward will only be reflected as
-    <a rel="noopener noreferrer" href="https://github.com/MamaNyoSquad/mamanyosquad.github.io/issues?q=label%3AMINOR" target="_blank">GitHub Pull Requests</a>
-    with a <span isLabel="MINOR">MINOR</span> label.
+    Minor versions going forward will only be reflected on GitHub Pull Requests with a
+    <span style="cursor: pointer;" isLabel="MINOR" onclick="{ window.open('https://github.com/MamaNyoSquad/mamanyosquad.github.io/issues?q=label%3AMINOR'); }">MINOR</span>
+    label.
   </i></p>
 </div>
