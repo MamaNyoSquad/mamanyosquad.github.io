@@ -1,6 +1,6 @@
 function showMIT() {
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="width: 593.75px; height: 712.5px; background-color: #a31f34;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
         <div class="MITtxt" style="padding: 47.5px 19px; text-align: left;">
           <h2>MIT License</h2>
@@ -50,7 +50,7 @@ function supplementalBtns() {
       <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="window.open('/MamaNyoVotesPH')">how_to_vote</span> -->
       <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
       <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="xvvDialog('music', 'fgXv8wMl3h0')">music_note</span>
-      <!-- <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.22.0!" onclick="xvvDialog('newver')">release_alert</span> -->
+      <span class="material-symbols-rounded xvvNotify" title="More colors, more fun -- now available on #MamaNyoSquad v20240518.23.0!" onclick="xvvDialog('newver')">release_alert</span>
       <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}')">celebration</span> -->
     `);
   }
@@ -58,7 +58,7 @@ function supplementalBtns() {
 
 function headingDialog(url) {
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="width: 475px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
         <iframe id="headingDialog" src="${url}"></iframe>
       </div>
@@ -68,7 +68,7 @@ function headingDialog(url) {
 
 function ytVodDialog(ytId, style) {
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="${style}" onclick="{ event.stopPropagation(); }">
         <iframe src="https://www.youtube-nocookie.com/embed/${ytId}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
       </div>
@@ -87,4 +87,44 @@ function cssChange() { // comment all to cancel changes
     // hML.setAttribute("src", "/assets/svg/logo/doaxvv/anniv/8nfinity_small.svg");
   });
   // document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
+}
+
+function randomClr() {
+  let clrs = [
+    ["#a88255", "#ffffff", 200],
+    ["#ffecc3", "#161224", 300],
+    ["#f4a092", "#161224", 300],
+    ["#c55e2c", "#ffffff", 200],
+    ["#521969", "#ffffff", 200],
+    ["#2a1d1d", "#ffffff", 200],
+    ["#161224", "#ffffff", 200],
+    ["#794627", "#ffffff", 200],
+    ["#e50418", "#ffffff", 200],
+    ["#fce693", "#161224", 300],
+    ["#f0d2d4", "#161224", 300],
+    ["#521969", "#ffffff", 200],
+    ["#88361c", "#ffffff", 200],
+    ["#d4bfe5", "#161224", 300],
+    ["#4f325c", "#ffffff", 200],
+    ["#a53623", "#ffffff", 200],
+    ["#c1ae6b", "#161224", 300],
+    ["#ffeae1", "#161224", 300],
+    ["#ced6d1", "#161224", 300],
+    ["#4c3e37", "#ffffff", 200],
+    ["#15488a", "#ffffff", 200],
+    ["#4d3b2e", "#ffffff", 200],
+    ["#eda2ae", "#161224", 300],
+    ["#dc919f", "#161224", 300],
+    ["#fdd67a", "#161224", 300],
+    ["#bda599", "#161224", 300],
+    ["#5f3a59", "#ffffff", 200],
+    ["#f8daa8", "#161224", 300],
+    ["#bfbadf", "#161224", 300],
+    ["#4a4f63", "#ffffff", 200],
+    ["#b39b89", "#161224", 300],
+    ["#a33b4f", "#ffffff", 200],
+    ["#0066cc", "#ffffff", 200]
+  ], rndClr = clrs[Math.floor(Math.random() * clrs.length)];
+  document.querySelector("footer").setAttribute("style", `background-color: ${rndClr[0]}; color: ${rndClr[1]};`);
+  document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `${rndClr[2]}`; });
 }

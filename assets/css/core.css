@@ -77,6 +77,7 @@ header {
 
 footer {
   background-color: #000000;
+  color: #ffffff;
   padding: 19px 38px;
   overflow: auto;
 }
@@ -93,6 +94,10 @@ span[onclick="{ showMIT(); }"]:hover { color: #a31f34; }
 span[onclick="{ window.location.replace('/clock?format=12'); }"]:hover {
   cursor: pointer;
   color: #06a8ff;
+}
+span[onclick="{ window.location.replace('/palette'); }"]:hover {
+  cursor: pointer;
+  color: #ff0000;
 }
 
 button {
@@ -163,7 +168,7 @@ button:disabled {
 #mamaNyoDialog > div {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 19px;  
+  border-radius: 19px;
   -webkit-filter: drop-shadow(0 9.5px 19px #161224a0);
   filter: drop-shadow(0 9.5px 19px #161224a0);
   overflow: auto;

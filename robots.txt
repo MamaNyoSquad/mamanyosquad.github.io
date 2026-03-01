@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mamanyosquad.github.io/sitemap.xml
