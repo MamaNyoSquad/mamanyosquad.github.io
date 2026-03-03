@@ -38,6 +38,7 @@
     <script type="text/javascript">
       function start() {
         // start() args here
+        autoToggleCopyToClipboard();
       }
     </script>
     <script type="text/javascript">
@@ -46,7 +47,7 @@
   </head>
   <body onload="init()">
     <div class="copiedToClipboard">
-      <p>HEX value <span class="hexVl">asdad</span> copied to clipboard</p>
+      <p>HEX value <span class="hexVl">HEXCODE</span> copied to clipboard</p>
     </div>
     <div class="headers"> <!-- header -->
       <header class="desktop">
@@ -83,10 +84,14 @@
         <p><i>
           Colors will reset to normal upon next reload.
         </i></p>
+        <br>
+        <p class="funcCopyToClipboard">
+          <span class="material-symbols-rounded toggleCheck" onclick="{ toggleCopyToClipboard(true); }">check_box_outline_blank</span> Enable copy to clipboard
+        </p>
         <br><br>
         <h2>#MamaNyoSquad Palette</h2>
         <br>
-        <div class="paletteGrid" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+        <div class="paletteGrid MamaNyoPalette">
           <div style="background-color: #161224; color: #ffffff;" onclick="{ changePalette('#161224', '#ffffff'); }">#161224</div>
           <div style="background-color: #ff0000; color: #ffffff;" onclick="{ changePalette('#ff0000', '#ffffff'); }">#FF0000</div>
           <div style="background-color: #d6c278; color: #161224;" onclick="{ changePalette('#d6c278', '#161224'); }">#D6C278</div>
@@ -99,7 +104,7 @@
           residing in the island.
         </p>
         <br>
-        <div class="paletteGrid" style="grid-template-columns: repeat(5, minmax(0, 1fr));">
+        <div class="paletteGrid venusPalette">
           <div style="background-color: #a88255; color: #ffffff;" onclick="{ changePalette('#a88255', '#ffffff'); }" onmouseover="{ this.innerText = '#A88255'; }" onmouseout="{ this.innerText = 'Misaki'; }">Misaki</div>
           <div style="background-color: #ffecc3; color: #161224;" onclick="{ changePalette('#ffecc3', '#161224'); }" onmouseover="{ this.innerText = '#FFECC3'; }" onmouseout="{ this.innerText = 'Marie'; }">Marie</div>
           <div style="background-color: #f4a092; color: #161224;" onclick="{ changePalette('#f4a092', '#161224'); }" onmouseover="{ this.innerText = '#F4A092'; }" onmouseout="{ this.innerText = 'Honoka'; }">Honoka</div>
