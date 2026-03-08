@@ -62,7 +62,12 @@
     display: inline-block;
     margin-right: 9.5px;
   }
-  & span:hover {
-    color: inherit;
+  & span:hover { color: inherit; }
+  & span[class^="material-symbols"] {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
   }
+  & span[class^="material-symbols"]:hover { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
 }
