@@ -112,3 +112,26 @@ div[style="text-align: center;"] { padding: calc(19px * 10) 19px; }
   height: auto;
   margin: 0 auto;
 }
+
+/* EVENT RELATED */
+.ayaneTribute {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  & * { margin: 0; }
+  & div {
+    width: calc(190px * 3.75);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 190px 19px;
+    & img {
+      width: calc(19px * 25);
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 1;
+      margin: 0 auto;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}

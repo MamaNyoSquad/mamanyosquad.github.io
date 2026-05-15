@@ -77,19 +77,20 @@ function ytVodDialog(ytId, style) {
 }
 
 function cssChange() { // comment all to cancel changes
-  // document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#c77a63a0, #00000000);"); });
+  document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#521969a0, #00000000);"); });
   document.querySelectorAll("img[headerWideLogo]").forEach((hWL) => {
     // hWL.setAttribute("src", "/assets/svg/logo/doaxvv/anniv/8nfinityのDOAXVV.svg");
     // hWL.setAttribute("width", "285px");
   });
   document.querySelectorAll("img[headerMobileLogo]").forEach((hML) => {
     // hML.setAttribute("src", "https://play-lh.googleusercontent.com/vR0UGZVvqiD11tiKL1xNEGUSnZfqXxrT-OIuX0AvjVSbWM9TPAyYQXDaQ-BZ1AvQ9JPvFxr-OqeVc2bDrchQNw=s1024-rw");
-    // hML.setAttribute("src", "/assets/svg/logo/doaxvv/anniv/8nfinity_small.svg");
+    hML.setAttribute("src", "/assets/images/event/evtIcon.png");
   });
   // document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
 }
 
 function randomClr() {
+
   let clrs = [
     ["#a88255", "#ffffff", 200],
     ["#ffecc3", "#161224", 300],
@@ -125,6 +126,13 @@ function randomClr() {
     ["#a33b4f", "#ffffff", 200],
     ["#0066cc", "#ffffff", 200]
   ], rndClr = clrs[Math.floor(Math.random() * clrs.length)];
-  document.querySelector("footer").setAttribute("style", `background-color: ${rndClr[0]}; color: ${rndClr[1]};`);
-  document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `${rndClr[2]}`; });
+
+  // RANDOM PALETTE EVERY RELOAD, COMMENT IF EVENT-RELATED
+  // document.querySelector("footer").setAttribute("style", `background-color: ${rndClr[0]}; color: ${rndClr[1]};`);
+  // document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `${rndClr[2]}`; });
+
+  // EVENT-RELATED FOOTER COLOR CHANGE, UNCOMMENT TO ACTIVATE (SEE clrs FOR REFERENCES)
+  document.querySelector("footer").setAttribute("style", `background-color: #521969; color: #ffffff;`);
+  document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `200`; });
+
 }
