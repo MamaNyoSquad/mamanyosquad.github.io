@@ -158,6 +158,15 @@ function blogQue() {
       loadArticle(article);
       return;
 
+    case "20260522":
+      replaceHeader();
+      document.title = "Remembering Yamazaki Wakana, 1965-2026 \u2014 22 May 2026";
+      document.querySelector("#blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
+      document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20260522_YamazakiWakanaMemorial.png'); background-attachment: unset;");
+      document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
+      loadArticle(article);
+      return;
+
     default: return;
 
   }
