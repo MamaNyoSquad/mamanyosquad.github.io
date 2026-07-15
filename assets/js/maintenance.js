@@ -30,11 +30,11 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[0]};`);
-  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[0]};`);
+  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
 
-  document.querySelector("#impt-ja_jp").innerHTML = "全体33位ヴィーナスのデビュー";
-  document.querySelector("#impt-en_jp").innerHTML = "Debut of the 33rd Overall Venus";
+  document.querySelector("#impt-ja_jp").innerHTML = "サーバー機器のメンテナンス";
+  document.querySelector("#impt-en_jp").innerHTML = "Server Equipment Maintenance";
 
   // True Colors (comment to activate / deactivate)
   // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～モニカ～";
