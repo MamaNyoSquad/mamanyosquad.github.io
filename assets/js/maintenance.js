@@ -33,12 +33,12 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
   document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
 
-  document.querySelector("#impt-ja_jp").innerHTML = "サーバー機器のメンテナンス";
-  document.querySelector("#impt-en_jp").innerHTML = "Server Equipment Maintenance";
+  // document.querySelector("#impt-ja_jp").innerHTML = "サーバー機器のメンテナンス";
+  // document.querySelector("#impt-en_jp").innerHTML = "Server Equipment Maintenance";
 
   // True Colors (comment to activate / deactivate)
-  // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～モニカ～";
-  // document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Monica～";
+  document.querySelector("#impt-ja_jp").innerHTML = "True Colors～つくし～";
+  document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Tsukushi～";
 
 }
 
