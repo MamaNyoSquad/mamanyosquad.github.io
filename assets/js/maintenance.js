@@ -30,15 +30,15 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
-  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[0]};`);
+  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[0]};`);
 
-  // document.querySelector("#impt-ja_jp").innerHTML = "サーバー機器のメンテナンス";
-  // document.querySelector("#impt-en_jp").innerHTML = "Server Equipment Maintenance";
+  document.querySelector("#impt-ja_jp").innerHTML = "サーバー機器のメンテナンス";
+  document.querySelector("#impt-en_jp").innerHTML = "Server Equipment Maintenance";
 
   // True Colors (comment to activate / deactivate)
-  document.querySelector("#impt-ja_jp").innerHTML = "True Colors～つくし～";
-  document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Tsukushi～";
+  // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～つくし～";
+  // document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Tsukushi～";
 
 }
 
@@ -56,12 +56,12 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // below code are contained in <li important>, toggle the view with #impt-[locale]
   let toggle = ["none", "list-item"];
 
-  document.querySelector("#impt-en_gl").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-en_gl").setAttribute("style", `display: ${toggle[0]};`);
 
-  // document.querySelector("#impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
+  document.querySelector("#impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
 
   // True Colors (comment to activate / deactivate)
-  document.querySelector("#impt-en_gl").innerHTML = "True Colors ～Monica～";
+  // document.querySelector("#impt-en_gl").innerHTML = "True Colors ～Monica～";
 
 }
 
