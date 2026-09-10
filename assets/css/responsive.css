@@ -47,10 +47,14 @@
   .viewSlogan-hd { display: none; }
 }
 
-/* div.btnOther */
-@media screen and (max-width: 665px) {
-  .btnOther { margin-right: 9.5px; }
+/* palette grid */
+@media screen and (max-width: 540px) {
+  .venusPalette, .MamaNyoPalette { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-@media screen and (min-width: 665px) {
-  .btnOther { margin-right: 19px; }
+@media screen and (min-width: 540px) and (max-width: 1080px) {
+  .venusPalette, .MamaNyoPalette { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media screen and (min-width: 1080px) {
+  .venusPalette { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .MamaNyoPalette { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }

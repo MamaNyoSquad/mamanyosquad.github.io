@@ -1,6 +1,6 @@
 function showMIT() {
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="width: 593.75px; height: 712.5px; background-color: #a31f34;" onclick="{ event.stopPropagation(); event.preventDefault(); }">
         <div class="MITtxt" style="padding: 47.5px 19px; text-align: left;">
           <h2>MIT License</h2>
@@ -45,20 +45,20 @@ function supplementalBtns() {
   let suplRows = document.querySelectorAll(".btnOther");
   for (let b = 0; b < suplRows.length; b++) {
     suplRows[b].insertAdjacentHTML("beforeend", `
-      <!-- <span class="material-symbols-rounded xvvSurvey" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="window.open('https://youtu.be/mNsy-usRsCc')">play_circle</span> -->
-      <!-- <span class="material-symbols-sharp xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">border_all</span> -->
-      <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="window.open('/MamaNyoVotesPH')">how_to_vote</span> -->
-      <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="window.open('/VenusVacationCollection')">beach_access</span> -->
-      <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="xvvDialog('music', 'fgXv8wMl3h0')">music_note</span>
-      <!-- <span class="material-symbols-rounded xvvNotify" title="#MamaNyoSquad has been upgraded to v20240518.22.0!" onclick="xvvDialog('newver')">release_alert</span> -->
-      <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}')">celebration</span> -->
+      <!-- <span class="material-symbols-rounded xvvSurvey" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="{ window.open('https://youtu.be/mNsy-usRsCc'); }">play_circle</span> -->
+      <!-- <span class="material-symbols-sharp xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;'); }">border_all</span> -->
+      <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="{ window.open('/MamaNyoVotesPH'); }">how_to_vote</span> -->
+      <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="{ window.open('/VenusVacationCollection'); }">beach_access</span> -->
+      <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="{ xvvDialog('music', 'fgXv8wMl3h0'); }">music_note</span>
+      <!-- <span class="material-symbols-rounded xvvNotify" title="More colors, more fun -- now available on #MamaNyoSquad v20240518.23.0!" onclick="{ xvvDialog('newver'); }">release_alert</span> -->
+      <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="{ xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}'); }">celebration</span> -->
     `);
   }
 }
 
 function headingDialog(url) {
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="width: 475px; height: 712.5px;" onclick="{ event.stopPropagation(); }">
         <iframe id="headingDialog" src="${url}"></iframe>
       </div>
@@ -68,7 +68,7 @@ function headingDialog(url) {
 
 function ytVodDialog(ytId, style) {
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="${style}" onclick="{ event.stopPropagation(); }">
         <iframe src="https://www.youtube-nocookie.com/embed/${ytId}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
       </div>
@@ -77,14 +77,62 @@ function ytVodDialog(ytId, style) {
 }
 
 function cssChange() { // comment all to cancel changes
-  // document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#c77a63a0, #00000000);"); });
+  // document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#521969a0, #00000000);"); });
   document.querySelectorAll("img[headerWideLogo]").forEach((hWL) => {
-    hWL.setAttribute("src", "/assets/svg/logo/doaxvv/anniv/8nfinityのDOAXVV.svg");
-    // hWL.setAttribute("width", "  ");
+    // hWL.setAttribute("src", "/assets/svg/logo/doaxvv/anniv/8nfinityのDOAXVV.svg");
+    // hWL.setAttribute("width", "285px");
   });
   document.querySelectorAll("img[headerMobileLogo]").forEach((hML) => {
     // hML.setAttribute("src", "https://play-lh.googleusercontent.com/vR0UGZVvqiD11tiKL1xNEGUSnZfqXxrT-OIuX0AvjVSbWM9TPAyYQXDaQ-BZ1AvQ9JPvFxr-OqeVc2bDrchQNw=s1024-rw");
-    hML.setAttribute("src", "/assets/svg/logo/doaxvv/anniv/8nfinity_small.svg");
+    // hML.setAttribute("src", "/assets/images/event/evtIcon.png");
   });
   // document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
+}
+
+function randomClr() {
+
+  let clrs = [
+    ["#a88255", "#ffffff", 200],
+    ["#ffecc3", "#161224", 300],
+    ["#f4a092", "#161224", 300],
+    ["#c55e2c", "#ffffff", 200],
+    ["#521969", "#ffffff", 200],
+    ["#2a1d1d", "#ffffff", 200],
+    ["#161224", "#ffffff", 200],
+    ["#794627", "#ffffff", 200],
+    ["#e50418", "#ffffff", 200],
+    ["#fce693", "#161224", 300],
+    ["#f0d2d4", "#161224", 300],
+    ["#539471", "#ffffff", 200],
+    ["#88361c", "#ffffff", 200],
+    ["#d4bfe5", "#161224", 300],
+    ["#4f325c", "#ffffff", 200],
+    ["#a53623", "#ffffff", 200],
+    ["#c1ae6b", "#161224", 300],
+    ["#ffeae1", "#161224", 300],
+    ["#ced6d1", "#161224", 300],
+    ["#4c3e37", "#ffffff", 200],
+    ["#15488a", "#ffffff", 200],
+    ["#4d3b2e", "#ffffff", 200],
+    ["#eda2ae", "#161224", 300],
+    ["#dc919f", "#161224", 300],
+    ["#fdd67a", "#161224", 300],
+    ["#bda599", "#161224", 300],
+    ["#5f3a59", "#ffffff", 200],
+    ["#f8daa8", "#161224", 300],
+    ["#bfbadf", "#161224", 300],
+    ["#4a4f63", "#ffffff", 200],
+    ["#b39b89", "#161224", 300],
+    ["#a33b4f", "#ffffff", 200],
+    ["#0066cc", "#ffffff", 200]
+  ], rndClr = clrs[Math.floor(Math.random() * clrs.length)];
+
+  // RANDOM PALETTE EVERY RELOAD, COMMENT IF EVENT-RELATED
+  document.querySelector("footer").setAttribute("style", `background-color: ${rndClr[0]}; color: ${rndClr[1]};`);
+  document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `${rndClr[2]}`; });
+
+  // EVENT-RELATED FOOTER COLOR CHANGE, UNCOMMENT TO ACTIVATE (SEE clrs FOR REFERENCES)
+  // document.querySelector("footer").setAttribute("style", `background-color: #521969; color: #ffffff;`);
+  // document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `200`; });
+
 }

@@ -42,8 +42,8 @@
         // start() args here
         showMaintenance();
         // reference: start month, start day, start hr, start min, end month, end day, end hr, end min, timezone
-        jpMaint(11, 10, 12, 0, 11, 10, 17, 0, 9);
-        glMaint(11, 10, 2, 30, 11, 10, 6, 30, 0);
+        jpMaint(9, 10, 12, 0, 9, 10, 17, 0, 9);
+        glMaint(9, 10, 2, 30, 9, 10, 6, 30, 0);
       }
     </script>
     <script type="text/javascript">
@@ -87,13 +87,13 @@
       <div class="heroBack">
         <div class="heroFore">
           <h1>Maintenance Tracker</h1>
-          <span>Last updated</span>
+          <span>Last updated:</span>
           <br>
           <span id="modifiedDate">fetching time and date...</span>
         </div>
       </div>
     </div>
-    <!-- <div style="background-color: #f00; padding: 0.475rem; font-size: medium; text-align: center;">
+    <!-- <div style="background-color: #ff0000; padding: 0.475rem; font-size: medium; text-align: center;">
       <div style="display: block; margin: 0 auto; width: 71.25rem; max-width: 100%;">
         <p style="margin: 0;">
           Information below may be out of date. For the most up-to-date information about
@@ -105,7 +105,7 @@
       <div style="padding: calc(19px * 2.5) 0;">
         <div id="ja" lang="ja">
           <h2>日本語版 <img xvvIcon src="https://game.doaxvv.com/production/html/information/img/Girl/lun_icon.png" alt=""></h2> <!-- ja-jp, translation provided by DeepL -->
-          <span><span onclick="{ cLang('en'); }">英語</span>&ensp;&#8226;&ensp;<b>日本語</b></span>
+          <span><span onclick="{ cLang('en'); }">英語</span>&ensp;&bull;&ensp;<b>日本語</b></span>
           <br>
           <p>メンテナンスルーチンが発表されました：</p>
           <br>
@@ -132,12 +132,12 @@
             >から午前<span id="edTime-ja_jp">【データの取得...】</span>までVITの予定だ。
           </p>
           <br>
-          <button onclick="{ maintDialog('jp', 'maintenance/50464'); }">詳細へ</button>
+          <button onclick="{ maintDialog('jp', 'maintenance/54948'); }">詳細へ</button>
           <!-- <button disabled="true">ゲーム内でのみ利用可能</button> -->
         </div>
         <div id="en" lang="en"> <!-- ja-en -->
           <h2>Japanese Edition <img xvvIcon src="https://game.doaxvv.com/production/html/information/img/Girl/lun_icon.png" alt=""></h2>
-          <span><b>English</b>&ensp;&#8226;&ensp;<span onclick="{ cLang('ja'); }">Japanese</span></span>
+          <span><b>English</b>&ensp;&bull;&ensp;<span onclick="{ cLang('ja'); }">Japanese</span></span>
           <br>
           <p>A Maintenance Routine has been issued regarding the following:</p>
           <br>
@@ -163,7 +163,7 @@
             <span id="edTime-en_jp">[fetching data...]</span> VIT.
           </p>
           <br>
-          <button onclick="{ maintDialog('jp', 'maintenance/50464'); }">Details</button>
+          <button onclick="{ maintDialog('jp', 'maintenance/54948'); }">Details</button>
           <!-- <button disabled="true">Only available in-game</button> -->
         </div>
         <br><br>
@@ -180,7 +180,7 @@
           <!-- TODO: add some data here if there are more than just displayed below,
           and comment these two below if they are not included in the Routine. -->
           
-          <!-- <li>Fixes for recently-occurring bugs</li> -->
+          <!-- <li>【Follow-Up Fix】 Issue/s involving Boss Arena</li> -->
 
           <li>Updated Events</li>
           <li>Bug Fixes</li>
@@ -193,7 +193,7 @@
           <span id="edTime-en_gl">[fetching data...]</span> VIT.
         </p>
         <br>
-        <button onclick="{ maintDialog('gl', 'maint_gl_0732_251110_1_0_ec804ef2c655a59a4035540c01cbbe0e629baa814d96b9d81e5eec32a6b05d70_en'); }">Details</button>
+        <button onclick="{ maintDialog('gl', 'maint_gl_0824_260910_1_0_2bf2410d08bc86b460c0a649c6a9e921101c2bce10a851769bfff73b94a2487b_en'); }">Details</button>
         <!-- <button disabled="true">Only available in-game</button> -->
       </div>
     </div>
@@ -205,10 +205,11 @@
           <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
           <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
         </div>
-        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&bull;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&bull;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&bull;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+        <p class="footText"><span onclick="{ window.location.replace('/palette'); }">See all DOAXVV palette</span></p>
       </div>
     </footer>
   </body>
