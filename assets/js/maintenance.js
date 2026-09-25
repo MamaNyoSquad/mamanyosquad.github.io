@@ -12,11 +12,11 @@ function showMaintenance() {
 // maintenance tracking (ja)
 function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`${sMt} ${sDy}, 2025 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
-    ed = new Date(new Date(`${eMt} ${eDy}, 2025 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`${sMt} ${sDy}, 2026 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
+    ed = new Date(new Date(`${eMt} ${eDy}, 2026 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
   
-  document.querySelector("#maintDate-ja_jp").innerHTML = `2025年${(st.getMonth() + 1)}月${st.getDate()}日`;
-  document.querySelector("#maintDate-en_jp").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
+  document.querySelector("#maintDate-ja_jp").innerHTML = `2026年${(st.getMonth() + 1)}月${st.getDate()}日`;
+  document.querySelector("#maintDate-en_jp").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2026`;
 
   document.querySelector("#stTime-ja_jp").innerHTML = `${st.getHours()}時${addZero(st.getMinutes())}分`;
   document.querySelector("#edTime-ja_jp").innerHTML = `${ed.getHours()}時${addZero(ed.getMinutes())}分`;
@@ -30,25 +30,25 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // as there's no vanillajs-equivalent of general selector yet
   // and vanillajs doesn't permit outputting data to duplicate
   // ids in its associated html.
-  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
-  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[0]};`);
+  document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[0]};`);
 
-  document.querySelector("#impt-ja_jp").innerHTML = "8nfinityのDOAXVV";
-  document.querySelector("#impt-en_jp").innerHTML = "DOAXVV @ 8nfinity";
+  document.querySelector("#impt-ja_jp").innerHTML = "サーバー機器のメンテナンス";
+  document.querySelector("#impt-en_jp").innerHTML = "Server Equipment Maintenance";
 
   // True Colors (comment to activate / deactivate)
-  // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～モニカ～";
-  // document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Monica～";
+  // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～つくし～";
+  // document.querySelector("#impt-en_jp").innerHTML = "True Colors ～Tsukushi～";
 
 }
 
 // maintenance tracking (gl)
 function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
 
-  let st = new Date(new Date(`${sMt} ${sDy}, 2025 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
-    ed = new Date(new Date(`${eMt} ${eDy}, 2025 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
+  let st = new Date(new Date(`${sMt} ${sDy}, 2026 ${sHh}:${sMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11)),
+    ed = new Date(new Date(`${eMt} ${eDy}, 2026 ${eHh}:${eMm}:00 GMT+${tzz}:00`).getTime() + diffOffs(11));
   
-  document.querySelector("#maintDate-en_gl").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2025`;
+  document.querySelector("#maintDate-en_gl").innerHTML = `${st.getDate()} ${monthDef(st.getMonth())} 2026`;
 
   document.querySelector("#stTime-en_gl").innerHTML = `${hr12(st.getHours())}:${addZero(st.getMinutes())}${ampm(st.getHours())}`;
   document.querySelector("#edTime-en_gl").innerHTML = `${hr12(ed.getHours())}:${addZero(ed.getMinutes())}${ampm(ed.getHours())}`;
@@ -61,14 +61,14 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   document.querySelector("#impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
 
   // True Colors (comment to activate / deactivate)
-  // document.querySelector("#impt-en_gl").innerHTML = "True Colors ～Kokkoro～";
+  // document.querySelector("#impt-en_gl").innerHTML = "True Colors ～Monica～";
 
 }
 
 // simplified _main.js clock but for time/date document tracking
 function docModified() {
   let tD = new Date(new Date(document.lastModified).getTime() + diffOffs(11));
-  document.querySelector("#modifiedDate").innerHTML = `${hr12(tD.getHours())}:${addZero(tD.getMinutes())}${ampm(tD.getHours())}&ensp;&#8226;&ensp;${tD.getDate()} ${monthDef(tD.getMonth())} ${tD.getFullYear()} VIT`
+  document.querySelector("#modifiedDate").innerHTML = `${hr12(tD.getHours())}:${addZero(tD.getMinutes())}${ampm(tD.getHours())}&ensp;&bull;&ensp;${tD.getDate()} ${monthDef(tD.getMonth())} ${tD.getFullYear()} VIT`
   setTimeout(docModified, 0);
 }
 function monthDef(m) {
@@ -88,7 +88,7 @@ function maintDialog(e, id) {
     default: return event.preventDefault();
   }
   return document.body.insertAdjacentHTML("afterbegin", `
-    <div id="mamaNyoDialog" onclick="{ document.getElementById('mamaNyoDialog').remove(); }">
+    <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="width: 950px; height: 712.5px; background-color: #ffffff;" onclick="{ event.stopPropagation(); }">
         <iframe src="${url}"></iframe>
       </div>

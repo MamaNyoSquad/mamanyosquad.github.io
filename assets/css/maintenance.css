@@ -17,6 +17,6 @@ h2 > img[xvvIcon] {
 }
 
 li[important] {
-  font-weight: bold;
+  font-weight: 700;
   display: none; /* toggle between "none" and "list-item" in maintenance.js */
 }
