@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>Page not found</title>
@@ -34,7 +35,7 @@
       // js args here
     </script>
   </head>
-  <body onload="init()">
+  <body onload="{ init(); }">
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
@@ -65,10 +66,11 @@
           <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
           <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
         </div>
-        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&bull;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
         <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a></p>
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&bull;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a></p>
+        <p class="footText"><span onclick="{ window.location.replace('/palette'); }">See all DOAXVV palette</span></p>
       </div>
     </footer>
   </body>
