@@ -178,7 +178,7 @@ function replaceHeader() {
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img headerWideLogo src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <div class="headerWideLogo"></div>
           <div class="linkRefs">
             <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
             <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
