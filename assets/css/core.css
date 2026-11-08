@@ -44,6 +44,15 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.headerWideLogo {
+  width: 190px;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  background-image: url("/assets/svg/logo/MamaNyoSquad_2026.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 .linkRefs {
   display: flex;
   justify-content: right;
