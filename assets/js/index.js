@@ -79,11 +79,11 @@ function ytVodDialog(ytId, style) {
 function cssChange() { // comment all to cancel changes
   // document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#521969a0, #00000000);"); });
   document.querySelectorAll(".headerWideLogo").forEach((hWL) => {
-    hWL.style.backgroundImage = "url('/assets/svg/logo/Nyotengu_2026.svg')";
+    hWL.style.backgroundImage = "url('/assets/images/logo/doaxvv/anniv/IXのDOAXVV.png')";
   });
   document.querySelectorAll("img[headerMobileLogo]").forEach((hML) => {
     // hML.setAttribute("src", "https://play-lh.googleusercontent.com/vR0UGZVvqiD11tiKL1xNEGUSnZfqXxrT-OIuX0AvjVSbWM9TPAyYQXDaQ-BZ1AvQ9JPvFxr-OqeVc2bDrchQNw=s1024-rw");
-    // hML.setAttribute("src", "/assets/images/event/evtIcon.png");
+    hML.setAttribute("src", "/assets/images/logo/doaxvv/anniv/IXの_small.png");
   });
   // document.querySelectorAll("span[class^='material-symbols']:hover").forEach((mtBtn) => { mtBtn.setAttribute("style", "color: #c77a63 !important;"); });
 }
