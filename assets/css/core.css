@@ -110,6 +110,7 @@ span[onclick="{ window.location.replace('/palette'); }"]:hover {
 }
 
 button {
+  display: inline-block;
   background-color: #161224;
   border: solid 2.85px #ff0000;
   border-radius: 1900px;
@@ -145,15 +146,15 @@ button:disabled {
   /* pointer-events: none; */
 }
 
-/* NEW FORMAT!! supplementary buttons are now in a separate space */
-.btnOther {
-  margin-right: 9.5px;
+/* NEW FORMAT!! button collections now in separate space */
+div[class^="btn"] {
   display: flex;
   justify-content: end;
   align-items: center;
+  gap: 9.5px;
 }
 /* styling formats for supplemental buttons */
-.btnOther > * { display: inline-block; }
+div[class^="btn"] > * { display: inline-block; }
 
 /* mamaNyoDialog v2 */
 #mamaNyoDialog {

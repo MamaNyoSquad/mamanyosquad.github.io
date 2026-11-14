@@ -45,13 +45,14 @@ function supplementalBtns() {
   let suplRows = document.querySelectorAll(".btnOther");
   for (let b = 0; b < suplRows.length; b++) {
     suplRows[b].insertAdjacentHTML("beforeend", `
-      <!-- <span class="material-symbols-rounded xvvSurvey" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="{ window.open('https://youtu.be/mNsy-usRsCc'); }">play_circle</span> -->
-      <!-- <span class="material-symbols-sharp xvvSurvey" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;'); }">border_all</span> -->
-      <!-- <span class="material-symbols-rounded xvvSurvey" title="See our election coverage" onclick="{ window.open('/MamaNyoVotesPH'); }">how_to_vote</span> -->
-      <!-- <span class="material-symbols-rounded xvvSurvey" title="Explore the Venus Vacation Collection" onclick="{ window.open('/VenusVacationCollection'); }">beach_access</span> -->
-      <span class="material-symbols-rounded xvvSurvey" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="{ xvvDialog('music', 'fgXv8wMl3h0'); }">music_note</span>
-      <!-- <span class="material-symbols-rounded xvvNotify" title="More colors, more fun -- now available on #MamaNyoSquad v20240518.23.0!" onclick="{ xvvDialog('newver'); }">release_alert</span> -->
-      <!-- <span class="material-symbols-rounded xvvEvent" title="Check out the newest event from DOAXVV!" onclick="{ xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}'); }">celebration</span> -->
+      <!-- <span class="material-symbols-rounded" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="{ window.open('https://youtu.be/mNsy-usRsCc'); }">play_circle</span> -->
+      <!-- <span class="material-symbols-sharp" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;'); }">border_all</span> -->
+      <!-- <span class="material-symbols-rounded" title="See our election coverage" onclick="{ window.open('/MamaNyoVotesPH'); }">how_to_vote</span> -->
+      <!-- <span class="material-symbols-rounded" title="Explore the Venus Vacation Collection" onclick="{ window.open('/VenusVacationCollection'); }">beach_access</span> -->
+      <span class="material-symbols-rounded" title="Watch our simulcast of 「IXのDOAXVV」!" onclick="{ window.open('https://youtu.be/3xriL4vBC-Q'); }">celebration</span>
+      <span class="material-symbols-rounded" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="{ xvvDialog('music', 'fgXv8wMl3h0'); }">music_note</span>
+      <span class="material-symbols-rounded" title="All the moments from the G.Mgr's first playthrough to the latest, revealed in v20240518.24.0!!" onclick="{ xvvDialog('newver'); }">release_alert</span>
+      <!-- <span class="material-symbols-rounded" title="Check out the newest event from DOAXVV!" onclick="{ xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}'); }">celebration</span> -->
     `);
   }
 }
@@ -77,7 +78,7 @@ function ytVodDialog(ytId, style) {
 }
 
 function cssChange() { // comment all to cancel changes
-  // document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#521969a0, #00000000);"); });
+  document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#06a8ffa0, #00000000);"); });
   document.querySelectorAll(".headerWideLogo").forEach((hWL) => {
     hWL.style.backgroundImage = "url('/assets/images/logo/doaxvv/anniv/IXのDOAXVV.png')";
   });

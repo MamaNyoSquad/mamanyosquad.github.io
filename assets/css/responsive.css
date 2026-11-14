@@ -58,3 +58,12 @@
   .venusPalette { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .MamaNyoPalette { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* mobile-only header buttons */
+@media screen and (max-width: 665px) {
+  #mobile-navPanel {
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 9.5px;
+  }
+}
