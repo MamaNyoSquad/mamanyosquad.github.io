@@ -3,7 +3,6 @@
 
 .latestBlogBack {
   background-color: #000000;
-  /* background-image: url("/assets/images/hero/Helena_hero.jpg"); */
   background-size: cover;
   background-position: 25% 47.5%;
   background-repeat: no-repeat;
@@ -46,3 +45,11 @@
 .blogText > span { font-style: italic; }
 .blogText > p { margin-bottom: 19px; }
 .blogText > h2, h3 { margin: calc(19px * 2) 0 19px 0 !important; }
+
+.blogAuthorQuote {
+  padding-left: 19px;
+  border-style: none none none solid;
+  border-color: #ff0000;
+  border-width: calc(19px / 2.5);
+  margin-bottom: 19px;
+}

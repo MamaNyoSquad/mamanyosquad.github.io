@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="#MamaNyoSquad">
     <title>#MamaNyoSquad</title>
@@ -43,27 +44,33 @@
       // js args here
     </script>
   </head>
-  <body onload="init()">
+  <body onload="{ init(); }">
     <div id="mobile-navPanel" class="mobile">
       <div class="btnOther"></div>
-      <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
-      <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-      <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
-      <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-      <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
-      <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      <div class="btnPrimary">
+        <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
+        <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+        <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+        <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+        <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+        <span class="material-symbols-rounded" title="All DOAXVV playthroughs from the G.Mgr!!" onclick="{ window.location.replace('/vods'); }">video_library</span>
+        <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      </div>
     </div>
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img headerWideLogo src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <div class="headerWideLogo"></div>
           <div class="linkRefs">
-            <div class="btnOther"></div>
-            <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
-            <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-            <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
-            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-            <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+            <div class="btnOther" style="margin-right: 19px;"></div>
+            <div class="btnPrimary">
+              <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
+              <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+              <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+              <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+              <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+              <span class="material-symbols-rounded" title="All DOAXVV playthroughs from the G.Mgr!!" onclick="{ window.location.replace('/vods'); }">video_library</span>
+            </div>
           </div>
         </div>
       </header>
@@ -78,27 +85,60 @@
     </div>
     <iframe
       style="width: 100vw; height: 100vh; display: block;"
-      src="https://www.youtube-nocookie.com/embed/5ph4h0ZVX9s?playlist=5ph4h0ZVX9s&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
+      src="https://www.youtube-nocookie.com/embed/3xriL4vBC-Q?playlist=3xriL4vBC-Q&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
       title="YouTube Player"
       frameborder="0"
       allow="autoplay"
+      referrerpolicy="strict-origin-when-cross-origin"
       loop>
     </iframe>
-    <div class="hero"> <!-- hero section -->
+    <div feed class="VenusIslandBG">
+      <div>
+        <div style="text-align: center;">
+          <img class="doaxvvAnniv" src="/assets/images/logo/doaxvv/anniv/IXのDOAXVV.png" alt="">
+          <br><br>
+          <h2>Onwards to the First Decade</h2>
+          <br>
+          <p>
+            &OpenCurlyDoubleQuote;The Venus Island has been enjoying its biggest moments
+            as it celebrates its 9th year of continuous operation! As the first decade
+            closes in, can the Venuses weigh in on ways to celebrate with a
+            bang?&CloseCurlyDoubleQuote;
+          </p>
+          <br>
+          <p>
+            DOAXVV (DEAD OR ALIVE Xtreme Venus Vacation) Japanese Edition has been a
+            staple in how we perceive the worlds beyond our screens for the past 9 years.
+            As we anticipate its first decade, are we all ready for more surprises that
+            the Venus Island can offer to the table?
+          </p>
+          <br>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://www.gamecity.ne.jp/doaxvv/9th/program.html'); }">Get involved</button>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://youtu.be/3xriL4vBC-Q'); }">From #MamaNyoLIVE</button>
+        </div>
+      </div>
+    </div>
+    <div class="hero" style="display: block;"> <!-- hero section -->
       <div class="hero-fhd">
         <div class="heroHead1-fhd">
           <div class="heroHead2-fhd">
             <div class="heroSlogan-fhd">
-              <img src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe">
+              <!-- <img src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe"> -->
+              <img src="/assets/images/chibi/venus5/venus5_win.png" alt="Venus 5">
               <br>
-              <h2>Our new look</h2>
+              <h2>
+                Banding the Venus 5 together
+                <br>
+                for a prismatic future
+              </h2>
               <br>
               <p>
-                After our continuous effort in R&D, we're excited to unveil our new web design
-                language to commemorate a new beginning as a Squad! 💕
+                <b>Happy 5th Inception Anniversary to #MamaNyoSquad!</b> We are continuing our
+                commitment of preserving the DEAD OR ALIVE legacy from the comfort of the
+                Venus Island -- and beyond. 💕
               </p>
-              <br>
-              <button onclick="{ headingDialog('/blog?article=20241206'); }">Read our approach</button>
+              <!-- <br>
+              <button onclick="{ headingDialog('/blog?article=20241206'); }">Read our approach</button> -->
             </div>
           </div>
         </div>
@@ -108,70 +148,53 @@
           <div class="heroHead2-hd">
             <div class="heroSlogan-hd">
               <div class="viewSlogan-hd">
-                <img class="sloganLogo-hd" src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe">
+                <!-- <img class="sloganLogo-hd" src="/assets/images/logo/entertheuniverse_2024.png" alt="Enter the universe"> -->
+                <img class="sloganLogo-hd" src="/assets/images/chibi/venus5/venus5_win.png" alt="Venus 5">
                 <br>
               </div>
-              <h2>Our new look</h2>
+              <h2>
+                Banding the Venus 5 together
+                <br>
+                for a prismatic future
+              </h2>
               <br>
               <p>
-                After our continuous effort in R&D, we're excited to unveil our new web design
-                language to commemorate a new beginning as a Squad! 💕
+                <b>Happy 5th Inception Anniversary to #MamaNyoSquad!</b> We are continuing our
+                commitment of preserving the DEAD OR ALIVE legacy from the comfort of the
+                Venus Island -- and beyond. 💕
               </p>
-              <br>
-              <button onclick="{ headingDialog('/blog?article=20241206'); }">Read our approach</button>
+              <!-- <br>
+              <button onclick="{ headingDialog('/blog?article=20241206'); }">Read our approach</button> -->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div feed>
+    <div feed style="background-color: #eda2ae; color: #161224; display: block;">
       <div>
         <div style="text-align: center;">
           <div class="annivColl">
-            <div class="annivOVL"></div>
-            <img src="/assets/images/annivCollection.png" alt="">
+            <!-- <div class="annivOVL"></div> -->
+            <img src="/assets/images/logo/MamaNyoAnniv/MamaNyo_5anniv.png" alt="">
           </div>
           <br>
-          <h2>Celebrating our 4th Anniversary as a Collective</h2>
+          <h2>5 Years of Prismatic Legacy, and Beyond</h2>
           <br>
           <p>
-            #MamaNyoSquad has been constantly innovating to relive the hype of DEAD OR
-            ALIVE through Venus Vacation and beyond. With the 4th Inception Anniversary,
-            the ever-shining Prism continues to shine even brighter than before!
+            Despite the hurdles in our day-to-day activities, we are constantly improving
+            in every way possible to bring you all the developments the Venus Island has
+            to offer.
           </p>
           <br>
           <p>
-            Together with Nyotengu and the fellow Venuses, let's continue on our promise
-            of continuous preservation of DOA's memories through our creative efforts!
+            As we continue shifting the tides onward on our 5th year as a DEAD OR ALIVE
+            Collective, let's remind ourselves on what truly matters the most: The legacy
+            of the series and how best we can preserve them for generations to come.
           </p>
           <br>
-          <button style="margin: 9.5px 1.9px 1.9px 1.9px;" onclick="ytVodDialog('PuIJe3EaRzU', 'width: 950px; height: auto; aspect-ratio: 16 / 9;')">Watch the full Keynote</button>
-          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="xvvDialog('transcript', '20241206_4anniv_transcript.pdf')">Presenter's Transcript</button>
-        </div>
-      </div>
-    </div> -->
-    <div feed class="VenusIslandBG">
-      <div>
-        <div style="text-align: center;">
-          <img class="doaxvvAnniv" src="/assets/svg/logo/doaxvv/anniv/8nfinityのDOAXVV.svg" alt="">
-          <br><br>
-          <h2>The Venus Island turns 8!</h2>
-          <br>
-          <p>
-            <b>15 Nov 2017</b>, the day the Venus Island was first introduced to the world
-            through its immersive experience following the debut of Dead or Alive Xtreme
-            Venus Vacation (Japanese Edition). The following years that came afterward
-            were filled with countless memories, events, and collaborations that made the
-            island a beloved destination for current and future Venuses to come.
-          </p>
-          <br>
-          <p>
-            Its prismatic legacy still remained as it redefined its own legacy -- a legacy
-            noteworthy of its charismatic beauty that came from within.
-          </p>
-          <br>
-          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://www.gamecity.ne.jp/doaxvv/8th/program.html'); }">Get involved</button>
-          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://youtu.be/lKRqro-lgTM'); }">From #MamaNyoLIVE</button>
+          <!-- <button style="margin: 9.5px 1.9px 1.9px 1.9px; color: #ffffff;" onclick="{ ytVodDialog('PuIJe3EaRzU', 'width: 950px; height: auto; aspect-ratio: 16 / 9;'); }">Watch the full Keynote</button> -->
+          <!-- <button style="margin: 9.5px 1.9px 28.5px 1.9px; color: #ffffff;" onclick="{ xvvDialog('transcript', '20241206_4anniv_transcript.pdf'); }">Presenter's Transcript</button> -->
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px; color: #ffffff;" onclick="{ window.open('/blog?article=20251206'); }">Development Blog</button>
         </div>
       </div>
     </div>
@@ -183,10 +206,12 @@
           <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
           <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
         </div>
-        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&#8226;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
+        <div style="width: 100%; height: 0.5em;"></div> <!-- SPACER -->
+        <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&bull;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
-        <br>
-        <p class="footText">©2020 #MamaNyoSquad&ensp;&#8226;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&#8226;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+        <div style="width: 100%; height: 0.5em;"></div> <!-- SPACER -->
+        <p class="footText">©2020 #MamaNyoSquad&ensp;&bull;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&bull;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
+        <p class="footText"><span onclick="{ window.location.replace('/palette'); }">See all DOAXVV palette</span></p>
       </div>
     </footer>
   </body>

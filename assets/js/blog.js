@@ -58,7 +58,7 @@ function blogQue() {
               <div class="linkRefs">
                 <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
                 <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-                <span class="material-symbols-rounded" title="Learn more" onclick="window.open('https://vtresmarias.github.io')">open_in_new</span>
+                <span class="material-symbols-rounded" title="Learn more" onclick="{ window.open('https://vtresmarias.github.io'); }">open_in_new</span>
               </div>
             </div>
           </header>
@@ -68,7 +68,7 @@ function blogQue() {
               <div class="linkRefs">
                 <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
                 <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-                <span class="material-symbols-rounded" title="Learn more" onclick="window.open('https://vtresmarias.github.io')">open_in_new</span>
+                <span class="material-symbols-rounded" title="Learn more" onclick="{ window.open('https://vtresmarias.github.io'); }">open_in_new</span>
               </div>
             </div>
           </header>
@@ -149,6 +149,24 @@ function blogQue() {
       loadArticle(article);
       return;
 
+    case "20251206":
+      replaceHeader();
+      document.title = "Our statement concerning the 5th Inception Anniversary broadcast \u2014 6 Dec 2025";
+      document.querySelector("#blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
+      document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20251206_5anniv.png'); background-attachment: unset;");
+      document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
+      loadArticle(article);
+      return;
+
+    case "20260522":
+      replaceHeader();
+      document.title = "Remembering Yamazaki Wakana, 1965-2026 \u2014 22 May 2026";
+      document.querySelector("#blogHero").innerHTML = `<div class="heroBack"><div class="heroFore"></div></div>`;
+      document.querySelector(".heroBack").setAttribute("style", "background-image: url('/assets/images/bloghead/20260522_YamazakiWakanaMemorial.png'); background-attachment: unset;");
+      document.querySelector(".heroFore").setAttribute("style", "background-color: unset; padding: calc(285px + 95px) 19px 285px 19px;");
+      loadArticle(article);
+      return;
+
     default: return;
 
   }
@@ -160,7 +178,7 @@ function replaceHeader() {
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
-          <img headerWideLogo src="/assets/images/logo/MamaNyoSquad_2024.png" alt="#MamaNyoSquad" width="190px">
+          <div class="headerWideLogo"></div>
           <div class="linkRefs">
             <span class="material-symbols-rounded" title="Go back to Home" onclick="{ window.location.replace('/'); }">home</span>
             <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
@@ -181,10 +199,13 @@ function replaceHeader() {
 }
 
 function loadArticle(date) {
-  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  let atcl = new XMLHttpRequest();
-  atcl.onload = function() { document.querySelector("#blogContent").innerHTML = this.responseText; }
-  atcl.open("GET", "/assets/ajx/blog/" + date + ".txt");
-  atcl.send();
-  return;
+  return fetch(`/assets/ajx/blog/${date}.txt`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(content => { document.querySelector("#blogContent").innerHTML = content; })
+    .catch(error => console.error(`Failed to load blog article ${date}:`, error));
 }
