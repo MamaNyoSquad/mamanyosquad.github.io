@@ -54,24 +54,30 @@
   <body onload="{ init(); }">
     <div id="mobile-navPanel" class="mobile">
       <div class="btnOther"></div>
-      <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span>
-      <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-      <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
-      <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-      <!-- <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span> -->
-      <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      <div class="btnPrimary">
+        <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span>
+        <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+        <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+        <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+        <!-- <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span> -->
+        <span class="material-symbols-rounded" title="All DOAXVV playthroughs from the G.Mgr!!" onclick="{ window.location.replace('/vods'); }">video_library</span>
+        <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      </div>
     </div>
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
           <div class="headerWideLogo"></div>
           <div class="linkRefs">
-            <div class="btnOther"></div>
-            <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span>
-            <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-            <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
-            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-            <!-- <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span> -->
+            <div class="btnOther" style="margin-right: 19px;"></div>
+            <div class="btnPrimary">
+              <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span>
+              <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+              <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+              <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+              <!-- <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span> -->
+              <span class="material-symbols-rounded" title="All DOAXVV playthroughs from the G.Mgr!!" onclick="{ window.location.replace('/vods'); }">video_library</span>
+            </div>
           </div>
         </div>
       </header>
@@ -206,9 +212,10 @@
           <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
           <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
         </div>
+        <div style="width: 100%; height: 0.5em;"></div> <!-- SPACER -->
         <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&bull;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
-        <br>
+        <div style="width: 100%; height: 0.5em;"></div> <!-- SPACER -->
         <p class="footText">©2020 #MamaNyoSquad&ensp;&bull;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&bull;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
         <p class="footText"><span onclick="{ window.location.replace('/palette'); }">See all DOAXVV palette</span></p>
       </div>

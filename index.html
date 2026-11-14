@@ -47,24 +47,30 @@
   <body onload="{ init(); }">
     <div id="mobile-navPanel" class="mobile">
       <div class="btnOther"></div>
-      <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
-      <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-      <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
-      <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-      <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
-      <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      <div class="btnPrimary">
+        <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
+        <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+        <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+        <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+        <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+        <span class="material-symbols-rounded" title="All DOAXVV playthroughs from the G.Mgr!!" onclick="{ window.location.replace('/vods'); }">video_library</span>
+        <span class="material-symbols-rounded closeNav" onclick="{ mobilePanelClose(); }">close</span>
+      </div>
     </div>
     <div class="headers"> <!-- header -->
       <header class="desktop">
         <div class="flexNav">
           <div class="headerWideLogo"></div>
           <div class="linkRefs">
-            <div class="btnOther"></div>
-            <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
-            <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
-            <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
-            <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
-            <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+            <div class="btnOther" style="margin-right: 19px;"></div>
+            <div class="btnPrimary">
+              <!-- <span class="material-symbols-rounded" title="Go to Home" onclick="{ window.location.replace('/'); }">home</span> -->
+              <!-- <span class="material-symbols-rounded" title="See all involved events">event</span> -->
+              <span class="material-symbols-rounded" title="Discover #MamaNyoSquad Publishing" onclick="{ window.open('/publishing'); }">book</span>
+              <span class="material-symbols-rounded" title="Read more from the SquadMates" onclick="{ window.location.replace('/blog'); }">rss_feed</span>
+              <span class="material-symbols-rounded" title="Track all Maintenance Routines" onclick="{ window.location.replace('/maintenance'); }">build</span>
+              <span class="material-symbols-rounded" title="All DOAXVV playthroughs from the G.Mgr!!" onclick="{ window.location.replace('/vods'); }">video_library</span>
+            </div>
           </div>
         </div>
       </header>
@@ -79,38 +85,39 @@
     </div>
     <iframe
       style="width: 100vw; height: 100vh; display: block;"
-      src="https://www.youtube-nocookie.com/embed/Pu9CClkWm6g?playlist=Pu9CClkWm6g&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
+      src="https://www.youtube-nocookie.com/embed/3xriL4vBC-Q?playlist=3xriL4vBC-Q&loop=1&controls=0&autoplay=1&mute=1&rel=0&showinfo=0&modestbranding=1&playsinline=1"
       title="YouTube Player"
       frameborder="0"
       allow="autoplay"
       referrerpolicy="strict-origin-when-cross-origin"
       loop>
     </iframe>
-    <!-- <img
-      style="width: 100vw; height: 100vh; display: block; -o-object-fit: cover; object-fit: cover;"
-      src="/assets/images/event/evtImg.png"
-      alt="Event Image Header"
-    >
-    <div class="ayaneTribute">
+    <div feed class="VenusIslandBG">
       <div>
-        <p style="font-weight: 700;">
-          We at #MamaNyoSquad had just been informed that one of the pillars of DEAD OR
-          ALIVE -- Yamazaki Wakana, who voiced Ayane -- has passed away last 18 Apr
-          2026. She was 61 years old.
-        </p>
-        <br>
-        <p>
-          As part of remembering her legacy, we have temporarily changed our icon to
-          reflect Ayane's presence in the hearts of the community.
-        </p>
-        <br>
-        <p>A special memorial event will be made in her honor very soon. 💜</p>
-        <br>
-        <button style="margin: 9.5px 1.9px 28.5px 1.9px; color: #ffffff;" onclick="{ window.open('/blog?article=20260522'); }">Read our Press Release</button>
-        <br><br>
-        <img src="https://pbs.twimg.com/media/HIZAZznacAAJ8fD?format=jpg&name=4096x4096" alt="Remembering Yamazaki Wakana">
+        <div style="text-align: center;">
+          <img class="doaxvvAnniv" src="/assets/images/logo/doaxvv/anniv/IXのDOAXVV.png" alt="">
+          <br><br>
+          <h2>Onwards to the First Decade</h2>
+          <br>
+          <p>
+            &OpenCurlyDoubleQuote;The Venus Island has been enjoying its biggest moments
+            as we celebrate its 9th year of continuous operation! As the first decade
+            closes in, can the Venuses weigh in on ways to celebrate with a
+            bang?&CloseCurlyDoubleQuote;
+          </p>
+          <br>
+          <p>
+            DOAXVV (DEAD OR ALIVE Xtreme Venus Vacation) Japanese Edition has been a
+            staple in how we perceive the worlds beyond our screens for the past 9 years.
+            As we anticipate its first decade, are we all ready for more surprises that
+            the Venus Island can offer to the table?
+          </p>
+          <br>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://www.gamecity.ne.jp/doaxvv/9th/program.html'); }">Get involved</button>
+          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://youtu.be/3xriL4vBC-Q'); }">From #MamaNyoLIVE</button>
+        </div>
       </div>
-    </div> -->
+    </div>
     <div class="hero" style="display: block;"> <!-- hero section -->
       <div class="hero-fhd">
         <div class="heroHead1-fhd">
@@ -191,31 +198,6 @@
         </div>
       </div>
     </div>
-    <!-- <div feed class="VenusIslandBG">
-      <div>
-        <div style="text-align: center;">
-          <img class="doaxvvAnniv" src="/assets/svg/logo/doaxvv/anniv/8nfinityのDOAXVV.svg" alt="">
-          <br><br>
-          <h2>The Venus Island turns 8!</h2>
-          <br>
-          <p>
-            <b>15 Nov 2017</b>, the day the Venus Island was first introduced to the world
-            through its immersive experience following the debut of Dead or Alive Xtreme
-            Venus Vacation (Japanese Edition). The following years that came afterward
-            were filled with countless memories, events, and collaborations that made the
-            island a beloved destination for current and future Venuses to come.
-          </p>
-          <br>
-          <p>
-            Its prismatic legacy still remained as it redefined its own legacy -- a legacy
-            noteworthy of its charismatic beauty that came from within.
-          </p>
-          <br>
-          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://www.gamecity.ne.jp/doaxvv/8th/program.html'); }">Get involved</button>
-          <button style="margin: 9.5px 1.9px 28.5px 1.9px;" onclick="{ window.open('https://youtu.be/whhOLIlex3o'); }">From #MamaNyoLIVE</button>
-        </div>
-      </div>
-    </div> -->
     <footer> <!-- footer -->
       <div id="footPage">
         <div>
@@ -224,9 +206,10 @@
           <i class="bi bi-youtube" alt="YouTube" title="Subscribe to YouTube: @MamaNyoSquad" onclick="{ window.open('https://youtube.com/@MamaNyoSquad'); }"></i>
           <i class="bi bi-envelope-at-fill" alt="Mail" title="Send an Email to mamanyosquad@outlook.com" onclick="{ window.open('mailto:mamanyosquad@outlook.com', '_self'); }"></i>
         </div>
+        <div style="width: 100%; height: 0.5em;"></div> <!-- SPACER -->
         <p class="footText"><span id="siteVersion">Fetching version...</span>&ensp;&bull;&ensp;Licensed under <span onclick="{ showMIT(); }" style="cursor: pointer;">MIT</span></p>
         <p class="footText"><span id="footTime" onclick="{ window.location.replace('/clock?format=12'); }">Fetching time...</span></p>
-        <br>
+        <div style="width: 100%; height: 0.5em;"></div> <!-- SPACER -->
         <p class="footText">©2020 #MamaNyoSquad&ensp;&bull;&ensp;<a rel="noopener noreferrer" onclick="{ window.open('https://tbmassoc.github.io'); }" title="Visit tbmassoc's website">a proud brand of tbmassoc</a>&ensp;&bull;&ensp;<a rel="noopener noreferrer" style="cursor: pointer;" onclick="{ window.location.replace('/policies'); }" title="Read our Site Policies on how we use assets">Site Policies</a></p>
         <p class="footText"><span onclick="{ window.location.replace('/palette'); }">See all DOAXVV palette</span></p>
       </div>

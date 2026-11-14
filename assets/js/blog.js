@@ -199,10 +199,13 @@ function replaceHeader() {
 }
 
 function loadArticle(date) {
-  // related code: https://www.w3schools.com/js/js_ajax_intro.asp 
-  let atcl = new XMLHttpRequest();
-  atcl.onload = function() { document.querySelector("#blogContent").innerHTML = this.responseText; }
-  atcl.open("GET", "/assets/ajx/blog/" + date + ".txt");
-  atcl.send();
-  return;
+  return fetch(`/assets/ajx/blog/${date}.txt`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(content => { document.querySelector("#blogContent").innerHTML = content; })
+    .catch(error => console.error(`Failed to load blog article ${date}:`, error));
 }
