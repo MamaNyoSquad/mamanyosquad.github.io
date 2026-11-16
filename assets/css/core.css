@@ -112,6 +112,7 @@ span[onclick="{ window.location.replace('/palette'); }"]:hover {
 button {
   display: inline-block;
   background-color: #161224;
+  color: #ffffff !important;
   border: solid 2.85px #ff0000;
   border-radius: 1900px;
   color: inherit;
@@ -120,7 +121,7 @@ button {
   font-size: calc(1.9em / 2);
   text-align: center;
   text-decoration: none;
-  margin: 9.5px 1.9px 28.5px 1.9px;
+  margin: 0 !important;
   cursor: pointer;
   -webkit-transition: 0.475s;
   -moz-transition: 0.475s;
