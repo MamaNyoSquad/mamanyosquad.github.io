@@ -33,8 +33,8 @@ function jpMaint(sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   document.querySelector("#impt-ja_jp").setAttribute("style", `display: ${toggle[1]};`);
   document.querySelector("#impt-en_jp").setAttribute("style", `display: ${toggle[1]};`);
 
-  document.querySelector("#impt-ja_jp").innerHTML = "IXのDOAXVV";
-  document.querySelector("#impt-en_jp").innerHTML = "IXのDOAXVV";
+  document.querySelector("#impt-ja_jp").innerHTML = "DOAXVV日本語版9周年「IXのDOAXVV」";
+  document.querySelector("#impt-en_jp").innerHTML = "DOAXVV Japanese @ 9: IXのDOAXVV";
 
   // True Colors (comment to activate / deactivate)
   // document.querySelector("#impt-ja_jp").innerHTML = "True Colors～つくし～";
@@ -56,7 +56,7 @@ function glMaint (sMt, sDy, sHh, sMm, eMt, eDy, eHh, eMm, tzz) {
   // below code are contained in <li important>, toggle the view with #impt-[locale]
   let toggle = ["none", "list-item"];
 
-  document.querySelector("#impt-en_gl").setAttribute("style", `display: ${toggle[1]};`);
+  document.querySelector("#impt-en_gl").setAttribute("style", `display: ${toggle[0]};`);
 
   document.querySelector("#impt-en_gl").innerHTML = "DOAXVV Global @ 6: 6th Prismic Revelation";
 
