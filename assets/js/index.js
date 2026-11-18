@@ -78,7 +78,7 @@ function ytVodDialog(ytId, style) {
 }
 
 function cssChange() { // comment all to cancel changes
-  document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#06a8ffa0, #00000000);"); });
+  document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#161224a0, #00000000);"); });
   document.querySelectorAll(".headerWideLogo").forEach((hWL) => {
     hWL.style.backgroundImage = "url('/assets/images/logo/MamaNyo19/MamaNyo19_2026.png')";
   });
