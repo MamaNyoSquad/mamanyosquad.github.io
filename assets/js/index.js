@@ -45,14 +45,13 @@ function supplementalBtns() {
   let suplRows = document.querySelectorAll(".btnOther");
   for (let b = 0; b < suplRows.length; b++) {
     suplRows[b].insertAdjacentHTML("beforeend", `
-      <!-- <span class="material-symbols-rounded" title="#MamaNyoSquad&ensp;&bull; LIVE presents DOAXVV @ TGS 2025!" onclick="{ window.open('https://youtu.be/mNsy-usRsCc'); }">play_circle</span> -->
-      <!-- <span class="material-symbols-sharp" title="What happens to DOAXVV and PRISM the moment Windows 10 goes out of support? Watch this VOD to learn more!" onclick="ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;'); }">border_all</span> -->
+      <!-- <span class="material-symbols-rounded" title="#MamaNyoSquad celebrates 6th Inception Anniversary" onclick="{ ytVodDialog('en9ioABcos4', 'width: 950px; height: auto; aspect-ratio: 16 / 9;'); }">cake</span> -->
       <!-- <span class="material-symbols-rounded" title="See our election coverage" onclick="{ window.open('/MamaNyoVotesPH'); }">how_to_vote</span> -->
       <!-- <span class="material-symbols-rounded" title="Explore the Venus Vacation Collection" onclick="{ window.open('/VenusVacationCollection'); }">beach_access</span> -->
-      <span class="material-symbols-rounded" title="Watch our simulcast of 「IXのDOAXVV」!" onclick="{ window.open('https://youtu.be/3xriL4vBC-Q'); }">celebration</span>
+      <!-- <span class="material-symbols-rounded" title="Watch our simulcast of 「IXのDOAXVV」!" onclick="{ window.open('https://youtu.be/3xriL4vBC-Q'); }">celebration</span> -->
       <span class="material-symbols-rounded" title="Listen to PRISM's theme &quot;Stolen&quot;!" onclick="{ xvvDialog('music', 'fgXv8wMl3h0'); }">music_note</span>
-      <span class="material-symbols-rounded" title="All the moments from the G.Mgr's first playthrough to the latest, revealed in v20240518.24.0!!" onclick="{ xvvDialog('newver'); }">release_alert</span>
-      <!-- <span class="material-symbols-rounded" title="Check out the newest event from DOAXVV!" onclick="{ xvvDialog('event', '${encodeURIComponent(`"jp", "info/49788"`)}'); }">celebration</span> -->
+      <span newVersionNotifySuppressWhenPastMinor5 class="material-symbols-rounded" title="All the moments from the G.Mgr's first playthrough to the latest, revealed in v20240518.24.0!!" onclick="{ xvvDialog('newver'); }">release_alert</span>
+      <span class="material-symbols-rounded" title="Check out the newest event from DOAXVV!" onclick="{ xvvDialog('event', '${encodeURIComponent(`"gl", "event_gl_0834_261118_1_0_ec202c0fa7a63efbd517a7b8b29b9cc68d8ec2e4378dddec37c4c888668165f8_en"`)}'); }">celebration</span>
     `);
   }
 }
@@ -71,16 +70,16 @@ function ytVodDialog(ytId, style) {
   return document.body.insertAdjacentHTML("afterbegin", `
     <div id="mamaNyoDialog" onclick="{ document.querySelector('#mamaNyoDialog').remove(); }">
       <div style="${style}" onclick="{ event.stopPropagation(); }">
-        <iframe src="https://www.youtube-nocookie.com/embed/${ytId}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1"></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/${ytId}?controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
     </div>
   `);
 }
 
 function cssChange() { // comment all to cancel changes
-  document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#161224a0, #00000000);"); });
+  // document.querySelectorAll("header").forEach((hdr) => { hdr.setAttribute("style", "background: linear-gradient(#161224a0, #00000000);"); });
   document.querySelectorAll(".headerWideLogo").forEach((hWL) => {
-    hWL.style.backgroundImage = "url('/assets/images/logo/MamaNyo19/MamaNyo19_2026.png')";
+    // hWL.style.backgroundImage = "url('/assets/images/logo/MamaNyo19/MamaNyo19_2026.png')";
   });
   document.querySelectorAll("img[headerMobileLogo]").forEach((hML) => {
     // hML.setAttribute("src", "https://play-lh.googleusercontent.com/vR0UGZVvqiD11tiKL1xNEGUSnZfqXxrT-OIuX0AvjVSbWM9TPAyYQXDaQ-BZ1AvQ9JPvFxr-OqeVc2bDrchQNw=s1024-rw");
@@ -128,11 +127,32 @@ function randomClr() {
   ], rndClr = clrs[Math.floor(Math.random() * clrs.length)];
 
   // RANDOM PALETTE EVERY RELOAD, COMMENT IF EVENT-RELATED
-  // document.querySelector("footer").setAttribute("style", `background-color: ${rndClr[0]}; color: ${rndClr[1]};`);
-  // document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `${rndClr[2]}`; });
+  document.querySelector("footer").setAttribute("style", `background-color: ${rndClr[0]}; color: ${rndClr[1]};`);
+  document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `${rndClr[2]}`; });
 
   // EVENT-RELATED FOOTER COLOR CHANGE, UNCOMMENT TO ACTIVATE (SEE clrs FOR REFERENCES)
-  document.querySelector("footer").setAttribute("style", `background-color: #161224; color: #ffffff;`);
-  document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `200`; });
+  // document.querySelector("footer").setAttribute("style", `background-color: #161224; color: #ffffff;`);
+  // document.querySelectorAll("footer .footText").forEach((ftTxt) => { ftTxt.style.fontWeight = `200`; });
 
+}
+
+function newVersionNotifySuppressWhenPastMinor5() {
+  const versionElement = document.querySelector("#siteVersion");
+  const notifyButtons = document.querySelectorAll("span[newVersionNotifySuppressWhenPastMinor5]");
+
+  if (!versionElement || notifyButtons.length === 0) return;
+
+  const versionText = versionElement.textContent.trim();
+  const versionParts = versionText.replace(/^v/, "").split(".");
+  if (versionParts.length < 3) return;
+
+  const minorVersion = versionParts[versionParts.length - 1];
+  if (!/^\d+$/.test(minorVersion)) return;
+
+  const minorNumber = Number.parseInt(minorVersion, 10);
+  const isPastMinor5 = minorNumber > 5;
+
+  if (isPastMinor5) {
+    notifyButtons.forEach((notifyButton) => notifyButton.remove());
+  }
 }
